@@ -73,7 +73,7 @@ namespace PetApp
             }
         }
 
-        public static void Aviso (string aviso)
+        public static void Aviso(string aviso)
         {
             MessageBox.Show(aviso);
         }
@@ -92,6 +92,7 @@ namespace PetApp
             catch (Exception ex)
             {
                 Aviso(F.toString(ex.Message));
+                F.WriteLOG("----------------------\nLOG WSCorreios - " + DateTime.Now.ToString() + " - Erro: " + ex.Message);
             }
         }
 
