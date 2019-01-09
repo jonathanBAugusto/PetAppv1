@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp1
+﻿namespace PetApp
 {
     partial class FrmCadCli
     {
@@ -46,9 +46,10 @@
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
             this.edCNPJCli = new DevExpress.XtraEditors.TextEdit();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
-            this.edRaSoCli = new DevExpress.XtraEditors.TextEdit();
+            this.edRazSoCli = new DevExpress.XtraEditors.TextEdit();
             this.rgPesTipo = new DevExpress.XtraEditors.RadioGroup();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.lblComp = new DevExpress.XtraEditors.LabelControl();
             this.edComplemento = new DevExpress.XtraEditors.TextEdit();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
@@ -66,7 +67,6 @@
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
             this.peImgPET = new DevExpress.XtraEditors.PictureEdit();
-            this.btnAddPet = new System.Windows.Forms.Button();
             this.labelControl20 = new DevExpress.XtraEditors.LabelControl();
             this.edNomePet = new DevExpress.XtraEditors.TextEdit();
             this.edCorPet = new DevExpress.XtraEditors.TextEdit();
@@ -83,7 +83,9 @@
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnAddPet = new DevExpress.XtraEditors.SimpleButton();
+            this.edEmail = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl17 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.edNomeCli.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.edTelCli.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
@@ -93,7 +95,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.edInsEsCli.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.edDDDTel.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.edCNPJCli.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edRaSoCli.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edRazSoCli.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rgPesTipo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
@@ -114,6 +116,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.edRacaPet.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlPet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewPet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edEmail.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // edNomeCli
@@ -130,7 +133,7 @@
             this.edTelCli.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.edTelCli.Name = "edTelCli";
             this.edTelCli.Size = new System.Drawing.Size(150, 26);
-            this.edTelCli.TabIndex = 2;
+            this.edTelCli.TabIndex = 3;
             // 
             // labelControl1
             // 
@@ -152,7 +155,7 @@
             // 
             // labelControl3
             // 
-            this.labelControl3.Location = new System.Drawing.Point(594, 78);
+            this.labelControl3.Location = new System.Drawing.Point(745, 85);
             this.labelControl3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(82, 19);
@@ -162,14 +165,16 @@
             // edNasCli
             // 
             this.edNasCli.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.edNasCli.Location = new System.Drawing.Point(594, 106);
+            this.edNasCli.Location = new System.Drawing.Point(745, 107);
             this.edNasCli.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.edNasCli.Name = "edNasCli";
-            this.edNasCli.Size = new System.Drawing.Size(178, 27);
-            this.edNasCli.TabIndex = 11;
+            this.edNasCli.Size = new System.Drawing.Size(122, 27);
+            this.edNasCli.TabIndex = 7;
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.edEmail);
+            this.groupControl1.Controls.Add(this.labelControl17);
             this.groupControl1.Controls.Add(this.edDDDCel);
             this.groupControl1.Controls.Add(this.labelControl15);
             this.groupControl1.Controls.Add(this.edCelCli);
@@ -181,7 +186,7 @@
             this.groupControl1.Controls.Add(this.labelControl12);
             this.groupControl1.Controls.Add(this.edCNPJCli);
             this.groupControl1.Controls.Add(this.labelControl11);
-            this.groupControl1.Controls.Add(this.edRaSoCli);
+            this.groupControl1.Controls.Add(this.edRazSoCli);
             this.groupControl1.Controls.Add(this.rgPesTipo);
             this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Controls.Add(this.edNasCli);
@@ -203,7 +208,7 @@
             this.edDDDCel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.edDDDCel.Name = "edDDDCel";
             this.edDDDCel.Size = new System.Drawing.Size(63, 26);
-            this.edDDDCel.TabIndex = 23;
+            this.edDDDCel.TabIndex = 4;
             // 
             // labelControl15
             // 
@@ -220,7 +225,7 @@
             this.edCelCli.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.edCelCli.Name = "edCelCli";
             this.edCelCli.Size = new System.Drawing.Size(150, 26);
-            this.edCelCli.TabIndex = 21;
+            this.edCelCli.TabIndex = 5;
             // 
             // labelControl16
             // 
@@ -237,7 +242,7 @@
             this.edInsEsCli.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.edInsEsCli.Name = "edInsEsCli";
             this.edInsEsCli.Size = new System.Drawing.Size(150, 26);
-            this.edInsEsCli.TabIndex = 20;
+            this.edInsEsCli.TabIndex = 10;
             // 
             // labelControl14
             // 
@@ -254,7 +259,7 @@
             this.edDDDTel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.edDDDTel.Name = "edDDDTel";
             this.edDDDTel.Size = new System.Drawing.Size(63, 26);
-            this.edDDDTel.TabIndex = 17;
+            this.edDDDTel.TabIndex = 2;
             // 
             // labelControl13
             // 
@@ -280,7 +285,7 @@
             this.edCNPJCli.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.edCNPJCli.Name = "edCNPJCli";
             this.edCNPJCli.Size = new System.Drawing.Size(150, 26);
-            this.edCNPJCli.TabIndex = 15;
+            this.edCNPJCli.TabIndex = 9;
             // 
             // labelControl11
             // 
@@ -291,13 +296,13 @@
             this.labelControl11.TabIndex = 14;
             this.labelControl11.Text = "Razão Social";
             // 
-            // edRaSoCli
+            // edRazSoCli
             // 
-            this.edRaSoCli.Location = new System.Drawing.Point(8, 177);
-            this.edRaSoCli.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.edRaSoCli.Name = "edRaSoCli";
-            this.edRaSoCli.Size = new System.Drawing.Size(214, 26);
-            this.edRaSoCli.TabIndex = 13;
+            this.edRazSoCli.Location = new System.Drawing.Point(8, 177);
+            this.edRazSoCli.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.edRazSoCli.Name = "edRazSoCli";
+            this.edRazSoCli.Size = new System.Drawing.Size(214, 26);
+            this.edRazSoCli.TabIndex = 8;
             // 
             // rgPesTipo
             // 
@@ -309,7 +314,7 @@
             new DevExpress.XtraEditors.Controls.RadioGroupItem("FIS", "Pessoa Física"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem("JUR", "Pessoa Jurídica")});
             this.rgPesTipo.Size = new System.Drawing.Size(873, 35);
-            this.rgPesTipo.TabIndex = 12;
+            this.rgPesTipo.TabIndex = 0;
             this.rgPesTipo.EditValueChanged += new System.EventHandler(this.rgPesTipo_EditValueChanged);
             // 
             // groupControl2
@@ -336,6 +341,15 @@
             this.groupControl2.Size = new System.Drawing.Size(879, 185);
             this.groupControl2.TabIndex = 3;
             this.groupControl2.Text = "Endereço";
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Location = new System.Drawing.Point(784, 133);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(85, 28);
+            this.simpleButton1.TabIndex = 20;
+            this.simpleButton1.Text = "Cadastrar";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // lblComp
             // 
@@ -482,8 +496,8 @@
             this.splitContainerControl1.Horizontal = false;
             this.splitContainerControl1.Location = new System.Drawing.Point(3, 30);
             this.splitContainerControl1.Name = "splitContainerControl1";
-            this.splitContainerControl1.Panel1.Controls.Add(this.peImgPET);
             this.splitContainerControl1.Panel1.Controls.Add(this.btnAddPet);
+            this.splitContainerControl1.Panel1.Controls.Add(this.peImgPET);
             this.splitContainerControl1.Panel1.Controls.Add(this.labelControl20);
             this.splitContainerControl1.Panel1.Controls.Add(this.edNomePet);
             this.splitContainerControl1.Panel1.Controls.Add(this.edCorPet);
@@ -510,17 +524,6 @@
             this.peImgPET.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.peImgPET.Size = new System.Drawing.Size(106, 105);
             this.peImgPET.TabIndex = 1;
-            // 
-            // btnAddPet
-            // 
-            this.btnAddPet.Location = new System.Drawing.Point(726, 50);
-            this.btnAddPet.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnAddPet.Name = "btnAddPet";
-            this.btnAddPet.Size = new System.Drawing.Size(140, 35);
-            this.btnAddPet.TabIndex = 6;
-            this.btnAddPet.Text = "Adicionar";
-            this.btnAddPet.UseVisualStyleBackColor = true;
-            this.btnAddPet.Click += new System.EventHandler(this.btnAddPet_Click);
             // 
             // labelControl20
             // 
@@ -668,13 +671,31 @@
             this.gridColumn6.Visible = true;
             this.gridColumn6.VisibleIndex = 5;
             // 
-            // simpleButton1
+            // btnAddPet
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(729, 116);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(75, 23);
-            this.simpleButton1.TabIndex = 20;
-            this.simpleButton1.Text = "Cadastro";
+            this.btnAddPet.Location = new System.Drawing.Point(781, 55);
+            this.btnAddPet.Name = "btnAddPet";
+            this.btnAddPet.Size = new System.Drawing.Size(85, 28);
+            this.btnAddPet.TabIndex = 28;
+            this.btnAddPet.Text = "Adicionar";
+            this.btnAddPet.Click += new System.EventHandler(this.btnAddPet_Click);
+            // 
+            // edEmail
+            // 
+            this.edEmail.Location = new System.Drawing.Point(593, 108);
+            this.edEmail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.edEmail.Name = "edEmail";
+            this.edEmail.Size = new System.Drawing.Size(150, 26);
+            this.edEmail.TabIndex = 6;
+            // 
+            // labelControl17
+            // 
+            this.labelControl17.Location = new System.Drawing.Point(592, 85);
+            this.labelControl17.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.labelControl17.Name = "labelControl17";
+            this.labelControl17.Size = new System.Drawing.Size(39, 19);
+            this.labelControl17.TabIndex = 26;
+            this.labelControl17.Text = "Email";
             // 
             // FrmCadCli
             // 
@@ -698,7 +719,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.edInsEsCli.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.edDDDTel.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.edCNPJCli.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edRaSoCli.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edRazSoCli.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rgPesTipo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
@@ -720,6 +741,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.edRacaPet.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlPet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewPet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edEmail.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -746,7 +768,7 @@
         private DevExpress.XtraEditors.LabelControl labelControl12;
         private DevExpress.XtraEditors.TextEdit edCNPJCli;
         private DevExpress.XtraEditors.LabelControl labelControl11;
-        private DevExpress.XtraEditors.TextEdit edRaSoCli;
+        private DevExpress.XtraEditors.TextEdit edRazSoCli;
         private DevExpress.XtraEditors.RadioGroup rgPesTipo;
         private DevExpress.XtraEditors.LabelControl labelControl10;
         private DevExpress.XtraEditors.TextEdit edCidade;
@@ -776,10 +798,12 @@
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.TextEdit edRacaPet;
         private DevExpress.XtraEditors.TextEdit edNomePet;
-        private System.Windows.Forms.Button btnAddPet;
         private DevExpress.XtraEditors.SplitContainerControl splitContainerControl1;
         private DevExpress.XtraEditors.LabelControl lblComp;
         private DevExpress.XtraEditors.TextEdit edComplemento;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.TextEdit edEmail;
+        private DevExpress.XtraEditors.LabelControl labelControl17;
+        private DevExpress.XtraEditors.SimpleButton btnAddPet;
     }
 }

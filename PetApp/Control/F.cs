@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -7,10 +8,21 @@ using System.Windows.Forms;
 using Correios.Net;
 using DevExpress.XtraEditors;
 
-namespace WindowsFormsApp1
+namespace PetApp
 {
-    class Funcoes
+    class F
     {
+        public static void WriteLOG(string log)
+        {
+            if (!File.Exists("LOG.txt"))
+            {
+                File.Create("LOG.txt");
+            }
+
+            StreamWriter sw = new StreamWriter("LOG.txt");
+            sw.NewLine = log;
+            sw.Close();
+        }
 
         public static string toString(object Value, string Default = "")
         {
@@ -71,7 +83,7 @@ namespace WindowsFormsApp1
             try
             {
                 var ws = new WSCorreios.AtendeClienteClient();
-                var resposta = ws.consultaCEP(Funcoes.toString(CEP));
+                var resposta = ws.consultaCEP(F.toString(CEP));
                 edCidade.EditValue = resposta.cidade;
                 edRua.EditValue = resposta.end;
                 edBairro.EditValue = resposta.bairro;
@@ -79,7 +91,7 @@ namespace WindowsFormsApp1
             }
             catch (Exception ex)
             {
-                Aviso(Funcoes.toString(ex.Message));
+                Aviso(F.toString(ex.Message));
             }
         }
 

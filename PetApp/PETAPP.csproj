@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{CEAE16B1-1412-4955-BD68-D02CEE3831EE}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WindowsFormsApp1</RootNamespace>
-    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <RootNamespace>PetApp</RootNamespace>
+    <AssemblyName>PetApp</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -82,6 +82,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Control\Connection.cs" />
+    <Compile Include="FrmCadServico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCadServico.Designer.cs">
+      <DependentUpon>FrmCadServico.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmInicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,10 +107,19 @@
     <Compile Include="FrmCadCli.Designer.cs">
       <DependentUpon>FrmCadCli.cs</DependentUpon>
     </Compile>
-    <Compile Include="Control\Funcoes.cs" />
+    <Compile Include="FrmServicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmServicos.Designer.cs">
+      <DependentUpon>FrmServicos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\F.cs" />
     <Compile Include="Model\Clientes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmCadServico.resx">
+      <DependentUpon>FrmCadServico.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmInicio.resx">
       <DependentUpon>FrmInicio.cs</DependentUpon>
     </EmbeddedResource>
@@ -112,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCadCli.resx">
       <DependentUpon>FrmCadCli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmServicos.resx">
+      <DependentUpon>FrmServicos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -124,142 +143,142 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="Connected Services\WSCorreios\AtendeClienteService.wsdl" />
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.atualizaPagamentoNaEntregaResponse.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.atualizaPagamentoNaEntregaResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.atualizaRemessaAgrupadaResponse.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.atualizaRemessaAgrupadaResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.bloquearObjetoResponse.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.bloquearObjetoResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.buscaClienteResponse.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.buscaClienteResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.buscaContratoResponse.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.buscaContratoResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.buscaDataAtualResponse.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.buscaDataAtualResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.buscaPagamentoEntregaResponse.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.buscaPagamentoEntregaResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.buscaServicosAdicionaisAtivosResponse.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.buscaServicosAdicionaisAtivosResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.buscaServicosResponse.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.buscaServicosResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.buscaServicosValorDeclaradoResponse.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.buscaServicosValorDeclaradoResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.buscaServicosXServicosAdicionaisResponse.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.buscaServicosXServicosAdicionaisResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.buscaTarifaValeResponse.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.buscaTarifaValeResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.calculaTarifaServicoResponse.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.calculaTarifaServicoResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.cancelarObjetoResponse.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.cancelarObjetoResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.cancelarPedidoScolResponse.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.cancelarPedidoScolResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.clienteERP.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.clienteERP.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.consultaCEPResponse.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.consultaCEPResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.consultaSROResponse.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.consultaSROResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.consultaSRO_NEWResponse.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.consultaSRO_NEWResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.contratoERP.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.contratoERP.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.embalagemLRSMaster.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.embalagemLRSMaster.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.enderecoERP.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.enderecoERP.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.fechaPlpResponse.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.fechaPlpResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.fechaPlpVariosServicosResponse.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.fechaPlpVariosServicosResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.geraDigitoVerificadorEtiquetasResponse.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.geraDigitoVerificadorEtiquetasResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.getStatusCartaoPostagemResponse.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.getStatusCartaoPostagemResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.getStatusPLPResponse.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.getStatusPLPResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.integrarUsuarioScolResponse.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.integrarUsuarioScolResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.obterClienteAtualizacaoResponse.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.obterClienteAtualizacaoResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.obterEmbalagemLRSResponse.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.obterEmbalagemLRSResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.retornoCancelamento.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.retornoCancelamento.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.servicoAdicionalXML.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.servicoAdicionalXML.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.servicoERP.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.servicoERP.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.solicitaEtiquetasResponse.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.solicitaEtiquetasResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.solicitaPLPResponse.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.solicitaPLPResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.solicitarPostagemScolResponse.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.solicitarPostagemScolResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.solicitaXmlPlpResponse.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.solicitaXmlPlpResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.statusCartao.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.statusCartao.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.statusPlp.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.statusPlp.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.valePostal.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.valePostal.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.validaEtiquetaPLPResponse.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.validaEtiquetaPLPResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.validaPlpResponse.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.validaPlpResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.validarPostagemReversaResponse.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.validarPostagemReversaResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.validarPostagemSimultaneaResponse.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.validarPostagemSimultaneaResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.verificaDisponibilidadeServicoResponse.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.verificaDisponibilidadeServicoResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSCorreios\WindowsFormsApp1.WSCorreios.VerificaSeTodosObjetosCanceladosResponse.datasource">
+    <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.VerificaSeTodosObjetosCanceladosResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="packages.config" />

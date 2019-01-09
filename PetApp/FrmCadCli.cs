@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Correios.Net;
 
-namespace WindowsFormsApp1
+namespace PetApp
 {
     public partial class FrmCadCli : Form
     {
@@ -33,24 +33,24 @@ namespace WindowsFormsApp1
 
         private void FrmCadCli_Load(object sender, EventArgs e)
         {
-
+            rgPesTipo.EditValue = "FIS";
         }
 
         private void rgPesTipo_EditValueChanged(object sender, EventArgs e)
         {
-            if (Funcoes.toString(rgPesTipo.EditValue) == "JUR")
+            if (F.toString(rgPesTipo.EditValue) == "JUR")
             {
                 edNomeCli.Enabled = false;
                 edNasCli.Enabled = false;
                 edInsEsCli.Enabled = true;
                 edCNPJCli.Enabled = true;
-                edRaSoCli.Enabled = true;
+                edRazSoCli.Enabled = true;
             }
             else
             {
                 edInsEsCli.Enabled = false;
                 edCNPJCli.Enabled = false;
-                edRaSoCli.Enabled = false;
+                edRazSoCli.Enabled = false;
                 edNomeCli.Enabled = true;
                 edNasCli.Enabled = true;
             }
@@ -64,7 +64,7 @@ namespace WindowsFormsApp1
         private void edCEP_Validated(object sender, EventArgs e)
         {
 
-            Funcoes.LocalizarCEP(Funcoes.toString(edCEP.EditValue),edEstado,edCidade,edBairro,edRua);
+            F.LocalizarCEP(F.toString(edCEP.EditValue),edEstado,edCidade,edBairro,edRua);
           
         }
 
@@ -73,12 +73,60 @@ namespace WindowsFormsApp1
             DataRow dr = infoPets.NewRow();
             dr["IDPet"] = id;
             id++;
-            dr["NomePet"] = Funcoes.toString(edNomePet.Text);
-            dr["RacaPet"] = Funcoes.toString(edRacaPet.Text);
-            dr["CorPet"] = Funcoes.toString(edCorPet.Text);
-            dr["NasPet"] = Funcoes.toString(edNasPet.Text);
-            dr["IdadePet"] = Funcoes.toString(Funcoes.idade(Convert.ToDateTime(edNasPet.Value)));
+            dr["NomePet"] = F.toString(edNomePet.Text);
+            dr["RacaPet"] = F.toString(edRacaPet.Text);
+            dr["CorPet"] = F.toString(edCorPet.Text);
+            dr["NasPet"] = F.toString(edNasPet.Text);
+            dr["IdadePet"] = F.toString(F.idade(Convert.ToDateTime(edNasPet.Value)));
             infoPets.Rows.Add(dr);
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            if (F.toString(rgPesTipo.EditValue) == "FIS" ) 
+            {
+                if (F.toString(edNomeCli) == "")
+                {
+                    F.Aviso("Por Favor, Informe o Nome do cliente.");
+                }
+                if (F.toString(edTelCli.EditValue) == "" && F.toString(edCelCli.EditValue) == ""
+                && F.toString(edEmail.EditValue) == "")
+                {
+                    F.Aviso("Por favor, informa ao menos uma forma de contato.");
+                }
+                if (F.toString(edDDDCel.EditValue) == "" && F.toString(edCelCli.EditValue) != "") 
+                {
+                    F.Aviso("Por Favor, Informe o DDD do celular.");
+                }
+                if (F.toString(edDDDTel.EditValue) == "" && F.toString(edTelCli.EditValue) != "")
+                {
+                    F.Aviso("Por Favor, Informe o DDD do telefone.");
+                }
+            }
+            if (F.toString(rgPesTipo.EditValue) == "JUR")
+            {
+                if (F.toString(edRazSoCli) == "")
+                {
+                    F.Aviso("Por favor, Informe a Razão Social do cliente");
+                }
+                if (F.toString(edInsEsCli) == "")
+                {
+                    F.Aviso("Por Favor, informe a Inscrição Estadual do cliente");
+                }
+                if (F.toString(edTelCli.EditValue) == "" && F.toString(edCelCli.EditValue) == ""
+                && F.toString(edEmail.EditValue) == "")
+                {
+                    F.Aviso("Por favor, informa ao menos uma forma de contato.");
+                }
+                if (F.toString(edDDDCel.EditValue) == "" && F.toString(edCelCli.EditValue) != "")
+                {
+                    F.Aviso("Por Favor, Informe o DDD do celular.");
+                }
+                if (F.toString(edDDDTel.EditValue) == "" && F.toString(edTelCli.EditValue) != "")
+                {
+                    F.Aviso("Por Favor, Informe o DDD do telefone.");
+                }
+            }
         }
     }
 }

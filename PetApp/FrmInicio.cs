@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp1
+namespace PetApp
 {
     public partial class FrmInicio : Form
     {
@@ -26,6 +26,12 @@ namespace WindowsFormsApp1
         {
             FrmCli frmcli = new FrmCli();
             frmcli.ShowDialog();
+        }
+
+        private void accordionControlElement3_Click(object sender, EventArgs e)
+        {
+            FrmServicos form = new FrmServicos();
+            form.Show();
         }
     }
 }

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WindowsFormsApp1.WSCorreios {
+namespace PetApp.WSCorreios {
     
     
     /// <remarks/>
@@ -215,14 +215,14 @@ namespace WindowsFormsApp1.WSCorreios {
         
         // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        [System.ServiceModel.FaultContractAttribute(typeof(WindowsFormsApp1.WSCorreios.SQLException), Action="", Name="SQLException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(PetApp.WSCorreios.SQLException), Action="", Name="SQLException")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WindowsFormsApp1.WSCorreios.buscaServicosAdicionaisAtivosResponse buscaServicosAdicionaisAtivos(WindowsFormsApp1.WSCorreios.buscaServicosAdicionaisAtivos request);
+        PetApp.WSCorreios.buscaServicosAdicionaisAtivosResponse buscaServicosAdicionaisAtivos(PetApp.WSCorreios.buscaServicosAdicionaisAtivos request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.buscaServicosAdicionaisAtivosResponse> buscaServicosAdicionaisAtivosAsync(WindowsFormsApp1.WSCorreios.buscaServicosAdicionaisAtivos request);
+        System.Threading.Tasks.Task<PetApp.WSCorreios.buscaServicosAdicionaisAtivosResponse> buscaServicosAdicionaisAtivosAsync(PetApp.WSCorreios.buscaServicosAdicionaisAtivos request);
         
         // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
@@ -230,76 +230,32 @@ namespace WindowsFormsApp1.WSCorreios {
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WindowsFormsApp1.WSCorreios.fechaPlpResponse fechaPlp(WindowsFormsApp1.WSCorreios.fechaPlp request);
+        PetApp.WSCorreios.fechaPlpResponse fechaPlp(PetApp.WSCorreios.fechaPlp request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.fechaPlpResponse> fechaPlpAsync(WindowsFormsApp1.WSCorreios.fechaPlp request);
+        System.Threading.Tasks.Task<PetApp.WSCorreios.fechaPlpResponse> fechaPlpAsync(PetApp.WSCorreios.fechaPlp request);
         
         // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WindowsFormsApp1.WSCorreios.consultaSROResponse consultaSRO(WindowsFormsApp1.WSCorreios.consultaSRO request);
+        PetApp.WSCorreios.consultaSROResponse consultaSRO(PetApp.WSCorreios.consultaSRO request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.consultaSROResponse> consultaSROAsync(WindowsFormsApp1.WSCorreios.consultaSRO request);
-        
-        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(WindowsFormsApp1.WSCorreios.Exception), Action="", Name="Exception")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WindowsFormsApp1.WSCorreios.calculaTarifaServicoResponse calculaTarifaServico(WindowsFormsApp1.WSCorreios.calculaTarifaServico request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.calculaTarifaServicoResponse> calculaTarifaServicoAsync(WindowsFormsApp1.WSCorreios.calculaTarifaServico request);
+        System.Threading.Tasks.Task<PetApp.WSCorreios.consultaSROResponse> consultaSROAsync(PetApp.WSCorreios.consultaSRO request);
         
         // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(PetApp.WSCorreios.Exception), Action="", Name="Exception")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WindowsFormsApp1.WSCorreios.validaPlpResponse validaPlp(WindowsFormsApp1.WSCorreios.validaPlp request);
+        PetApp.WSCorreios.calculaTarifaServicoResponse calculaTarifaServico(PetApp.WSCorreios.calculaTarifaServico request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.validaPlpResponse> validaPlpAsync(WindowsFormsApp1.WSCorreios.validaPlp request);
-        
-        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WindowsFormsApp1.WSCorreios.VerificaSeTodosObjetosCanceladosResponse VerificaSeTodosObjetosCancelados(WindowsFormsApp1.WSCorreios.VerificaSeTodosObjetosCancelados request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.VerificaSeTodosObjetosCanceladosResponse> VerificaSeTodosObjetosCanceladosAsync(WindowsFormsApp1.WSCorreios.VerificaSeTodosObjetosCancelados request);
-        
-        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(WindowsFormsApp1.WSCorreios.Exception), Action="", Name="Exception")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WindowsFormsApp1.WSCorreios.cancelarObjetoResponse cancelarObjeto(WindowsFormsApp1.WSCorreios.cancelarObjeto request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.cancelarObjetoResponse> cancelarObjetoAsync(WindowsFormsApp1.WSCorreios.cancelarObjeto request);
-        
-        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        [System.ServiceModel.FaultContractAttribute(typeof(WindowsFormsApp1.WSCorreios.SQLException), Action="", Name="SQLException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WindowsFormsApp1.WSCorreios.atualizaPagamentoNaEntregaResponse atualizaPagamentoNaEntrega(WindowsFormsApp1.WSCorreios.atualizaPagamentoNaEntrega request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.atualizaPagamentoNaEntregaResponse> atualizaPagamentoNaEntregaAsync(WindowsFormsApp1.WSCorreios.atualizaPagamentoNaEntrega request);
+        System.Threading.Tasks.Task<PetApp.WSCorreios.calculaTarifaServicoResponse> calculaTarifaServicoAsync(PetApp.WSCorreios.calculaTarifaServico request);
         
         // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
@@ -307,10 +263,43 @@ namespace WindowsFormsApp1.WSCorreios {
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WindowsFormsApp1.WSCorreios.obterClienteAtualizacaoResponse obterClienteAtualizacao(WindowsFormsApp1.WSCorreios.obterClienteAtualizacao request);
+        PetApp.WSCorreios.validaPlpResponse validaPlp(PetApp.WSCorreios.validaPlp request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.obterClienteAtualizacaoResponse> obterClienteAtualizacaoAsync(WindowsFormsApp1.WSCorreios.obterClienteAtualizacao request);
+        System.Threading.Tasks.Task<PetApp.WSCorreios.validaPlpResponse> validaPlpAsync(PetApp.WSCorreios.validaPlp request);
+        
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        PetApp.WSCorreios.VerificaSeTodosObjetosCanceladosResponse VerificaSeTodosObjetosCancelados(PetApp.WSCorreios.VerificaSeTodosObjetosCancelados request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        System.Threading.Tasks.Task<PetApp.WSCorreios.VerificaSeTodosObjetosCanceladosResponse> VerificaSeTodosObjetosCanceladosAsync(PetApp.WSCorreios.VerificaSeTodosObjetosCancelados request);
+        
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(PetApp.WSCorreios.Exception), Action="", Name="Exception")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        PetApp.WSCorreios.cancelarObjetoResponse cancelarObjeto(PetApp.WSCorreios.cancelarObjeto request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        System.Threading.Tasks.Task<PetApp.WSCorreios.cancelarObjetoResponse> cancelarObjetoAsync(PetApp.WSCorreios.cancelarObjeto request);
+        
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        [System.ServiceModel.FaultContractAttribute(typeof(PetApp.WSCorreios.SQLException), Action="", Name="SQLException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        PetApp.WSCorreios.atualizaPagamentoNaEntregaResponse atualizaPagamentoNaEntrega(PetApp.WSCorreios.atualizaPagamentoNaEntrega request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        System.Threading.Tasks.Task<PetApp.WSCorreios.atualizaPagamentoNaEntregaResponse> atualizaPagamentoNaEntregaAsync(PetApp.WSCorreios.atualizaPagamentoNaEntrega request);
         
         // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
@@ -318,21 +307,10 @@ namespace WindowsFormsApp1.WSCorreios {
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WindowsFormsApp1.WSCorreios.verificaDisponibilidadeServicoResponse verificaDisponibilidadeServico(WindowsFormsApp1.WSCorreios.verificaDisponibilidadeServico request);
+        PetApp.WSCorreios.obterClienteAtualizacaoResponse obterClienteAtualizacao(PetApp.WSCorreios.obterClienteAtualizacao request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.verificaDisponibilidadeServicoResponse> verificaDisponibilidadeServicoAsync(WindowsFormsApp1.WSCorreios.verificaDisponibilidadeServico request);
-        
-        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WindowsFormsApp1.WSCorreios.fechaPlpVariosServicosResponse fechaPlpVariosServicos(WindowsFormsApp1.WSCorreios.fechaPlpVariosServicos request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.fechaPlpVariosServicosResponse> fechaPlpVariosServicosAsync(WindowsFormsApp1.WSCorreios.fechaPlpVariosServicos request);
+        System.Threading.Tasks.Task<PetApp.WSCorreios.obterClienteAtualizacaoResponse> obterClienteAtualizacaoAsync(PetApp.WSCorreios.obterClienteAtualizacao request);
         
         // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
@@ -340,20 +318,10 @@ namespace WindowsFormsApp1.WSCorreios {
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WindowsFormsApp1.WSCorreios.geraDigitoVerificadorEtiquetasResponse geraDigitoVerificadorEtiquetas(WindowsFormsApp1.WSCorreios.geraDigitoVerificadorEtiquetas request);
+        PetApp.WSCorreios.verificaDisponibilidadeServicoResponse verificaDisponibilidadeServico(PetApp.WSCorreios.verificaDisponibilidadeServico request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.geraDigitoVerificadorEtiquetasResponse> geraDigitoVerificadorEtiquetasAsync(WindowsFormsApp1.WSCorreios.geraDigitoVerificadorEtiquetas request);
-        
-        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WindowsFormsApp1.WSCorreios.obterEmbalagemLRSResponse obterEmbalagemLRS(WindowsFormsApp1.WSCorreios.obterEmbalagemLRS request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.obterEmbalagemLRSResponse> obterEmbalagemLRSAsync(WindowsFormsApp1.WSCorreios.obterEmbalagemLRS request);
+        System.Threading.Tasks.Task<PetApp.WSCorreios.verificaDisponibilidadeServicoResponse> verificaDisponibilidadeServicoAsync(PetApp.WSCorreios.verificaDisponibilidadeServico request);
         
         // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
@@ -361,32 +329,10 @@ namespace WindowsFormsApp1.WSCorreios {
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WindowsFormsApp1.WSCorreios.validaEtiquetaPLPResponse validaEtiquetaPLP(WindowsFormsApp1.WSCorreios.validaEtiquetaPLP request);
+        PetApp.WSCorreios.fechaPlpVariosServicosResponse fechaPlpVariosServicos(PetApp.WSCorreios.fechaPlpVariosServicos request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.validaEtiquetaPLPResponse> validaEtiquetaPLPAsync(WindowsFormsApp1.WSCorreios.validaEtiquetaPLP request);
-        
-        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        [System.ServiceModel.FaultContractAttribute(typeof(WindowsFormsApp1.WSCorreios.SQLException), Action="", Name="SQLException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WindowsFormsApp1.WSCorreios.buscaServicosValorDeclaradoResponse buscaServicosValorDeclarado(WindowsFormsApp1.WSCorreios.buscaServicosValorDeclarado request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.buscaServicosValorDeclaradoResponse> buscaServicosValorDeclaradoAsync(WindowsFormsApp1.WSCorreios.buscaServicosValorDeclarado request);
-        
-        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        [System.ServiceModel.FaultContractAttribute(typeof(WindowsFormsApp1.WSCorreios.SQLException), Action="", Name="SQLException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WindowsFormsApp1.WSCorreios.consultaCEPResponse consultaCEP(WindowsFormsApp1.WSCorreios.consultaCEP request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.consultaCEPResponse> consultaCEPAsync(WindowsFormsApp1.WSCorreios.consultaCEP request);
+        System.Threading.Tasks.Task<PetApp.WSCorreios.fechaPlpVariosServicosResponse> fechaPlpVariosServicosAsync(PetApp.WSCorreios.fechaPlpVariosServicos request);
         
         // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
@@ -394,31 +340,20 @@ namespace WindowsFormsApp1.WSCorreios {
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WindowsFormsApp1.WSCorreios.integrarUsuarioScolResponse integrarUsuarioScol(WindowsFormsApp1.WSCorreios.integrarUsuarioScol request);
+        PetApp.WSCorreios.geraDigitoVerificadorEtiquetasResponse geraDigitoVerificadorEtiquetas(PetApp.WSCorreios.geraDigitoVerificadorEtiquetas request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.integrarUsuarioScolResponse> integrarUsuarioScolAsync(WindowsFormsApp1.WSCorreios.integrarUsuarioScol request);
-        
-        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        [System.ServiceModel.FaultContractAttribute(typeof(WindowsFormsApp1.WSCorreios.SQLException), Action="", Name="SQLException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WindowsFormsApp1.WSCorreios.atualizaRemessaAgrupadaResponse atualizaRemessaAgrupada(WindowsFormsApp1.WSCorreios.atualizaRemessaAgrupada request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.atualizaRemessaAgrupadaResponse> atualizaRemessaAgrupadaAsync(WindowsFormsApp1.WSCorreios.atualizaRemessaAgrupada request);
+        System.Threading.Tasks.Task<PetApp.WSCorreios.geraDigitoVerificadorEtiquetasResponse> geraDigitoVerificadorEtiquetasAsync(PetApp.WSCorreios.geraDigitoVerificadorEtiquetas request);
         
         // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WindowsFormsApp1.WSCorreios.consultaSRO_NEWResponse consultaSRO_NEW(WindowsFormsApp1.WSCorreios.consultaSRO_NEW request);
+        PetApp.WSCorreios.obterEmbalagemLRSResponse obterEmbalagemLRS(PetApp.WSCorreios.obterEmbalagemLRS request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.consultaSRO_NEWResponse> consultaSRO_NEWAsync(WindowsFormsApp1.WSCorreios.consultaSRO_NEW request);
+        System.Threading.Tasks.Task<PetApp.WSCorreios.obterEmbalagemLRSResponse> obterEmbalagemLRSAsync(PetApp.WSCorreios.obterEmbalagemLRS request);
         
         // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
@@ -426,10 +361,32 @@ namespace WindowsFormsApp1.WSCorreios {
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WindowsFormsApp1.WSCorreios.solicitaPLPResponse solicitaPLP(WindowsFormsApp1.WSCorreios.solicitaPLP request);
+        PetApp.WSCorreios.validaEtiquetaPLPResponse validaEtiquetaPLP(PetApp.WSCorreios.validaEtiquetaPLP request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.solicitaPLPResponse> solicitaPLPAsync(WindowsFormsApp1.WSCorreios.solicitaPLP request);
+        System.Threading.Tasks.Task<PetApp.WSCorreios.validaEtiquetaPLPResponse> validaEtiquetaPLPAsync(PetApp.WSCorreios.validaEtiquetaPLP request);
+        
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        [System.ServiceModel.FaultContractAttribute(typeof(PetApp.WSCorreios.SQLException), Action="", Name="SQLException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        PetApp.WSCorreios.buscaServicosValorDeclaradoResponse buscaServicosValorDeclarado(PetApp.WSCorreios.buscaServicosValorDeclarado request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        System.Threading.Tasks.Task<PetApp.WSCorreios.buscaServicosValorDeclaradoResponse> buscaServicosValorDeclaradoAsync(PetApp.WSCorreios.buscaServicosValorDeclarado request);
+        
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        [System.ServiceModel.FaultContractAttribute(typeof(PetApp.WSCorreios.SQLException), Action="", Name="SQLException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        PetApp.WSCorreios.consultaCEPResponse consultaCEP(PetApp.WSCorreios.consultaCEP request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        System.Threading.Tasks.Task<PetApp.WSCorreios.consultaCEPResponse> consultaCEPAsync(PetApp.WSCorreios.consultaCEP request);
         
         // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
@@ -437,63 +394,31 @@ namespace WindowsFormsApp1.WSCorreios {
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WindowsFormsApp1.WSCorreios.getStatusCartaoPostagemResponse getStatusCartaoPostagem(WindowsFormsApp1.WSCorreios.getStatusCartaoPostagem request);
+        PetApp.WSCorreios.integrarUsuarioScolResponse integrarUsuarioScol(PetApp.WSCorreios.integrarUsuarioScol request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.getStatusCartaoPostagemResponse> getStatusCartaoPostagemAsync(WindowsFormsApp1.WSCorreios.getStatusCartaoPostagem request);
-        
-        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WindowsFormsApp1.WSCorreios.buscaDataAtualResponse buscaDataAtual(WindowsFormsApp1.WSCorreios.buscaDataAtual request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.buscaDataAtualResponse> buscaDataAtualAsync(WindowsFormsApp1.WSCorreios.buscaDataAtual request);
+        System.Threading.Tasks.Task<PetApp.WSCorreios.integrarUsuarioScolResponse> integrarUsuarioScolAsync(PetApp.WSCorreios.integrarUsuarioScol request);
         
         // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(WindowsFormsApp1.WSCorreios.Exception), Action="", Name="Exception")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WindowsFormsApp1.WSCorreios.buscaTarifaValeResponse buscaTarifaVale(WindowsFormsApp1.WSCorreios.buscaTarifaVale request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.buscaTarifaValeResponse> buscaTarifaValeAsync(WindowsFormsApp1.WSCorreios.buscaTarifaVale request);
-        
-        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(PetApp.WSCorreios.SQLException), Action="", Name="SQLException")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WindowsFormsApp1.WSCorreios.validarPostagemSimultaneaResponse validarPostagemSimultanea(WindowsFormsApp1.WSCorreios.validarPostagemSimultanea request);
+        PetApp.WSCorreios.atualizaRemessaAgrupadaResponse atualizaRemessaAgrupada(PetApp.WSCorreios.atualizaRemessaAgrupada request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.validarPostagemSimultaneaResponse> validarPostagemSimultaneaAsync(WindowsFormsApp1.WSCorreios.validarPostagemSimultanea request);
+        System.Threading.Tasks.Task<PetApp.WSCorreios.atualizaRemessaAgrupadaResponse> atualizaRemessaAgrupadaAsync(PetApp.WSCorreios.atualizaRemessaAgrupada request);
         
         // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WindowsFormsApp1.WSCorreios.getStatusPLPResponse getStatusPLP(WindowsFormsApp1.WSCorreios.getStatusPLP request);
+        PetApp.WSCorreios.consultaSRO_NEWResponse consultaSRO_NEW(PetApp.WSCorreios.consultaSRO_NEW request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.getStatusPLPResponse> getStatusPLPAsync(WindowsFormsApp1.WSCorreios.getStatusPLP request);
-        
-        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        [System.ServiceModel.FaultContractAttribute(typeof(WindowsFormsApp1.WSCorreios.SQLException), Action="", Name="SQLException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WindowsFormsApp1.WSCorreios.buscaServicosXServicosAdicionaisResponse buscaServicosXServicosAdicionais(WindowsFormsApp1.WSCorreios.buscaServicosXServicosAdicionais request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.buscaServicosXServicosAdicionaisResponse> buscaServicosXServicosAdicionaisAsync(WindowsFormsApp1.WSCorreios.buscaServicosXServicosAdicionais request);
+        System.Threading.Tasks.Task<PetApp.WSCorreios.consultaSRO_NEWResponse> consultaSRO_NEWAsync(PetApp.WSCorreios.consultaSRO_NEW request);
         
         // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
@@ -501,21 +426,10 @@ namespace WindowsFormsApp1.WSCorreios {
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WindowsFormsApp1.WSCorreios.cancelarPedidoScolResponse cancelarPedidoScol(WindowsFormsApp1.WSCorreios.cancelarPedidoScol request);
+        PetApp.WSCorreios.solicitaPLPResponse solicitaPLP(PetApp.WSCorreios.solicitaPLP request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.cancelarPedidoScolResponse> cancelarPedidoScolAsync(WindowsFormsApp1.WSCorreios.cancelarPedidoScol request);
-        
-        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WindowsFormsApp1.WSCorreios.bloquearObjetoResponse bloquearObjeto(WindowsFormsApp1.WSCorreios.bloquearObjeto request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.bloquearObjetoResponse> bloquearObjetoAsync(WindowsFormsApp1.WSCorreios.bloquearObjeto request);
+        System.Threading.Tasks.Task<PetApp.WSCorreios.solicitaPLPResponse> solicitaPLPAsync(PetApp.WSCorreios.solicitaPLP request);
         
         // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
@@ -523,10 +437,31 @@ namespace WindowsFormsApp1.WSCorreios {
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WindowsFormsApp1.WSCorreios.buscaContratoResponse buscaContrato(WindowsFormsApp1.WSCorreios.buscaContrato request);
+        PetApp.WSCorreios.getStatusCartaoPostagemResponse getStatusCartaoPostagem(PetApp.WSCorreios.getStatusCartaoPostagem request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.buscaContratoResponse> buscaContratoAsync(WindowsFormsApp1.WSCorreios.buscaContrato request);
+        System.Threading.Tasks.Task<PetApp.WSCorreios.getStatusCartaoPostagemResponse> getStatusCartaoPostagemAsync(PetApp.WSCorreios.getStatusCartaoPostagem request);
+        
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        PetApp.WSCorreios.buscaDataAtualResponse buscaDataAtual(PetApp.WSCorreios.buscaDataAtual request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        System.Threading.Tasks.Task<PetApp.WSCorreios.buscaDataAtualResponse> buscaDataAtualAsync(PetApp.WSCorreios.buscaDataAtual request);
+        
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(PetApp.WSCorreios.Exception), Action="", Name="Exception")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        PetApp.WSCorreios.buscaTarifaValeResponse buscaTarifaVale(PetApp.WSCorreios.buscaTarifaVale request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        System.Threading.Tasks.Task<PetApp.WSCorreios.buscaTarifaValeResponse> buscaTarifaValeAsync(PetApp.WSCorreios.buscaTarifaVale request);
         
         // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
@@ -534,10 +469,31 @@ namespace WindowsFormsApp1.WSCorreios {
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WindowsFormsApp1.WSCorreios.solicitaEtiquetasResponse solicitaEtiquetas(WindowsFormsApp1.WSCorreios.solicitaEtiquetas request);
+        PetApp.WSCorreios.validarPostagemSimultaneaResponse validarPostagemSimultanea(PetApp.WSCorreios.validarPostagemSimultanea request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.solicitaEtiquetasResponse> solicitaEtiquetasAsync(WindowsFormsApp1.WSCorreios.solicitaEtiquetas request);
+        System.Threading.Tasks.Task<PetApp.WSCorreios.validarPostagemSimultaneaResponse> validarPostagemSimultaneaAsync(PetApp.WSCorreios.validarPostagemSimultanea request);
+        
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        PetApp.WSCorreios.getStatusPLPResponse getStatusPLP(PetApp.WSCorreios.getStatusPLP request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        System.Threading.Tasks.Task<PetApp.WSCorreios.getStatusPLPResponse> getStatusPLPAsync(PetApp.WSCorreios.getStatusPLP request);
+        
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        [System.ServiceModel.FaultContractAttribute(typeof(PetApp.WSCorreios.SQLException), Action="", Name="SQLException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        PetApp.WSCorreios.buscaServicosXServicosAdicionaisResponse buscaServicosXServicosAdicionais(PetApp.WSCorreios.buscaServicosXServicosAdicionais request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        System.Threading.Tasks.Task<PetApp.WSCorreios.buscaServicosXServicosAdicionaisResponse> buscaServicosXServicosAdicionaisAsync(PetApp.WSCorreios.buscaServicosXServicosAdicionais request);
         
         // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
@@ -545,21 +501,10 @@ namespace WindowsFormsApp1.WSCorreios {
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WindowsFormsApp1.WSCorreios.solicitaXmlPlpResponse solicitaXmlPlp(WindowsFormsApp1.WSCorreios.solicitaXmlPlp request);
+        PetApp.WSCorreios.cancelarPedidoScolResponse cancelarPedidoScol(PetApp.WSCorreios.cancelarPedidoScol request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.solicitaXmlPlpResponse> solicitaXmlPlpAsync(WindowsFormsApp1.WSCorreios.solicitaXmlPlp request);
-        
-        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WindowsFormsApp1.WSCorreios.validarPostagemReversaResponse validarPostagemReversa(WindowsFormsApp1.WSCorreios.validarPostagemReversa request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.validarPostagemReversaResponse> validarPostagemReversaAsync(WindowsFormsApp1.WSCorreios.validarPostagemReversa request);
+        System.Threading.Tasks.Task<PetApp.WSCorreios.cancelarPedidoScolResponse> cancelarPedidoScolAsync(PetApp.WSCorreios.cancelarPedidoScol request);
         
         // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
@@ -567,22 +512,10 @@ namespace WindowsFormsApp1.WSCorreios {
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WindowsFormsApp1.WSCorreios.buscaClienteResponse buscaCliente(WindowsFormsApp1.WSCorreios.buscaCliente request);
+        PetApp.WSCorreios.bloquearObjetoResponse bloquearObjeto(PetApp.WSCorreios.bloquearObjeto request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.buscaClienteResponse> buscaClienteAsync(WindowsFormsApp1.WSCorreios.buscaCliente request);
-        
-        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(WindowsFormsApp1.WSCorreios.ErroMontagemRelatorio), Action="", Name="ErroMontagemRelatorio")]
-        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WindowsFormsApp1.WSCorreios.buscaPagamentoEntregaResponse buscaPagamentoEntrega(WindowsFormsApp1.WSCorreios.buscaPagamentoEntrega request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.buscaPagamentoEntregaResponse> buscaPagamentoEntregaAsync(WindowsFormsApp1.WSCorreios.buscaPagamentoEntrega request);
+        System.Threading.Tasks.Task<PetApp.WSCorreios.bloquearObjetoResponse> bloquearObjetoAsync(PetApp.WSCorreios.bloquearObjeto request);
         
         // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
@@ -590,10 +523,10 @@ namespace WindowsFormsApp1.WSCorreios {
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WindowsFormsApp1.WSCorreios.solicitarPostagemScolResponse solicitarPostagemScol(WindowsFormsApp1.WSCorreios.solicitarPostagemScol request);
+        PetApp.WSCorreios.buscaContratoResponse buscaContrato(PetApp.WSCorreios.buscaContrato request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.solicitarPostagemScolResponse> solicitarPostagemScolAsync(WindowsFormsApp1.WSCorreios.solicitarPostagemScol request);
+        System.Threading.Tasks.Task<PetApp.WSCorreios.buscaContratoResponse> buscaContratoAsync(PetApp.WSCorreios.buscaContrato request);
         
         // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
@@ -601,10 +534,77 @@ namespace WindowsFormsApp1.WSCorreios {
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WindowsFormsApp1.WSCorreios.buscaServicosResponse buscaServicos(WindowsFormsApp1.WSCorreios.buscaServicos request);
+        PetApp.WSCorreios.solicitaEtiquetasResponse solicitaEtiquetas(PetApp.WSCorreios.solicitaEtiquetas request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.buscaServicosResponse> buscaServicosAsync(WindowsFormsApp1.WSCorreios.buscaServicos request);
+        System.Threading.Tasks.Task<PetApp.WSCorreios.solicitaEtiquetasResponse> solicitaEtiquetasAsync(PetApp.WSCorreios.solicitaEtiquetas request);
+        
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        PetApp.WSCorreios.solicitaXmlPlpResponse solicitaXmlPlp(PetApp.WSCorreios.solicitaXmlPlp request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        System.Threading.Tasks.Task<PetApp.WSCorreios.solicitaXmlPlpResponse> solicitaXmlPlpAsync(PetApp.WSCorreios.solicitaXmlPlp request);
+        
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        PetApp.WSCorreios.validarPostagemReversaResponse validarPostagemReversa(PetApp.WSCorreios.validarPostagemReversa request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        System.Threading.Tasks.Task<PetApp.WSCorreios.validarPostagemReversaResponse> validarPostagemReversaAsync(PetApp.WSCorreios.validarPostagemReversa request);
+        
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        PetApp.WSCorreios.buscaClienteResponse buscaCliente(PetApp.WSCorreios.buscaCliente request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        System.Threading.Tasks.Task<PetApp.WSCorreios.buscaClienteResponse> buscaClienteAsync(PetApp.WSCorreios.buscaCliente request);
+        
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(PetApp.WSCorreios.ErroMontagemRelatorio), Action="", Name="ErroMontagemRelatorio")]
+        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        PetApp.WSCorreios.buscaPagamentoEntregaResponse buscaPagamentoEntrega(PetApp.WSCorreios.buscaPagamentoEntrega request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        System.Threading.Tasks.Task<PetApp.WSCorreios.buscaPagamentoEntregaResponse> buscaPagamentoEntregaAsync(PetApp.WSCorreios.buscaPagamentoEntrega request);
+        
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        PetApp.WSCorreios.solicitarPostagemScolResponse solicitarPostagemScol(PetApp.WSCorreios.solicitarPostagemScol request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        System.Threading.Tasks.Task<PetApp.WSCorreios.solicitarPostagemScolResponse> solicitarPostagemScolAsync(PetApp.WSCorreios.solicitarPostagemScol request);
+        
+        // CODEGEN: O parâmetro 'return' requer informações adicionais de esquema que não podem ser capturadas usando o modo do parâmetro. O atributo específico é 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="AutenticacaoException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(string), Action="", Name="SigepClienteException")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        PetApp.WSCorreios.buscaServicosResponse buscaServicos(PetApp.WSCorreios.buscaServicos request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        System.Threading.Tasks.Task<PetApp.WSCorreios.buscaServicosResponse> buscaServicosAsync(PetApp.WSCorreios.buscaServicos request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -638,12 +638,12 @@ namespace WindowsFormsApp1.WSCorreios {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://cliente.bean.master.sigep.bsb.correios.com.br/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public WindowsFormsApp1.WSCorreios.servicoAdicionalXML[] @return;
+        public PetApp.WSCorreios.servicoAdicionalXML[] @return;
         
         public buscaServicosAdicionaisAtivosResponse() {
         }
         
-        public buscaServicosAdicionaisAtivosResponse(WindowsFormsApp1.WSCorreios.servicoAdicionalXML[] @return) {
+        public buscaServicosAdicionaisAtivosResponse(PetApp.WSCorreios.servicoAdicionalXML[] @return) {
             this.@return = @return;
         }
     }
@@ -4261,12 +4261,12 @@ namespace WindowsFormsApp1.WSCorreios {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://cliente.bean.master.sigep.bsb.correios.com.br/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("arg0", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public WindowsFormsApp1.WSCorreios.objetoPostal[] arg0;
+        public PetApp.WSCorreios.objetoPostal[] arg0;
         
         public VerificaSeTodosObjetosCancelados() {
         }
         
-        public VerificaSeTodosObjetosCancelados(WindowsFormsApp1.WSCorreios.objetoPostal[] arg0) {
+        public VerificaSeTodosObjetosCancelados(PetApp.WSCorreios.objetoPostal[] arg0) {
             this.arg0 = arg0;
         }
     }
@@ -4673,12 +4673,12 @@ namespace WindowsFormsApp1.WSCorreios {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://cliente.bean.master.sigep.bsb.correios.com.br/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public WindowsFormsApp1.WSCorreios.embalagemLRSMaster[] @return;
+        public PetApp.WSCorreios.embalagemLRSMaster[] @return;
         
         public obterEmbalagemLRSResponse() {
         }
         
-        public obterEmbalagemLRSResponse(WindowsFormsApp1.WSCorreios.embalagemLRSMaster[] @return) {
+        public obterEmbalagemLRSResponse(PetApp.WSCorreios.embalagemLRSMaster[] @return) {
             this.@return = @return;
         }
     }
@@ -4801,12 +4801,12 @@ namespace WindowsFormsApp1.WSCorreios {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://cliente.bean.master.sigep.bsb.correios.com.br/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public WindowsFormsApp1.WSCorreios.enderecoERP @return;
+        public PetApp.WSCorreios.enderecoERP @return;
         
         public consultaCEPResponse() {
         }
         
-        public consultaCEPResponse(WindowsFormsApp1.WSCorreios.enderecoERP @return) {
+        public consultaCEPResponse(PetApp.WSCorreios.enderecoERP @return) {
             this.@return = @return;
         }
     }
@@ -5058,12 +5058,12 @@ namespace WindowsFormsApp1.WSCorreios {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://cliente.bean.master.sigep.bsb.correios.com.br/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public WindowsFormsApp1.WSCorreios.statusCartao @return;
+        public PetApp.WSCorreios.statusCartao @return;
         
         public getStatusCartaoPostagemResponse() {
         }
         
-        public getStatusCartaoPostagemResponse(WindowsFormsApp1.WSCorreios.statusCartao @return) {
+        public getStatusCartaoPostagemResponse(PetApp.WSCorreios.statusCartao @return) {
             this.@return = @return;
         }
     }
@@ -5746,12 +5746,12 @@ namespace WindowsFormsApp1.WSCorreios {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://cliente.bean.master.sigep.bsb.correios.com.br/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public WindowsFormsApp1.WSCorreios.valePostal @return;
+        public PetApp.WSCorreios.valePostal @return;
         
         public buscaTarifaValeResponse() {
         }
         
-        public buscaTarifaValeResponse(WindowsFormsApp1.WSCorreios.valePostal @return) {
+        public buscaTarifaValeResponse(PetApp.WSCorreios.valePostal @return) {
             this.@return = @return;
         }
     }
@@ -6470,7 +6470,7 @@ namespace WindowsFormsApp1.WSCorreios {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://cliente.bean.master.sigep.bsb.correios.com.br/", Order=4)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public WindowsFormsApp1.WSCorreios.coletaSimultanea coleta;
+        public PetApp.WSCorreios.coletaSimultanea coleta;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://cliente.bean.master.sigep.bsb.correios.com.br/", Order=5)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
@@ -6483,7 +6483,7 @@ namespace WindowsFormsApp1.WSCorreios {
         public validarPostagemSimultanea() {
         }
         
-        public validarPostagemSimultanea(int codAdministrativo, int codigoServico, string idCartaoPostagem, string cepDestinatario, WindowsFormsApp1.WSCorreios.coletaSimultanea coleta, string usuario, string senha) {
+        public validarPostagemSimultanea(int codAdministrativo, int codigoServico, string idCartaoPostagem, string cepDestinatario, PetApp.WSCorreios.coletaSimultanea coleta, string usuario, string senha) {
             this.codAdministrativo = codAdministrativo;
             this.codigoServico = codigoServico;
             this.idCartaoPostagem = idCartaoPostagem;
@@ -6520,7 +6520,7 @@ namespace WindowsFormsApp1.WSCorreios {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://cliente.bean.master.sigep.bsb.correios.com.br/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("arg0", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public WindowsFormsApp1.WSCorreios.objetoPostal[] arg0;
+        public PetApp.WSCorreios.objetoPostal[] arg0;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://cliente.bean.master.sigep.bsb.correios.com.br/", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
@@ -6529,7 +6529,7 @@ namespace WindowsFormsApp1.WSCorreios {
         public getStatusPLP() {
         }
         
-        public getStatusPLP(WindowsFormsApp1.WSCorreios.objetoPostal[] arg0, string arg1) {
+        public getStatusPLP(PetApp.WSCorreios.objetoPostal[] arg0, string arg1) {
             this.arg0 = arg0;
             this.arg1 = arg1;
         }
@@ -6543,12 +6543,12 @@ namespace WindowsFormsApp1.WSCorreios {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://cliente.bean.master.sigep.bsb.correios.com.br/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public WindowsFormsApp1.WSCorreios.statusPlp @return;
+        public PetApp.WSCorreios.statusPlp @return;
         
         public getStatusPLPResponse() {
         }
         
-        public getStatusPLPResponse(WindowsFormsApp1.WSCorreios.statusPlp @return) {
+        public getStatusPLPResponse(PetApp.WSCorreios.statusPlp @return) {
             this.@return = @return;
         }
     }
@@ -6816,12 +6816,12 @@ namespace WindowsFormsApp1.WSCorreios {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://cliente.bean.master.sigep.bsb.correios.com.br/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public WindowsFormsApp1.WSCorreios.retornoCancelamento @return;
+        public PetApp.WSCorreios.retornoCancelamento @return;
         
         public cancelarPedidoScolResponse() {
         }
         
-        public cancelarPedidoScolResponse(WindowsFormsApp1.WSCorreios.retornoCancelamento @return) {
+        public cancelarPedidoScolResponse(PetApp.WSCorreios.retornoCancelamento @return) {
             this.@return = @return;
         }
     }
@@ -6883,11 +6883,11 @@ namespace WindowsFormsApp1.WSCorreios {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://cliente.bean.master.sigep.bsb.correios.com.br/", Order=2)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public WindowsFormsApp1.WSCorreios.tipoBloqueio tipoBloqueio;
+        public PetApp.WSCorreios.tipoBloqueio tipoBloqueio;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://cliente.bean.master.sigep.bsb.correios.com.br/", Order=3)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public WindowsFormsApp1.WSCorreios.acao acao;
+        public PetApp.WSCorreios.acao acao;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://cliente.bean.master.sigep.bsb.correios.com.br/", Order=4)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
@@ -6900,7 +6900,7 @@ namespace WindowsFormsApp1.WSCorreios {
         public bloquearObjeto() {
         }
         
-        public bloquearObjeto(string numeroEtiqueta, long idPlp, WindowsFormsApp1.WSCorreios.tipoBloqueio tipoBloqueio, WindowsFormsApp1.WSCorreios.acao acao, string usuario, string senha) {
+        public bloquearObjeto(string numeroEtiqueta, long idPlp, PetApp.WSCorreios.tipoBloqueio tipoBloqueio, PetApp.WSCorreios.acao acao, string usuario, string senha) {
             this.numeroEtiqueta = numeroEtiqueta;
             this.idPlp = idPlp;
             this.tipoBloqueio = tipoBloqueio;
@@ -6969,12 +6969,12 @@ namespace WindowsFormsApp1.WSCorreios {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://cliente.bean.master.sigep.bsb.correios.com.br/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public WindowsFormsApp1.WSCorreios.contratoERP @return;
+        public PetApp.WSCorreios.contratoERP @return;
         
         public buscaContratoResponse() {
         }
         
-        public buscaContratoResponse(WindowsFormsApp1.WSCorreios.contratoERP @return) {
+        public buscaContratoResponse(PetApp.WSCorreios.contratoERP @return) {
             this.@return = @return;
         }
     }
@@ -7110,7 +7110,7 @@ namespace WindowsFormsApp1.WSCorreios {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://cliente.bean.master.sigep.bsb.correios.com.br/", Order=4)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public WindowsFormsApp1.WSCorreios.coletaReversa coleta;
+        public PetApp.WSCorreios.coletaReversa coleta;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://cliente.bean.master.sigep.bsb.correios.com.br/", Order=5)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
@@ -7123,7 +7123,7 @@ namespace WindowsFormsApp1.WSCorreios {
         public validarPostagemReversa() {
         }
         
-        public validarPostagemReversa(string codAdministrativo, string codigoServico, string cepDestinatario, string idCartaoPostagem, WindowsFormsApp1.WSCorreios.coletaReversa coleta, string usuario, string senha) {
+        public validarPostagemReversa(string codAdministrativo, string codigoServico, string cepDestinatario, string idCartaoPostagem, PetApp.WSCorreios.coletaReversa coleta, string usuario, string senha) {
             this.codAdministrativo = codAdministrativo;
             this.codigoServico = codigoServico;
             this.cepDestinatario = cepDestinatario;
@@ -7193,12 +7193,12 @@ namespace WindowsFormsApp1.WSCorreios {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://cliente.bean.master.sigep.bsb.correios.com.br/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public WindowsFormsApp1.WSCorreios.clienteERP @return;
+        public PetApp.WSCorreios.clienteERP @return;
         
         public buscaClienteResponse() {
         }
         
-        public buscaClienteResponse(WindowsFormsApp1.WSCorreios.clienteERP @return) {
+        public buscaClienteResponse(PetApp.WSCorreios.clienteERP @return) {
             this.@return = @return;
         }
     }
@@ -7356,23 +7356,23 @@ namespace WindowsFormsApp1.WSCorreios {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://cliente.bean.master.sigep.bsb.correios.com.br/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public WindowsFormsApp1.WSCorreios.servicoERP[] @return;
+        public PetApp.WSCorreios.servicoERP[] @return;
         
         public buscaServicosResponse() {
         }
         
-        public buscaServicosResponse(WindowsFormsApp1.WSCorreios.servicoERP[] @return) {
+        public buscaServicosResponse(PetApp.WSCorreios.servicoERP[] @return) {
             this.@return = @return;
         }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface AtendeClienteChannel : WindowsFormsApp1.WSCorreios.AtendeCliente, System.ServiceModel.IClientChannel {
+    public interface AtendeClienteChannel : PetApp.WSCorreios.AtendeCliente, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class AtendeClienteClient : System.ServiceModel.ClientBase<WindowsFormsApp1.WSCorreios.AtendeCliente>, WindowsFormsApp1.WSCorreios.AtendeCliente {
+    public partial class AtendeClienteClient : System.ServiceModel.ClientBase<PetApp.WSCorreios.AtendeCliente>, PetApp.WSCorreios.AtendeCliente {
         
         public AtendeClienteClient() {
         }
@@ -7394,101 +7394,101 @@ namespace WindowsFormsApp1.WSCorreios {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WindowsFormsApp1.WSCorreios.buscaServicosAdicionaisAtivosResponse WindowsFormsApp1.WSCorreios.AtendeCliente.buscaServicosAdicionaisAtivos(WindowsFormsApp1.WSCorreios.buscaServicosAdicionaisAtivos request) {
+        PetApp.WSCorreios.buscaServicosAdicionaisAtivosResponse PetApp.WSCorreios.AtendeCliente.buscaServicosAdicionaisAtivos(PetApp.WSCorreios.buscaServicosAdicionaisAtivos request) {
             return base.Channel.buscaServicosAdicionaisAtivos(request);
         }
         
-        public WindowsFormsApp1.WSCorreios.servicoAdicionalXML[] buscaServicosAdicionaisAtivos(string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.buscaServicosAdicionaisAtivos inValue = new WindowsFormsApp1.WSCorreios.buscaServicosAdicionaisAtivos();
+        public PetApp.WSCorreios.servicoAdicionalXML[] buscaServicosAdicionaisAtivos(string usuario, string senha) {
+            PetApp.WSCorreios.buscaServicosAdicionaisAtivos inValue = new PetApp.WSCorreios.buscaServicosAdicionaisAtivos();
             inValue.usuario = usuario;
             inValue.senha = senha;
-            WindowsFormsApp1.WSCorreios.buscaServicosAdicionaisAtivosResponse retVal = ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).buscaServicosAdicionaisAtivos(inValue);
+            PetApp.WSCorreios.buscaServicosAdicionaisAtivosResponse retVal = ((PetApp.WSCorreios.AtendeCliente)(this)).buscaServicosAdicionaisAtivos(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.buscaServicosAdicionaisAtivosResponse> WindowsFormsApp1.WSCorreios.AtendeCliente.buscaServicosAdicionaisAtivosAsync(WindowsFormsApp1.WSCorreios.buscaServicosAdicionaisAtivos request) {
+        System.Threading.Tasks.Task<PetApp.WSCorreios.buscaServicosAdicionaisAtivosResponse> PetApp.WSCorreios.AtendeCliente.buscaServicosAdicionaisAtivosAsync(PetApp.WSCorreios.buscaServicosAdicionaisAtivos request) {
             return base.Channel.buscaServicosAdicionaisAtivosAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.buscaServicosAdicionaisAtivosResponse> buscaServicosAdicionaisAtivosAsync(string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.buscaServicosAdicionaisAtivos inValue = new WindowsFormsApp1.WSCorreios.buscaServicosAdicionaisAtivos();
+        public System.Threading.Tasks.Task<PetApp.WSCorreios.buscaServicosAdicionaisAtivosResponse> buscaServicosAdicionaisAtivosAsync(string usuario, string senha) {
+            PetApp.WSCorreios.buscaServicosAdicionaisAtivos inValue = new PetApp.WSCorreios.buscaServicosAdicionaisAtivos();
             inValue.usuario = usuario;
             inValue.senha = senha;
-            return ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).buscaServicosAdicionaisAtivosAsync(inValue);
+            return ((PetApp.WSCorreios.AtendeCliente)(this)).buscaServicosAdicionaisAtivosAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WindowsFormsApp1.WSCorreios.fechaPlpResponse WindowsFormsApp1.WSCorreios.AtendeCliente.fechaPlp(WindowsFormsApp1.WSCorreios.fechaPlp request) {
+        PetApp.WSCorreios.fechaPlpResponse PetApp.WSCorreios.AtendeCliente.fechaPlp(PetApp.WSCorreios.fechaPlp request) {
             return base.Channel.fechaPlp(request);
         }
         
         public long fechaPlp(string xml, long idPlpCliente, string cartaoPostagem, string faixaEtiquetas, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.fechaPlp inValue = new WindowsFormsApp1.WSCorreios.fechaPlp();
+            PetApp.WSCorreios.fechaPlp inValue = new PetApp.WSCorreios.fechaPlp();
             inValue.xml = xml;
             inValue.idPlpCliente = idPlpCliente;
             inValue.cartaoPostagem = cartaoPostagem;
             inValue.faixaEtiquetas = faixaEtiquetas;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            WindowsFormsApp1.WSCorreios.fechaPlpResponse retVal = ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).fechaPlp(inValue);
+            PetApp.WSCorreios.fechaPlpResponse retVal = ((PetApp.WSCorreios.AtendeCliente)(this)).fechaPlp(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.fechaPlpResponse> WindowsFormsApp1.WSCorreios.AtendeCliente.fechaPlpAsync(WindowsFormsApp1.WSCorreios.fechaPlp request) {
+        System.Threading.Tasks.Task<PetApp.WSCorreios.fechaPlpResponse> PetApp.WSCorreios.AtendeCliente.fechaPlpAsync(PetApp.WSCorreios.fechaPlp request) {
             return base.Channel.fechaPlpAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.fechaPlpResponse> fechaPlpAsync(string xml, long idPlpCliente, string cartaoPostagem, string faixaEtiquetas, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.fechaPlp inValue = new WindowsFormsApp1.WSCorreios.fechaPlp();
+        public System.Threading.Tasks.Task<PetApp.WSCorreios.fechaPlpResponse> fechaPlpAsync(string xml, long idPlpCliente, string cartaoPostagem, string faixaEtiquetas, string usuario, string senha) {
+            PetApp.WSCorreios.fechaPlp inValue = new PetApp.WSCorreios.fechaPlp();
             inValue.xml = xml;
             inValue.idPlpCliente = idPlpCliente;
             inValue.cartaoPostagem = cartaoPostagem;
             inValue.faixaEtiquetas = faixaEtiquetas;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            return ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).fechaPlpAsync(inValue);
+            return ((PetApp.WSCorreios.AtendeCliente)(this)).fechaPlpAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WindowsFormsApp1.WSCorreios.consultaSROResponse WindowsFormsApp1.WSCorreios.AtendeCliente.consultaSRO(WindowsFormsApp1.WSCorreios.consultaSRO request) {
+        PetApp.WSCorreios.consultaSROResponse PetApp.WSCorreios.AtendeCliente.consultaSRO(PetApp.WSCorreios.consultaSRO request) {
             return base.Channel.consultaSRO(request);
         }
         
         public string consultaSRO(string[] listaObjetos, string tipoConsulta, string tipoResultado, string usuarioSro, string senhaSro) {
-            WindowsFormsApp1.WSCorreios.consultaSRO inValue = new WindowsFormsApp1.WSCorreios.consultaSRO();
+            PetApp.WSCorreios.consultaSRO inValue = new PetApp.WSCorreios.consultaSRO();
             inValue.listaObjetos = listaObjetos;
             inValue.tipoConsulta = tipoConsulta;
             inValue.tipoResultado = tipoResultado;
             inValue.usuarioSro = usuarioSro;
             inValue.senhaSro = senhaSro;
-            WindowsFormsApp1.WSCorreios.consultaSROResponse retVal = ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).consultaSRO(inValue);
+            PetApp.WSCorreios.consultaSROResponse retVal = ((PetApp.WSCorreios.AtendeCliente)(this)).consultaSRO(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.consultaSROResponse> WindowsFormsApp1.WSCorreios.AtendeCliente.consultaSROAsync(WindowsFormsApp1.WSCorreios.consultaSRO request) {
+        System.Threading.Tasks.Task<PetApp.WSCorreios.consultaSROResponse> PetApp.WSCorreios.AtendeCliente.consultaSROAsync(PetApp.WSCorreios.consultaSRO request) {
             return base.Channel.consultaSROAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.consultaSROResponse> consultaSROAsync(string[] listaObjetos, string tipoConsulta, string tipoResultado, string usuarioSro, string senhaSro) {
-            WindowsFormsApp1.WSCorreios.consultaSRO inValue = new WindowsFormsApp1.WSCorreios.consultaSRO();
+        public System.Threading.Tasks.Task<PetApp.WSCorreios.consultaSROResponse> consultaSROAsync(string[] listaObjetos, string tipoConsulta, string tipoResultado, string usuarioSro, string senhaSro) {
+            PetApp.WSCorreios.consultaSRO inValue = new PetApp.WSCorreios.consultaSRO();
             inValue.listaObjetos = listaObjetos;
             inValue.tipoConsulta = tipoConsulta;
             inValue.tipoResultado = tipoResultado;
             inValue.usuarioSro = usuarioSro;
             inValue.senhaSro = senhaSro;
-            return ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).consultaSROAsync(inValue);
+            return ((PetApp.WSCorreios.AtendeCliente)(this)).consultaSROAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WindowsFormsApp1.WSCorreios.calculaTarifaServicoResponse WindowsFormsApp1.WSCorreios.AtendeCliente.calculaTarifaServico(WindowsFormsApp1.WSCorreios.calculaTarifaServico request) {
+        PetApp.WSCorreios.calculaTarifaServicoResponse PetApp.WSCorreios.AtendeCliente.calculaTarifaServico(PetApp.WSCorreios.calculaTarifaServico request) {
             return base.Channel.calculaTarifaServico(request);
         }
         
         public string calculaTarifaServico(string codAdministrativo, string usuario, string senha, string codServico, string cepOrigem, string cepDestino, string peso, int codFormato, double comprimento, double altura, double largura, double diametro, string codMaoPropria, double valorDeclarado, string codAvisoRecebimento) {
-            WindowsFormsApp1.WSCorreios.calculaTarifaServico inValue = new WindowsFormsApp1.WSCorreios.calculaTarifaServico();
+            PetApp.WSCorreios.calculaTarifaServico inValue = new PetApp.WSCorreios.calculaTarifaServico();
             inValue.codAdministrativo = codAdministrativo;
             inValue.usuario = usuario;
             inValue.senha = senha;
@@ -7504,17 +7504,17 @@ namespace WindowsFormsApp1.WSCorreios {
             inValue.codMaoPropria = codMaoPropria;
             inValue.valorDeclarado = valorDeclarado;
             inValue.codAvisoRecebimento = codAvisoRecebimento;
-            WindowsFormsApp1.WSCorreios.calculaTarifaServicoResponse retVal = ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).calculaTarifaServico(inValue);
+            PetApp.WSCorreios.calculaTarifaServicoResponse retVal = ((PetApp.WSCorreios.AtendeCliente)(this)).calculaTarifaServico(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.calculaTarifaServicoResponse> WindowsFormsApp1.WSCorreios.AtendeCliente.calculaTarifaServicoAsync(WindowsFormsApp1.WSCorreios.calculaTarifaServico request) {
+        System.Threading.Tasks.Task<PetApp.WSCorreios.calculaTarifaServicoResponse> PetApp.WSCorreios.AtendeCliente.calculaTarifaServicoAsync(PetApp.WSCorreios.calculaTarifaServico request) {
             return base.Channel.calculaTarifaServicoAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.calculaTarifaServicoResponse> calculaTarifaServicoAsync(string codAdministrativo, string usuario, string senha, string codServico, string cepOrigem, string cepDestino, string peso, int codFormato, double comprimento, double altura, double largura, double diametro, string codMaoPropria, double valorDeclarado, string codAvisoRecebimento) {
-            WindowsFormsApp1.WSCorreios.calculaTarifaServico inValue = new WindowsFormsApp1.WSCorreios.calculaTarifaServico();
+        public System.Threading.Tasks.Task<PetApp.WSCorreios.calculaTarifaServicoResponse> calculaTarifaServicoAsync(string codAdministrativo, string usuario, string senha, string codServico, string cepOrigem, string cepDestino, string peso, int codFormato, double comprimento, double altura, double largura, double diametro, string codMaoPropria, double valorDeclarado, string codAvisoRecebimento) {
+            PetApp.WSCorreios.calculaTarifaServico inValue = new PetApp.WSCorreios.calculaTarifaServico();
             inValue.codAdministrativo = codAdministrativo;
             inValue.usuario = usuario;
             inValue.senha = senha;
@@ -7530,16 +7530,16 @@ namespace WindowsFormsApp1.WSCorreios {
             inValue.codMaoPropria = codMaoPropria;
             inValue.valorDeclarado = valorDeclarado;
             inValue.codAvisoRecebimento = codAvisoRecebimento;
-            return ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).calculaTarifaServicoAsync(inValue);
+            return ((PetApp.WSCorreios.AtendeCliente)(this)).calculaTarifaServicoAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WindowsFormsApp1.WSCorreios.validaPlpResponse WindowsFormsApp1.WSCorreios.AtendeCliente.validaPlp(WindowsFormsApp1.WSCorreios.validaPlp request) {
+        PetApp.WSCorreios.validaPlpResponse PetApp.WSCorreios.AtendeCliente.validaPlp(PetApp.WSCorreios.validaPlp request) {
             return base.Channel.validaPlp(request);
         }
         
         public bool validaPlp(long cliente, string numero, long diretoria, string cartao, string unidadePostagem, long servico, string[] servicosAdicionais, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.validaPlp inValue = new WindowsFormsApp1.WSCorreios.validaPlp();
+            PetApp.WSCorreios.validaPlp inValue = new PetApp.WSCorreios.validaPlp();
             inValue.cliente = cliente;
             inValue.numero = numero;
             inValue.diretoria = diretoria;
@@ -7549,17 +7549,17 @@ namespace WindowsFormsApp1.WSCorreios {
             inValue.servicosAdicionais = servicosAdicionais;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            WindowsFormsApp1.WSCorreios.validaPlpResponse retVal = ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).validaPlp(inValue);
+            PetApp.WSCorreios.validaPlpResponse retVal = ((PetApp.WSCorreios.AtendeCliente)(this)).validaPlp(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.validaPlpResponse> WindowsFormsApp1.WSCorreios.AtendeCliente.validaPlpAsync(WindowsFormsApp1.WSCorreios.validaPlp request) {
+        System.Threading.Tasks.Task<PetApp.WSCorreios.validaPlpResponse> PetApp.WSCorreios.AtendeCliente.validaPlpAsync(PetApp.WSCorreios.validaPlp request) {
             return base.Channel.validaPlpAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.validaPlpResponse> validaPlpAsync(long cliente, string numero, long diretoria, string cartao, string unidadePostagem, long servico, string[] servicosAdicionais, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.validaPlp inValue = new WindowsFormsApp1.WSCorreios.validaPlp();
+        public System.Threading.Tasks.Task<PetApp.WSCorreios.validaPlpResponse> validaPlpAsync(long cliente, string numero, long diretoria, string cartao, string unidadePostagem, long servico, string[] servicosAdicionais, string usuario, string senha) {
+            PetApp.WSCorreios.validaPlp inValue = new PetApp.WSCorreios.validaPlp();
             inValue.cliente = cliente;
             inValue.numero = numero;
             inValue.diretoria = diretoria;
@@ -7569,469 +7569,469 @@ namespace WindowsFormsApp1.WSCorreios {
             inValue.servicosAdicionais = servicosAdicionais;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            return ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).validaPlpAsync(inValue);
+            return ((PetApp.WSCorreios.AtendeCliente)(this)).validaPlpAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WindowsFormsApp1.WSCorreios.VerificaSeTodosObjetosCanceladosResponse WindowsFormsApp1.WSCorreios.AtendeCliente.VerificaSeTodosObjetosCancelados(WindowsFormsApp1.WSCorreios.VerificaSeTodosObjetosCancelados request) {
+        PetApp.WSCorreios.VerificaSeTodosObjetosCanceladosResponse PetApp.WSCorreios.AtendeCliente.VerificaSeTodosObjetosCancelados(PetApp.WSCorreios.VerificaSeTodosObjetosCancelados request) {
             return base.Channel.VerificaSeTodosObjetosCancelados(request);
         }
         
-        public bool VerificaSeTodosObjetosCancelados(WindowsFormsApp1.WSCorreios.objetoPostal[] arg0) {
-            WindowsFormsApp1.WSCorreios.VerificaSeTodosObjetosCancelados inValue = new WindowsFormsApp1.WSCorreios.VerificaSeTodosObjetosCancelados();
+        public bool VerificaSeTodosObjetosCancelados(PetApp.WSCorreios.objetoPostal[] arg0) {
+            PetApp.WSCorreios.VerificaSeTodosObjetosCancelados inValue = new PetApp.WSCorreios.VerificaSeTodosObjetosCancelados();
             inValue.arg0 = arg0;
-            WindowsFormsApp1.WSCorreios.VerificaSeTodosObjetosCanceladosResponse retVal = ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).VerificaSeTodosObjetosCancelados(inValue);
+            PetApp.WSCorreios.VerificaSeTodosObjetosCanceladosResponse retVal = ((PetApp.WSCorreios.AtendeCliente)(this)).VerificaSeTodosObjetosCancelados(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.VerificaSeTodosObjetosCanceladosResponse> WindowsFormsApp1.WSCorreios.AtendeCliente.VerificaSeTodosObjetosCanceladosAsync(WindowsFormsApp1.WSCorreios.VerificaSeTodosObjetosCancelados request) {
+        System.Threading.Tasks.Task<PetApp.WSCorreios.VerificaSeTodosObjetosCanceladosResponse> PetApp.WSCorreios.AtendeCliente.VerificaSeTodosObjetosCanceladosAsync(PetApp.WSCorreios.VerificaSeTodosObjetosCancelados request) {
             return base.Channel.VerificaSeTodosObjetosCanceladosAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.VerificaSeTodosObjetosCanceladosResponse> VerificaSeTodosObjetosCanceladosAsync(WindowsFormsApp1.WSCorreios.objetoPostal[] arg0) {
-            WindowsFormsApp1.WSCorreios.VerificaSeTodosObjetosCancelados inValue = new WindowsFormsApp1.WSCorreios.VerificaSeTodosObjetosCancelados();
+        public System.Threading.Tasks.Task<PetApp.WSCorreios.VerificaSeTodosObjetosCanceladosResponse> VerificaSeTodosObjetosCanceladosAsync(PetApp.WSCorreios.objetoPostal[] arg0) {
+            PetApp.WSCorreios.VerificaSeTodosObjetosCancelados inValue = new PetApp.WSCorreios.VerificaSeTodosObjetosCancelados();
             inValue.arg0 = arg0;
-            return ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).VerificaSeTodosObjetosCanceladosAsync(inValue);
+            return ((PetApp.WSCorreios.AtendeCliente)(this)).VerificaSeTodosObjetosCanceladosAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WindowsFormsApp1.WSCorreios.cancelarObjetoResponse WindowsFormsApp1.WSCorreios.AtendeCliente.cancelarObjeto(WindowsFormsApp1.WSCorreios.cancelarObjeto request) {
+        PetApp.WSCorreios.cancelarObjetoResponse PetApp.WSCorreios.AtendeCliente.cancelarObjeto(PetApp.WSCorreios.cancelarObjeto request) {
             return base.Channel.cancelarObjeto(request);
         }
         
         public bool cancelarObjeto(long idPlp, string numeroEtiqueta, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.cancelarObjeto inValue = new WindowsFormsApp1.WSCorreios.cancelarObjeto();
+            PetApp.WSCorreios.cancelarObjeto inValue = new PetApp.WSCorreios.cancelarObjeto();
             inValue.idPlp = idPlp;
             inValue.numeroEtiqueta = numeroEtiqueta;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            WindowsFormsApp1.WSCorreios.cancelarObjetoResponse retVal = ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).cancelarObjeto(inValue);
+            PetApp.WSCorreios.cancelarObjetoResponse retVal = ((PetApp.WSCorreios.AtendeCliente)(this)).cancelarObjeto(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.cancelarObjetoResponse> WindowsFormsApp1.WSCorreios.AtendeCliente.cancelarObjetoAsync(WindowsFormsApp1.WSCorreios.cancelarObjeto request) {
+        System.Threading.Tasks.Task<PetApp.WSCorreios.cancelarObjetoResponse> PetApp.WSCorreios.AtendeCliente.cancelarObjetoAsync(PetApp.WSCorreios.cancelarObjeto request) {
             return base.Channel.cancelarObjetoAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.cancelarObjetoResponse> cancelarObjetoAsync(long idPlp, string numeroEtiqueta, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.cancelarObjeto inValue = new WindowsFormsApp1.WSCorreios.cancelarObjeto();
+        public System.Threading.Tasks.Task<PetApp.WSCorreios.cancelarObjetoResponse> cancelarObjetoAsync(long idPlp, string numeroEtiqueta, string usuario, string senha) {
+            PetApp.WSCorreios.cancelarObjeto inValue = new PetApp.WSCorreios.cancelarObjeto();
             inValue.idPlp = idPlp;
             inValue.numeroEtiqueta = numeroEtiqueta;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            return ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).cancelarObjetoAsync(inValue);
+            return ((PetApp.WSCorreios.AtendeCliente)(this)).cancelarObjetoAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WindowsFormsApp1.WSCorreios.atualizaPagamentoNaEntregaResponse WindowsFormsApp1.WSCorreios.AtendeCliente.atualizaPagamentoNaEntrega(WindowsFormsApp1.WSCorreios.atualizaPagamentoNaEntrega request) {
+        PetApp.WSCorreios.atualizaPagamentoNaEntregaResponse PetApp.WSCorreios.AtendeCliente.atualizaPagamentoNaEntrega(PetApp.WSCorreios.atualizaPagamentoNaEntrega request) {
             return base.Channel.atualizaPagamentoNaEntrega(request);
         }
         
         public string atualizaPagamentoNaEntrega(string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.atualizaPagamentoNaEntrega inValue = new WindowsFormsApp1.WSCorreios.atualizaPagamentoNaEntrega();
+            PetApp.WSCorreios.atualizaPagamentoNaEntrega inValue = new PetApp.WSCorreios.atualizaPagamentoNaEntrega();
             inValue.usuario = usuario;
             inValue.senha = senha;
-            WindowsFormsApp1.WSCorreios.atualizaPagamentoNaEntregaResponse retVal = ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).atualizaPagamentoNaEntrega(inValue);
+            PetApp.WSCorreios.atualizaPagamentoNaEntregaResponse retVal = ((PetApp.WSCorreios.AtendeCliente)(this)).atualizaPagamentoNaEntrega(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.atualizaPagamentoNaEntregaResponse> WindowsFormsApp1.WSCorreios.AtendeCliente.atualizaPagamentoNaEntregaAsync(WindowsFormsApp1.WSCorreios.atualizaPagamentoNaEntrega request) {
+        System.Threading.Tasks.Task<PetApp.WSCorreios.atualizaPagamentoNaEntregaResponse> PetApp.WSCorreios.AtendeCliente.atualizaPagamentoNaEntregaAsync(PetApp.WSCorreios.atualizaPagamentoNaEntrega request) {
             return base.Channel.atualizaPagamentoNaEntregaAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.atualizaPagamentoNaEntregaResponse> atualizaPagamentoNaEntregaAsync(string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.atualizaPagamentoNaEntrega inValue = new WindowsFormsApp1.WSCorreios.atualizaPagamentoNaEntrega();
+        public System.Threading.Tasks.Task<PetApp.WSCorreios.atualizaPagamentoNaEntregaResponse> atualizaPagamentoNaEntregaAsync(string usuario, string senha) {
+            PetApp.WSCorreios.atualizaPagamentoNaEntrega inValue = new PetApp.WSCorreios.atualizaPagamentoNaEntrega();
             inValue.usuario = usuario;
             inValue.senha = senha;
-            return ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).atualizaPagamentoNaEntregaAsync(inValue);
+            return ((PetApp.WSCorreios.AtendeCliente)(this)).atualizaPagamentoNaEntregaAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WindowsFormsApp1.WSCorreios.obterClienteAtualizacaoResponse WindowsFormsApp1.WSCorreios.AtendeCliente.obterClienteAtualizacao(WindowsFormsApp1.WSCorreios.obterClienteAtualizacao request) {
+        PetApp.WSCorreios.obterClienteAtualizacaoResponse PetApp.WSCorreios.AtendeCliente.obterClienteAtualizacao(PetApp.WSCorreios.obterClienteAtualizacao request) {
             return base.Channel.obterClienteAtualizacao(request);
         }
         
         public System.DateTime obterClienteAtualizacao(string cnpjCliente, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.obterClienteAtualizacao inValue = new WindowsFormsApp1.WSCorreios.obterClienteAtualizacao();
+            PetApp.WSCorreios.obterClienteAtualizacao inValue = new PetApp.WSCorreios.obterClienteAtualizacao();
             inValue.cnpjCliente = cnpjCliente;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            WindowsFormsApp1.WSCorreios.obterClienteAtualizacaoResponse retVal = ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).obterClienteAtualizacao(inValue);
+            PetApp.WSCorreios.obterClienteAtualizacaoResponse retVal = ((PetApp.WSCorreios.AtendeCliente)(this)).obterClienteAtualizacao(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.obterClienteAtualizacaoResponse> WindowsFormsApp1.WSCorreios.AtendeCliente.obterClienteAtualizacaoAsync(WindowsFormsApp1.WSCorreios.obterClienteAtualizacao request) {
+        System.Threading.Tasks.Task<PetApp.WSCorreios.obterClienteAtualizacaoResponse> PetApp.WSCorreios.AtendeCliente.obterClienteAtualizacaoAsync(PetApp.WSCorreios.obterClienteAtualizacao request) {
             return base.Channel.obterClienteAtualizacaoAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.obterClienteAtualizacaoResponse> obterClienteAtualizacaoAsync(string cnpjCliente, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.obterClienteAtualizacao inValue = new WindowsFormsApp1.WSCorreios.obterClienteAtualizacao();
+        public System.Threading.Tasks.Task<PetApp.WSCorreios.obterClienteAtualizacaoResponse> obterClienteAtualizacaoAsync(string cnpjCliente, string usuario, string senha) {
+            PetApp.WSCorreios.obterClienteAtualizacao inValue = new PetApp.WSCorreios.obterClienteAtualizacao();
             inValue.cnpjCliente = cnpjCliente;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            return ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).obterClienteAtualizacaoAsync(inValue);
+            return ((PetApp.WSCorreios.AtendeCliente)(this)).obterClienteAtualizacaoAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WindowsFormsApp1.WSCorreios.verificaDisponibilidadeServicoResponse WindowsFormsApp1.WSCorreios.AtendeCliente.verificaDisponibilidadeServico(WindowsFormsApp1.WSCorreios.verificaDisponibilidadeServico request) {
+        PetApp.WSCorreios.verificaDisponibilidadeServicoResponse PetApp.WSCorreios.AtendeCliente.verificaDisponibilidadeServico(PetApp.WSCorreios.verificaDisponibilidadeServico request) {
             return base.Channel.verificaDisponibilidadeServico(request);
         }
         
         public string verificaDisponibilidadeServico(int codAdministrativo, string numeroServico, string cepOrigem, string cepDestino, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.verificaDisponibilidadeServico inValue = new WindowsFormsApp1.WSCorreios.verificaDisponibilidadeServico();
+            PetApp.WSCorreios.verificaDisponibilidadeServico inValue = new PetApp.WSCorreios.verificaDisponibilidadeServico();
             inValue.codAdministrativo = codAdministrativo;
             inValue.numeroServico = numeroServico;
             inValue.cepOrigem = cepOrigem;
             inValue.cepDestino = cepDestino;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            WindowsFormsApp1.WSCorreios.verificaDisponibilidadeServicoResponse retVal = ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).verificaDisponibilidadeServico(inValue);
+            PetApp.WSCorreios.verificaDisponibilidadeServicoResponse retVal = ((PetApp.WSCorreios.AtendeCliente)(this)).verificaDisponibilidadeServico(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.verificaDisponibilidadeServicoResponse> WindowsFormsApp1.WSCorreios.AtendeCliente.verificaDisponibilidadeServicoAsync(WindowsFormsApp1.WSCorreios.verificaDisponibilidadeServico request) {
+        System.Threading.Tasks.Task<PetApp.WSCorreios.verificaDisponibilidadeServicoResponse> PetApp.WSCorreios.AtendeCliente.verificaDisponibilidadeServicoAsync(PetApp.WSCorreios.verificaDisponibilidadeServico request) {
             return base.Channel.verificaDisponibilidadeServicoAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.verificaDisponibilidadeServicoResponse> verificaDisponibilidadeServicoAsync(int codAdministrativo, string numeroServico, string cepOrigem, string cepDestino, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.verificaDisponibilidadeServico inValue = new WindowsFormsApp1.WSCorreios.verificaDisponibilidadeServico();
+        public System.Threading.Tasks.Task<PetApp.WSCorreios.verificaDisponibilidadeServicoResponse> verificaDisponibilidadeServicoAsync(int codAdministrativo, string numeroServico, string cepOrigem, string cepDestino, string usuario, string senha) {
+            PetApp.WSCorreios.verificaDisponibilidadeServico inValue = new PetApp.WSCorreios.verificaDisponibilidadeServico();
             inValue.codAdministrativo = codAdministrativo;
             inValue.numeroServico = numeroServico;
             inValue.cepOrigem = cepOrigem;
             inValue.cepDestino = cepDestino;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            return ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).verificaDisponibilidadeServicoAsync(inValue);
+            return ((PetApp.WSCorreios.AtendeCliente)(this)).verificaDisponibilidadeServicoAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WindowsFormsApp1.WSCorreios.fechaPlpVariosServicosResponse WindowsFormsApp1.WSCorreios.AtendeCliente.fechaPlpVariosServicos(WindowsFormsApp1.WSCorreios.fechaPlpVariosServicos request) {
+        PetApp.WSCorreios.fechaPlpVariosServicosResponse PetApp.WSCorreios.AtendeCliente.fechaPlpVariosServicos(PetApp.WSCorreios.fechaPlpVariosServicos request) {
             return base.Channel.fechaPlpVariosServicos(request);
         }
         
         public long fechaPlpVariosServicos(string xml, long idPlpCliente, string cartaoPostagem, string[] listaEtiquetas, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.fechaPlpVariosServicos inValue = new WindowsFormsApp1.WSCorreios.fechaPlpVariosServicos();
+            PetApp.WSCorreios.fechaPlpVariosServicos inValue = new PetApp.WSCorreios.fechaPlpVariosServicos();
             inValue.xml = xml;
             inValue.idPlpCliente = idPlpCliente;
             inValue.cartaoPostagem = cartaoPostagem;
             inValue.listaEtiquetas = listaEtiquetas;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            WindowsFormsApp1.WSCorreios.fechaPlpVariosServicosResponse retVal = ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).fechaPlpVariosServicos(inValue);
+            PetApp.WSCorreios.fechaPlpVariosServicosResponse retVal = ((PetApp.WSCorreios.AtendeCliente)(this)).fechaPlpVariosServicos(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.fechaPlpVariosServicosResponse> WindowsFormsApp1.WSCorreios.AtendeCliente.fechaPlpVariosServicosAsync(WindowsFormsApp1.WSCorreios.fechaPlpVariosServicos request) {
+        System.Threading.Tasks.Task<PetApp.WSCorreios.fechaPlpVariosServicosResponse> PetApp.WSCorreios.AtendeCliente.fechaPlpVariosServicosAsync(PetApp.WSCorreios.fechaPlpVariosServicos request) {
             return base.Channel.fechaPlpVariosServicosAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.fechaPlpVariosServicosResponse> fechaPlpVariosServicosAsync(string xml, long idPlpCliente, string cartaoPostagem, string[] listaEtiquetas, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.fechaPlpVariosServicos inValue = new WindowsFormsApp1.WSCorreios.fechaPlpVariosServicos();
+        public System.Threading.Tasks.Task<PetApp.WSCorreios.fechaPlpVariosServicosResponse> fechaPlpVariosServicosAsync(string xml, long idPlpCliente, string cartaoPostagem, string[] listaEtiquetas, string usuario, string senha) {
+            PetApp.WSCorreios.fechaPlpVariosServicos inValue = new PetApp.WSCorreios.fechaPlpVariosServicos();
             inValue.xml = xml;
             inValue.idPlpCliente = idPlpCliente;
             inValue.cartaoPostagem = cartaoPostagem;
             inValue.listaEtiquetas = listaEtiquetas;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            return ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).fechaPlpVariosServicosAsync(inValue);
+            return ((PetApp.WSCorreios.AtendeCliente)(this)).fechaPlpVariosServicosAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WindowsFormsApp1.WSCorreios.geraDigitoVerificadorEtiquetasResponse WindowsFormsApp1.WSCorreios.AtendeCliente.geraDigitoVerificadorEtiquetas(WindowsFormsApp1.WSCorreios.geraDigitoVerificadorEtiquetas request) {
+        PetApp.WSCorreios.geraDigitoVerificadorEtiquetasResponse PetApp.WSCorreios.AtendeCliente.geraDigitoVerificadorEtiquetas(PetApp.WSCorreios.geraDigitoVerificadorEtiquetas request) {
             return base.Channel.geraDigitoVerificadorEtiquetas(request);
         }
         
         public int[] geraDigitoVerificadorEtiquetas(string[] etiquetas, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.geraDigitoVerificadorEtiquetas inValue = new WindowsFormsApp1.WSCorreios.geraDigitoVerificadorEtiquetas();
+            PetApp.WSCorreios.geraDigitoVerificadorEtiquetas inValue = new PetApp.WSCorreios.geraDigitoVerificadorEtiquetas();
             inValue.etiquetas = etiquetas;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            WindowsFormsApp1.WSCorreios.geraDigitoVerificadorEtiquetasResponse retVal = ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).geraDigitoVerificadorEtiquetas(inValue);
+            PetApp.WSCorreios.geraDigitoVerificadorEtiquetasResponse retVal = ((PetApp.WSCorreios.AtendeCliente)(this)).geraDigitoVerificadorEtiquetas(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.geraDigitoVerificadorEtiquetasResponse> WindowsFormsApp1.WSCorreios.AtendeCliente.geraDigitoVerificadorEtiquetasAsync(WindowsFormsApp1.WSCorreios.geraDigitoVerificadorEtiquetas request) {
+        System.Threading.Tasks.Task<PetApp.WSCorreios.geraDigitoVerificadorEtiquetasResponse> PetApp.WSCorreios.AtendeCliente.geraDigitoVerificadorEtiquetasAsync(PetApp.WSCorreios.geraDigitoVerificadorEtiquetas request) {
             return base.Channel.geraDigitoVerificadorEtiquetasAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.geraDigitoVerificadorEtiquetasResponse> geraDigitoVerificadorEtiquetasAsync(string[] etiquetas, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.geraDigitoVerificadorEtiquetas inValue = new WindowsFormsApp1.WSCorreios.geraDigitoVerificadorEtiquetas();
+        public System.Threading.Tasks.Task<PetApp.WSCorreios.geraDigitoVerificadorEtiquetasResponse> geraDigitoVerificadorEtiquetasAsync(string[] etiquetas, string usuario, string senha) {
+            PetApp.WSCorreios.geraDigitoVerificadorEtiquetas inValue = new PetApp.WSCorreios.geraDigitoVerificadorEtiquetas();
             inValue.etiquetas = etiquetas;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            return ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).geraDigitoVerificadorEtiquetasAsync(inValue);
+            return ((PetApp.WSCorreios.AtendeCliente)(this)).geraDigitoVerificadorEtiquetasAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WindowsFormsApp1.WSCorreios.obterEmbalagemLRSResponse WindowsFormsApp1.WSCorreios.AtendeCliente.obterEmbalagemLRS(WindowsFormsApp1.WSCorreios.obterEmbalagemLRS request) {
+        PetApp.WSCorreios.obterEmbalagemLRSResponse PetApp.WSCorreios.AtendeCliente.obterEmbalagemLRS(PetApp.WSCorreios.obterEmbalagemLRS request) {
             return base.Channel.obterEmbalagemLRS(request);
         }
         
-        public WindowsFormsApp1.WSCorreios.embalagemLRSMaster[] obterEmbalagemLRS() {
-            WindowsFormsApp1.WSCorreios.obterEmbalagemLRS inValue = new WindowsFormsApp1.WSCorreios.obterEmbalagemLRS();
-            WindowsFormsApp1.WSCorreios.obterEmbalagemLRSResponse retVal = ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).obterEmbalagemLRS(inValue);
+        public PetApp.WSCorreios.embalagemLRSMaster[] obterEmbalagemLRS() {
+            PetApp.WSCorreios.obterEmbalagemLRS inValue = new PetApp.WSCorreios.obterEmbalagemLRS();
+            PetApp.WSCorreios.obterEmbalagemLRSResponse retVal = ((PetApp.WSCorreios.AtendeCliente)(this)).obterEmbalagemLRS(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.obterEmbalagemLRSResponse> WindowsFormsApp1.WSCorreios.AtendeCliente.obterEmbalagemLRSAsync(WindowsFormsApp1.WSCorreios.obterEmbalagemLRS request) {
+        System.Threading.Tasks.Task<PetApp.WSCorreios.obterEmbalagemLRSResponse> PetApp.WSCorreios.AtendeCliente.obterEmbalagemLRSAsync(PetApp.WSCorreios.obterEmbalagemLRS request) {
             return base.Channel.obterEmbalagemLRSAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.obterEmbalagemLRSResponse> obterEmbalagemLRSAsync() {
-            WindowsFormsApp1.WSCorreios.obterEmbalagemLRS inValue = new WindowsFormsApp1.WSCorreios.obterEmbalagemLRS();
-            return ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).obterEmbalagemLRSAsync(inValue);
+        public System.Threading.Tasks.Task<PetApp.WSCorreios.obterEmbalagemLRSResponse> obterEmbalagemLRSAsync() {
+            PetApp.WSCorreios.obterEmbalagemLRS inValue = new PetApp.WSCorreios.obterEmbalagemLRS();
+            return ((PetApp.WSCorreios.AtendeCliente)(this)).obterEmbalagemLRSAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WindowsFormsApp1.WSCorreios.validaEtiquetaPLPResponse WindowsFormsApp1.WSCorreios.AtendeCliente.validaEtiquetaPLP(WindowsFormsApp1.WSCorreios.validaEtiquetaPLP request) {
+        PetApp.WSCorreios.validaEtiquetaPLPResponse PetApp.WSCorreios.AtendeCliente.validaEtiquetaPLP(PetApp.WSCorreios.validaEtiquetaPLP request) {
             return base.Channel.validaEtiquetaPLP(request);
         }
         
         public bool validaEtiquetaPLP(string numeroEtiqueta, long idPlp, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.validaEtiquetaPLP inValue = new WindowsFormsApp1.WSCorreios.validaEtiquetaPLP();
+            PetApp.WSCorreios.validaEtiquetaPLP inValue = new PetApp.WSCorreios.validaEtiquetaPLP();
             inValue.numeroEtiqueta = numeroEtiqueta;
             inValue.idPlp = idPlp;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            WindowsFormsApp1.WSCorreios.validaEtiquetaPLPResponse retVal = ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).validaEtiquetaPLP(inValue);
+            PetApp.WSCorreios.validaEtiquetaPLPResponse retVal = ((PetApp.WSCorreios.AtendeCliente)(this)).validaEtiquetaPLP(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.validaEtiquetaPLPResponse> WindowsFormsApp1.WSCorreios.AtendeCliente.validaEtiquetaPLPAsync(WindowsFormsApp1.WSCorreios.validaEtiquetaPLP request) {
+        System.Threading.Tasks.Task<PetApp.WSCorreios.validaEtiquetaPLPResponse> PetApp.WSCorreios.AtendeCliente.validaEtiquetaPLPAsync(PetApp.WSCorreios.validaEtiquetaPLP request) {
             return base.Channel.validaEtiquetaPLPAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.validaEtiquetaPLPResponse> validaEtiquetaPLPAsync(string numeroEtiqueta, long idPlp, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.validaEtiquetaPLP inValue = new WindowsFormsApp1.WSCorreios.validaEtiquetaPLP();
+        public System.Threading.Tasks.Task<PetApp.WSCorreios.validaEtiquetaPLPResponse> validaEtiquetaPLPAsync(string numeroEtiqueta, long idPlp, string usuario, string senha) {
+            PetApp.WSCorreios.validaEtiquetaPLP inValue = new PetApp.WSCorreios.validaEtiquetaPLP();
             inValue.numeroEtiqueta = numeroEtiqueta;
             inValue.idPlp = idPlp;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            return ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).validaEtiquetaPLPAsync(inValue);
+            return ((PetApp.WSCorreios.AtendeCliente)(this)).validaEtiquetaPLPAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WindowsFormsApp1.WSCorreios.buscaServicosValorDeclaradoResponse WindowsFormsApp1.WSCorreios.AtendeCliente.buscaServicosValorDeclarado(WindowsFormsApp1.WSCorreios.buscaServicosValorDeclarado request) {
+        PetApp.WSCorreios.buscaServicosValorDeclaradoResponse PetApp.WSCorreios.AtendeCliente.buscaServicosValorDeclarado(PetApp.WSCorreios.buscaServicosValorDeclarado request) {
             return base.Channel.buscaServicosValorDeclarado(request);
         }
         
         public string[] buscaServicosValorDeclarado(string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.buscaServicosValorDeclarado inValue = new WindowsFormsApp1.WSCorreios.buscaServicosValorDeclarado();
+            PetApp.WSCorreios.buscaServicosValorDeclarado inValue = new PetApp.WSCorreios.buscaServicosValorDeclarado();
             inValue.usuario = usuario;
             inValue.senha = senha;
-            WindowsFormsApp1.WSCorreios.buscaServicosValorDeclaradoResponse retVal = ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).buscaServicosValorDeclarado(inValue);
+            PetApp.WSCorreios.buscaServicosValorDeclaradoResponse retVal = ((PetApp.WSCorreios.AtendeCliente)(this)).buscaServicosValorDeclarado(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.buscaServicosValorDeclaradoResponse> WindowsFormsApp1.WSCorreios.AtendeCliente.buscaServicosValorDeclaradoAsync(WindowsFormsApp1.WSCorreios.buscaServicosValorDeclarado request) {
+        System.Threading.Tasks.Task<PetApp.WSCorreios.buscaServicosValorDeclaradoResponse> PetApp.WSCorreios.AtendeCliente.buscaServicosValorDeclaradoAsync(PetApp.WSCorreios.buscaServicosValorDeclarado request) {
             return base.Channel.buscaServicosValorDeclaradoAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.buscaServicosValorDeclaradoResponse> buscaServicosValorDeclaradoAsync(string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.buscaServicosValorDeclarado inValue = new WindowsFormsApp1.WSCorreios.buscaServicosValorDeclarado();
+        public System.Threading.Tasks.Task<PetApp.WSCorreios.buscaServicosValorDeclaradoResponse> buscaServicosValorDeclaradoAsync(string usuario, string senha) {
+            PetApp.WSCorreios.buscaServicosValorDeclarado inValue = new PetApp.WSCorreios.buscaServicosValorDeclarado();
             inValue.usuario = usuario;
             inValue.senha = senha;
-            return ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).buscaServicosValorDeclaradoAsync(inValue);
+            return ((PetApp.WSCorreios.AtendeCliente)(this)).buscaServicosValorDeclaradoAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WindowsFormsApp1.WSCorreios.consultaCEPResponse WindowsFormsApp1.WSCorreios.AtendeCliente.consultaCEP(WindowsFormsApp1.WSCorreios.consultaCEP request) {
+        PetApp.WSCorreios.consultaCEPResponse PetApp.WSCorreios.AtendeCliente.consultaCEP(PetApp.WSCorreios.consultaCEP request) {
             return base.Channel.consultaCEP(request);
         }
         
-        public WindowsFormsApp1.WSCorreios.enderecoERP consultaCEP(string cep) {
-            WindowsFormsApp1.WSCorreios.consultaCEP inValue = new WindowsFormsApp1.WSCorreios.consultaCEP();
+        public PetApp.WSCorreios.enderecoERP consultaCEP(string cep) {
+            PetApp.WSCorreios.consultaCEP inValue = new PetApp.WSCorreios.consultaCEP();
             inValue.cep = cep;
-            WindowsFormsApp1.WSCorreios.consultaCEPResponse retVal = ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).consultaCEP(inValue);
+            PetApp.WSCorreios.consultaCEPResponse retVal = ((PetApp.WSCorreios.AtendeCliente)(this)).consultaCEP(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.consultaCEPResponse> WindowsFormsApp1.WSCorreios.AtendeCliente.consultaCEPAsync(WindowsFormsApp1.WSCorreios.consultaCEP request) {
+        System.Threading.Tasks.Task<PetApp.WSCorreios.consultaCEPResponse> PetApp.WSCorreios.AtendeCliente.consultaCEPAsync(PetApp.WSCorreios.consultaCEP request) {
             return base.Channel.consultaCEPAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.consultaCEPResponse> consultaCEPAsync(string cep) {
-            WindowsFormsApp1.WSCorreios.consultaCEP inValue = new WindowsFormsApp1.WSCorreios.consultaCEP();
+        public System.Threading.Tasks.Task<PetApp.WSCorreios.consultaCEPResponse> consultaCEPAsync(string cep) {
+            PetApp.WSCorreios.consultaCEP inValue = new PetApp.WSCorreios.consultaCEP();
             inValue.cep = cep;
-            return ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).consultaCEPAsync(inValue);
+            return ((PetApp.WSCorreios.AtendeCliente)(this)).consultaCEPAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WindowsFormsApp1.WSCorreios.integrarUsuarioScolResponse WindowsFormsApp1.WSCorreios.AtendeCliente.integrarUsuarioScol(WindowsFormsApp1.WSCorreios.integrarUsuarioScol request) {
+        PetApp.WSCorreios.integrarUsuarioScolResponse PetApp.WSCorreios.AtendeCliente.integrarUsuarioScol(PetApp.WSCorreios.integrarUsuarioScol request) {
             return base.Channel.integrarUsuarioScol(request);
         }
         
         public bool integrarUsuarioScol(int codAdministrativo, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.integrarUsuarioScol inValue = new WindowsFormsApp1.WSCorreios.integrarUsuarioScol();
+            PetApp.WSCorreios.integrarUsuarioScol inValue = new PetApp.WSCorreios.integrarUsuarioScol();
             inValue.codAdministrativo = codAdministrativo;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            WindowsFormsApp1.WSCorreios.integrarUsuarioScolResponse retVal = ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).integrarUsuarioScol(inValue);
+            PetApp.WSCorreios.integrarUsuarioScolResponse retVal = ((PetApp.WSCorreios.AtendeCliente)(this)).integrarUsuarioScol(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.integrarUsuarioScolResponse> WindowsFormsApp1.WSCorreios.AtendeCliente.integrarUsuarioScolAsync(WindowsFormsApp1.WSCorreios.integrarUsuarioScol request) {
+        System.Threading.Tasks.Task<PetApp.WSCorreios.integrarUsuarioScolResponse> PetApp.WSCorreios.AtendeCliente.integrarUsuarioScolAsync(PetApp.WSCorreios.integrarUsuarioScol request) {
             return base.Channel.integrarUsuarioScolAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.integrarUsuarioScolResponse> integrarUsuarioScolAsync(int codAdministrativo, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.integrarUsuarioScol inValue = new WindowsFormsApp1.WSCorreios.integrarUsuarioScol();
+        public System.Threading.Tasks.Task<PetApp.WSCorreios.integrarUsuarioScolResponse> integrarUsuarioScolAsync(int codAdministrativo, string usuario, string senha) {
+            PetApp.WSCorreios.integrarUsuarioScol inValue = new PetApp.WSCorreios.integrarUsuarioScol();
             inValue.codAdministrativo = codAdministrativo;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            return ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).integrarUsuarioScolAsync(inValue);
+            return ((PetApp.WSCorreios.AtendeCliente)(this)).integrarUsuarioScolAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WindowsFormsApp1.WSCorreios.atualizaRemessaAgrupadaResponse WindowsFormsApp1.WSCorreios.AtendeCliente.atualizaRemessaAgrupada(WindowsFormsApp1.WSCorreios.atualizaRemessaAgrupada request) {
+        PetApp.WSCorreios.atualizaRemessaAgrupadaResponse PetApp.WSCorreios.AtendeCliente.atualizaRemessaAgrupada(PetApp.WSCorreios.atualizaRemessaAgrupada request) {
             return base.Channel.atualizaRemessaAgrupada(request);
         }
         
         public string atualizaRemessaAgrupada(string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.atualizaRemessaAgrupada inValue = new WindowsFormsApp1.WSCorreios.atualizaRemessaAgrupada();
+            PetApp.WSCorreios.atualizaRemessaAgrupada inValue = new PetApp.WSCorreios.atualizaRemessaAgrupada();
             inValue.usuario = usuario;
             inValue.senha = senha;
-            WindowsFormsApp1.WSCorreios.atualizaRemessaAgrupadaResponse retVal = ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).atualizaRemessaAgrupada(inValue);
+            PetApp.WSCorreios.atualizaRemessaAgrupadaResponse retVal = ((PetApp.WSCorreios.AtendeCliente)(this)).atualizaRemessaAgrupada(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.atualizaRemessaAgrupadaResponse> WindowsFormsApp1.WSCorreios.AtendeCliente.atualizaRemessaAgrupadaAsync(WindowsFormsApp1.WSCorreios.atualizaRemessaAgrupada request) {
+        System.Threading.Tasks.Task<PetApp.WSCorreios.atualizaRemessaAgrupadaResponse> PetApp.WSCorreios.AtendeCliente.atualizaRemessaAgrupadaAsync(PetApp.WSCorreios.atualizaRemessaAgrupada request) {
             return base.Channel.atualizaRemessaAgrupadaAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.atualizaRemessaAgrupadaResponse> atualizaRemessaAgrupadaAsync(string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.atualizaRemessaAgrupada inValue = new WindowsFormsApp1.WSCorreios.atualizaRemessaAgrupada();
+        public System.Threading.Tasks.Task<PetApp.WSCorreios.atualizaRemessaAgrupadaResponse> atualizaRemessaAgrupadaAsync(string usuario, string senha) {
+            PetApp.WSCorreios.atualizaRemessaAgrupada inValue = new PetApp.WSCorreios.atualizaRemessaAgrupada();
             inValue.usuario = usuario;
             inValue.senha = senha;
-            return ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).atualizaRemessaAgrupadaAsync(inValue);
+            return ((PetApp.WSCorreios.AtendeCliente)(this)).atualizaRemessaAgrupadaAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WindowsFormsApp1.WSCorreios.consultaSRO_NEWResponse WindowsFormsApp1.WSCorreios.AtendeCliente.consultaSRO_NEW(WindowsFormsApp1.WSCorreios.consultaSRO_NEW request) {
+        PetApp.WSCorreios.consultaSRO_NEWResponse PetApp.WSCorreios.AtendeCliente.consultaSRO_NEW(PetApp.WSCorreios.consultaSRO_NEW request) {
             return base.Channel.consultaSRO_NEW(request);
         }
         
         public string consultaSRO_NEW(string[] listaObjetos, string tipoResultado, string usuarioSro, string senhaSro) {
-            WindowsFormsApp1.WSCorreios.consultaSRO_NEW inValue = new WindowsFormsApp1.WSCorreios.consultaSRO_NEW();
+            PetApp.WSCorreios.consultaSRO_NEW inValue = new PetApp.WSCorreios.consultaSRO_NEW();
             inValue.listaObjetos = listaObjetos;
             inValue.tipoResultado = tipoResultado;
             inValue.usuarioSro = usuarioSro;
             inValue.senhaSro = senhaSro;
-            WindowsFormsApp1.WSCorreios.consultaSRO_NEWResponse retVal = ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).consultaSRO_NEW(inValue);
+            PetApp.WSCorreios.consultaSRO_NEWResponse retVal = ((PetApp.WSCorreios.AtendeCliente)(this)).consultaSRO_NEW(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.consultaSRO_NEWResponse> WindowsFormsApp1.WSCorreios.AtendeCliente.consultaSRO_NEWAsync(WindowsFormsApp1.WSCorreios.consultaSRO_NEW request) {
+        System.Threading.Tasks.Task<PetApp.WSCorreios.consultaSRO_NEWResponse> PetApp.WSCorreios.AtendeCliente.consultaSRO_NEWAsync(PetApp.WSCorreios.consultaSRO_NEW request) {
             return base.Channel.consultaSRO_NEWAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.consultaSRO_NEWResponse> consultaSRO_NEWAsync(string[] listaObjetos, string tipoResultado, string usuarioSro, string senhaSro) {
-            WindowsFormsApp1.WSCorreios.consultaSRO_NEW inValue = new WindowsFormsApp1.WSCorreios.consultaSRO_NEW();
+        public System.Threading.Tasks.Task<PetApp.WSCorreios.consultaSRO_NEWResponse> consultaSRO_NEWAsync(string[] listaObjetos, string tipoResultado, string usuarioSro, string senhaSro) {
+            PetApp.WSCorreios.consultaSRO_NEW inValue = new PetApp.WSCorreios.consultaSRO_NEW();
             inValue.listaObjetos = listaObjetos;
             inValue.tipoResultado = tipoResultado;
             inValue.usuarioSro = usuarioSro;
             inValue.senhaSro = senhaSro;
-            return ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).consultaSRO_NEWAsync(inValue);
+            return ((PetApp.WSCorreios.AtendeCliente)(this)).consultaSRO_NEWAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WindowsFormsApp1.WSCorreios.solicitaPLPResponse WindowsFormsApp1.WSCorreios.AtendeCliente.solicitaPLP(WindowsFormsApp1.WSCorreios.solicitaPLP request) {
+        PetApp.WSCorreios.solicitaPLPResponse PetApp.WSCorreios.AtendeCliente.solicitaPLP(PetApp.WSCorreios.solicitaPLP request) {
             return base.Channel.solicitaPLP(request);
         }
         
         public string solicitaPLP(long idPlpMaster, string numEtiqueta, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.solicitaPLP inValue = new WindowsFormsApp1.WSCorreios.solicitaPLP();
+            PetApp.WSCorreios.solicitaPLP inValue = new PetApp.WSCorreios.solicitaPLP();
             inValue.idPlpMaster = idPlpMaster;
             inValue.numEtiqueta = numEtiqueta;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            WindowsFormsApp1.WSCorreios.solicitaPLPResponse retVal = ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).solicitaPLP(inValue);
+            PetApp.WSCorreios.solicitaPLPResponse retVal = ((PetApp.WSCorreios.AtendeCliente)(this)).solicitaPLP(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.solicitaPLPResponse> WindowsFormsApp1.WSCorreios.AtendeCliente.solicitaPLPAsync(WindowsFormsApp1.WSCorreios.solicitaPLP request) {
+        System.Threading.Tasks.Task<PetApp.WSCorreios.solicitaPLPResponse> PetApp.WSCorreios.AtendeCliente.solicitaPLPAsync(PetApp.WSCorreios.solicitaPLP request) {
             return base.Channel.solicitaPLPAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.solicitaPLPResponse> solicitaPLPAsync(long idPlpMaster, string numEtiqueta, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.solicitaPLP inValue = new WindowsFormsApp1.WSCorreios.solicitaPLP();
+        public System.Threading.Tasks.Task<PetApp.WSCorreios.solicitaPLPResponse> solicitaPLPAsync(long idPlpMaster, string numEtiqueta, string usuario, string senha) {
+            PetApp.WSCorreios.solicitaPLP inValue = new PetApp.WSCorreios.solicitaPLP();
             inValue.idPlpMaster = idPlpMaster;
             inValue.numEtiqueta = numEtiqueta;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            return ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).solicitaPLPAsync(inValue);
+            return ((PetApp.WSCorreios.AtendeCliente)(this)).solicitaPLPAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WindowsFormsApp1.WSCorreios.getStatusCartaoPostagemResponse WindowsFormsApp1.WSCorreios.AtendeCliente.getStatusCartaoPostagem(WindowsFormsApp1.WSCorreios.getStatusCartaoPostagem request) {
+        PetApp.WSCorreios.getStatusCartaoPostagemResponse PetApp.WSCorreios.AtendeCliente.getStatusCartaoPostagem(PetApp.WSCorreios.getStatusCartaoPostagem request) {
             return base.Channel.getStatusCartaoPostagem(request);
         }
         
-        public WindowsFormsApp1.WSCorreios.statusCartao getStatusCartaoPostagem(string numeroCartaoPostagem, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.getStatusCartaoPostagem inValue = new WindowsFormsApp1.WSCorreios.getStatusCartaoPostagem();
+        public PetApp.WSCorreios.statusCartao getStatusCartaoPostagem(string numeroCartaoPostagem, string usuario, string senha) {
+            PetApp.WSCorreios.getStatusCartaoPostagem inValue = new PetApp.WSCorreios.getStatusCartaoPostagem();
             inValue.numeroCartaoPostagem = numeroCartaoPostagem;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            WindowsFormsApp1.WSCorreios.getStatusCartaoPostagemResponse retVal = ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).getStatusCartaoPostagem(inValue);
+            PetApp.WSCorreios.getStatusCartaoPostagemResponse retVal = ((PetApp.WSCorreios.AtendeCliente)(this)).getStatusCartaoPostagem(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.getStatusCartaoPostagemResponse> WindowsFormsApp1.WSCorreios.AtendeCliente.getStatusCartaoPostagemAsync(WindowsFormsApp1.WSCorreios.getStatusCartaoPostagem request) {
+        System.Threading.Tasks.Task<PetApp.WSCorreios.getStatusCartaoPostagemResponse> PetApp.WSCorreios.AtendeCliente.getStatusCartaoPostagemAsync(PetApp.WSCorreios.getStatusCartaoPostagem request) {
             return base.Channel.getStatusCartaoPostagemAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.getStatusCartaoPostagemResponse> getStatusCartaoPostagemAsync(string numeroCartaoPostagem, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.getStatusCartaoPostagem inValue = new WindowsFormsApp1.WSCorreios.getStatusCartaoPostagem();
+        public System.Threading.Tasks.Task<PetApp.WSCorreios.getStatusCartaoPostagemResponse> getStatusCartaoPostagemAsync(string numeroCartaoPostagem, string usuario, string senha) {
+            PetApp.WSCorreios.getStatusCartaoPostagem inValue = new PetApp.WSCorreios.getStatusCartaoPostagem();
             inValue.numeroCartaoPostagem = numeroCartaoPostagem;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            return ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).getStatusCartaoPostagemAsync(inValue);
+            return ((PetApp.WSCorreios.AtendeCliente)(this)).getStatusCartaoPostagemAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WindowsFormsApp1.WSCorreios.buscaDataAtualResponse WindowsFormsApp1.WSCorreios.AtendeCliente.buscaDataAtual(WindowsFormsApp1.WSCorreios.buscaDataAtual request) {
+        PetApp.WSCorreios.buscaDataAtualResponse PetApp.WSCorreios.AtendeCliente.buscaDataAtual(PetApp.WSCorreios.buscaDataAtual request) {
             return base.Channel.buscaDataAtual(request);
         }
         
         public System.DateTime buscaDataAtual() {
-            WindowsFormsApp1.WSCorreios.buscaDataAtual inValue = new WindowsFormsApp1.WSCorreios.buscaDataAtual();
-            WindowsFormsApp1.WSCorreios.buscaDataAtualResponse retVal = ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).buscaDataAtual(inValue);
+            PetApp.WSCorreios.buscaDataAtual inValue = new PetApp.WSCorreios.buscaDataAtual();
+            PetApp.WSCorreios.buscaDataAtualResponse retVal = ((PetApp.WSCorreios.AtendeCliente)(this)).buscaDataAtual(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.buscaDataAtualResponse> WindowsFormsApp1.WSCorreios.AtendeCliente.buscaDataAtualAsync(WindowsFormsApp1.WSCorreios.buscaDataAtual request) {
+        System.Threading.Tasks.Task<PetApp.WSCorreios.buscaDataAtualResponse> PetApp.WSCorreios.AtendeCliente.buscaDataAtualAsync(PetApp.WSCorreios.buscaDataAtual request) {
             return base.Channel.buscaDataAtualAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.buscaDataAtualResponse> buscaDataAtualAsync() {
-            WindowsFormsApp1.WSCorreios.buscaDataAtual inValue = new WindowsFormsApp1.WSCorreios.buscaDataAtual();
-            return ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).buscaDataAtualAsync(inValue);
+        public System.Threading.Tasks.Task<PetApp.WSCorreios.buscaDataAtualResponse> buscaDataAtualAsync() {
+            PetApp.WSCorreios.buscaDataAtual inValue = new PetApp.WSCorreios.buscaDataAtual();
+            return ((PetApp.WSCorreios.AtendeCliente)(this)).buscaDataAtualAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WindowsFormsApp1.WSCorreios.buscaTarifaValeResponse WindowsFormsApp1.WSCorreios.AtendeCliente.buscaTarifaVale(WindowsFormsApp1.WSCorreios.buscaTarifaVale request) {
+        PetApp.WSCorreios.buscaTarifaValeResponse PetApp.WSCorreios.AtendeCliente.buscaTarifaVale(PetApp.WSCorreios.buscaTarifaVale request) {
             return base.Channel.buscaTarifaVale(request);
         }
         
-        public WindowsFormsApp1.WSCorreios.valePostal buscaTarifaVale(string codAdministrativo, string usuario, string senha, string codServico, string cepOrigem, string cepDestino, string peso, int codFormato, double comprimento, double altura, double largura, double valorDeclarado, string servicoAdicional) {
-            WindowsFormsApp1.WSCorreios.buscaTarifaVale inValue = new WindowsFormsApp1.WSCorreios.buscaTarifaVale();
+        public PetApp.WSCorreios.valePostal buscaTarifaVale(string codAdministrativo, string usuario, string senha, string codServico, string cepOrigem, string cepDestino, string peso, int codFormato, double comprimento, double altura, double largura, double valorDeclarado, string servicoAdicional) {
+            PetApp.WSCorreios.buscaTarifaVale inValue = new PetApp.WSCorreios.buscaTarifaVale();
             inValue.codAdministrativo = codAdministrativo;
             inValue.usuario = usuario;
             inValue.senha = senha;
@@ -8045,17 +8045,17 @@ namespace WindowsFormsApp1.WSCorreios {
             inValue.largura = largura;
             inValue.valorDeclarado = valorDeclarado;
             inValue.servicoAdicional = servicoAdicional;
-            WindowsFormsApp1.WSCorreios.buscaTarifaValeResponse retVal = ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).buscaTarifaVale(inValue);
+            PetApp.WSCorreios.buscaTarifaValeResponse retVal = ((PetApp.WSCorreios.AtendeCliente)(this)).buscaTarifaVale(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.buscaTarifaValeResponse> WindowsFormsApp1.WSCorreios.AtendeCliente.buscaTarifaValeAsync(WindowsFormsApp1.WSCorreios.buscaTarifaVale request) {
+        System.Threading.Tasks.Task<PetApp.WSCorreios.buscaTarifaValeResponse> PetApp.WSCorreios.AtendeCliente.buscaTarifaValeAsync(PetApp.WSCorreios.buscaTarifaVale request) {
             return base.Channel.buscaTarifaValeAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.buscaTarifaValeResponse> buscaTarifaValeAsync(string codAdministrativo, string usuario, string senha, string codServico, string cepOrigem, string cepDestino, string peso, int codFormato, double comprimento, double altura, double largura, double valorDeclarado, string servicoAdicional) {
-            WindowsFormsApp1.WSCorreios.buscaTarifaVale inValue = new WindowsFormsApp1.WSCorreios.buscaTarifaVale();
+        public System.Threading.Tasks.Task<PetApp.WSCorreios.buscaTarifaValeResponse> buscaTarifaValeAsync(string codAdministrativo, string usuario, string senha, string codServico, string cepOrigem, string cepDestino, string peso, int codFormato, double comprimento, double altura, double largura, double valorDeclarado, string servicoAdicional) {
+            PetApp.WSCorreios.buscaTarifaVale inValue = new PetApp.WSCorreios.buscaTarifaVale();
             inValue.codAdministrativo = codAdministrativo;
             inValue.usuario = usuario;
             inValue.senha = senha;
@@ -8069,16 +8069,16 @@ namespace WindowsFormsApp1.WSCorreios {
             inValue.largura = largura;
             inValue.valorDeclarado = valorDeclarado;
             inValue.servicoAdicional = servicoAdicional;
-            return ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).buscaTarifaValeAsync(inValue);
+            return ((PetApp.WSCorreios.AtendeCliente)(this)).buscaTarifaValeAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WindowsFormsApp1.WSCorreios.validarPostagemSimultaneaResponse WindowsFormsApp1.WSCorreios.AtendeCliente.validarPostagemSimultanea(WindowsFormsApp1.WSCorreios.validarPostagemSimultanea request) {
+        PetApp.WSCorreios.validarPostagemSimultaneaResponse PetApp.WSCorreios.AtendeCliente.validarPostagemSimultanea(PetApp.WSCorreios.validarPostagemSimultanea request) {
             return base.Channel.validarPostagemSimultanea(request);
         }
         
-        public bool validarPostagemSimultanea(int codAdministrativo, int codigoServico, string idCartaoPostagem, string cepDestinatario, WindowsFormsApp1.WSCorreios.coletaSimultanea coleta, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.validarPostagemSimultanea inValue = new WindowsFormsApp1.WSCorreios.validarPostagemSimultanea();
+        public bool validarPostagemSimultanea(int codAdministrativo, int codigoServico, string idCartaoPostagem, string cepDestinatario, PetApp.WSCorreios.coletaSimultanea coleta, string usuario, string senha) {
+            PetApp.WSCorreios.validarPostagemSimultanea inValue = new PetApp.WSCorreios.validarPostagemSimultanea();
             inValue.codAdministrativo = codAdministrativo;
             inValue.codigoServico = codigoServico;
             inValue.idCartaoPostagem = idCartaoPostagem;
@@ -8086,17 +8086,17 @@ namespace WindowsFormsApp1.WSCorreios {
             inValue.coleta = coleta;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            WindowsFormsApp1.WSCorreios.validarPostagemSimultaneaResponse retVal = ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).validarPostagemSimultanea(inValue);
+            PetApp.WSCorreios.validarPostagemSimultaneaResponse retVal = ((PetApp.WSCorreios.AtendeCliente)(this)).validarPostagemSimultanea(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.validarPostagemSimultaneaResponse> WindowsFormsApp1.WSCorreios.AtendeCliente.validarPostagemSimultaneaAsync(WindowsFormsApp1.WSCorreios.validarPostagemSimultanea request) {
+        System.Threading.Tasks.Task<PetApp.WSCorreios.validarPostagemSimultaneaResponse> PetApp.WSCorreios.AtendeCliente.validarPostagemSimultaneaAsync(PetApp.WSCorreios.validarPostagemSimultanea request) {
             return base.Channel.validarPostagemSimultaneaAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.validarPostagemSimultaneaResponse> validarPostagemSimultaneaAsync(int codAdministrativo, int codigoServico, string idCartaoPostagem, string cepDestinatario, WindowsFormsApp1.WSCorreios.coletaSimultanea coleta, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.validarPostagemSimultanea inValue = new WindowsFormsApp1.WSCorreios.validarPostagemSimultanea();
+        public System.Threading.Tasks.Task<PetApp.WSCorreios.validarPostagemSimultaneaResponse> validarPostagemSimultaneaAsync(int codAdministrativo, int codigoServico, string idCartaoPostagem, string cepDestinatario, PetApp.WSCorreios.coletaSimultanea coleta, string usuario, string senha) {
+            PetApp.WSCorreios.validarPostagemSimultanea inValue = new PetApp.WSCorreios.validarPostagemSimultanea();
             inValue.codAdministrativo = codAdministrativo;
             inValue.codigoServico = codigoServico;
             inValue.idCartaoPostagem = idCartaoPostagem;
@@ -8104,219 +8104,219 @@ namespace WindowsFormsApp1.WSCorreios {
             inValue.coleta = coleta;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            return ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).validarPostagemSimultaneaAsync(inValue);
+            return ((PetApp.WSCorreios.AtendeCliente)(this)).validarPostagemSimultaneaAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WindowsFormsApp1.WSCorreios.getStatusPLPResponse WindowsFormsApp1.WSCorreios.AtendeCliente.getStatusPLP(WindowsFormsApp1.WSCorreios.getStatusPLP request) {
+        PetApp.WSCorreios.getStatusPLPResponse PetApp.WSCorreios.AtendeCliente.getStatusPLP(PetApp.WSCorreios.getStatusPLP request) {
             return base.Channel.getStatusPLP(request);
         }
         
-        public WindowsFormsApp1.WSCorreios.statusPlp getStatusPLP(WindowsFormsApp1.WSCorreios.objetoPostal[] arg0, string arg1) {
-            WindowsFormsApp1.WSCorreios.getStatusPLP inValue = new WindowsFormsApp1.WSCorreios.getStatusPLP();
+        public PetApp.WSCorreios.statusPlp getStatusPLP(PetApp.WSCorreios.objetoPostal[] arg0, string arg1) {
+            PetApp.WSCorreios.getStatusPLP inValue = new PetApp.WSCorreios.getStatusPLP();
             inValue.arg0 = arg0;
             inValue.arg1 = arg1;
-            WindowsFormsApp1.WSCorreios.getStatusPLPResponse retVal = ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).getStatusPLP(inValue);
+            PetApp.WSCorreios.getStatusPLPResponse retVal = ((PetApp.WSCorreios.AtendeCliente)(this)).getStatusPLP(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.getStatusPLPResponse> WindowsFormsApp1.WSCorreios.AtendeCliente.getStatusPLPAsync(WindowsFormsApp1.WSCorreios.getStatusPLP request) {
+        System.Threading.Tasks.Task<PetApp.WSCorreios.getStatusPLPResponse> PetApp.WSCorreios.AtendeCliente.getStatusPLPAsync(PetApp.WSCorreios.getStatusPLP request) {
             return base.Channel.getStatusPLPAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.getStatusPLPResponse> getStatusPLPAsync(WindowsFormsApp1.WSCorreios.objetoPostal[] arg0, string arg1) {
-            WindowsFormsApp1.WSCorreios.getStatusPLP inValue = new WindowsFormsApp1.WSCorreios.getStatusPLP();
+        public System.Threading.Tasks.Task<PetApp.WSCorreios.getStatusPLPResponse> getStatusPLPAsync(PetApp.WSCorreios.objetoPostal[] arg0, string arg1) {
+            PetApp.WSCorreios.getStatusPLP inValue = new PetApp.WSCorreios.getStatusPLP();
             inValue.arg0 = arg0;
             inValue.arg1 = arg1;
-            return ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).getStatusPLPAsync(inValue);
+            return ((PetApp.WSCorreios.AtendeCliente)(this)).getStatusPLPAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WindowsFormsApp1.WSCorreios.buscaServicosXServicosAdicionaisResponse WindowsFormsApp1.WSCorreios.AtendeCliente.buscaServicosXServicosAdicionais(WindowsFormsApp1.WSCorreios.buscaServicosXServicosAdicionais request) {
+        PetApp.WSCorreios.buscaServicosXServicosAdicionaisResponse PetApp.WSCorreios.AtendeCliente.buscaServicosXServicosAdicionais(PetApp.WSCorreios.buscaServicosXServicosAdicionais request) {
             return base.Channel.buscaServicosXServicosAdicionais(request);
         }
         
         public string[] buscaServicosXServicosAdicionais(string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.buscaServicosXServicosAdicionais inValue = new WindowsFormsApp1.WSCorreios.buscaServicosXServicosAdicionais();
+            PetApp.WSCorreios.buscaServicosXServicosAdicionais inValue = new PetApp.WSCorreios.buscaServicosXServicosAdicionais();
             inValue.usuario = usuario;
             inValue.senha = senha;
-            WindowsFormsApp1.WSCorreios.buscaServicosXServicosAdicionaisResponse retVal = ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).buscaServicosXServicosAdicionais(inValue);
+            PetApp.WSCorreios.buscaServicosXServicosAdicionaisResponse retVal = ((PetApp.WSCorreios.AtendeCliente)(this)).buscaServicosXServicosAdicionais(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.buscaServicosXServicosAdicionaisResponse> WindowsFormsApp1.WSCorreios.AtendeCliente.buscaServicosXServicosAdicionaisAsync(WindowsFormsApp1.WSCorreios.buscaServicosXServicosAdicionais request) {
+        System.Threading.Tasks.Task<PetApp.WSCorreios.buscaServicosXServicosAdicionaisResponse> PetApp.WSCorreios.AtendeCliente.buscaServicosXServicosAdicionaisAsync(PetApp.WSCorreios.buscaServicosXServicosAdicionais request) {
             return base.Channel.buscaServicosXServicosAdicionaisAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.buscaServicosXServicosAdicionaisResponse> buscaServicosXServicosAdicionaisAsync(string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.buscaServicosXServicosAdicionais inValue = new WindowsFormsApp1.WSCorreios.buscaServicosXServicosAdicionais();
+        public System.Threading.Tasks.Task<PetApp.WSCorreios.buscaServicosXServicosAdicionaisResponse> buscaServicosXServicosAdicionaisAsync(string usuario, string senha) {
+            PetApp.WSCorreios.buscaServicosXServicosAdicionais inValue = new PetApp.WSCorreios.buscaServicosXServicosAdicionais();
             inValue.usuario = usuario;
             inValue.senha = senha;
-            return ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).buscaServicosXServicosAdicionaisAsync(inValue);
+            return ((PetApp.WSCorreios.AtendeCliente)(this)).buscaServicosXServicosAdicionaisAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WindowsFormsApp1.WSCorreios.cancelarPedidoScolResponse WindowsFormsApp1.WSCorreios.AtendeCliente.cancelarPedidoScol(WindowsFormsApp1.WSCorreios.cancelarPedidoScol request) {
+        PetApp.WSCorreios.cancelarPedidoScolResponse PetApp.WSCorreios.AtendeCliente.cancelarPedidoScol(PetApp.WSCorreios.cancelarPedidoScol request) {
             return base.Channel.cancelarPedidoScol(request);
         }
         
-        public WindowsFormsApp1.WSCorreios.retornoCancelamento cancelarPedidoScol(string codAdministrativo, string idPostagem, string tipo, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.cancelarPedidoScol inValue = new WindowsFormsApp1.WSCorreios.cancelarPedidoScol();
+        public PetApp.WSCorreios.retornoCancelamento cancelarPedidoScol(string codAdministrativo, string idPostagem, string tipo, string usuario, string senha) {
+            PetApp.WSCorreios.cancelarPedidoScol inValue = new PetApp.WSCorreios.cancelarPedidoScol();
             inValue.codAdministrativo = codAdministrativo;
             inValue.idPostagem = idPostagem;
             inValue.tipo = tipo;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            WindowsFormsApp1.WSCorreios.cancelarPedidoScolResponse retVal = ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).cancelarPedidoScol(inValue);
+            PetApp.WSCorreios.cancelarPedidoScolResponse retVal = ((PetApp.WSCorreios.AtendeCliente)(this)).cancelarPedidoScol(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.cancelarPedidoScolResponse> WindowsFormsApp1.WSCorreios.AtendeCliente.cancelarPedidoScolAsync(WindowsFormsApp1.WSCorreios.cancelarPedidoScol request) {
+        System.Threading.Tasks.Task<PetApp.WSCorreios.cancelarPedidoScolResponse> PetApp.WSCorreios.AtendeCliente.cancelarPedidoScolAsync(PetApp.WSCorreios.cancelarPedidoScol request) {
             return base.Channel.cancelarPedidoScolAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.cancelarPedidoScolResponse> cancelarPedidoScolAsync(string codAdministrativo, string idPostagem, string tipo, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.cancelarPedidoScol inValue = new WindowsFormsApp1.WSCorreios.cancelarPedidoScol();
+        public System.Threading.Tasks.Task<PetApp.WSCorreios.cancelarPedidoScolResponse> cancelarPedidoScolAsync(string codAdministrativo, string idPostagem, string tipo, string usuario, string senha) {
+            PetApp.WSCorreios.cancelarPedidoScol inValue = new PetApp.WSCorreios.cancelarPedidoScol();
             inValue.codAdministrativo = codAdministrativo;
             inValue.idPostagem = idPostagem;
             inValue.tipo = tipo;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            return ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).cancelarPedidoScolAsync(inValue);
+            return ((PetApp.WSCorreios.AtendeCliente)(this)).cancelarPedidoScolAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WindowsFormsApp1.WSCorreios.bloquearObjetoResponse WindowsFormsApp1.WSCorreios.AtendeCliente.bloquearObjeto(WindowsFormsApp1.WSCorreios.bloquearObjeto request) {
+        PetApp.WSCorreios.bloquearObjetoResponse PetApp.WSCorreios.AtendeCliente.bloquearObjeto(PetApp.WSCorreios.bloquearObjeto request) {
             return base.Channel.bloquearObjeto(request);
         }
         
-        public string bloquearObjeto(string numeroEtiqueta, long idPlp, WindowsFormsApp1.WSCorreios.tipoBloqueio tipoBloqueio, WindowsFormsApp1.WSCorreios.acao acao, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.bloquearObjeto inValue = new WindowsFormsApp1.WSCorreios.bloquearObjeto();
+        public string bloquearObjeto(string numeroEtiqueta, long idPlp, PetApp.WSCorreios.tipoBloqueio tipoBloqueio, PetApp.WSCorreios.acao acao, string usuario, string senha) {
+            PetApp.WSCorreios.bloquearObjeto inValue = new PetApp.WSCorreios.bloquearObjeto();
             inValue.numeroEtiqueta = numeroEtiqueta;
             inValue.idPlp = idPlp;
             inValue.tipoBloqueio = tipoBloqueio;
             inValue.acao = acao;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            WindowsFormsApp1.WSCorreios.bloquearObjetoResponse retVal = ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).bloquearObjeto(inValue);
+            PetApp.WSCorreios.bloquearObjetoResponse retVal = ((PetApp.WSCorreios.AtendeCliente)(this)).bloquearObjeto(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.bloquearObjetoResponse> WindowsFormsApp1.WSCorreios.AtendeCliente.bloquearObjetoAsync(WindowsFormsApp1.WSCorreios.bloquearObjeto request) {
+        System.Threading.Tasks.Task<PetApp.WSCorreios.bloquearObjetoResponse> PetApp.WSCorreios.AtendeCliente.bloquearObjetoAsync(PetApp.WSCorreios.bloquearObjeto request) {
             return base.Channel.bloquearObjetoAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.bloquearObjetoResponse> bloquearObjetoAsync(string numeroEtiqueta, long idPlp, WindowsFormsApp1.WSCorreios.tipoBloqueio tipoBloqueio, WindowsFormsApp1.WSCorreios.acao acao, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.bloquearObjeto inValue = new WindowsFormsApp1.WSCorreios.bloquearObjeto();
+        public System.Threading.Tasks.Task<PetApp.WSCorreios.bloquearObjetoResponse> bloquearObjetoAsync(string numeroEtiqueta, long idPlp, PetApp.WSCorreios.tipoBloqueio tipoBloqueio, PetApp.WSCorreios.acao acao, string usuario, string senha) {
+            PetApp.WSCorreios.bloquearObjeto inValue = new PetApp.WSCorreios.bloquearObjeto();
             inValue.numeroEtiqueta = numeroEtiqueta;
             inValue.idPlp = idPlp;
             inValue.tipoBloqueio = tipoBloqueio;
             inValue.acao = acao;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            return ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).bloquearObjetoAsync(inValue);
+            return ((PetApp.WSCorreios.AtendeCliente)(this)).bloquearObjetoAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WindowsFormsApp1.WSCorreios.buscaContratoResponse WindowsFormsApp1.WSCorreios.AtendeCliente.buscaContrato(WindowsFormsApp1.WSCorreios.buscaContrato request) {
+        PetApp.WSCorreios.buscaContratoResponse PetApp.WSCorreios.AtendeCliente.buscaContrato(PetApp.WSCorreios.buscaContrato request) {
             return base.Channel.buscaContrato(request);
         }
         
-        public WindowsFormsApp1.WSCorreios.contratoERP buscaContrato(string numero, long diretoria, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.buscaContrato inValue = new WindowsFormsApp1.WSCorreios.buscaContrato();
+        public PetApp.WSCorreios.contratoERP buscaContrato(string numero, long diretoria, string usuario, string senha) {
+            PetApp.WSCorreios.buscaContrato inValue = new PetApp.WSCorreios.buscaContrato();
             inValue.numero = numero;
             inValue.diretoria = diretoria;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            WindowsFormsApp1.WSCorreios.buscaContratoResponse retVal = ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).buscaContrato(inValue);
+            PetApp.WSCorreios.buscaContratoResponse retVal = ((PetApp.WSCorreios.AtendeCliente)(this)).buscaContrato(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.buscaContratoResponse> WindowsFormsApp1.WSCorreios.AtendeCliente.buscaContratoAsync(WindowsFormsApp1.WSCorreios.buscaContrato request) {
+        System.Threading.Tasks.Task<PetApp.WSCorreios.buscaContratoResponse> PetApp.WSCorreios.AtendeCliente.buscaContratoAsync(PetApp.WSCorreios.buscaContrato request) {
             return base.Channel.buscaContratoAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.buscaContratoResponse> buscaContratoAsync(string numero, long diretoria, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.buscaContrato inValue = new WindowsFormsApp1.WSCorreios.buscaContrato();
+        public System.Threading.Tasks.Task<PetApp.WSCorreios.buscaContratoResponse> buscaContratoAsync(string numero, long diretoria, string usuario, string senha) {
+            PetApp.WSCorreios.buscaContrato inValue = new PetApp.WSCorreios.buscaContrato();
             inValue.numero = numero;
             inValue.diretoria = diretoria;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            return ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).buscaContratoAsync(inValue);
+            return ((PetApp.WSCorreios.AtendeCliente)(this)).buscaContratoAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WindowsFormsApp1.WSCorreios.solicitaEtiquetasResponse WindowsFormsApp1.WSCorreios.AtendeCliente.solicitaEtiquetas(WindowsFormsApp1.WSCorreios.solicitaEtiquetas request) {
+        PetApp.WSCorreios.solicitaEtiquetasResponse PetApp.WSCorreios.AtendeCliente.solicitaEtiquetas(PetApp.WSCorreios.solicitaEtiquetas request) {
             return base.Channel.solicitaEtiquetas(request);
         }
         
         public string solicitaEtiquetas(string tipoDestinatario, string identificador, long idServico, int qtdEtiquetas, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.solicitaEtiquetas inValue = new WindowsFormsApp1.WSCorreios.solicitaEtiquetas();
+            PetApp.WSCorreios.solicitaEtiquetas inValue = new PetApp.WSCorreios.solicitaEtiquetas();
             inValue.tipoDestinatario = tipoDestinatario;
             inValue.identificador = identificador;
             inValue.idServico = idServico;
             inValue.qtdEtiquetas = qtdEtiquetas;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            WindowsFormsApp1.WSCorreios.solicitaEtiquetasResponse retVal = ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).solicitaEtiquetas(inValue);
+            PetApp.WSCorreios.solicitaEtiquetasResponse retVal = ((PetApp.WSCorreios.AtendeCliente)(this)).solicitaEtiquetas(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.solicitaEtiquetasResponse> WindowsFormsApp1.WSCorreios.AtendeCliente.solicitaEtiquetasAsync(WindowsFormsApp1.WSCorreios.solicitaEtiquetas request) {
+        System.Threading.Tasks.Task<PetApp.WSCorreios.solicitaEtiquetasResponse> PetApp.WSCorreios.AtendeCliente.solicitaEtiquetasAsync(PetApp.WSCorreios.solicitaEtiquetas request) {
             return base.Channel.solicitaEtiquetasAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.solicitaEtiquetasResponse> solicitaEtiquetasAsync(string tipoDestinatario, string identificador, long idServico, int qtdEtiquetas, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.solicitaEtiquetas inValue = new WindowsFormsApp1.WSCorreios.solicitaEtiquetas();
+        public System.Threading.Tasks.Task<PetApp.WSCorreios.solicitaEtiquetasResponse> solicitaEtiquetasAsync(string tipoDestinatario, string identificador, long idServico, int qtdEtiquetas, string usuario, string senha) {
+            PetApp.WSCorreios.solicitaEtiquetas inValue = new PetApp.WSCorreios.solicitaEtiquetas();
             inValue.tipoDestinatario = tipoDestinatario;
             inValue.identificador = identificador;
             inValue.idServico = idServico;
             inValue.qtdEtiquetas = qtdEtiquetas;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            return ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).solicitaEtiquetasAsync(inValue);
+            return ((PetApp.WSCorreios.AtendeCliente)(this)).solicitaEtiquetasAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WindowsFormsApp1.WSCorreios.solicitaXmlPlpResponse WindowsFormsApp1.WSCorreios.AtendeCliente.solicitaXmlPlp(WindowsFormsApp1.WSCorreios.solicitaXmlPlp request) {
+        PetApp.WSCorreios.solicitaXmlPlpResponse PetApp.WSCorreios.AtendeCliente.solicitaXmlPlp(PetApp.WSCorreios.solicitaXmlPlp request) {
             return base.Channel.solicitaXmlPlp(request);
         }
         
         public string solicitaXmlPlp(long idPlpMaster, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.solicitaXmlPlp inValue = new WindowsFormsApp1.WSCorreios.solicitaXmlPlp();
+            PetApp.WSCorreios.solicitaXmlPlp inValue = new PetApp.WSCorreios.solicitaXmlPlp();
             inValue.idPlpMaster = idPlpMaster;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            WindowsFormsApp1.WSCorreios.solicitaXmlPlpResponse retVal = ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).solicitaXmlPlp(inValue);
+            PetApp.WSCorreios.solicitaXmlPlpResponse retVal = ((PetApp.WSCorreios.AtendeCliente)(this)).solicitaXmlPlp(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.solicitaXmlPlpResponse> WindowsFormsApp1.WSCorreios.AtendeCliente.solicitaXmlPlpAsync(WindowsFormsApp1.WSCorreios.solicitaXmlPlp request) {
+        System.Threading.Tasks.Task<PetApp.WSCorreios.solicitaXmlPlpResponse> PetApp.WSCorreios.AtendeCliente.solicitaXmlPlpAsync(PetApp.WSCorreios.solicitaXmlPlp request) {
             return base.Channel.solicitaXmlPlpAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.solicitaXmlPlpResponse> solicitaXmlPlpAsync(long idPlpMaster, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.solicitaXmlPlp inValue = new WindowsFormsApp1.WSCorreios.solicitaXmlPlp();
+        public System.Threading.Tasks.Task<PetApp.WSCorreios.solicitaXmlPlpResponse> solicitaXmlPlpAsync(long idPlpMaster, string usuario, string senha) {
+            PetApp.WSCorreios.solicitaXmlPlp inValue = new PetApp.WSCorreios.solicitaXmlPlp();
             inValue.idPlpMaster = idPlpMaster;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            return ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).solicitaXmlPlpAsync(inValue);
+            return ((PetApp.WSCorreios.AtendeCliente)(this)).solicitaXmlPlpAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WindowsFormsApp1.WSCorreios.validarPostagemReversaResponse WindowsFormsApp1.WSCorreios.AtendeCliente.validarPostagemReversa(WindowsFormsApp1.WSCorreios.validarPostagemReversa request) {
+        PetApp.WSCorreios.validarPostagemReversaResponse PetApp.WSCorreios.AtendeCliente.validarPostagemReversa(PetApp.WSCorreios.validarPostagemReversa request) {
             return base.Channel.validarPostagemReversa(request);
         }
         
-        public bool validarPostagemReversa(string codAdministrativo, string codigoServico, string cepDestinatario, string idCartaoPostagem, WindowsFormsApp1.WSCorreios.coletaReversa coleta, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.validarPostagemReversa inValue = new WindowsFormsApp1.WSCorreios.validarPostagemReversa();
+        public bool validarPostagemReversa(string codAdministrativo, string codigoServico, string cepDestinatario, string idCartaoPostagem, PetApp.WSCorreios.coletaReversa coleta, string usuario, string senha) {
+            PetApp.WSCorreios.validarPostagemReversa inValue = new PetApp.WSCorreios.validarPostagemReversa();
             inValue.codAdministrativo = codAdministrativo;
             inValue.codigoServico = codigoServico;
             inValue.cepDestinatario = cepDestinatario;
@@ -8324,17 +8324,17 @@ namespace WindowsFormsApp1.WSCorreios {
             inValue.coleta = coleta;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            WindowsFormsApp1.WSCorreios.validarPostagemReversaResponse retVal = ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).validarPostagemReversa(inValue);
+            PetApp.WSCorreios.validarPostagemReversaResponse retVal = ((PetApp.WSCorreios.AtendeCliente)(this)).validarPostagemReversa(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.validarPostagemReversaResponse> WindowsFormsApp1.WSCorreios.AtendeCliente.validarPostagemReversaAsync(WindowsFormsApp1.WSCorreios.validarPostagemReversa request) {
+        System.Threading.Tasks.Task<PetApp.WSCorreios.validarPostagemReversaResponse> PetApp.WSCorreios.AtendeCliente.validarPostagemReversaAsync(PetApp.WSCorreios.validarPostagemReversa request) {
             return base.Channel.validarPostagemReversaAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.validarPostagemReversaResponse> validarPostagemReversaAsync(string codAdministrativo, string codigoServico, string cepDestinatario, string idCartaoPostagem, WindowsFormsApp1.WSCorreios.coletaReversa coleta, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.validarPostagemReversa inValue = new WindowsFormsApp1.WSCorreios.validarPostagemReversa();
+        public System.Threading.Tasks.Task<PetApp.WSCorreios.validarPostagemReversaResponse> validarPostagemReversaAsync(string codAdministrativo, string codigoServico, string cepDestinatario, string idCartaoPostagem, PetApp.WSCorreios.coletaReversa coleta, string usuario, string senha) {
+            PetApp.WSCorreios.validarPostagemReversa inValue = new PetApp.WSCorreios.validarPostagemReversa();
             inValue.codAdministrativo = codAdministrativo;
             inValue.codigoServico = codigoServico;
             inValue.cepDestinatario = cepDestinatario;
@@ -8342,127 +8342,127 @@ namespace WindowsFormsApp1.WSCorreios {
             inValue.coleta = coleta;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            return ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).validarPostagemReversaAsync(inValue);
+            return ((PetApp.WSCorreios.AtendeCliente)(this)).validarPostagemReversaAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WindowsFormsApp1.WSCorreios.buscaClienteResponse WindowsFormsApp1.WSCorreios.AtendeCliente.buscaCliente(WindowsFormsApp1.WSCorreios.buscaCliente request) {
+        PetApp.WSCorreios.buscaClienteResponse PetApp.WSCorreios.AtendeCliente.buscaCliente(PetApp.WSCorreios.buscaCliente request) {
             return base.Channel.buscaCliente(request);
         }
         
-        public WindowsFormsApp1.WSCorreios.clienteERP buscaCliente(string idContrato, string idCartaoPostagem, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.buscaCliente inValue = new WindowsFormsApp1.WSCorreios.buscaCliente();
+        public PetApp.WSCorreios.clienteERP buscaCliente(string idContrato, string idCartaoPostagem, string usuario, string senha) {
+            PetApp.WSCorreios.buscaCliente inValue = new PetApp.WSCorreios.buscaCliente();
             inValue.idContrato = idContrato;
             inValue.idCartaoPostagem = idCartaoPostagem;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            WindowsFormsApp1.WSCorreios.buscaClienteResponse retVal = ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).buscaCliente(inValue);
+            PetApp.WSCorreios.buscaClienteResponse retVal = ((PetApp.WSCorreios.AtendeCliente)(this)).buscaCliente(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.buscaClienteResponse> WindowsFormsApp1.WSCorreios.AtendeCliente.buscaClienteAsync(WindowsFormsApp1.WSCorreios.buscaCliente request) {
+        System.Threading.Tasks.Task<PetApp.WSCorreios.buscaClienteResponse> PetApp.WSCorreios.AtendeCliente.buscaClienteAsync(PetApp.WSCorreios.buscaCliente request) {
             return base.Channel.buscaClienteAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.buscaClienteResponse> buscaClienteAsync(string idContrato, string idCartaoPostagem, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.buscaCliente inValue = new WindowsFormsApp1.WSCorreios.buscaCliente();
+        public System.Threading.Tasks.Task<PetApp.WSCorreios.buscaClienteResponse> buscaClienteAsync(string idContrato, string idCartaoPostagem, string usuario, string senha) {
+            PetApp.WSCorreios.buscaCliente inValue = new PetApp.WSCorreios.buscaCliente();
             inValue.idContrato = idContrato;
             inValue.idCartaoPostagem = idCartaoPostagem;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            return ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).buscaClienteAsync(inValue);
+            return ((PetApp.WSCorreios.AtendeCliente)(this)).buscaClienteAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WindowsFormsApp1.WSCorreios.buscaPagamentoEntregaResponse WindowsFormsApp1.WSCorreios.AtendeCliente.buscaPagamentoEntrega(WindowsFormsApp1.WSCorreios.buscaPagamentoEntrega request) {
+        PetApp.WSCorreios.buscaPagamentoEntregaResponse PetApp.WSCorreios.AtendeCliente.buscaPagamentoEntrega(PetApp.WSCorreios.buscaPagamentoEntrega request) {
             return base.Channel.buscaPagamentoEntrega(request);
         }
         
         public string buscaPagamentoEntrega(string usuario, string senha, string contrato, string dataInicio, string dataFim, string etiqueta) {
-            WindowsFormsApp1.WSCorreios.buscaPagamentoEntrega inValue = new WindowsFormsApp1.WSCorreios.buscaPagamentoEntrega();
+            PetApp.WSCorreios.buscaPagamentoEntrega inValue = new PetApp.WSCorreios.buscaPagamentoEntrega();
             inValue.usuario = usuario;
             inValue.senha = senha;
             inValue.contrato = contrato;
             inValue.dataInicio = dataInicio;
             inValue.dataFim = dataFim;
             inValue.etiqueta = etiqueta;
-            WindowsFormsApp1.WSCorreios.buscaPagamentoEntregaResponse retVal = ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).buscaPagamentoEntrega(inValue);
+            PetApp.WSCorreios.buscaPagamentoEntregaResponse retVal = ((PetApp.WSCorreios.AtendeCliente)(this)).buscaPagamentoEntrega(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.buscaPagamentoEntregaResponse> WindowsFormsApp1.WSCorreios.AtendeCliente.buscaPagamentoEntregaAsync(WindowsFormsApp1.WSCorreios.buscaPagamentoEntrega request) {
+        System.Threading.Tasks.Task<PetApp.WSCorreios.buscaPagamentoEntregaResponse> PetApp.WSCorreios.AtendeCliente.buscaPagamentoEntregaAsync(PetApp.WSCorreios.buscaPagamentoEntrega request) {
             return base.Channel.buscaPagamentoEntregaAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.buscaPagamentoEntregaResponse> buscaPagamentoEntregaAsync(string usuario, string senha, string contrato, string dataInicio, string dataFim, string etiqueta) {
-            WindowsFormsApp1.WSCorreios.buscaPagamentoEntrega inValue = new WindowsFormsApp1.WSCorreios.buscaPagamentoEntrega();
+        public System.Threading.Tasks.Task<PetApp.WSCorreios.buscaPagamentoEntregaResponse> buscaPagamentoEntregaAsync(string usuario, string senha, string contrato, string dataInicio, string dataFim, string etiqueta) {
+            PetApp.WSCorreios.buscaPagamentoEntrega inValue = new PetApp.WSCorreios.buscaPagamentoEntrega();
             inValue.usuario = usuario;
             inValue.senha = senha;
             inValue.contrato = contrato;
             inValue.dataInicio = dataInicio;
             inValue.dataFim = dataFim;
             inValue.etiqueta = etiqueta;
-            return ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).buscaPagamentoEntregaAsync(inValue);
+            return ((PetApp.WSCorreios.AtendeCliente)(this)).buscaPagamentoEntregaAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WindowsFormsApp1.WSCorreios.solicitarPostagemScolResponse WindowsFormsApp1.WSCorreios.AtendeCliente.solicitarPostagemScol(WindowsFormsApp1.WSCorreios.solicitarPostagemScol request) {
+        PetApp.WSCorreios.solicitarPostagemScolResponse PetApp.WSCorreios.AtendeCliente.solicitarPostagemScol(PetApp.WSCorreios.solicitarPostagemScol request) {
             return base.Channel.solicitarPostagemScol(request);
         }
         
         public string solicitarPostagemScol(int codAdministrativo, string xml, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.solicitarPostagemScol inValue = new WindowsFormsApp1.WSCorreios.solicitarPostagemScol();
+            PetApp.WSCorreios.solicitarPostagemScol inValue = new PetApp.WSCorreios.solicitarPostagemScol();
             inValue.codAdministrativo = codAdministrativo;
             inValue.xml = xml;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            WindowsFormsApp1.WSCorreios.solicitarPostagemScolResponse retVal = ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).solicitarPostagemScol(inValue);
+            PetApp.WSCorreios.solicitarPostagemScolResponse retVal = ((PetApp.WSCorreios.AtendeCliente)(this)).solicitarPostagemScol(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.solicitarPostagemScolResponse> WindowsFormsApp1.WSCorreios.AtendeCliente.solicitarPostagemScolAsync(WindowsFormsApp1.WSCorreios.solicitarPostagemScol request) {
+        System.Threading.Tasks.Task<PetApp.WSCorreios.solicitarPostagemScolResponse> PetApp.WSCorreios.AtendeCliente.solicitarPostagemScolAsync(PetApp.WSCorreios.solicitarPostagemScol request) {
             return base.Channel.solicitarPostagemScolAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.solicitarPostagemScolResponse> solicitarPostagemScolAsync(int codAdministrativo, string xml, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.solicitarPostagemScol inValue = new WindowsFormsApp1.WSCorreios.solicitarPostagemScol();
+        public System.Threading.Tasks.Task<PetApp.WSCorreios.solicitarPostagemScolResponse> solicitarPostagemScolAsync(int codAdministrativo, string xml, string usuario, string senha) {
+            PetApp.WSCorreios.solicitarPostagemScol inValue = new PetApp.WSCorreios.solicitarPostagemScol();
             inValue.codAdministrativo = codAdministrativo;
             inValue.xml = xml;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            return ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).solicitarPostagemScolAsync(inValue);
+            return ((PetApp.WSCorreios.AtendeCliente)(this)).solicitarPostagemScolAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WindowsFormsApp1.WSCorreios.buscaServicosResponse WindowsFormsApp1.WSCorreios.AtendeCliente.buscaServicos(WindowsFormsApp1.WSCorreios.buscaServicos request) {
+        PetApp.WSCorreios.buscaServicosResponse PetApp.WSCorreios.AtendeCliente.buscaServicos(PetApp.WSCorreios.buscaServicos request) {
             return base.Channel.buscaServicos(request);
         }
         
-        public WindowsFormsApp1.WSCorreios.servicoERP[] buscaServicos(string idContrato, string idCartaoPostagem, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.buscaServicos inValue = new WindowsFormsApp1.WSCorreios.buscaServicos();
+        public PetApp.WSCorreios.servicoERP[] buscaServicos(string idContrato, string idCartaoPostagem, string usuario, string senha) {
+            PetApp.WSCorreios.buscaServicos inValue = new PetApp.WSCorreios.buscaServicos();
             inValue.idContrato = idContrato;
             inValue.idCartaoPostagem = idCartaoPostagem;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            WindowsFormsApp1.WSCorreios.buscaServicosResponse retVal = ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).buscaServicos(inValue);
+            PetApp.WSCorreios.buscaServicosResponse retVal = ((PetApp.WSCorreios.AtendeCliente)(this)).buscaServicos(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.buscaServicosResponse> WindowsFormsApp1.WSCorreios.AtendeCliente.buscaServicosAsync(WindowsFormsApp1.WSCorreios.buscaServicos request) {
+        System.Threading.Tasks.Task<PetApp.WSCorreios.buscaServicosResponse> PetApp.WSCorreios.AtendeCliente.buscaServicosAsync(PetApp.WSCorreios.buscaServicos request) {
             return base.Channel.buscaServicosAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WindowsFormsApp1.WSCorreios.buscaServicosResponse> buscaServicosAsync(string idContrato, string idCartaoPostagem, string usuario, string senha) {
-            WindowsFormsApp1.WSCorreios.buscaServicos inValue = new WindowsFormsApp1.WSCorreios.buscaServicos();
+        public System.Threading.Tasks.Task<PetApp.WSCorreios.buscaServicosResponse> buscaServicosAsync(string idContrato, string idCartaoPostagem, string usuario, string senha) {
+            PetApp.WSCorreios.buscaServicos inValue = new PetApp.WSCorreios.buscaServicos();
             inValue.idContrato = idContrato;
             inValue.idCartaoPostagem = idCartaoPostagem;
             inValue.usuario = usuario;
             inValue.senha = senha;
-            return ((WindowsFormsApp1.WSCorreios.AtendeCliente)(this)).buscaServicosAsync(inValue);
+            return ((PetApp.WSCorreios.AtendeCliente)(this)).buscaServicosAsync(inValue);
         }
     }
 }

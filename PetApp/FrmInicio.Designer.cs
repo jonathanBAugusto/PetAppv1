@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp1
+﻿namespace PetApp
 {
     partial class FrmInicio
     {
@@ -50,9 +50,10 @@
             this.accordionControlElement3,
             this.accordionControlElement4});
             this.acInicio.Location = new System.Drawing.Point(0, 0);
+            this.acInicio.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.acInicio.Name = "acInicio";
             this.acInicio.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Auto;
-            this.acInicio.Size = new System.Drawing.Size(138, 363);
+            this.acInicio.Size = new System.Drawing.Size(207, 558);
             this.acInicio.TabIndex = 0;
             this.acInicio.Text = "accordionControl1";
             // 
@@ -85,6 +86,7 @@
             this.accordionControlElement3.Name = "accordionControlElement3";
             this.accordionControlElement3.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement3.Text = "Serviços";
+            this.accordionControlElement3.Click += new System.EventHandler(this.accordionControlElement3_Click);
             // 
             // accordionControlElement4
             // 
@@ -99,29 +101,32 @@
             this.iSlider.Dock = System.Windows.Forms.DockStyle.Fill;
             this.iSlider.Images.Add(((System.Drawing.Image)(resources.GetObject("iSlider.Images"))));
             this.iSlider.Images.Add(((System.Drawing.Image)(resources.GetObject("iSlider.Images1"))));
-            this.iSlider.Location = new System.Drawing.Point(138, 0);
+            this.iSlider.Location = new System.Drawing.Point(207, 0);
+            this.iSlider.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.iSlider.Name = "iSlider";
-            this.iSlider.Size = new System.Drawing.Size(502, 363);
+            this.iSlider.Size = new System.Drawing.Size(753, 558);
             this.iSlider.TabIndex = 1;
             this.iSlider.Text = "imageSlider1";
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(138, 343);
+            this.dateTimePicker1.Location = new System.Drawing.Point(207, 532);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(502, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(753, 26);
             this.dateTimePicker1.TabIndex = 2;
             // 
             // FrmInicio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(640, 363);
+            this.ClientSize = new System.Drawing.Size(960, 558);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.iSlider);
             this.Controls.Add(this.acInicio);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FrmInicio";
             this.Text = "PetShop";
             ((System.ComponentModel.ISupportInitialize)(this.acInicio)).EndInit();

@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace PetApp
 {
-    public partial class FrmCli : Form
+    public partial class FrmCadServico : Form
     {
-        public FrmCli()
+        public FrmCadServico()
         {
             InitializeComponent();
         }
 
-        private void btnAdcCli_Click(object sender, EventArgs e)
+        private void simpleButton1_Click(object sender, EventArgs e)
         {
-            FrmCadCli frmcadcli = new FrmCadCli();
-            frmcadcli.ShowDialog();
+            FrmCadCli form = new FrmCadCli();
+            form.Show();
         }
     }
 }
