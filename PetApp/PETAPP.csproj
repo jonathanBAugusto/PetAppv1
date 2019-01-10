@@ -107,6 +107,12 @@
     <Compile Include="FrmCadCli.Designer.cs">
       <DependentUpon>FrmCadCli.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmPets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPets.Designer.cs">
+      <DependentUpon>FrmPets.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmServicos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,7 @@
     </Compile>
     <Compile Include="Control\F.cs" />
     <Compile Include="Model\Clientes.cs" />
+    <Compile Include="Model\Pets.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmCadServico.resx">
@@ -128,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCadCli.resx">
       <DependentUpon>FrmCadCli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPets.resx">
+      <DependentUpon>FrmPets.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmServicos.resx">
       <DependentUpon>FrmServicos.cs</DependentUpon>
