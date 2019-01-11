@@ -44,7 +44,7 @@ namespace PetApp
                 clientes.Columns["CLI_ID"]
             };
         }
-
+        //
         private void FrmCadCli_Load(object sender, EventArgs e)
         {
             rgPesTipo.EditValue = "FIS";
