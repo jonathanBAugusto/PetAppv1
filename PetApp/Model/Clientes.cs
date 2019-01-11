@@ -14,22 +14,22 @@ namespace PetApp.Model
         [PrimaryKey]
         [AutoIncrement]
         public int CLI_ID { get; set; }
-        public int NOMECLI { get; set; }
+        public int CLI_NOME { get; set; }
         public int DDDTEL { get; set; }
-        public int TELCLI { get; set; }
+        public int CLI_TEL { get; set; }
         public int DDDCEL { get; set; }
-        public int CELCLI { get; set; }
-        public int EMAILCLI { get; set; }
-        public int RAZSOCLI { get; set; }
-        public int INSESCLI { get; set; }
-        public int CNPJCLI { get; set; }
-        public int CEPEBDCLI { get; set; }
-        public int RUAENDCLI { get; set; }
-        public int BAIRROENDCLI { get; set; }
-        public int NUMENDCLI { get; set; }
-        public int ESTENDCLI { get; set; }
-        public int PAISENDCLI { get; set; }
-        public int NASCLI { get; set; }
+        public int CLI_CEL { get; set; }
+        public int CLI_EMAIL { get; set; }
+        public int CLI_RAZSO { get; set; }
+        public int CLI_INSES { get; set; }
+        public int CLI_CNPJ { get; set; }
+        public int CLI_CEP { get; set; }
+        public int CLI_RUA { get; set; }
+        public int CLI_BAIRRO { get; set; }
+        public int CLI_NUMERO { get; set; }
+        public int CLI_UF { get; set; }
+        public int CLI_PAIS { get; set; }
+        public int CLI_NAS { get; set; }
         public int PESTIPO { get; set; }
 
         private static Connection CONN;

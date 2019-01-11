@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.XtraTabbedMdi;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -39,5 +40,10 @@ namespace PetApp
             FrmPets form = new FrmPets();
             form.Show();
         }
+
+        private void FrmInicio_Load(object sender, EventArgs e)
+        {
+        }
+
     }
 }

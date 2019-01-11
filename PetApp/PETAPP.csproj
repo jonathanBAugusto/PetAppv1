@@ -83,10 +83,10 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="Control\Connection.cs" />
-    <Compile Include="FrmCadServico.cs">
+    <Compile Include="View\FrmCadServico.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCadServico.Designer.cs">
+    <Compile Include="View\FrmCadServico.Designer.cs">
       <DependentUpon>FrmCadServico.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmInicio.cs">
@@ -95,28 +95,28 @@
     <Compile Include="FrmInicio.Designer.cs">
       <DependentUpon>FrmInicio.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCli.cs">
+    <Compile Include="View\FrmCli.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCli.Designer.cs">
+    <Compile Include="View\FrmCli.Designer.cs">
       <DependentUpon>FrmCli.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCadCli.cs">
+    <Compile Include="View\FrmCadCli.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCadCli.Designer.cs">
+    <Compile Include="View\FrmCadCli.Designer.cs">
       <DependentUpon>FrmCadCli.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmPets.cs">
+    <Compile Include="View\FrmPets.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmPets.Designer.cs">
+    <Compile Include="View\FrmPets.Designer.cs">
       <DependentUpon>FrmPets.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmServicos.cs">
+    <Compile Include="View\FrmServicos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmServicos.Designer.cs">
+    <Compile Include="View\FrmServicos.Designer.cs">
       <DependentUpon>FrmServicos.cs</DependentUpon>
     </Compile>
     <Compile Include="Control\F.cs" />
@@ -124,22 +124,22 @@
     <Compile Include="Model\Pets.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmCadServico.resx">
+    <EmbeddedResource Include="View\FrmCadServico.resx">
       <DependentUpon>FrmCadServico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmInicio.resx">
       <DependentUpon>FrmInicio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmCli.resx">
+    <EmbeddedResource Include="View\FrmCli.resx">
       <DependentUpon>FrmCli.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmCadCli.resx">
+    <EmbeddedResource Include="View\FrmCadCli.resx">
       <DependentUpon>FrmCadCli.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmPets.resx">
+    <EmbeddedResource Include="View\FrmPets.resx">
       <DependentUpon>FrmPets.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmServicos.resx">
+    <EmbeddedResource Include="View\FrmServicos.resx">
       <DependentUpon>FrmServicos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
