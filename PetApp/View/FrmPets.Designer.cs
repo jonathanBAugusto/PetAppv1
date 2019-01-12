@@ -103,7 +103,7 @@
             // gridColumn5
             // 
             this.gridColumn5.Caption = "Dono";
-            this.gridColumn5.FieldName = "CLI_NOME";
+            this.gridColumn5.FieldName = "CLI_FANTASIA";
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.Visible = true;
             this.gridColumn5.VisibleIndex = 5;

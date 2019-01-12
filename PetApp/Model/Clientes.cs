@@ -14,13 +14,13 @@ namespace PetApp.Model
         [PrimaryKey]
         [AutoIncrement]
         public int CLI_ID { get; set; }
-        public string CLI_NOME { get; set; }
+        public string CLI_FANTASIA { get; set; }
+        public string CLI_RAZAO { get; set; }
         public string CLI_DDDTEL { get; set; }
         public string CLI_TEL { get; set; }
         public string CLI_DDDCEL { get; set; }
         public string CLI_CEL { get; set; }
         public string CLI_EMAIL { get; set; }
-        public string CLI_RAZAO { get; set; }
         public string CLI_INSCRICAO { get; set; }
         public string CLI_CNPJ { get; set; }
         public string CLI_CEP { get; set; }

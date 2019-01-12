@@ -38,10 +38,10 @@
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.btnRemCli = new DevExpress.XtraEditors.SimpleButton();
             this.btnAltCli = new DevExpress.XtraEditors.SimpleButton();
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
@@ -50,10 +50,9 @@
             // 
             // btnAdcCli
             // 
-            this.btnAdcCli.Location = new System.Drawing.Point(4, 5);
-            this.btnAdcCli.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAdcCli.Location = new System.Drawing.Point(3, 3);
             this.btnAdcCli.Name = "btnAdcCli";
-            this.btnAdcCli.Size = new System.Drawing.Size(160, 35);
+            this.btnAdcCli.Size = new System.Drawing.Size(107, 23);
             this.btnAdcCli.TabIndex = 2;
             this.btnAdcCli.Text = "Adicionar Cliente";
             this.btnAdcCli.Click += new System.EventHandler(this.btnAdcCli_Click);
@@ -61,12 +60,10 @@
             // gridControl1
             // 
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(644, 402);
+            this.gridControl1.Size = new System.Drawing.Size(429, 261);
             this.gridControl1.TabIndex = 3;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -96,7 +93,7 @@
             // Nome
             // 
             this.Nome.Caption = "Nome";
-            this.Nome.FieldName = "CLI_NOME";
+            this.Nome.FieldName = "CLI_FANTASIA";
             this.Nome.Name = "Nome";
             this.Nome.Visible = true;
             this.Nome.VisibleIndex = 1;
@@ -104,7 +101,7 @@
             // gridColumn3
             // 
             this.gridColumn3.Caption = "Razão Social";
-            this.gridColumn3.FieldName = "CLI_RAZSO";
+            this.gridColumn3.FieldName = "CLI_RAZAO";
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.Visible = true;
             this.gridColumn3.VisibleIndex = 2;
@@ -112,7 +109,7 @@
             // gridColumn4
             // 
             this.gridColumn4.Caption = "Inscrição Estadual";
-            this.gridColumn4.FieldName = "CLI_INSES";
+            this.gridColumn4.FieldName = "CLI_INSCRICAO";
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.Visible = true;
             this.gridColumn4.VisibleIndex = 3;
@@ -120,7 +117,7 @@
             // gridColumn5
             // 
             this.gridColumn5.Caption = "Nascimento";
-            this.gridColumn5.FieldName = "CLI_NAS";
+            this.gridColumn5.FieldName = "CLI_NASC";
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.Visible = true;
             this.gridColumn5.VisibleIndex = 4;
@@ -141,42 +138,6 @@
             this.gridColumn7.Visible = true;
             this.gridColumn7.VisibleIndex = 6;
             // 
-            // btnRemCli
-            // 
-            this.btnRemCli.Location = new System.Drawing.Point(174, 5);
-            this.btnRemCli.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnRemCli.Name = "btnRemCli";
-            this.btnRemCli.Size = new System.Drawing.Size(160, 35);
-            this.btnRemCli.TabIndex = 4;
-            this.btnRemCli.Text = "Remover Cliente";
-            // 
-            // btnAltCli
-            // 
-            this.btnAltCli.Location = new System.Drawing.Point(344, 5);
-            this.btnAltCli.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnAltCli.Name = "btnAltCli";
-            this.btnAltCli.Size = new System.Drawing.Size(160, 35);
-            this.btnAltCli.TabIndex = 5;
-            this.btnAltCli.Text = "Alterar Informações";
-            // 
-            // splitContainerControl1
-            // 
-            this.splitContainerControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainerControl1.Horizontal = false;
-            this.splitContainerControl1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainerControl1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.splitContainerControl1.Name = "splitContainerControl1";
-            this.splitContainerControl1.Panel1.Controls.Add(this.btnAdcCli);
-            this.splitContainerControl1.Panel1.Controls.Add(this.btnAltCli);
-            this.splitContainerControl1.Panel1.Controls.Add(this.btnRemCli);
-            this.splitContainerControl1.Panel1.Text = "Panel1";
-            this.splitContainerControl1.Panel2.Controls.Add(this.gridControl1);
-            this.splitContainerControl1.Panel2.Text = "Panel2";
-            this.splitContainerControl1.Size = new System.Drawing.Size(644, 460);
-            this.splitContainerControl1.SplitterPosition = 50;
-            this.splitContainerControl1.TabIndex = 6;
-            this.splitContainerControl1.Text = "splitContainerControl1";
-            // 
             // gridColumn1
             // 
             this.gridColumn1.Caption = "Email";
@@ -185,13 +146,45 @@
             this.gridColumn1.Visible = true;
             this.gridColumn1.VisibleIndex = 7;
             // 
+            // btnRemCli
+            // 
+            this.btnRemCli.Location = new System.Drawing.Point(116, 3);
+            this.btnRemCli.Name = "btnRemCli";
+            this.btnRemCli.Size = new System.Drawing.Size(107, 23);
+            this.btnRemCli.TabIndex = 4;
+            this.btnRemCli.Text = "Remover Cliente";
+            // 
+            // btnAltCli
+            // 
+            this.btnAltCli.Location = new System.Drawing.Point(229, 3);
+            this.btnAltCli.Name = "btnAltCli";
+            this.btnAltCli.Size = new System.Drawing.Size(107, 23);
+            this.btnAltCli.TabIndex = 5;
+            this.btnAltCli.Text = "Alterar Informações";
+            // 
+            // splitContainerControl1
+            // 
+            this.splitContainerControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainerControl1.Horizontal = false;
+            this.splitContainerControl1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainerControl1.Name = "splitContainerControl1";
+            this.splitContainerControl1.Panel1.Controls.Add(this.btnAdcCli);
+            this.splitContainerControl1.Panel1.Controls.Add(this.btnAltCli);
+            this.splitContainerControl1.Panel1.Controls.Add(this.btnRemCli);
+            this.splitContainerControl1.Panel1.Text = "Panel1";
+            this.splitContainerControl1.Panel2.Controls.Add(this.gridControl1);
+            this.splitContainerControl1.Panel2.Text = "Panel2";
+            this.splitContainerControl1.Size = new System.Drawing.Size(429, 299);
+            this.splitContainerControl1.SplitterPosition = 33;
+            this.splitContainerControl1.TabIndex = 6;
+            this.splitContainerControl1.Text = "splitContainerControl1";
+            // 
             // FrmCli
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(644, 460);
+            this.ClientSize = new System.Drawing.Size(429, 299);
             this.Controls.Add(this.splitContainerControl1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FrmCli";
             this.Text = "Clientes";
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();

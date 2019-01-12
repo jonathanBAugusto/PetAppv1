@@ -8,13 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Correios.Net;
+using PetApp.Model;
 
 namespace PetApp
 {
     public partial class FrmCadCli : Form
     {
         DataTable infoPets;
-        DataTable clientes;
         int id = 0;
         public FrmCadCli()
         {
@@ -31,43 +31,47 @@ namespace PetApp
                 infoPets.Columns["PET_ID"]
             };
 
-            clientes = new DataTable();
-            clientes.Columns.Add("CLI_ID", typeof(int));
-            clientes.Columns.Add("CLI_RAZSO", typeof(string));
-            clientes.Columns.Add("CLI_INSES", typeof(string));
-            clientes.Columns.Add("CLI_NAS", typeof(DateTime));
-            clientes.Columns.Add("CLI_CEL", typeof(string));
-            clientes.Columns.Add("CLI_TEL", typeof(string));
-            clientes.Columns.Add("CLI_EMAIL", typeof(string));
-            clientes.Columns.Add("CLI_CNPJ", typeof(string));
-            clientes.PrimaryKey = new DataColumn[]
-            {
-                clientes.Columns["CLI_ID"]
-            };
+            List<Clientes> clientes = new List<Clientes>();
+            clientes.Add(new Clientes {
+                CLI_RAZAO = F.toString(edCLI_RAZAO.EditValue),
+                CLI_FANTASIA = F.toString(edCLI_FANTASIA),
+                CLI_INSCRICAO = F.toString(edCLI_INSCRICAO),
+                CLI_CNPJ = F.toString(edCLI_CNPJ.EditValue),
+                CLI_EMAIL = F.toString(edCLI_EMAIL.EditValue),
+                CLI_TEL = F.toString(edCLI_TEL.EditValue),
+                CLI_CEL = F.toString(edCLI_CEL.EditValue),
+                CLI_NASC = F.toString(edCLI_NASC.EditValue),
+                CLI_CEP = F.toString(edCEP.EditValue),
+                CLI_BAIRRO = F.toString(edBairro.EditValue),
+                CLI_NUMERO = F.toString(edNumero.EditValue),
+                CLI_PESTIPO = F.toString(rgCLI_PESTIPO.EditValue),
+                CLI_RUA = F.toString(edRua.EditValue),
+            });
+
         }
         //
         private void FrmCadCli_Load(object sender, EventArgs e)
         {
-            rgPesTipo.EditValue = "FIS";
+            rgCLI_PESTIPO.EditValue = "FIS";
         }
 
         private void rgPesTipo_EditValueChanged(object sender, EventArgs e)
         {
-            if (F.toString(rgPesTipo.EditValue) == "JUR")
+            if (F.toString(rgCLI_PESTIPO.EditValue) == "JUR")
             {
-                edCLI_NAS.Enabled = false;
-                edCLI_INSES.Enabled = true;
+                edCLI_NASC.Enabled = false;
+                edCLI_INSCRICAO.Enabled = true;
                 edCLI_FANTASIA.Enabled = true;
                 edCLI_CNPJ.Enabled = true;
                 edCLI_RAZAO.Enabled = true;
             }
             else
             {
-                edCLI_INSES.Enabled = false;
+                edCLI_INSCRICAO.Enabled = false;
                 edCLI_CNPJ.Enabled = false;
                 edCLI_RAZAO.Enabled = false;
                 edCLI_FANTASIA.Enabled = false;
-                edCLI_NAS.Enabled = true;
+                edCLI_NASC.Enabled = true;
             }
         }
 
@@ -98,11 +102,12 @@ namespace PetApp
 
         private void simpleButton1_Click(object sender, EventArgs e)
         {
-            if (F.toString(rgPesTipo.EditValue) == "FIS" ) 
+            if (F.toString(rgCLI_PESTIPO.EditValue) == "FIS" ) 
             {
                 if (F.toString(edCLI_RAZAO) == "")
                 {
                     F.Aviso("Por Favor, Informe o Nome do cliente.");
+                    edCLI_RAZAO.Focus();
                 }
                 if (F.toString(edCLI_TEL.EditValue) == "" && F.toString(edCLI_CEL.EditValue) == ""
                 && F.toString(edCLI_EMAIL.EditValue) == "")
@@ -112,25 +117,30 @@ namespace PetApp
                 if (F.toString(edDDDCel.EditValue) == "" && F.toString(edCLI_CEL.EditValue) != "") 
                 {
                     F.Aviso("Por Favor, Informe o DDD do celular.");
+                    edDDDCel.Focus();
                 }
                 if (F.toString(edDDDTel.EditValue) == "" && F.toString(edCLI_TEL.EditValue) != "")
                 {
                     F.Aviso("Por Favor, Informe o DDD do telefone.");
+                    edDDDTel.Focus();
                 }
             }
-            if (F.toString(rgPesTipo.EditValue) == "JUR")
+            if (F.toString(rgCLI_PESTIPO.EditValue) == "JUR")
             {
                 if (F.toString(edCLI_RAZAO) == "")
                 {
                     F.Aviso("Por favor, Informe a Razão Social do cliente");
+                    edCLI_RAZAO.Focus();
                 }
                 if (F.toString(edCLI_FANTASIA.EditValue) == "")
                 {
                     F.Aviso("Por favor, informe o nome fantasia do cliente");
+                    edCLI_FANTASIA.Focus();
                 }
-                if (F.toString(edCLI_INSES) == "")
+                if (F.toString(edCLI_INSCRICAO) == "")
                 {
                     F.Aviso("Por Favor, informe a Inscrição Estadual do cliente");
+                    edCLI_INSCRICAO.Focus();
                 }
                 if (F.toString(edCLI_TEL.EditValue) == "" && F.toString(edCLI_CEL.EditValue) == ""
                 && F.toString(edCLI_EMAIL.EditValue) == "")
@@ -140,23 +150,15 @@ namespace PetApp
                 if (F.toString(edDDDCel.EditValue) == "" && F.toString(edCLI_CEL.EditValue) != "")
                 {
                     F.Aviso("Por Favor, Informe o DDD do celular.");
+                    edDDDCel.Focus();
                 }
                 if (F.toString(edDDDTel.EditValue) == "" && F.toString(edCLI_TEL.EditValue) != "")
                 {
                     F.Aviso("Por Favor, Informe o DDD do telefone.");
+                    edDDDTel.Focus();
                 }
             }
-            int idc = 0;
-            DataRow dr = clientes.NewRow();
-            dr["CLI_ID"] = F.toInt(idc);
-            idc++;
-            dr["CLI_RAZSO"] = F.toString(edCLI_RAZAO.EditValue);
-            dr["CLI_INSES"] = F.toString(edCLI_INSES.EditValue);
-            dr["CLI_NAS"] = edCLI_NAS.EditValue;
-            dr["CLI_CEL"] = F.toString(edDDDCel.EditValue) + F.toString(edCLI_CEL.EditValue);
-            dr["CLI_TEL"] = F.toString(edDDDTel.EditValue) + F.toString(edCLI_TEL.EditValue);
-            dr["CLI_FANTASIA"] = F.toString(edCLI_FANTASIA.EditValue);
-            dr["CLI_EMAIL"] = F.toString(edCLI_EMAIL.EditValue);
+
         }
     }
 }
