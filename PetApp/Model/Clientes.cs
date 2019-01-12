@@ -14,23 +14,23 @@ namespace PetApp.Model
         [PrimaryKey]
         [AutoIncrement]
         public int CLI_ID { get; set; }
-        public string CLI_NOME { get; set; }
-        public string CLI_DDDTEL { get; set; }
-        public string CLI_TEL { get; set; }
-        public string CLI_DDDCEL { get; set; }
-        public string CLI_CEL { get; set; }
-        public string CLI_EMAIL { get; set; }
-        public string CLI_RAZAO { get; set; }
-        public string CLI_INSCRICAO { get; set; }
-        public string CLI_CNPJ { get; set; }
-        public string CLI_CEP { get; set; }
-        public string CLI_RUA { get; set; }
-        public string CLI_BAIRRO { get; set; }
-        public string CLI_NUMERO { get; set; }
-        public string CLI_NASC { get; set; }
-        public string CLI_PESTIPO { get; set; }
-        public string CLI_ENDCOMPLE { get; set; }
-        public int CID_ID { get; set; }
+        public int NOMECLI { get; set; }
+        public int DDDTEL { get; set; }
+        public int TELCLI { get; set; }
+        public int DDDCEL { get; set; }
+        public int CELCLI { get; set; }
+        public int EMAILCLI { get; set; }
+        public int RAZSOCLI { get; set; }
+        public int INSESCLI { get; set; }
+        public int CNPJCLI { get; set; }
+        public int CEPEBDCLI { get; set; }
+        public int RUAENDCLI { get; set; }
+        public int BAIRROENDCLI { get; set; }
+        public int NUMENDCLI { get; set; }
+        public int ESTENDCLI { get; set; }
+        public int PAISENDCLI { get; set; }
+        public int NASCLI { get; set; }
+        public int PESTIPO { get; set; }
 
         private static Connection CONN;
 
