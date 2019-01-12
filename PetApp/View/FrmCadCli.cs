@@ -31,6 +31,7 @@ namespace PetApp
                 infoPets.Columns["PET_ID"]
             };
 
+            clientes = new DataTable();
             clientes.Columns.Add("CLI_ID", typeof(int));
             clientes.Columns.Add("CLI_RAZSO", typeof(string));
             clientes.Columns.Add("CLI_INSES", typeof(string));

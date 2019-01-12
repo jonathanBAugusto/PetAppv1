@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
@@ -41,7 +40,7 @@
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ribbonPage4 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.popupMenu1 = new DevExpress.XtraBars.PopupMenu();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
@@ -79,19 +78,22 @@
             // 
             this.groupControl1.Controls.Add(this.gridControl1);
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupControl1.Location = new System.Drawing.Point(0, 106);
+            this.groupControl1.Location = new System.Drawing.Point(0, 69);
+            this.groupControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(790, 435);
+            this.groupControl1.Size = new System.Drawing.Size(527, 283);
             this.groupControl1.TabIndex = 1;
             this.groupControl1.Text = "Histórico de serviços";
             // 
             // gridControl1
             // 
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.Location = new System.Drawing.Point(3, 30);
+            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gridControl1.Location = new System.Drawing.Point(2, 20);
             this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(784, 402);
+            this.gridControl1.Size = new System.Drawing.Size(523, 261);
             this.gridControl1.TabIndex = 1;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -176,121 +178,135 @@
             // 
             // labelControl5
             // 
-            this.labelControl5.Location = new System.Drawing.Point(528, 33);
+            this.labelControl5.Location = new System.Drawing.Point(352, 21);
+            this.labelControl5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(59, 19);
+            this.labelControl5.Size = new System.Drawing.Size(41, 13);
             this.labelControl5.TabIndex = 42;
             this.labelControl5.Text = "Previsão";
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(528, 57);
+            this.dateTimePicker1.Location = new System.Drawing.Point(352, 37);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(127, 27);
+            this.dateTimePicker1.Size = new System.Drawing.Size(86, 21);
             this.dateTimePicker1.TabIndex = 41;
             // 
             // labelControl4
             // 
-            this.labelControl4.Location = new System.Drawing.Point(421, 33);
+            this.labelControl4.Location = new System.Drawing.Point(281, 21);
+            this.labelControl4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(37, 19);
+            this.labelControl4.Size = new System.Drawing.Size(24, 13);
             this.labelControl4.TabIndex = 40;
             this.labelControl4.Text = "Valor";
             // 
             // textEdit1
             // 
-            this.textEdit1.Location = new System.Drawing.Point(421, 58);
+            this.textEdit1.Location = new System.Drawing.Point(281, 38);
+            this.textEdit1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textEdit1.Name = "textEdit1";
             this.textEdit1.Properties.Mask.EditMask = "c";
             this.textEdit1.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.textEdit1.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.textEdit1.Size = new System.Drawing.Size(100, 26);
+            this.textEdit1.Size = new System.Drawing.Size(67, 20);
             this.textEdit1.TabIndex = 39;
             // 
             // simpleButton4
             // 
-            this.simpleButton4.Location = new System.Drawing.Point(661, 56);
+            this.simpleButton4.Location = new System.Drawing.Point(441, 36);
+            this.simpleButton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.Size = new System.Drawing.Size(112, 28);
+            this.simpleButton4.Size = new System.Drawing.Size(75, 22);
             this.simpleButton4.TabIndex = 38;
             this.simpleButton4.Text = "Cadastrar";
             // 
             // labelControl3
             // 
-            this.labelControl3.Location = new System.Drawing.Point(282, 33);
+            this.labelControl3.Location = new System.Drawing.Point(188, 21);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(108, 19);
+            this.labelControl3.Size = new System.Drawing.Size(72, 13);
             this.labelControl3.TabIndex = 37;
             this.labelControl3.Text = "Tipo de serviço";
             // 
             // simpleButton3
             // 
-            this.simpleButton3.Location = new System.Drawing.Point(388, 58);
+            this.simpleButton3.Location = new System.Drawing.Point(259, 38);
+            this.simpleButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(26, 26);
+            this.simpleButton3.Size = new System.Drawing.Size(18, 20);
             this.simpleButton3.TabIndex = 36;
             this.simpleButton3.Text = "+";
             // 
             // lookUpEdit3
             // 
-            this.lookUpEdit3.Location = new System.Drawing.Point(282, 58);
+            this.lookUpEdit3.Location = new System.Drawing.Point(188, 38);
+            this.lookUpEdit3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lookUpEdit3.Name = "lookUpEdit3";
             this.lookUpEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookUpEdit3.Properties.NullText = "Serviço";
-            this.lookUpEdit3.Size = new System.Drawing.Size(100, 26);
+            this.lookUpEdit3.Size = new System.Drawing.Size(67, 20);
             this.lookUpEdit3.TabIndex = 35;
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(144, 33);
+            this.labelControl2.Location = new System.Drawing.Point(96, 21);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(28, 19);
+            this.labelControl2.Size = new System.Drawing.Size(18, 13);
             this.labelControl2.TabIndex = 34;
             this.labelControl2.Text = "PET";
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(6, 33);
+            this.labelControl1.Location = new System.Drawing.Point(4, 21);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(48, 19);
+            this.labelControl1.Size = new System.Drawing.Size(33, 13);
             this.labelControl1.TabIndex = 33;
             this.labelControl1.Text = "Cliente";
             // 
             // simpleButton2
             // 
-            this.simpleButton2.Location = new System.Drawing.Point(250, 57);
+            this.simpleButton2.Location = new System.Drawing.Point(167, 37);
+            this.simpleButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(26, 26);
+            this.simpleButton2.Size = new System.Drawing.Size(17, 21);
             this.simpleButton2.TabIndex = 32;
             this.simpleButton2.Text = "+";
             // 
             // lookUpEdit2
             // 
-            this.lookUpEdit2.Location = new System.Drawing.Point(144, 58);
+            this.lookUpEdit2.Location = new System.Drawing.Point(96, 38);
+            this.lookUpEdit2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lookUpEdit2.Name = "lookUpEdit2";
             this.lookUpEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookUpEdit2.Properties.NullText = "Pet";
-            this.lookUpEdit2.Size = new System.Drawing.Size(100, 26);
+            this.lookUpEdit2.Size = new System.Drawing.Size(67, 20);
             this.lookUpEdit2.TabIndex = 31;
             // 
             // lookUpEdit1
             // 
-            this.lookUpEdit1.Location = new System.Drawing.Point(6, 58);
+            this.lookUpEdit1.Location = new System.Drawing.Point(4, 38);
+            this.lookUpEdit1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lookUpEdit1.Name = "lookUpEdit1";
             this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookUpEdit1.Properties.NullText = "Cliente";
-            this.lookUpEdit1.Size = new System.Drawing.Size(100, 26);
+            this.lookUpEdit1.Size = new System.Drawing.Size(67, 20);
             this.lookUpEdit1.TabIndex = 30;
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(112, 58);
+            this.simpleButton1.Location = new System.Drawing.Point(75, 38);
+            this.simpleButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(26, 26);
+            this.simpleButton1.Size = new System.Drawing.Size(17, 20);
             this.simpleButton1.TabIndex = 29;
             this.simpleButton1.Text = "+";
             // 
@@ -312,18 +328,20 @@
             this.groupControl2.Controls.Add(this.simpleButton3);
             this.groupControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl2.Location = new System.Drawing.Point(0, 0);
+            this.groupControl2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(790, 106);
+            this.groupControl2.Size = new System.Drawing.Size(527, 69);
             this.groupControl2.TabIndex = 43;
             this.groupControl2.Text = "Cadastrar Serviço";
             // 
             // FrmServicos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(790, 541);
+            this.ClientSize = new System.Drawing.Size(527, 352);
             this.Controls.Add(this.groupControl2);
             this.Controls.Add(this.groupControl1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmServicos";
             this.Text = "Serviços";
             this.Load += new System.EventHandler(this.FrmServicos_Load);

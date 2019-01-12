@@ -45,5 +45,16 @@ namespace PetApp
         {
         }
 
+        private void accordionControlElement7_Click(object sender, EventArgs e)
+        {
+            FrmCadCli form = new FrmCadCli();
+            form.Show();
+        }
+
+        private void accordionControlElement8_Click(object sender, EventArgs e)
+        {
+            FrmPets form = new FrmPets();
+            form.Show();
+        }
     }
 }
