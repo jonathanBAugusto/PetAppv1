@@ -28,26 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.edNomeCli = new DevExpress.XtraEditors.TextEdit();
-            this.edTelCli = new DevExpress.XtraEditors.TextEdit();
+            this.edCLI_FANTASIA = new DevExpress.XtraEditors.TextEdit();
+            this.edCLI_TEL = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.edEmail = new DevExpress.XtraEditors.TextEdit();
+            this.edCLI_NAS = new DevExpress.XtraEditors.DateEdit();
+            this.edCLI_EMAIL = new DevExpress.XtraEditors.TextEdit();
             this.labelControl17 = new DevExpress.XtraEditors.LabelControl();
             this.edDDDCel = new DevExpress.XtraEditors.TextEdit();
             this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
-            this.edCelCli = new DevExpress.XtraEditors.TextEdit();
+            this.edCLI_CEL = new DevExpress.XtraEditors.TextEdit();
             this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
-            this.edInsEsCli = new DevExpress.XtraEditors.TextEdit();
+            this.edCLI_INSES = new DevExpress.XtraEditors.TextEdit();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
             this.edDDDTel = new DevExpress.XtraEditors.TextEdit();
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
-            this.edCNPJCli = new DevExpress.XtraEditors.TextEdit();
+            this.edCLI_CNPJ = new DevExpress.XtraEditors.TextEdit();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
-            this.edRazSoCli = new DevExpress.XtraEditors.TextEdit();
+            this.edCLI_RAZAO = new DevExpress.XtraEditors.TextEdit();
             this.rgPesTipo = new DevExpress.XtraEditors.RadioGroup();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
@@ -64,14 +65,17 @@
             this.edRua = new DevExpress.XtraEditors.TextEdit();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.edCidade = new DevExpress.XtraEditors.GridLookUpEdit();
+            this.gridLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
+            this.edPET_NAS = new DevExpress.XtraEditors.DateEdit();
             this.btnAddPet = new DevExpress.XtraEditors.SimpleButton();
             this.peImgPET = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl20 = new DevExpress.XtraEditors.LabelControl();
-            this.edNomePet = new DevExpress.XtraEditors.TextEdit();
-            this.edCorPet = new DevExpress.XtraEditors.TextEdit();
-            this.edRacaPet = new DevExpress.XtraEditors.TextEdit();
+            this.edPET_NOME = new DevExpress.XtraEditors.TextEdit();
+            this.edPET_COR = new DevExpress.XtraEditors.TextEdit();
+            this.edPET_RACA = new DevExpress.XtraEditors.TextEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
@@ -83,21 +87,19 @@
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.edNasCli = new DevExpress.XtraEditors.DateEdit();
-            this.edNasPet = new DevExpress.XtraEditors.DateEdit();
-            this.edCidade = new DevExpress.XtraEditors.GridLookUpEdit();
-            this.gridLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
-            ((System.ComponentModel.ISupportInitialize)(this.edNomeCli.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edTelCli.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edCLI_FANTASIA.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edCLI_TEL.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.edEmail.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edCLI_NAS.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edCLI_NAS.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edCLI_EMAIL.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.edDDDCel.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edCelCli.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edInsEsCli.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edCLI_CEL.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edCLI_INSES.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.edDDDTel.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edCNPJCli.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edRazSoCli.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edCLI_CNPJ.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edCLI_RAZAO.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rgPesTipo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
@@ -107,37 +109,35 @@
             ((System.ComponentModel.ISupportInitialize)(this.edBairro.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.edCEP.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.edRua.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edCidade.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.edPET_NAS.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edPET_NAS.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.peImgPET.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edNomePet.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edCorPet.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edRacaPet.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edPET_NOME.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edPET_COR.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edPET_RACA.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlPet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewPet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edNasCli.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edNasCli.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edNasPet.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edNasPet.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edCidade.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).BeginInit();
             this.SuspendLayout();
             // 
-            // edNomeCli
+            // edCLI_FANTASIA
             // 
-            this.edNomeCli.Location = new System.Drawing.Point(12, 43);
-            this.edNomeCli.Name = "edNomeCli";
-            this.edNomeCli.Size = new System.Drawing.Size(140, 20);
-            this.edNomeCli.TabIndex = 1;
+            this.edCLI_FANTASIA.Location = new System.Drawing.Point(12, 43);
+            this.edCLI_FANTASIA.Name = "edCLI_FANTASIA";
+            this.edCLI_FANTASIA.Size = new System.Drawing.Size(140, 20);
+            this.edCLI_FANTASIA.TabIndex = 1;
             // 
-            // edTelCli
+            // edCLI_TEL
             // 
-            this.edTelCli.Location = new System.Drawing.Point(258, 84);
-            this.edTelCli.Name = "edTelCli";
-            this.edTelCli.Size = new System.Drawing.Size(100, 20);
-            this.edTelCli.TabIndex = 3;
+            this.edCLI_TEL.Location = new System.Drawing.Point(258, 84);
+            this.edCLI_TEL.Name = "edCLI_TEL";
+            this.edCLI_TEL.Size = new System.Drawing.Size(100, 20);
+            this.edCLI_TEL.TabIndex = 3;
             // 
             // labelControl1
             // 
@@ -165,25 +165,25 @@
             // 
             // groupControl1
             // 
-            this.groupControl1.Controls.Add(this.edNasCli);
-            this.groupControl1.Controls.Add(this.edEmail);
+            this.groupControl1.Controls.Add(this.edCLI_NAS);
+            this.groupControl1.Controls.Add(this.edCLI_EMAIL);
             this.groupControl1.Controls.Add(this.labelControl17);
             this.groupControl1.Controls.Add(this.edDDDCel);
             this.groupControl1.Controls.Add(this.labelControl15);
-            this.groupControl1.Controls.Add(this.edCelCli);
+            this.groupControl1.Controls.Add(this.edCLI_CEL);
             this.groupControl1.Controls.Add(this.labelControl16);
-            this.groupControl1.Controls.Add(this.edInsEsCli);
+            this.groupControl1.Controls.Add(this.edCLI_INSES);
             this.groupControl1.Controls.Add(this.labelControl14);
             this.groupControl1.Controls.Add(this.edDDDTel);
             this.groupControl1.Controls.Add(this.labelControl13);
             this.groupControl1.Controls.Add(this.labelControl12);
-            this.groupControl1.Controls.Add(this.edCNPJCli);
+            this.groupControl1.Controls.Add(this.edCLI_CNPJ);
             this.groupControl1.Controls.Add(this.labelControl11);
-            this.groupControl1.Controls.Add(this.edRazSoCli);
+            this.groupControl1.Controls.Add(this.edCLI_RAZAO);
             this.groupControl1.Controls.Add(this.rgPesTipo);
             this.groupControl1.Controls.Add(this.labelControl1);
-            this.groupControl1.Controls.Add(this.edNomeCli);
-            this.groupControl1.Controls.Add(this.edTelCli);
+            this.groupControl1.Controls.Add(this.edCLI_FANTASIA);
+            this.groupControl1.Controls.Add(this.edCLI_TEL);
             this.groupControl1.Controls.Add(this.labelControl2);
             this.groupControl1.Controls.Add(this.labelControl3);
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -193,12 +193,24 @@
             this.groupControl1.TabIndex = 1;
             this.groupControl1.Text = "Informações do Cliente";
             // 
-            // edEmail
+            // edCLI_NAS
             // 
-            this.edEmail.Location = new System.Drawing.Point(12, 84);
-            this.edEmail.Name = "edEmail";
-            this.edEmail.Size = new System.Drawing.Size(100, 20);
-            this.edEmail.TabIndex = 6;
+            this.edCLI_NAS.EditValue = null;
+            this.edCLI_NAS.Location = new System.Drawing.Point(118, 84);
+            this.edCLI_NAS.Name = "edCLI_NAS";
+            this.edCLI_NAS.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.edCLI_NAS.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.edCLI_NAS.Size = new System.Drawing.Size(85, 20);
+            this.edCLI_NAS.TabIndex = 27;
+            // 
+            // edCLI_EMAIL
+            // 
+            this.edCLI_EMAIL.Location = new System.Drawing.Point(12, 84);
+            this.edCLI_EMAIL.Name = "edCLI_EMAIL";
+            this.edCLI_EMAIL.Size = new System.Drawing.Size(100, 20);
+            this.edCLI_EMAIL.TabIndex = 6;
             // 
             // labelControl17
             // 
@@ -223,12 +235,12 @@
             this.labelControl15.TabIndex = 24;
             this.labelControl15.Text = "DDD";
             // 
-            // edCelCli
+            // edCLI_CEL
             // 
-            this.edCelCli.Location = new System.Drawing.Point(413, 84);
-            this.edCelCli.Name = "edCelCli";
-            this.edCelCli.Size = new System.Drawing.Size(100, 20);
-            this.edCelCli.TabIndex = 5;
+            this.edCLI_CEL.Location = new System.Drawing.Point(413, 84);
+            this.edCLI_CEL.Name = "edCLI_CEL";
+            this.edCLI_CEL.Size = new System.Drawing.Size(100, 20);
+            this.edCLI_CEL.TabIndex = 5;
             // 
             // labelControl16
             // 
@@ -238,12 +250,12 @@
             this.labelControl16.TabIndex = 22;
             this.labelControl16.Text = "Celular";
             // 
-            // edInsEsCli
+            // edCLI_INSES
             // 
-            this.edInsEsCli.Location = new System.Drawing.Point(413, 43);
-            this.edInsEsCli.Name = "edInsEsCli";
-            this.edInsEsCli.Size = new System.Drawing.Size(99, 20);
-            this.edInsEsCli.TabIndex = 10;
+            this.edCLI_INSES.Location = new System.Drawing.Point(413, 43);
+            this.edCLI_INSES.Name = "edCLI_INSES";
+            this.edCLI_INSES.Size = new System.Drawing.Size(99, 20);
+            this.edCLI_INSES.TabIndex = 10;
             // 
             // labelControl14
             // 
@@ -276,12 +288,12 @@
             this.labelControl12.TabIndex = 16;
             this.labelControl12.Text = "CPF/CNPJ";
             // 
-            // edCNPJCli
+            // edCLI_CNPJ
             // 
-            this.edCNPJCli.Location = new System.Drawing.Point(307, 43);
-            this.edCNPJCli.Name = "edCNPJCli";
-            this.edCNPJCli.Size = new System.Drawing.Size(100, 20);
-            this.edCNPJCli.TabIndex = 9;
+            this.edCLI_CNPJ.Location = new System.Drawing.Point(307, 43);
+            this.edCLI_CNPJ.Name = "edCLI_CNPJ";
+            this.edCLI_CNPJ.Size = new System.Drawing.Size(100, 20);
+            this.edCLI_CNPJ.TabIndex = 9;
             // 
             // labelControl11
             // 
@@ -291,12 +303,12 @@
             this.labelControl11.TabIndex = 14;
             this.labelControl11.Text = "Razão Social";
             // 
-            // edRazSoCli
+            // edCLI_RAZAO
             // 
-            this.edRazSoCli.Location = new System.Drawing.Point(158, 43);
-            this.edRazSoCli.Name = "edRazSoCli";
-            this.edRazSoCli.Size = new System.Drawing.Size(143, 20);
-            this.edRazSoCli.TabIndex = 8;
+            this.edCLI_RAZAO.Location = new System.Drawing.Point(158, 43);
+            this.edCLI_RAZAO.Name = "edCLI_RAZAO";
+            this.edCLI_RAZAO.Size = new System.Drawing.Size(143, 20);
+            this.edCLI_RAZAO.TabIndex = 8;
             // 
             // rgPesTipo
             // 
@@ -339,7 +351,7 @@
             // simpleButton1
             // 
             this.simpleButton1.Location = new System.Drawing.Point(527, 82);
-            this.simpleButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.simpleButton1.Margin = new System.Windows.Forms.Padding(2);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(90, 21);
             this.simpleButton1.TabIndex = 20;
@@ -453,6 +465,24 @@
             this.labelControl8.TabIndex = 6;
             this.labelControl8.Text = "Bairro";
             // 
+            // edCidade
+            // 
+            this.edCidade.Location = new System.Drawing.Point(5, 83);
+            this.edCidade.Name = "edCidade";
+            this.edCidade.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.edCidade.Properties.NullText = "";
+            this.edCidade.Properties.PopupView = this.gridLookUpEdit1View;
+            this.edCidade.Size = new System.Drawing.Size(177, 20);
+            this.edCidade.TabIndex = 6;
+            // 
+            // gridLookUpEdit1View
+            // 
+            this.gridLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.gridLookUpEdit1View.Name = "gridLookUpEdit1View";
+            this.gridLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.gridLookUpEdit1View.OptionsView.ShowGroupPanel = false;
+            // 
             // groupControl3
             // 
             this.groupControl3.Controls.Add(this.splitContainerControl1);
@@ -468,15 +498,15 @@
             this.splitContainerControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainerControl1.Horizontal = false;
             this.splitContainerControl1.Location = new System.Drawing.Point(2, 20);
-            this.splitContainerControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.splitContainerControl1.Margin = new System.Windows.Forms.Padding(2);
             this.splitContainerControl1.Name = "splitContainerControl1";
-            this.splitContainerControl1.Panel1.Controls.Add(this.edNasPet);
+            this.splitContainerControl1.Panel1.Controls.Add(this.edPET_NAS);
             this.splitContainerControl1.Panel1.Controls.Add(this.btnAddPet);
             this.splitContainerControl1.Panel1.Controls.Add(this.peImgPET);
             this.splitContainerControl1.Panel1.Controls.Add(this.labelControl20);
-            this.splitContainerControl1.Panel1.Controls.Add(this.edNomePet);
-            this.splitContainerControl1.Panel1.Controls.Add(this.edCorPet);
-            this.splitContainerControl1.Panel1.Controls.Add(this.edRacaPet);
+            this.splitContainerControl1.Panel1.Controls.Add(this.edPET_NOME);
+            this.splitContainerControl1.Panel1.Controls.Add(this.edPET_COR);
+            this.splitContainerControl1.Panel1.Controls.Add(this.edPET_RACA);
             this.splitContainerControl1.Panel1.Controls.Add(this.labelControl4);
             this.splitContainerControl1.Panel1.Controls.Add(this.labelControl19);
             this.splitContainerControl1.Panel1.Controls.Add(this.labelControl18);
@@ -488,10 +518,22 @@
             this.splitContainerControl1.TabIndex = 30;
             this.splitContainerControl1.Text = "splitContainerControl1";
             // 
+            // edPET_NAS
+            // 
+            this.edPET_NAS.EditValue = null;
+            this.edPET_NAS.Location = new System.Drawing.Point(435, 35);
+            this.edPET_NAS.Name = "edPET_NAS";
+            this.edPET_NAS.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.edPET_NAS.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.edPET_NAS.Size = new System.Drawing.Size(85, 20);
+            this.edPET_NAS.TabIndex = 29;
+            // 
             // btnAddPet
             // 
             this.btnAddPet.Location = new System.Drawing.Point(525, 34);
-            this.btnAddPet.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddPet.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddPet.Name = "btnAddPet";
             this.btnAddPet.Size = new System.Drawing.Size(90, 21);
             this.btnAddPet.TabIndex = 28;
@@ -517,29 +559,29 @@
             this.labelControl20.TabIndex = 27;
             this.labelControl20.Text = "Cor";
             // 
-            // edNomePet
+            // edPET_NOME
             // 
-            this.edNomePet.EnterMoveNextControl = true;
-            this.edNomePet.Location = new System.Drawing.Point(80, 35);
-            this.edNomePet.Name = "edNomePet";
-            this.edNomePet.Size = new System.Drawing.Size(137, 20);
-            this.edNomePet.TabIndex = 2;
+            this.edPET_NOME.EnterMoveNextControl = true;
+            this.edPET_NOME.Location = new System.Drawing.Point(80, 35);
+            this.edPET_NOME.Name = "edPET_NOME";
+            this.edPET_NOME.Size = new System.Drawing.Size(137, 20);
+            this.edPET_NOME.TabIndex = 2;
             // 
-            // edCorPet
+            // edPET_COR
             // 
-            this.edCorPet.EnterMoveNextControl = true;
-            this.edCorPet.Location = new System.Drawing.Point(329, 35);
-            this.edCorPet.Name = "edCorPet";
-            this.edCorPet.Size = new System.Drawing.Size(100, 20);
-            this.edCorPet.TabIndex = 4;
+            this.edPET_COR.EnterMoveNextControl = true;
+            this.edPET_COR.Location = new System.Drawing.Point(329, 35);
+            this.edPET_COR.Name = "edPET_COR";
+            this.edPET_COR.Size = new System.Drawing.Size(100, 20);
+            this.edPET_COR.TabIndex = 4;
             // 
-            // edRacaPet
+            // edPET_RACA
             // 
-            this.edRacaPet.EnterMoveNextControl = true;
-            this.edRacaPet.Location = new System.Drawing.Point(223, 35);
-            this.edRacaPet.Name = "edRacaPet";
-            this.edRacaPet.Size = new System.Drawing.Size(100, 20);
-            this.edRacaPet.TabIndex = 3;
+            this.edPET_RACA.EnterMoveNextControl = true;
+            this.edPET_RACA.Location = new System.Drawing.Point(223, 35);
+            this.edPET_RACA.Name = "edPET_RACA";
+            this.edPET_RACA.Size = new System.Drawing.Size(100, 20);
+            this.edPET_RACA.TabIndex = 3;
             // 
             // labelControl4
             // 
@@ -637,48 +679,6 @@
             this.gridColumn6.Visible = true;
             this.gridColumn6.VisibleIndex = 5;
             // 
-            // edNasCli
-            // 
-            this.edNasCli.EditValue = null;
-            this.edNasCli.Location = new System.Drawing.Point(118, 84);
-            this.edNasCli.Name = "edNasCli";
-            this.edNasCli.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.edNasCli.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.edNasCli.Size = new System.Drawing.Size(85, 20);
-            this.edNasCli.TabIndex = 27;
-            // 
-            // edNasPet
-            // 
-            this.edNasPet.EditValue = null;
-            this.edNasPet.Location = new System.Drawing.Point(435, 35);
-            this.edNasPet.Name = "edNasPet";
-            this.edNasPet.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.edNasPet.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.edNasPet.Size = new System.Drawing.Size(85, 20);
-            this.edNasPet.TabIndex = 29;
-            // 
-            // edCidade
-            // 
-            this.edCidade.Location = new System.Drawing.Point(5, 83);
-            this.edCidade.Name = "edCidade";
-            this.edCidade.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.edCidade.Properties.NullText = "";
-            this.edCidade.Properties.PopupView = this.gridLookUpEdit1View;
-            this.edCidade.Size = new System.Drawing.Size(177, 20);
-            this.edCidade.TabIndex = 6;
-            // 
-            // gridLookUpEdit1View
-            // 
-            this.gridLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
-            this.gridLookUpEdit1View.Name = "gridLookUpEdit1View";
-            this.gridLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
-            this.gridLookUpEdit1View.OptionsView.ShowGroupPanel = false;
-            // 
             // FrmCadCli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -690,18 +690,20 @@
             this.Name = "FrmCadCli";
             this.Text = "Cadastro de Cliente";
             this.Load += new System.EventHandler(this.FrmCadCli_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.edNomeCli.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edTelCli.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edCLI_FANTASIA.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edCLI_TEL.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.edEmail.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edCLI_NAS.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edCLI_NAS.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edCLI_EMAIL.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.edDDDCel.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edCelCli.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edInsEsCli.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edCLI_CEL.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edCLI_INSES.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.edDDDTel.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edCNPJCli.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edRazSoCli.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edCLI_CNPJ.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edCLI_RAZAO.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rgPesTipo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
@@ -712,29 +714,27 @@
             ((System.ComponentModel.ISupportInitialize)(this.edBairro.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.edCEP.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.edRua.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edCidade.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).EndInit();
             this.splitContainerControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.edPET_NAS.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edPET_NAS.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.peImgPET.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edNomePet.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edCorPet.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edRacaPet.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edPET_NOME.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edPET_COR.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edPET_RACA.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlPet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewPet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edNasCli.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edNasCli.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edNasPet.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edNasPet.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edCidade.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private DevExpress.XtraEditors.TextEdit edNomeCli;
-        private DevExpress.XtraEditors.TextEdit edTelCli;
+        private DevExpress.XtraEditors.TextEdit edCLI_FANTASIA;
+        private DevExpress.XtraEditors.TextEdit edCLI_TEL;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl3;
@@ -746,14 +746,14 @@
         private DevExpress.XtraEditors.TextEdit edRua;
         private DevExpress.XtraEditors.LabelControl labelControl6;
         private DevExpress.XtraEditors.LabelControl labelControl8;
-        private DevExpress.XtraEditors.TextEdit edInsEsCli;
+        private DevExpress.XtraEditors.TextEdit edCLI_INSES;
         private DevExpress.XtraEditors.LabelControl labelControl14;
         private DevExpress.XtraEditors.TextEdit edDDDTel;
         private DevExpress.XtraEditors.LabelControl labelControl13;
         private DevExpress.XtraEditors.LabelControl labelControl12;
-        private DevExpress.XtraEditors.TextEdit edCNPJCli;
+        private DevExpress.XtraEditors.TextEdit edCLI_CNPJ;
         private DevExpress.XtraEditors.LabelControl labelControl11;
-        private DevExpress.XtraEditors.TextEdit edRazSoCli;
+        private DevExpress.XtraEditors.TextEdit edCLI_RAZAO;
         private DevExpress.XtraEditors.RadioGroup rgPesTipo;
         private DevExpress.XtraEditors.LabelControl labelControl10;
         private DevExpress.XtraEditors.LabelControl labelControl9;
@@ -762,7 +762,7 @@
         private DevExpress.XtraEditors.TextEdit edNumero;
         private DevExpress.XtraEditors.TextEdit edDDDCel;
         private DevExpress.XtraEditors.LabelControl labelControl15;
-        private DevExpress.XtraEditors.TextEdit edCelCli;
+        private DevExpress.XtraEditors.TextEdit edCLI_CEL;
         private DevExpress.XtraEditors.LabelControl labelControl16;
         private DevExpress.XtraEditors.GroupControl groupControl3;
         private DevExpress.XtraEditors.PictureEdit peImgPET;
@@ -775,21 +775,21 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
         private DevExpress.XtraEditors.LabelControl labelControl20;
-        private DevExpress.XtraEditors.TextEdit edCorPet;
+        private DevExpress.XtraEditors.TextEdit edPET_COR;
         private DevExpress.XtraEditors.LabelControl labelControl19;
         private DevExpress.XtraEditors.LabelControl labelControl18;
         private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.TextEdit edRacaPet;
-        private DevExpress.XtraEditors.TextEdit edNomePet;
+        private DevExpress.XtraEditors.TextEdit edPET_RACA;
+        private DevExpress.XtraEditors.TextEdit edPET_NOME;
         private DevExpress.XtraEditors.SplitContainerControl splitContainerControl1;
         private DevExpress.XtraEditors.LabelControl lblComp;
         private DevExpress.XtraEditors.TextEdit edComplemento;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraEditors.TextEdit edEmail;
+        private DevExpress.XtraEditors.TextEdit edCLI_EMAIL;
         private DevExpress.XtraEditors.LabelControl labelControl17;
         private DevExpress.XtraEditors.SimpleButton btnAddPet;
-        private DevExpress.XtraEditors.DateEdit edNasCli;
-        private DevExpress.XtraEditors.DateEdit edNasPet;
+        private DevExpress.XtraEditors.DateEdit edCLI_NAS;
+        private DevExpress.XtraEditors.DateEdit edPET_NAS;
         private DevExpress.XtraEditors.GridLookUpEdit edCidade;
         private DevExpress.XtraGrid.Views.Grid.GridView gridLookUpEdit1View;
     }

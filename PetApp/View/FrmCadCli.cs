@@ -58,13 +58,13 @@ namespace PetApp
                 edCLI_INSES.Enabled = true;
                 edCLI_FANTASIA.Enabled = true;
                 edCLI_CNPJ.Enabled = true;
-                edCLI_RAZSO.Enabled = true;
+                edCLI_RAZAO.Enabled = true;
             }
             else
             {
                 edCLI_INSES.Enabled = false;
                 edCLI_CNPJ.Enabled = false;
-                edCLI_RAZSO.Enabled = false;
+                edCLI_RAZAO.Enabled = false;
                 edCLI_FANTASIA.Enabled = false;
                 edCLI_NAS.Enabled = true;
             }
@@ -91,7 +91,7 @@ namespace PetApp
             dr["PET_RACA"] = F.toString(edPET_RACA.Text);
             dr["PET_COR"] = F.toString(edPET_COR.Text);
             dr["PET_NAS"] = F.toString(edPET_NAS.Text);
-            dr["PET_IDADE"] = F.toString(F.idade(Convert.ToDateTime(edPET_NAS.Value)));
+            dr["PET_IDADE"] = F.toString(F.idade(Convert.ToDateTime(edPET_NAS.EditValue)));
             infoPets.Rows.Add(dr);
         }
 
@@ -99,7 +99,7 @@ namespace PetApp
         {
             if (F.toString(rgPesTipo.EditValue) == "FIS" ) 
             {
-                if (F.toString(edCLI_RAZSO) == "")
+                if (F.toString(edCLI_RAZAO) == "")
                 {
                     F.Aviso("Por Favor, Informe o Nome do cliente.");
                 }
@@ -119,7 +119,7 @@ namespace PetApp
             }
             if (F.toString(rgPesTipo.EditValue) == "JUR")
             {
-                if (F.toString(edCLI_RAZSO) == "")
+                if (F.toString(edCLI_RAZAO) == "")
                 {
                     F.Aviso("Por favor, Informe a Razão Social do cliente");
                 }
@@ -149,9 +149,9 @@ namespace PetApp
             DataRow dr = clientes.NewRow();
             dr["CLI_ID"] = F.toInt(idc);
             idc++;
-            dr["CLI_RAZSO"] = F.toString(edCLI_RAZSO.EditValue);
+            dr["CLI_RAZSO"] = F.toString(edCLI_RAZAO.EditValue);
             dr["CLI_INSES"] = F.toString(edCLI_INSES.EditValue);
-            dr["CLI_NAS"] = edCLI_NAS.Value;
+            dr["CLI_NAS"] = edCLI_NAS.EditValue;
             dr["CLI_CEL"] = F.toString(edDDDCel.EditValue) + F.toString(edCLI_CEL.EditValue);
             dr["CLI_TEL"] = F.toString(edDDDTel.EditValue) + F.toString(edCLI_TEL.EditValue);
             dr["CLI_FANTASIA"] = F.toString(edCLI_FANTASIA.EditValue);
