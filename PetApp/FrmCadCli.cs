@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Correios.Net;
+using PetApp.Model;
 
 namespace PetApp
 {
@@ -63,8 +64,13 @@ namespace PetApp
 
         private void edCEP_Validated(object sender, EventArgs e)
         {
-
-            F.LocalizarCEP(F.toString(edCEP.EditValue),edEstado,edCidade,edBairro,edRua);
+            try
+            {
+                F.LocalizarCEP(F.toString(edCEP.EditValue),edEstado,edCidade,edBairro,edRua);
+            }
+            catch (Exception ex)
+            {
+                F.WriteLOG("-----------------------\n" + DateTime.Now.ToString() + " Erro: " + ex.Message);            }
           
         }
 
@@ -77,7 +83,7 @@ namespace PetApp
             dr["RacaPet"] = F.toString(edRacaPet.Text);
             dr["CorPet"] = F.toString(edCorPet.Text);
             dr["NasPet"] = F.toString(edNasPet.Text);
-            dr["IdadePet"] = F.toString(F.idade(Convert.ToDateTime(edNasPet.Value)));
+            dr["IdadePet"] = F.toString(F.idade(Convert.ToDateTime(edNasPet.EditValue)));
             infoPets.Rows.Add(dr);
         }
 
@@ -87,7 +93,7 @@ namespace PetApp
             {
                 if (F.toString(edNomeCli) == "")
                 {
-                    F.Aviso("Por Favor, Informe o Nome do cliente.");
+                    F.Aviso("Por Favor, Informe o Nome do Cliente.");
                 }
                 if (F.toString(edTelCli.EditValue) == "" && F.toString(edCelCli.EditValue) == ""
                 && F.toString(edEmail.EditValue) == "")
@@ -127,6 +133,30 @@ namespace PetApp
                     F.Aviso("Por Favor, Informe o DDD do telefone.");
                 }
             }
+
+            Clientes newCli = new Clientes()
+            {
+                CLI_NOME = F.toString(edNomeCli.EditValue),
+                CLI_RAZAO = F.toString(edRazSoCli.EditValue),
+                CLI_CNPJ = F.toString(edCNPJCli.EditValue),
+                CLI_INSCRICAO = F.toString(edInsEsCli.EditValue),
+                CLI_EMAIL = F.toString(edEmail.EditValue),
+                CLI_NASC = F.toString(edNasCli.EditValue),
+                CLI_DDDTEL = F.toString(edDDDTel.EditValue),
+                CLI_TEL = F.toString(edTelCli.EditValue),
+                CLI_DDDCEL = F.toString(edDDDCel.EditValue),
+                CLI_CEL = F.toString(edCelCli.EditValue),
+                CLI_PESTIPO = F.toString(rgPesTipo.EditValue),
+                CLI_CEP = F.toString(edCEP.EditValue),
+                CLI_RUA = F.toString(edRua.EditValue),
+                CLI_BAIRRO = F.toString(edBairro.EditValue),
+                CLI_NUMERO = F.toString(edNumero.EditValue),
+                CLI_ENDCOMPLE = F.toString(edComplemento.EditValue),
+                CID_ID = 1
+            };
+
+            if (Clientes.Insert(newCli))
+                this.Close();
         }
     }
 }
