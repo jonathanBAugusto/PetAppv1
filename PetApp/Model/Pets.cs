@@ -16,7 +16,7 @@ namespace PetApp.Model
         public string PET_RACA { get; set; }
         public string PET_COR { get; set; }
         public string PET_OBS { get; set; }
-        public string CLI_ID { get; set; }
+        public int CLI_ID { get; set; }
 
         private static Connection CONN;
 

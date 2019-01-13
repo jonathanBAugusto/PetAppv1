@@ -13,13 +13,11 @@ namespace PetApp
 {
     public partial class FrmServicos : Form
     {
-        List<Servicos> ser;
         double valorTotal = 0;
         string estagio;
         public FrmServicos()
         {
             InitializeComponent();
-            gridControlServicos.DataSource = Servicos.Get();
 
         }
 
@@ -68,7 +66,7 @@ namespace PetApp
                 SER_ESTAGIO = F.toString(estagio)
             };
             Servicos.Insert(servico);
-            gridControlServicos.DataSource = Servicos.Get();
+
         }
 
         private void edSER_OBSERVACAO_TextChanged(object sender, EventArgs e)
