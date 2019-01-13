@@ -28,159 +28,67 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ribbonPage4 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.popupMenu1 = new DevExpress.XtraBars.PopupMenu();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.edSER_VALOR = new DevExpress.XtraEditors.TextEdit();
+            this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.edSER_VALOR_BASE = new DevExpress.XtraEditors.TextEdit();
             this.btnCadastrar = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
-            this.edSER_TIPO = new DevExpress.XtraEditors.LookUpEdit();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnAddTipoServico = new DevExpress.XtraEditors.SimpleButton();
+            this.btnAddPet = new DevExpress.XtraEditors.SimpleButton();
             this.edPET_ID = new DevExpress.XtraEditors.LookUpEdit();
             this.edCLI_NOME = new DevExpress.XtraEditors.LookUpEdit();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnAddCli = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            this.edSER_DESCONTO = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
-            this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            this.groupControl10 = new DevExpress.XtraEditors.GroupControl();
+            this.groupControl9 = new DevExpress.XtraEditors.GroupControl();
+            this.groupControl8 = new DevExpress.XtraEditors.GroupControl();
+            this.groupControl7 = new DevExpress.XtraEditors.GroupControl();
+            this.edSER_VALOR_DESCONTO = new DevExpress.XtraEditors.TextEdit();
+            this.groupControl6 = new DevExpress.XtraEditors.GroupControl();
+            this.groupControl5 = new DevExpress.XtraEditors.GroupControl();
+            this.edSER_TIPO = new DevExpress.XtraEditors.GridLookUpEdit();
+            this.gridLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
+            this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
+            this.edSER_OBSERVACAO = new DevExpress.XtraEditors.MemoEdit();
+            this.edSER_DATA_PREV = new DevExpress.XtraEditors.DateEdit();
+            this.cbEstagio = new DevExpress.XtraEditors.RadioGroup();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edSER_VALOR.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edSER_TIPO.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edSER_VALOR_BASE.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.edPET_ID.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.edCLI_NOME.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.edSER_DESCONTO.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl10)).BeginInit();
+            this.groupControl10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl9)).BeginInit();
+            this.groupControl9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl8)).BeginInit();
+            this.groupControl8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).BeginInit();
+            this.groupControl7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.edSER_VALOR_DESCONTO.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).BeginInit();
+            this.groupControl6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).BeginInit();
+            this.groupControl5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.edSER_TIPO.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
+            this.groupControl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
+            this.groupControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.edSER_OBSERVACAO.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edSER_DATA_PREV.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edSER_DATA_PREV.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbEstagio.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonPage5
             // 
             this.ribbonPage5.Name = "ribbonPage5";
             this.ribbonPage5.Text = "ribbonPage5";
-            // 
-            // groupControl1
-            // 
-            this.groupControl1.Controls.Add(this.gridControl1);
-            this.groupControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupControl1.Location = new System.Drawing.Point(0, 158);
-            this.groupControl1.Margin = new System.Windows.Forms.Padding(2);
-            this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(598, 194);
-            this.groupControl1.TabIndex = 1;
-            this.groupControl1.Text = "Histórico de serviços";
-            // 
-            // gridControl1
-            // 
-            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2);
-            this.gridControl1.Location = new System.Drawing.Point(2, 20);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Margin = new System.Windows.Forms.Padding(2);
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(594, 172);
-            this.gridControl1.TabIndex = 1;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
-            // 
-            // gridView1
-            // 
-            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn1,
-            this.gridColumn2,
-            this.gridColumn3,
-            this.gridColumn4,
-            this.gridColumn5,
-            this.gridColumn6,
-            this.gridColumn7,
-            this.gridColumn8});
-            this.gridView1.GridControl = this.gridControl1;
-            this.gridView1.Name = "gridView1";
-            // 
-            // gridColumn1
-            // 
-            this.gridColumn1.Caption = "ID";
-            this.gridColumn1.FieldName = "SER_ID";
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 0;
-            // 
-            // gridColumn2
-            // 
-            this.gridColumn2.Caption = "Cliente";
-            this.gridColumn2.FieldName = "CLI_ID";
-            this.gridColumn2.Name = "gridColumn2";
-            this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 1;
-            // 
-            // gridColumn3
-            // 
-            this.gridColumn3.Caption = "Tipo de serviço";
-            this.gridColumn3.FieldName = "SER_TIPO";
-            this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 2;
-            // 
-            // gridColumn4
-            // 
-            this.gridColumn4.Caption = "PET";
-            this.gridColumn4.FieldName = "PET_ID";
-            this.gridColumn4.Name = "gridColumn4";
-            this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 3;
-            // 
-            // gridColumn5
-            // 
-            this.gridColumn5.Caption = "Data de cadastro";
-            this.gridColumn5.FieldName = "SER_DATA_CAD";
-            this.gridColumn5.Name = "gridColumn5";
-            this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 4;
-            // 
-            // gridColumn6
-            // 
-            this.gridColumn6.Caption = "Previsão";
-            this.gridColumn6.FieldName = "SER_DATA_PREV";
-            this.gridColumn6.Name = "gridColumn6";
-            this.gridColumn6.Visible = true;
-            this.gridColumn6.VisibleIndex = 5;
-            // 
-            // gridColumn7
-            // 
-            this.gridColumn7.Caption = "Valor";
-            this.gridColumn7.FieldName = "SER_VALOR";
-            this.gridColumn7.Name = "gridColumn7";
-            this.gridColumn7.Visible = true;
-            this.gridColumn7.VisibleIndex = 6;
-            // 
-            // gridColumn8
-            // 
-            this.gridColumn8.Caption = "Observações";
-            this.gridColumn8.FieldName = "SER_OBS";
-            this.gridColumn8.Name = "gridColumn8";
-            this.gridColumn8.Visible = true;
-            this.gridColumn8.VisibleIndex = 7;
             // 
             // ribbonPage4
             // 
@@ -191,113 +99,48 @@
             // 
             this.popupMenu1.Name = "popupMenu1";
             // 
-            // labelControl5
+            // edSER_VALOR_BASE
             // 
-            this.labelControl5.Location = new System.Drawing.Point(423, 21);
-            this.labelControl5.Margin = new System.Windows.Forms.Padding(2);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(41, 13);
-            this.labelControl5.TabIndex = 42;
-            this.labelControl5.Text = "Previsão";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(423, 37);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(86, 21);
-            this.dateTimePicker1.TabIndex = 6;
-            // 
-            // labelControl4
-            // 
-            this.labelControl4.Location = new System.Drawing.Point(281, 21);
-            this.labelControl4.Margin = new System.Windows.Forms.Padding(2);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(24, 13);
-            this.labelControl4.TabIndex = 40;
-            this.labelControl4.Text = "Valor";
-            // 
-            // edSER_VALOR
-            // 
-            this.edSER_VALOR.Location = new System.Drawing.Point(281, 38);
-            this.edSER_VALOR.Margin = new System.Windows.Forms.Padding(2);
-            this.edSER_VALOR.Name = "edSER_VALOR";
-            this.edSER_VALOR.Properties.Mask.EditMask = "c";
-            this.edSER_VALOR.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.edSER_VALOR.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.edSER_VALOR.Size = new System.Drawing.Size(67, 20);
-            this.edSER_VALOR.TabIndex = 4;
+            this.edSER_VALOR_BASE.Location = new System.Drawing.Point(4, 22);
+            this.edSER_VALOR_BASE.Margin = new System.Windows.Forms.Padding(2);
+            this.edSER_VALOR_BASE.Name = "edSER_VALOR_BASE";
+            this.edSER_VALOR_BASE.Properties.Mask.EditMask = "c";
+            this.edSER_VALOR_BASE.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.edSER_VALOR_BASE.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.edSER_VALOR_BASE.Size = new System.Drawing.Size(95, 20);
+            this.edSER_VALOR_BASE.TabIndex = 4;
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(512, 36);
+            this.btnCadastrar.Location = new System.Drawing.Point(596, 75);
             this.btnCadastrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(75, 22);
+            this.btnCadastrar.Size = new System.Drawing.Size(75, 67);
             this.btnCadastrar.TabIndex = 7;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
-            // labelControl3
+            // btnAddTipoServico
             // 
-            this.labelControl3.Location = new System.Drawing.Point(188, 21);
-            this.labelControl3.Margin = new System.Windows.Forms.Padding(2);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(72, 13);
-            this.labelControl3.TabIndex = 37;
-            this.labelControl3.Text = "Tipo de serviço";
+            this.btnAddTipoServico.Location = new System.Drawing.Point(75, 22);
+            this.btnAddTipoServico.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddTipoServico.Name = "btnAddTipoServico";
+            this.btnAddTipoServico.Size = new System.Drawing.Size(24, 21);
+            this.btnAddTipoServico.TabIndex = 36;
+            this.btnAddTipoServico.Text = "+";
             // 
-            // simpleButton3
+            // btnAddPet
             // 
-            this.simpleButton3.Location = new System.Drawing.Point(259, 38);
-            this.simpleButton3.Margin = new System.Windows.Forms.Padding(2);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(18, 20);
-            this.simpleButton3.TabIndex = 36;
-            this.simpleButton3.Text = "+";
-            // 
-            // edSER_TIPO
-            // 
-            this.edSER_TIPO.Location = new System.Drawing.Point(188, 38);
-            this.edSER_TIPO.Margin = new System.Windows.Forms.Padding(2);
-            this.edSER_TIPO.Name = "edSER_TIPO";
-            this.edSER_TIPO.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.edSER_TIPO.Properties.NullText = "Serviço";
-            this.edSER_TIPO.Size = new System.Drawing.Size(67, 20);
-            this.edSER_TIPO.TabIndex = 3;
-            // 
-            // labelControl2
-            // 
-            this.labelControl2.Location = new System.Drawing.Point(96, 21);
-            this.labelControl2.Margin = new System.Windows.Forms.Padding(2);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(18, 13);
-            this.labelControl2.TabIndex = 34;
-            this.labelControl2.Text = "PET";
-            // 
-            // labelControl1
-            // 
-            this.labelControl1.Location = new System.Drawing.Point(4, 21);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(2);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(33, 13);
-            this.labelControl1.TabIndex = 33;
-            this.labelControl1.Text = "Cliente";
-            // 
-            // simpleButton2
-            // 
-            this.simpleButton2.Location = new System.Drawing.Point(167, 37);
-            this.simpleButton2.Margin = new System.Windows.Forms.Padding(2);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(17, 21);
-            this.simpleButton2.TabIndex = 32;
-            this.simpleButton2.Text = "+";
+            this.btnAddPet.Location = new System.Drawing.Point(75, 21);
+            this.btnAddPet.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddPet.Name = "btnAddPet";
+            this.btnAddPet.Size = new System.Drawing.Size(22, 21);
+            this.btnAddPet.TabIndex = 32;
+            this.btnAddPet.Text = "+";
             // 
             // edPET_ID
             // 
-            this.edPET_ID.Location = new System.Drawing.Point(96, 38);
+            this.edPET_ID.Location = new System.Drawing.Point(4, 22);
             this.edPET_ID.Margin = new System.Windows.Forms.Padding(2);
             this.edPET_ID.Name = "edPET_ID";
             this.edPET_ID.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -308,151 +151,250 @@
             // 
             // edCLI_NOME
             // 
-            this.edCLI_NOME.Location = new System.Drawing.Point(4, 38);
+            this.edCLI_NOME.Location = new System.Drawing.Point(4, 22);
             this.edCLI_NOME.Margin = new System.Windows.Forms.Padding(2);
             this.edCLI_NOME.Name = "edCLI_NOME";
             this.edCLI_NOME.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.edCLI_NOME.Properties.NullText = "Cliente";
-            this.edCLI_NOME.Size = new System.Drawing.Size(67, 20);
+            this.edCLI_NOME.Size = new System.Drawing.Size(74, 20);
             this.edCLI_NOME.TabIndex = 1;
             // 
-            // simpleButton1
+            // btnAddCli
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(75, 38);
-            this.simpleButton1.Margin = new System.Windows.Forms.Padding(2);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(17, 20);
-            this.simpleButton1.TabIndex = 29;
-            this.simpleButton1.Text = "+";
+            this.btnAddCli.Location = new System.Drawing.Point(82, 22);
+            this.btnAddCli.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddCli.Name = "btnAddCli";
+            this.btnAddCli.Size = new System.Drawing.Size(24, 20);
+            this.btnAddCli.TabIndex = 29;
+            this.btnAddCli.Text = "+";
             // 
             // groupControl2
             // 
-            this.groupControl2.Controls.Add(this.edSER_DESCONTO);
-            this.groupControl2.Controls.Add(this.labelControl7);
-            this.groupControl2.Controls.Add(this.labelControl6);
-            this.groupControl2.Controls.Add(this.richTextBox1);
-            this.groupControl2.Controls.Add(this.labelControl1);
-            this.groupControl2.Controls.Add(this.labelControl5);
-            this.groupControl2.Controls.Add(this.simpleButton1);
-            this.groupControl2.Controls.Add(this.dateTimePicker1);
-            this.groupControl2.Controls.Add(this.edCLI_NOME);
-            this.groupControl2.Controls.Add(this.labelControl4);
-            this.groupControl2.Controls.Add(this.edPET_ID);
-            this.groupControl2.Controls.Add(this.edSER_VALOR);
-            this.groupControl2.Controls.Add(this.simpleButton2);
+            this.groupControl2.Controls.Add(this.groupControl10);
+            this.groupControl2.Controls.Add(this.groupControl9);
+            this.groupControl2.Controls.Add(this.groupControl8);
+            this.groupControl2.Controls.Add(this.groupControl7);
+            this.groupControl2.Controls.Add(this.groupControl6);
+            this.groupControl2.Controls.Add(this.groupControl5);
+            this.groupControl2.Controls.Add(this.groupControl4);
+            this.groupControl2.Controls.Add(this.groupControl3);
             this.groupControl2.Controls.Add(this.btnCadastrar);
-            this.groupControl2.Controls.Add(this.labelControl2);
-            this.groupControl2.Controls.Add(this.labelControl3);
-            this.groupControl2.Controls.Add(this.edSER_TIPO);
-            this.groupControl2.Controls.Add(this.simpleButton3);
             this.groupControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl2.Location = new System.Drawing.Point(0, 0);
             this.groupControl2.Margin = new System.Windows.Forms.Padding(2);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(598, 158);
+            this.groupControl2.Size = new System.Drawing.Size(678, 150);
             this.groupControl2.TabIndex = 43;
             this.groupControl2.Text = "Cadastrar Serviço";
-            this.groupControl2.Paint += new System.Windows.Forms.PaintEventHandler(this.groupControl2_Paint);
             // 
-            // edSER_DESCONTO
+            // groupControl10
             // 
-            this.edSER_DESCONTO.Location = new System.Drawing.Point(352, 38);
-            this.edSER_DESCONTO.Margin = new System.Windows.Forms.Padding(2);
-            this.edSER_DESCONTO.Name = "edSER_DESCONTO";
-            this.edSER_DESCONTO.Properties.Mask.EditMask = "c";
-            this.edSER_DESCONTO.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.edSER_DESCONTO.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.edSER_DESCONTO.Size = new System.Drawing.Size(67, 20);
-            this.edSER_DESCONTO.TabIndex = 5;
+            this.groupControl10.Controls.Add(this.cbEstagio);
+            this.groupControl10.Location = new System.Drawing.Point(340, 75);
+            this.groupControl10.Name = "groupControl10";
+            this.groupControl10.Padding = new System.Windows.Forms.Padding(2);
+            this.groupControl10.Size = new System.Drawing.Size(251, 67);
+            this.groupControl10.TabIndex = 51;
+            this.groupControl10.Text = "Estágio";
             // 
-            // labelControl7
+            // groupControl9
             // 
-            this.labelControl7.Location = new System.Drawing.Point(352, 22);
-            this.labelControl7.Margin = new System.Windows.Forms.Padding(2);
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(45, 13);
-            this.labelControl7.TabIndex = 45;
-            this.labelControl7.Text = "Desconto";
+            this.groupControl9.Controls.Add(this.edSER_OBSERVACAO);
+            this.groupControl9.Location = new System.Drawing.Point(5, 75);
+            this.groupControl9.Name = "groupControl9";
+            this.groupControl9.Size = new System.Drawing.Size(329, 67);
+            this.groupControl9.TabIndex = 52;
+            this.groupControl9.Text = "Observações";
             // 
-            // labelControl6
+            // groupControl8
             // 
-            this.labelControl6.Location = new System.Drawing.Point(5, 64);
-            this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(63, 13);
-            this.labelControl6.TabIndex = 44;
-            this.labelControl6.Text = "Observações";
+            this.groupControl8.Controls.Add(this.edSER_DATA_PREV);
+            this.groupControl8.Location = new System.Drawing.Point(558, 23);
+            this.groupControl8.Name = "groupControl8";
+            this.groupControl8.Size = new System.Drawing.Size(113, 46);
+            this.groupControl8.TabIndex = 51;
+            this.groupControl8.Text = "Data de previsão";
             // 
-            // richTextBox1
+            // groupControl7
             // 
-            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.richTextBox1.Location = new System.Drawing.Point(2, 83);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(594, 73);
-            this.richTextBox1.TabIndex = 43;
-            this.richTextBox1.Text = "";
+            this.groupControl7.Controls.Add(this.edSER_VALOR_DESCONTO);
+            this.groupControl7.Location = new System.Drawing.Point(449, 23);
+            this.groupControl7.Name = "groupControl7";
+            this.groupControl7.Size = new System.Drawing.Size(103, 46);
+            this.groupControl7.TabIndex = 50;
+            this.groupControl7.Text = "Desconto";
+            // 
+            // edSER_VALOR_DESCONTO
+            // 
+            this.edSER_VALOR_DESCONTO.Location = new System.Drawing.Point(4, 22);
+            this.edSER_VALOR_DESCONTO.Margin = new System.Windows.Forms.Padding(2);
+            this.edSER_VALOR_DESCONTO.Name = "edSER_VALOR_DESCONTO";
+            this.edSER_VALOR_DESCONTO.Properties.Mask.EditMask = "c";
+            this.edSER_VALOR_DESCONTO.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.edSER_VALOR_DESCONTO.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.edSER_VALOR_DESCONTO.Size = new System.Drawing.Size(95, 20);
+            this.edSER_VALOR_DESCONTO.TabIndex = 5;
+            // 
+            // groupControl6
+            // 
+            this.groupControl6.Controls.Add(this.edSER_VALOR_BASE);
+            this.groupControl6.Location = new System.Drawing.Point(340, 23);
+            this.groupControl6.Name = "groupControl6";
+            this.groupControl6.Size = new System.Drawing.Size(103, 46);
+            this.groupControl6.TabIndex = 49;
+            this.groupControl6.Text = "Valor";
+            // 
+            // groupControl5
+            // 
+            this.groupControl5.Controls.Add(this.edSER_TIPO);
+            this.groupControl5.Controls.Add(this.btnAddTipoServico);
+            this.groupControl5.Location = new System.Drawing.Point(231, 23);
+            this.groupControl5.Name = "groupControl5";
+            this.groupControl5.Size = new System.Drawing.Size(103, 46);
+            this.groupControl5.TabIndex = 48;
+            this.groupControl5.Text = "Tipo de Serviço";
+            // 
+            // edSER_TIPO
+            // 
+            this.edSER_TIPO.EditValue = "S";
+            this.edSER_TIPO.Location = new System.Drawing.Point(5, 23);
+            this.edSER_TIPO.Name = "edSER_TIPO";
+            this.edSER_TIPO.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.edSER_TIPO.Properties.NullText = "Selecione";
+            this.edSER_TIPO.Properties.PopupView = this.gridLookUpEdit1View;
+            this.edSER_TIPO.Size = new System.Drawing.Size(67, 20);
+            this.edSER_TIPO.TabIndex = 44;
+            // 
+            // gridLookUpEdit1View
+            // 
+            this.gridLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.gridLookUpEdit1View.Name = "gridLookUpEdit1View";
+            this.gridLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.gridLookUpEdit1View.OptionsView.ShowGroupPanel = false;
+            // 
+            // groupControl4
+            // 
+            this.groupControl4.Controls.Add(this.edPET_ID);
+            this.groupControl4.Controls.Add(this.btnAddPet);
+            this.groupControl4.Location = new System.Drawing.Point(122, 23);
+            this.groupControl4.Name = "groupControl4";
+            this.groupControl4.Size = new System.Drawing.Size(103, 46);
+            this.groupControl4.TabIndex = 47;
+            this.groupControl4.Text = "Pet";
+            // 
+            // groupControl3
+            // 
+            this.groupControl3.Controls.Add(this.edCLI_NOME);
+            this.groupControl3.Controls.Add(this.btnAddCli);
+            this.groupControl3.Location = new System.Drawing.Point(5, 23);
+            this.groupControl3.Name = "groupControl3";
+            this.groupControl3.Size = new System.Drawing.Size(111, 46);
+            this.groupControl3.TabIndex = 46;
+            this.groupControl3.Text = "Cliente";
+            // 
+            // edSER_OBSERVACAO
+            // 
+            this.edSER_OBSERVACAO.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.edSER_OBSERVACAO.Location = new System.Drawing.Point(2, 20);
+            this.edSER_OBSERVACAO.Name = "edSER_OBSERVACAO";
+            this.edSER_OBSERVACAO.Size = new System.Drawing.Size(325, 45);
+            this.edSER_OBSERVACAO.TabIndex = 0;
+            // 
+            // edSER_DATA_PREV
+            // 
+            this.edSER_DATA_PREV.EditValue = null;
+            this.edSER_DATA_PREV.Location = new System.Drawing.Point(5, 22);
+            this.edSER_DATA_PREV.Name = "edSER_DATA_PREV";
+            this.edSER_DATA_PREV.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.edSER_DATA_PREV.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.edSER_DATA_PREV.Size = new System.Drawing.Size(102, 20);
+            this.edSER_DATA_PREV.TabIndex = 0;
+            // 
+            // cbEstagio
+            // 
+            this.cbEstagio.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbEstagio.Location = new System.Drawing.Point(4, 22);
+            this.cbEstagio.Name = "cbEstagio";
+            this.cbEstagio.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
+            new DevExpress.XtraEditors.Controls.RadioGroupItem("N", "Não Iniciado"),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem("P", "Em processo"),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem("F", "Finalizado"),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem("C", "Cancelado")});
+            this.cbEstagio.Size = new System.Drawing.Size(243, 41);
+            this.cbEstagio.TabIndex = 0;
             // 
             // FrmServicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(598, 352);
+            this.ClientSize = new System.Drawing.Size(678, 150);
             this.Controls.Add(this.groupControl2);
-            this.Controls.Add(this.groupControl1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmServicos";
             this.Text = "Serviços";
             this.Load += new System.EventHandler(this.FrmServicos_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
-            this.groupControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edSER_VALOR.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edSER_TIPO.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edSER_VALOR_BASE.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.edPET_ID.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.edCLI_NOME.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
-            this.groupControl2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.edSER_DESCONTO.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl10)).EndInit();
+            this.groupControl10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl9)).EndInit();
+            this.groupControl9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl8)).EndInit();
+            this.groupControl8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).EndInit();
+            this.groupControl7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.edSER_VALOR_DESCONTO.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).EndInit();
+            this.groupControl6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).EndInit();
+            this.groupControl5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.edSER_TIPO.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
+            this.groupControl4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
+            this.groupControl3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.edSER_OBSERVACAO.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edSER_DATA_PREV.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edSER_DATA_PREV.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbEstagio.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage5;
-        private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraGrid.GridControl gridControl1;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage4;
         private DevExpress.XtraBars.PopupMenu popupMenu1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
-        private DevExpress.XtraEditors.LabelControl labelControl5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.TextEdit edSER_VALOR;
+        private DevExpress.XtraEditors.TextEdit edSER_VALOR_BASE;
         private DevExpress.XtraEditors.SimpleButton btnCadastrar;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
-        private DevExpress.XtraEditors.LookUpEdit edSER_TIPO;
-        private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private DevExpress.XtraEditors.SimpleButton btnAddTipoServico;
+        private DevExpress.XtraEditors.SimpleButton btnAddPet;
         private DevExpress.XtraEditors.LookUpEdit edPET_ID;
         private DevExpress.XtraEditors.LookUpEdit edCLI_NOME;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton btnAddCli;
         private DevExpress.XtraEditors.GroupControl groupControl2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
-        private DevExpress.XtraEditors.LabelControl labelControl6;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private DevExpress.XtraEditors.TextEdit edSER_DESCONTO;
-        private DevExpress.XtraEditors.LabelControl labelControl7;
+        private DevExpress.XtraEditors.TextEdit edSER_VALOR_DESCONTO;
+        private DevExpress.XtraEditors.GroupControl groupControl9;
+        private DevExpress.XtraEditors.GroupControl groupControl8;
+        private DevExpress.XtraEditors.GroupControl groupControl7;
+        private DevExpress.XtraEditors.GroupControl groupControl6;
+        private DevExpress.XtraEditors.GroupControl groupControl5;
+        private DevExpress.XtraEditors.GroupControl groupControl4;
+        private DevExpress.XtraEditors.GroupControl groupControl3;
+        private DevExpress.XtraEditors.GridLookUpEdit edSER_TIPO;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridLookUpEdit1View;
+        private DevExpress.XtraEditors.GroupControl groupControl10;
+        private DevExpress.XtraEditors.RadioGroup cbEstagio;
+        private DevExpress.XtraEditors.MemoEdit edSER_OBSERVACAO;
+        private DevExpress.XtraEditors.DateEdit edSER_DATA_PREV;
     }
 }

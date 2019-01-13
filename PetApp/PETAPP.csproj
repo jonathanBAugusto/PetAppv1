@@ -88,12 +88,7 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="Control\Connection.cs" />
-    <Compile Include="View\FrmCadServico.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\FrmCadServico.Designer.cs">
-      <DependentUpon>FrmCadServico.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Model\Servicos.cs" />
     <Compile Include="FrmInicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +113,12 @@
     <Compile Include="View\FrmPets.Designer.cs">
       <DependentUpon>FrmPets.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Relatorios\REL_SERVICOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Relatorios\REL_SERVICOS.Designer.cs">
+      <DependentUpon>REL_SERVICOS.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Servicos\FrmServicos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,9 +136,6 @@
     <Compile Include="View\Servicos\frmTipoServico.Designer.cs">
       <DependentUpon>frmTipoServico.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="View\FrmCadServico.resx">
-      <DependentUpon>FrmCadServico.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmInicio.resx">
       <DependentUpon>FrmInicio.cs</DependentUpon>
     </EmbeddedResource>
@@ -149,6 +147,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\FrmPets.resx">
       <DependentUpon>FrmPets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Relatorios\REL_SERVICOS.resx">
+      <DependentUpon>REL_SERVICOS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Servicos\FrmServicos.resx">
       <DependentUpon>FrmServicos.cs</DependentUpon>

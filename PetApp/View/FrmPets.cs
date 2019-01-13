@@ -30,7 +30,7 @@ namespace PetApp
         {
             List<Pets> listPets = new List<Pets>();
 
-            listPets.Add(new Pets() { PET_ID = id, PET_NOME = F.toString(edPET_NOME.EditValue), PET_RACA = F.toString(edPET_RACA.EditValue), PET_OBS = F.toString(edPET_OBS.EditValue), PET_NAS = edPET_NAS.Value, PET_COR = F.toString(edPET_COR.EditValue), CLI_NOME = F.toString(edCLI_ID.EditValue),PET_IMG = F.toString(PET_IMG.Image)});
+            listPets.Add(new Pets() { PET_ID = id, PET_NOME = F.toString(edPET_NOME.EditValue), PET_RACA = F.toString(edPET_RACA.EditValue), PET_OBS = F.toString(edPET_OBS.Text), PET_NAS = edPET_NAS.Value, PET_COR = F.toString(edPET_COR.EditValue), CLI_NOME = F.toString(edCLI_ID.EditValue),PET_IMG = F.toString(PET_IMG.Image)});
             id++;
             gridControlPets.DataSource = listPets;
         }
