@@ -1,76 +1,84 @@
-﻿using PetApp.Control;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PetApp.Control;
+using SQLite;
 
 namespace PetApp.Model
 {
-    class Pets
+    [Table("PRODUTOS")]
+    class Produtos
     {
-        public int PET_ID { get; set; }
-        public string PET_IMG { get; set; }
-        public string PET_NOME { get; set; }
-        public string PET_NAS { get; set; }
-        public string PET_RACA { get; set; }
-        public string PET_COR { get; set; }
-        public string PET_OBS { get; set; }
-        public string CLI_ID { get; set; }
+        [PrimaryKey, AutoIncrement]
+        public int PRO_ID { get; set; }
+        public string PRO_REFERENCIA { get; set; }
+        public string PRO_DESCRICAO { get; set; }
+        public double PRO_CUSTO { get; set; }
+        public double PRO_CUSTOULTCOMPRA { get; set; }
+        public string PRO_TIPO { get; set; }
+        public int PRO_FORNECEDOR { get; set; }
+        public string PRO_IMAGEM { get; set; }
 
         private static Connection CONN;
 
-        public static List<Pets> Get()
+        public Produtos()
         {
             CONN = new Connection();
-            List<Pets> list = new List<Pets>();
+        }
+
+        public static List<Produtos> Get()
+        {
+            CONN = new Connection();
+            List<Produtos> list = new List<Produtos>();
 
             try
             {
-                list = CONN.conn.Table<Pets>().ToList<Pets>();
+                list = CONN.conn.Table<Produtos>().ToList<Produtos>();
             }
             catch
             {
                 try
                 {
-                    list = CONN.conn.Table<Pets>().ToList<Pets>();
+                    list = CONN.conn.Table<Produtos>().ToList<Produtos>();
                 }
                 catch (Exception ex)
                 {
                     F.WriteLOG("---------------------------\n" + DateTime.Now.ToString() + " Error: " + ex.Message);
-                    list = new List<Pets>();
+                    list = new List<Produtos>();
                 }
             }
 
             return list;
         }
 
-        public static Pets Get(int ID)
+        public static Produtos Get(int ID)
         {
             CONN = new Connection();
-            Pets user = new Pets();
+            Produtos user = new Produtos();
 
             try
             {
-                user = CONN.conn.Get<Pets>(ID);
+                user = CONN.conn.Get<Produtos>(ID);
             }
             catch
             {
                 try
                 {
-                    user = CONN.conn.Get<Pets>(ID);
+                    user = CONN.conn.Get<Produtos>(ID);
                 }
                 catch (Exception ex)
                 {
                     F.WriteLOG("---------------------------\n" + DateTime.Now.ToString() + " Error: " + ex.Message);
-                    user = new Pets();
+                    user = new Produtos();
                 }
             }
 
             return user;
         }
 
-        public static bool Insert(Pets user)
+        public static bool Insert(Produtos user)
         {
             CONN = new Connection();
             try
@@ -92,7 +100,7 @@ namespace PetApp.Model
             return true;
         }
 
-        public static bool Insert(List<Pets> user)
+        public static bool Insert(List<Produtos> user)
         {
             CONN = new Connection();
             try
@@ -114,7 +122,7 @@ namespace PetApp.Model
             return true;
         }
 
-        public static bool Update(Pets user)
+        public static bool Update(Produtos user)
         {
             CONN = new Connection();
             try
@@ -136,7 +144,7 @@ namespace PetApp.Model
             return true;
         }
 
-        public static bool Update(List<Pets> user)
+        public static bool Update(List<Produtos> user)
         {
             CONN = new Connection();
             try
@@ -158,7 +166,7 @@ namespace PetApp.Model
             return true;
         }
 
-        public static bool Delete(Pets user)
+        public static bool Delete(Produtos user)
         {
             CONN = new Connection();
             try
@@ -180,12 +188,12 @@ namespace PetApp.Model
             return true;
         }
 
-        public static bool Delete(List<Pets> users)
+        public static bool Delete(List<Produtos> users)
         {
             CONN = new Connection();
             try
             {
-                foreach (Pets user in users)
+                foreach (Produtos user in users)
                 {
                     CONN.conn.Delete(user);
                 }
@@ -204,13 +212,13 @@ namespace PetApp.Model
             CONN = new Connection();
             try
             {
-                CONN.conn.DeleteAll<Pets>();
+                CONN.conn.DeleteAll<Produtos>();
             }
             catch
             {
-                try
+                try 
                 {
-                    CONN.conn.DeleteAll<Pets>();
+                    CONN.conn.DeleteAll<Produtos>();
                 }
                 catch (Exception ex)
                 {
