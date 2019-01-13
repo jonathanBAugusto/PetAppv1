@@ -13,7 +13,6 @@ namespace PetApp
 {
     public partial class FrmPets : Form
     {
-        DataTable petTable;
         int id = 0;
         public FrmPets()
         {

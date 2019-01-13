@@ -37,5 +37,21 @@ namespace PetApp
             FrmCadServico form = new FrmCadServico();
             form.Show();
         }
+
+        private void groupControl2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            if (F.toString(edSER_DESCONTO.EditValue) != "")
+            {
+                double valorTotal = 0;
+                valorTotal
+                    = F.toDouble(edSER_VALOR) - F.toDouble(edSER_DESCONTO);
+            }
+        }
+
     }
 }
