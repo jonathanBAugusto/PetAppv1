@@ -75,5 +75,10 @@ namespace PetApp.View
         {
 
         }
+
+        private void FrmProdutos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
