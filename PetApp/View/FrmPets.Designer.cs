@@ -70,8 +70,8 @@
             this.edPET_OBS = new DevExpress.XtraEditors.TextEdit();
             this.edCLI_ID = new DevExpress.XtraEditors.LookUpEdit();
             this.edPET_RACA = new DevExpress.XtraEditors.LookUpEdit();
-            this.edPET_NAS = new System.Windows.Forms.DateTimePicker();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.edPET_NAS = new DevExpress.XtraEditors.DateEdit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemImageEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlPets)).BeginInit();
@@ -82,6 +82,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.edPET_OBS.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.edCLI_ID.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.edPET_RACA.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edPET_NAS.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edPET_NAS.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // gridColumn2
@@ -162,10 +164,10 @@
             // gridControlPets
             // 
             this.gridControlPets.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.gridControlPets.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gridControlPets.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2);
             this.gridControlPets.Location = new System.Drawing.Point(0, 89);
             this.gridControlPets.MainView = this.tileView1;
-            this.gridControlPets.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gridControlPets.Margin = new System.Windows.Forms.Padding(2);
             this.gridControlPets.Name = "gridControlPets";
             this.gridControlPets.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemPictureEdit1,
@@ -274,7 +276,7 @@
             // btnAdd
             // 
             this.btnAdd.Location = new System.Drawing.Point(387, 21);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(88, 64);
             this.btnAdd.TabIndex = 1;
@@ -285,7 +287,7 @@
             // 
             this.PET_IMG.Cursor = System.Windows.Forms.Cursors.Default;
             this.PET_IMG.Location = new System.Drawing.Point(11, 8);
-            this.PET_IMG.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PET_IMG.Margin = new System.Windows.Forms.Padding(2);
             this.PET_IMG.Name = "PET_IMG";
             this.PET_IMG.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.PET_IMG.Size = new System.Drawing.Size(74, 77);
@@ -294,7 +296,7 @@
             // edPET_NOME
             // 
             this.edPET_NOME.Location = new System.Drawing.Point(89, 21);
-            this.edPET_NOME.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.edPET_NOME.Margin = new System.Windows.Forms.Padding(2);
             this.edPET_NOME.Name = "edPET_NOME";
             this.edPET_NOME.Size = new System.Drawing.Size(95, 20);
             this.edPET_NOME.TabIndex = 3;
@@ -322,7 +324,7 @@
             // edPET_COR
             // 
             this.edPET_COR.Location = new System.Drawing.Point(89, 65);
-            this.edPET_COR.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.edPET_COR.Margin = new System.Windows.Forms.Padding(2);
             this.edPET_COR.Name = "edPET_COR";
             this.edPET_COR.Size = new System.Drawing.Size(95, 20);
             this.edPET_COR.TabIndex = 5;
@@ -370,7 +372,7 @@
             // edPET_OBS
             // 
             this.edPET_OBS.Location = new System.Drawing.Point(286, 65);
-            this.edPET_OBS.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.edPET_OBS.Margin = new System.Windows.Forms.Padding(2);
             this.edPET_OBS.Name = "edPET_OBS";
             this.edPET_OBS.Size = new System.Drawing.Size(97, 20);
             this.edPET_OBS.TabIndex = 13;
@@ -378,7 +380,7 @@
             // edCLI_ID
             // 
             this.edCLI_ID.Location = new System.Drawing.Point(187, 21);
-            this.edCLI_ID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.edCLI_ID.Margin = new System.Windows.Forms.Padding(2);
             this.edCLI_ID.Name = "edCLI_ID";
             this.edCLI_ID.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -388,38 +390,41 @@
             // edPET_RACA
             // 
             this.edPET_RACA.Location = new System.Drawing.Point(188, 65);
-            this.edPET_RACA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.edPET_RACA.Margin = new System.Windows.Forms.Padding(2);
             this.edPET_RACA.Name = "edPET_RACA";
             this.edPET_RACA.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.edPET_RACA.Size = new System.Drawing.Size(74, 20);
             this.edPET_RACA.TabIndex = 16;
             // 
-            // edPET_NAS
-            // 
-            this.edPET_NAS.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.edPET_NAS.Location = new System.Drawing.Point(286, 21);
-            this.edPET_NAS.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.edPET_NAS.Name = "edPET_NAS";
-            this.edPET_NAS.Size = new System.Drawing.Size(97, 20);
-            this.edPET_NAS.TabIndex = 17;
-            // 
             // simpleButton2
             // 
             this.simpleButton2.Location = new System.Drawing.Point(266, 65);
-            this.simpleButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.simpleButton2.Margin = new System.Windows.Forms.Padding(2);
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.Size = new System.Drawing.Size(16, 20);
             this.simpleButton2.TabIndex = 18;
             this.simpleButton2.Text = "+";
+            // 
+            // edPET_NAS
+            // 
+            this.edPET_NAS.EditValue = null;
+            this.edPET_NAS.Location = new System.Drawing.Point(286, 21);
+            this.edPET_NAS.Name = "edPET_NAS";
+            this.edPET_NAS.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.edPET_NAS.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.edPET_NAS.Size = new System.Drawing.Size(97, 20);
+            this.edPET_NAS.TabIndex = 19;
             // 
             // FrmPets
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(481, 307);
-            this.Controls.Add(this.simpleButton2);
             this.Controls.Add(this.edPET_NAS);
+            this.Controls.Add(this.simpleButton2);
             this.Controls.Add(this.edPET_RACA);
             this.Controls.Add(this.edCLI_ID);
             this.Controls.Add(this.label6);
@@ -434,7 +439,7 @@
             this.Controls.Add(this.PET_IMG);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.gridControlPets);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmPets";
             this.Text = "PETS";
             this.Load += new System.EventHandler(this.FrmPets_Load);
@@ -448,6 +453,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.edPET_OBS.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.edCLI_ID.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.edPET_RACA.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edPET_NAS.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edPET_NAS.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -479,8 +486,8 @@
         private DevExpress.XtraEditors.TextEdit edPET_OBS;
         private DevExpress.XtraEditors.LookUpEdit edCLI_ID;
         private DevExpress.XtraEditors.LookUpEdit edPET_RACA;
-        private System.Windows.Forms.DateTimePicker edPET_NAS;
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
         private DevExpress.XtraGrid.Columns.TileViewColumn tileViewColumn1;
+        private DevExpress.XtraEditors.DateEdit edPET_NAS;
     }
 }

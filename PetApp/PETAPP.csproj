@@ -83,6 +83,8 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="Control\Connection.cs" />
+    <Compile Include="Model\Produtos.cs" />
+    <Compile Include="Model\TipoProduto.cs" />
     <Compile Include="View\FrmCadServico.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +115,12 @@
     <Compile Include="View\FrmPets.Designer.cs">
       <DependentUpon>FrmPets.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FrmProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmProdutos.Designer.cs">
+      <DependentUpon>FrmProdutos.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FrmServicos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\FrmPets.resx">
       <DependentUpon>FrmPets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmProdutos.resx">
+      <DependentUpon>FrmProdutos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FrmServicos.resx">
       <DependentUpon>FrmServicos.cs</DependentUpon>
