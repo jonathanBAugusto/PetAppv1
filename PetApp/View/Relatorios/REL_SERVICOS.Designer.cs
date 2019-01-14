@@ -57,7 +57,7 @@
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(717, 450);
             this.groupControl1.TabIndex = 2;
-            this.groupControl1.Text = "Histórico de serviços";
+            this.groupControl1.Text = "Relatórios de serviços";
             // 
             // gridControlServicos
             // 

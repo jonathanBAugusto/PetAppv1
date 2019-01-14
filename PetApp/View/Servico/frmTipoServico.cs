@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PetApp.View.Servicos
+namespace PetApp.View.Servico
 {
     public partial class frmTipoServico : DevExpress.XtraEditors.XtraForm
     {

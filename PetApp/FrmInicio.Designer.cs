@@ -30,20 +30,20 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInicio));
             this.acInicio = new DevExpress.XtraBars.Navigation.AccordionControl();
-            this.accordionControlElement2 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement3 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement4 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement6 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement7 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement8 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement9 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement10 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement11 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.iSlider = new DevExpress.XtraEditors.Controls.ImageSlider();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.accordionControlElement5 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.accordionControlElement10 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement11 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement2 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement3 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement4 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             ((System.ComponentModel.ISupportInitialize)(this.acInicio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iSlider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -54,43 +54,15 @@
             this.acInicio.Cursor = System.Windows.Forms.Cursors.Default;
             this.acInicio.Dock = System.Windows.Forms.DockStyle.Left;
             this.acInicio.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlElement2,
-            this.accordionControlElement3,
-            this.accordionControlElement4,
             this.accordionControlElement6,
-            this.accordionControlElement10});
+            this.accordionControlElement10,
+            this.accordionControlElement3});
             this.acInicio.Location = new System.Drawing.Point(0, 0);
             this.acInicio.Name = "acInicio";
             this.acInicio.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Auto;
-            this.acInicio.Size = new System.Drawing.Size(159, 363);
+            this.acInicio.Size = new System.Drawing.Size(199, 363);
             this.acInicio.TabIndex = 0;
             this.acInicio.Text = "accordionControl1";
-            // 
-            // accordionControlElement2
-            // 
-            this.accordionControlElement2.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
-            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text),
-            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image),
-            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl),
-            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.ContextButtons)});
-            this.accordionControlElement2.Name = "accordionControlElement2";
-            this.accordionControlElement2.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement2.Text = "Clientes";
-            this.accordionControlElement2.Click += new System.EventHandler(this.accordionControlElement2_Click);
-            // 
-            // accordionControlElement3
-            // 
-            this.accordionControlElement3.Name = "accordionControlElement3";
-            this.accordionControlElement3.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement3.Text = "Serviços";
-            this.accordionControlElement3.Click += new System.EventHandler(this.accordionControlElement3_Click);
-            // 
-            // accordionControlElement4
-            // 
-            this.accordionControlElement4.Name = "accordionControlElement4";
-            this.accordionControlElement4.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement4.Text = "Pets";
-            this.accordionControlElement4.Click += new System.EventHandler(this.accordionControlElement4_Click);
             // 
             // accordionControlElement6
             // 
@@ -98,6 +70,7 @@
             this.accordionControlElement7,
             this.accordionControlElement8,
             this.accordionControlElement9,
+            this.accordionControlElement2,
             this.accordionControlElement1});
             this.accordionControlElement6.Name = "accordionControlElement6";
             this.accordionControlElement6.Text = "Cadastros";
@@ -130,6 +103,20 @@
             this.accordionControlElement1.Text = "Produtos";
             this.accordionControlElement1.Click += new System.EventHandler(this.accordionControlElement1_Click_1);
             // 
+            // accordionControlElement10
+            // 
+            this.accordionControlElement10.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
+            this.accordionControlElement11});
+            this.accordionControlElement10.Name = "accordionControlElement10";
+            this.accordionControlElement10.Text = "Relatórios";
+            // 
+            // accordionControlElement11
+            // 
+            this.accordionControlElement11.Name = "accordionControlElement11";
+            this.accordionControlElement11.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement11.Text = "Serviços";
+            this.accordionControlElement11.Click += new System.EventHandler(this.accordionControlElement11_Click);
+            // 
             // iSlider
             // 
             this.iSlider.CurrentImageIndex = 0;
@@ -137,18 +124,18 @@
             this.iSlider.Dock = System.Windows.Forms.DockStyle.Fill;
             this.iSlider.Images.Add(((System.Drawing.Image)(resources.GetObject("iSlider.Images"))));
             this.iSlider.Images.Add(((System.Drawing.Image)(resources.GetObject("iSlider.Images1"))));
-            this.iSlider.Location = new System.Drawing.Point(159, 0);
+            this.iSlider.Location = new System.Drawing.Point(199, 0);
             this.iSlider.Name = "iSlider";
-            this.iSlider.Size = new System.Drawing.Size(481, 363);
+            this.iSlider.Size = new System.Drawing.Size(441, 363);
             this.iSlider.TabIndex = 1;
             this.iSlider.Text = "imageSlider1";
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(159, 343);
+            this.dateTimePicker1.Location = new System.Drawing.Point(199, 342);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(481, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(441, 21);
             this.dateTimePicker1.TabIndex = 2;
             // 
             // accordionControlElement5
@@ -162,33 +149,38 @@
             this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBox1.Image = global::PetApp.Properties.Resources.s;
             this.pictureBox1.InitialImage = global::PetApp.Properties.Resources.s;
-            this.pictureBox1.Location = new System.Drawing.Point(159, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(199, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(120, 139);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
-            // accordionControlElement10
+            // accordionControlElement2
             // 
-            this.accordionControlElement10.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlElement11});
-            this.accordionControlElement10.Expanded = true;
-            this.accordionControlElement10.Name = "accordionControlElement10";
-            this.accordionControlElement10.Text = "Relatórios";
+            this.accordionControlElement2.Name = "accordionControlElement2";
+            this.accordionControlElement2.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement2.Text = "Serviços";
+            this.accordionControlElement2.Click += new System.EventHandler(this.accordionControlElement2_Click_1);
             // 
-            // accordionControlElement11
+            // accordionControlElement3
             // 
-            this.accordionControlElement11.Name = "accordionControlElement11";
-            this.accordionControlElement11.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement11.Text = "Serviços";
-            this.accordionControlElement11.Click += new System.EventHandler(this.accordionControlElement11_Click);
+            this.accordionControlElement3.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
+            this.accordionControlElement4});
+            this.accordionControlElement3.Expanded = true;
+            this.accordionControlElement3.Name = "accordionControlElement3";
+            this.accordionControlElement3.Text = "Pesquisas/Listagens";
+            // 
+            // accordionControlElement4
+            // 
+            this.accordionControlElement4.Name = "accordionControlElement4";
+            this.accordionControlElement4.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement4.Text = "Serviços";
             // 
             // FrmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(640, 363);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dateTimePicker1);
@@ -196,6 +188,7 @@
             this.Controls.Add(this.acInicio);
             this.IsMdiContainer = true;
             this.Name = "FrmInicio";
+            this.ShowIcon = false;
             this.Text = "PetShop";
             this.Load += new System.EventHandler(this.FrmInicio_Load);
             ((System.ComponentModel.ISupportInitialize)(this.acInicio)).EndInit();
@@ -208,9 +201,6 @@
         #endregion
 
         private DevExpress.XtraBars.Navigation.AccordionControl acInicio;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement2;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement3;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement4;
         private DevExpress.XtraEditors.Controls.ImageSlider iSlider;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement5;
@@ -222,6 +212,9 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement10;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement11;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement2;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement3;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement4;
     }
 }
 

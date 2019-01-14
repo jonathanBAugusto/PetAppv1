@@ -16,17 +16,28 @@ namespace PetApp
         public FrmCli()
         {
             InitializeComponent();
-            List<Clientes> clientes = new List<Clientes>();
-            if (clientes != null)
-            {
-                gridControl1.DataSource = clientes;
-            }
+
         }
 
         private void btnAdcCli_Click(object sender, EventArgs e)
         {
             FrmCadCli frmcadcli = new FrmCadCli();
             frmcadcli.ShowDialog();
+        }
+
+        private void btnInserir_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAlterar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            gridControl1.DataSource = Clientes.Get();
         }
     }
 }

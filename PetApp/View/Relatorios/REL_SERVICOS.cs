@@ -21,7 +21,7 @@ namespace PetApp.View.Relatorios
 
         private void REL_SERVICOS_Load(object sender, EventArgs e)
         {
-            gridControlServicos.DataSource = Model.Servicos.Get();
+            gridControlServicos.DataSource = Servicos.Get();
         }
     }
 }

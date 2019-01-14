@@ -130,9 +130,6 @@
     <Compile Include="View\FrmProdutos.Designer.cs">
       <DependentUpon>FrmProdutos.cs</DependentUpon>
     </Compile>
-	<Compile Include="View\Servico\FrmServicos.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="View\Servico\FrmServicos.Designer.cs">
       <DependentUpon>FrmServicos.cs</DependentUpon>
     </Compile>
@@ -146,6 +143,12 @@
     </Compile>
     <Compile Include="View\Servico\frmTipoServico.Designer.cs">
       <DependentUpon>frmTipoServico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SH_SERVICOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SH_SERVICOS.Designer.cs">
+      <DependentUpon>SH_SERVICOS.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="FrmInicio.resx">
       <DependentUpon>FrmInicio.cs</DependentUpon>
@@ -181,6 +184,9 @@
     </Compile>
     <EmbeddedResource Include="View\Servico\frmTipoServico.resx">
       <DependentUpon>frmTipoServico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SH_SERVICOS.resx">
+      <DependentUpon>SH_SERVICOS.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Connected Services\WSCorreios\AtendeClienteService.wsdl" />
     <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.atualizaPagamentoNaEntregaResponse.datasource">

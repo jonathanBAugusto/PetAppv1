@@ -33,8 +33,9 @@ namespace PetApp
             catch (Exception ex)
             {
                 Aviso("Erro ao Salva/Alterar Imagem\n" + ex.Message);
+                return false;
             }
-
+            return true;
         }
         public static void WriteLOG(string log)
         {

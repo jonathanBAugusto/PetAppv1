@@ -158,6 +158,11 @@ namespace PetApp
                     edDDDTel.Focus();
                 }
             }
+            F.Aviso("Cliente Cadastrado com Sucesso!");
+        }
+
+        private void peImgPET_EditValueChanged(object sender, EventArgs e)
+        {
 
         }
     }

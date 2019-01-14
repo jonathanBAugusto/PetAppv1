@@ -74,7 +74,7 @@
             // groupControl1
             // 
             this.groupControl1.Controls.Add(this.edPRO_DESCRICAO);
-            this.groupControl1.Location = new System.Drawing.Point(106, 12);
+            this.groupControl1.Location = new System.Drawing.Point(264, 12);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(164, 43);
             this.groupControl1.TabIndex = 0;
@@ -91,9 +91,9 @@
             // groupControl2
             // 
             this.groupControl2.Controls.Add(this.edPRO_CUSTO);
-            this.groupControl2.Location = new System.Drawing.Point(178, 61);
+            this.groupControl2.Location = new System.Drawing.Point(301, 61);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(116, 43);
+            this.groupControl2.Size = new System.Drawing.Size(127, 43);
             this.groupControl2.TabIndex = 1;
             this.groupControl2.Text = "Custo";
             // 
@@ -102,15 +102,15 @@
             this.edPRO_CUSTO.Dock = System.Windows.Forms.DockStyle.Fill;
             this.edPRO_CUSTO.Location = new System.Drawing.Point(2, 20);
             this.edPRO_CUSTO.Name = "edPRO_CUSTO";
-            this.edPRO_CUSTO.Size = new System.Drawing.Size(112, 20);
+            this.edPRO_CUSTO.Size = new System.Drawing.Size(123, 20);
             this.edPRO_CUSTO.TabIndex = 0;
             // 
             // groupControl3
             // 
             this.groupControl3.Controls.Add(this.edPRO_CUSTOULTCOMPRA);
-            this.groupControl3.Location = new System.Drawing.Point(300, 61);
+            this.groupControl3.Location = new System.Drawing.Point(432, 61);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(117, 43);
+            this.groupControl3.Size = new System.Drawing.Size(143, 43);
             this.groupControl3.TabIndex = 2;
             this.groupControl3.Text = "Custo Ult. Compra";
             // 
@@ -119,15 +119,15 @@
             this.edPRO_CUSTOULTCOMPRA.Dock = System.Windows.Forms.DockStyle.Fill;
             this.edPRO_CUSTOULTCOMPRA.Location = new System.Drawing.Point(2, 20);
             this.edPRO_CUSTOULTCOMPRA.Name = "edPRO_CUSTOULTCOMPRA";
-            this.edPRO_CUSTOULTCOMPRA.Size = new System.Drawing.Size(113, 20);
+            this.edPRO_CUSTOULTCOMPRA.Size = new System.Drawing.Size(139, 20);
             this.edPRO_CUSTOULTCOMPRA.TabIndex = 0;
             // 
             // groupControl4
             // 
             this.groupControl4.Controls.Add(this.edPRO_TIPO);
-            this.groupControl4.Location = new System.Drawing.Point(276, 12);
+            this.groupControl4.Location = new System.Drawing.Point(432, 12);
             this.groupControl4.Name = "groupControl4";
-            this.groupControl4.Size = new System.Drawing.Size(141, 43);
+            this.groupControl4.Size = new System.Drawing.Size(143, 43);
             this.groupControl4.TabIndex = 3;
             this.groupControl4.Text = "Tipo";
             // 
@@ -136,13 +136,13 @@
             this.edPRO_TIPO.Dock = System.Windows.Forms.DockStyle.Fill;
             this.edPRO_TIPO.Location = new System.Drawing.Point(2, 20);
             this.edPRO_TIPO.Name = "edPRO_TIPO";
-            this.edPRO_TIPO.Size = new System.Drawing.Size(137, 20);
+            this.edPRO_TIPO.Size = new System.Drawing.Size(139, 20);
             this.edPRO_TIPO.TabIndex = 0;
             // 
             // groupControl5
             // 
             this.groupControl5.Controls.Add(this.edPRO_FORNECEDOR);
-            this.groupControl5.Location = new System.Drawing.Point(14, 61);
+            this.groupControl5.Location = new System.Drawing.Point(135, 61);
             this.groupControl5.Name = "groupControl5";
             this.groupControl5.Size = new System.Drawing.Size(160, 43);
             this.groupControl5.TabIndex = 4;
@@ -160,7 +160,7 @@
             // 
             this.groupControl6.Controls.Add(this.pic_IMAGEM);
             this.groupControl6.Controls.Add(this.edPRO_IMAGEM);
-            this.groupControl6.Location = new System.Drawing.Point(421, 12);
+            this.groupControl6.Location = new System.Drawing.Point(12, 12);
             this.groupControl6.Name = "groupControl6";
             this.groupControl6.Size = new System.Drawing.Size(119, 133);
             this.groupControl6.TabIndex = 5;
@@ -190,9 +190,9 @@
             // groupControl7
             // 
             this.groupControl7.Controls.Add(this.edPRO_REFERENCIA);
-            this.groupControl7.Location = new System.Drawing.Point(14, 12);
+            this.groupControl7.Location = new System.Drawing.Point(135, 12);
             this.groupControl7.Name = "groupControl7";
-            this.groupControl7.Size = new System.Drawing.Size(88, 43);
+            this.groupControl7.Size = new System.Drawing.Size(125, 43);
             this.groupControl7.TabIndex = 2;
             this.groupControl7.Text = "Referênia";
             // 
@@ -201,32 +201,32 @@
             this.edPRO_REFERENCIA.Dock = System.Windows.Forms.DockStyle.Fill;
             this.edPRO_REFERENCIA.Location = new System.Drawing.Point(2, 20);
             this.edPRO_REFERENCIA.Name = "edPRO_REFERENCIA";
-            this.edPRO_REFERENCIA.Size = new System.Drawing.Size(84, 20);
+            this.edPRO_REFERENCIA.Size = new System.Drawing.Size(121, 20);
             this.edPRO_REFERENCIA.TabIndex = 0;
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Location = new System.Drawing.Point(342, 122);
+            this.btnExcluir.Location = new System.Drawing.Point(432, 110);
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(75, 23);
+            this.btnExcluir.Size = new System.Drawing.Size(143, 35);
             this.btnExcluir.TabIndex = 6;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(261, 122);
+            this.btnCancelar.Location = new System.Drawing.Point(301, 110);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.Size = new System.Drawing.Size(127, 35);
             this.btnCancelar.TabIndex = 7;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(177, 122);
+            this.btnSalvar.Location = new System.Drawing.Point(137, 110);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(75, 23);
+            this.btnSalvar.Size = new System.Drawing.Size(158, 35);
             this.btnSalvar.TabIndex = 8;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
@@ -235,7 +235,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(552, 214);
+            this.ClientSize = new System.Drawing.Size(586, 157);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnExcluir);
@@ -247,6 +247,7 @@
             this.Controls.Add(this.groupControl2);
             this.Controls.Add(this.groupControl1);
             this.Name = "FrmProdutos";
+            this.ShowIcon = false;
             this.Text = "Cadastro de Produto";
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);

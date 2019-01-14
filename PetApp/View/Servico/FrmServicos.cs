@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using PetApp.View.Servicos;
+using PetApp.View.Servico;
+using PetApp.View.Relatorios;
 using PetApp.Model;
 namespace PetApp
 {
@@ -66,12 +67,23 @@ namespace PetApp
                 SER_ESTAGIO = F.toString(estagio)
             };
             Servicos.Insert(servico);
-
+            F.Aviso("Serviço Cadastrado com Sucesso!");
         }
 
         private void edSER_OBSERVACAO_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnRelatorio_Click(object sender, EventArgs e)
+        {
+            REL_SERVICOS rel = new REL_SERVICOS();
+            rel.Show();
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace PetApp.View.Servicos
+﻿namespace PetApp.View.Servico
 {
     partial class frmTipoServico
     {
