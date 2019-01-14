@@ -50,6 +50,37 @@ namespace PetApp.Control
                     F.WriteLOG("---------------------------\n" + DateTime.Now.ToString() + " Error: " + ex.Message);
                 }
             }
+            try
+            {
+                conn.CreateTable<Pets>();
+            }
+            catch
+            {
+                try
+                {
+                    conn.CreateTable<Pets>();
+                }
+                catch (Exception ex)
+                {
+                    F.WriteLOG("---------------------------\n" + DateTime.Now.ToString() + " Error: " + ex.Message);
+                }
+            }
+            try
+            {
+                conn.CreateTable<Servicos>();
+            }
+            catch
+            {
+                try
+                {
+                    conn.CreateTable<Servicos>();
+                }
+                catch (Exception ex)
+                {
+                    F.WriteLOG("---------------------------\n" + DateTime.Now.ToString() + " Error: " + ex.Message);
+                }
+            }
+            
         }
 
         public bool ExecuteSQL(string sql)

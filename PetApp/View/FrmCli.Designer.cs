@@ -50,9 +50,9 @@
             // 
             // btnAdcCli
             // 
-            this.btnAdcCli.Location = new System.Drawing.Point(3, 3);
+            this.btnAdcCli.Location = new System.Drawing.Point(3, 6);
             this.btnAdcCli.Name = "btnAdcCli";
-            this.btnAdcCli.Size = new System.Drawing.Size(107, 23);
+            this.btnAdcCli.Size = new System.Drawing.Size(107, 35);
             this.btnAdcCli.TabIndex = 2;
             this.btnAdcCli.Text = "Adicionar Cliente";
             this.btnAdcCli.Click += new System.EventHandler(this.btnAdcCli_Click);
@@ -63,7 +63,7 @@
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(429, 261);
+            this.gridControl1.Size = new System.Drawing.Size(429, 279);
             this.gridControl1.TabIndex = 3;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -148,17 +148,17 @@
             // 
             // btnRemCli
             // 
-            this.btnRemCli.Location = new System.Drawing.Point(116, 3);
+            this.btnRemCli.Location = new System.Drawing.Point(116, 6);
             this.btnRemCli.Name = "btnRemCli";
-            this.btnRemCli.Size = new System.Drawing.Size(107, 23);
+            this.btnRemCli.Size = new System.Drawing.Size(107, 35);
             this.btnRemCli.TabIndex = 4;
             this.btnRemCli.Text = "Remover Cliente";
             // 
             // btnAltCli
             // 
-            this.btnAltCli.Location = new System.Drawing.Point(229, 3);
+            this.btnAltCli.Location = new System.Drawing.Point(229, 6);
             this.btnAltCli.Name = "btnAltCli";
-            this.btnAltCli.Size = new System.Drawing.Size(107, 23);
+            this.btnAltCli.Size = new System.Drawing.Size(107, 35);
             this.btnAltCli.TabIndex = 5;
             this.btnAltCli.Text = "Alterar Informações";
             // 
@@ -174,8 +174,8 @@
             this.splitContainerControl1.Panel1.Text = "Panel1";
             this.splitContainerControl1.Panel2.Controls.Add(this.gridControl1);
             this.splitContainerControl1.Panel2.Text = "Panel2";
-            this.splitContainerControl1.Size = new System.Drawing.Size(429, 299);
-            this.splitContainerControl1.SplitterPosition = 33;
+            this.splitContainerControl1.Size = new System.Drawing.Size(429, 326);
+            this.splitContainerControl1.SplitterPosition = 42;
             this.splitContainerControl1.TabIndex = 6;
             this.splitContainerControl1.Text = "splitContainerControl1";
             // 
@@ -183,7 +183,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(429, 299);
+            this.ClientSize = new System.Drawing.Size(429, 326);
             this.Controls.Add(this.splitContainerControl1);
             this.Name = "FrmCli";
             this.Text = "Clientes";

@@ -8,19 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PetApp
+namespace PetApp.View.Relatorios
 {
-    public partial class FrmCadServico : Form
+    public partial class REL_SERVICOS : Form
     {
-        public FrmCadServico()
+        public REL_SERVICOS()
         {
             InitializeComponent();
-        }
-
-        private void simpleButton1_Click(object sender, EventArgs e)
-        {
-            FrmCadCli form = new FrmCadCli();
-            form.Show();
         }
     }
 }

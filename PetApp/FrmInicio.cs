@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PetApp.View.Servicos;
+using PetApp.View;
 
 namespace PetApp
 {
@@ -61,6 +62,12 @@ namespace PetApp
         private void accordionControlElement9_Click(object sender, EventArgs e)
         {
             frmTipoServico form = new frmTipoServico();
+            form.Show();
+        }
+
+        private void accordionControlElement1_Click_1(object sender, EventArgs e)
+        {
+            FrmProdutos form = new FrmProdutos();
             form.Show();
         }
     }
