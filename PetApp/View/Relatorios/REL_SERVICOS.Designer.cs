@@ -185,6 +185,7 @@
             this.Controls.Add(this.groupControl1);
             this.Name = "REL_SERVICOS";
             this.Text = "Relatório Serviços";
+            this.Load += new System.EventHandler(this.REL_SERVICOS_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControlServicos)).EndInit();

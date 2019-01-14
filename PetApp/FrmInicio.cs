@@ -10,10 +10,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using PetApp.View.Servicos;
 using PetApp.View;
+using PetApp.View.Relatorios;
 
 namespace PetApp
 {
-    public partial class FrmInicio : Form
+    public partial class FrmInicio : DevExpress.XtraEditors.XtraForm
     {
         public FrmInicio()
         {
@@ -68,6 +69,12 @@ namespace PetApp
         private void accordionControlElement1_Click_1(object sender, EventArgs e)
         {
             FrmProdutos form = new FrmProdutos();
+            form.Show();
+        }
+
+        private void accordionControlElement11_Click(object sender, EventArgs e)
+        {
+            REL_SERVICOS form = new REL_SERVICOS();
             form.Show();
         }
     }

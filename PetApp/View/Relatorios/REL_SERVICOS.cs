@@ -7,14 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PetApp.Model;
 
 namespace PetApp.View.Relatorios
 {
-    public partial class REL_SERVICOS : Form
+    public partial class REL_SERVICOS : DevExpress.XtraEditors.XtraForm
     {
         public REL_SERVICOS()
         {
             InitializeComponent();
+
+        }
+
+        private void REL_SERVICOS_Load(object sender, EventArgs e)
+        {
+            gridControlServicos.DataSource = Model.Servicos.Get();
         }
     }
 }

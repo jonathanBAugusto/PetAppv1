@@ -11,7 +11,7 @@ using PetApp.Model;
 
 namespace PetApp
 {
-    public partial class FrmPets : Form
+    public partial class FrmPets : DevExpress.XtraEditors.XtraForm
     {
         int id = 0;
         public FrmPets()

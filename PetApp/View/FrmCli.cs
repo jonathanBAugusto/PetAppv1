@@ -11,7 +11,7 @@ using PetApp.Model;
 
 namespace PetApp
 {
-    public partial class FrmCli : Form
+    public partial class FrmCli : DevExpress.XtraEditors.XtraForm
     {
         public FrmCli()
         {

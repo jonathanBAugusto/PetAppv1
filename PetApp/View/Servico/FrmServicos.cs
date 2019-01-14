@@ -11,7 +11,7 @@ using PetApp.View.Servicos;
 using PetApp.Model;
 namespace PetApp
 {
-    public partial class FrmServicos : Form
+    public partial class FrmServicos : DevExpress.XtraEditors.XtraForm
     {
         double valorTotal = 0;
         string estagio;

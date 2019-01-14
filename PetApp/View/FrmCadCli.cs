@@ -12,7 +12,7 @@ using PetApp.Model;
 
 namespace PetApp
 {
-    public partial class FrmCadCli : Form
+    public partial class FrmCadCli : DevExpress.XtraEditors.XtraForm
     {
         DataTable infoPets;
         int id = 0;

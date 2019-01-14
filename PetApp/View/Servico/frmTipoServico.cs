@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace PetApp.View.Servicos
 {
-    public partial class frmTipoServico : Form
+    public partial class frmTipoServico : DevExpress.XtraEditors.XtraForm
     {
         public frmTipoServico()
         {
