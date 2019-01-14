@@ -54,7 +54,7 @@ namespace PetApp.View
             objProdutos.PRO_CUSTO = F.toDouble(edPRO_CUSTO.EditValue);
             objProdutos.PRO_CUSTOULTCOMPRA = F.toDouble(edPRO_CUSTOULTCOMPRA.EditValue);
             objProdutos.PRO_FORNECEDOR = F.toInt(edPRO_FORNECEDOR.EditValue);
-            objProdutos.PRO_IMAGEM = F.toString(edPRO_IMAGEM.EditValue);
+            objProdutos.PRO_IMAGEM = F.toString(pic_IMAGEM.EditValue);
 
             if (objProdutos.PRO_ID == 0)
             {
@@ -74,6 +74,17 @@ namespace PetApp.View
         private void btnExcluir_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void edPRO_IMAGEM_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+        {
+            string pathImg = "";
+            if (openFileDialogImg.ShowDialog() != DialogResult.OK)
+            {
+                return;
+            }
+            pathImg = openFileDialogImg.FileName;
+            string fileName = System.IO.Path.GetFileName(pathImg);
         }
     }
 }
