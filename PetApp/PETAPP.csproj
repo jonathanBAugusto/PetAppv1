@@ -97,6 +97,7 @@
     <Compile Include="FrmInicio.Designer.cs">
       <DependentUpon>FrmInicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\TipoServico.cs" />
     <Compile Include="View\FrmCli.cs">
       <SubType>Form</SubType>
     </Compile>

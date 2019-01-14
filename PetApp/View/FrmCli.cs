@@ -39,5 +39,10 @@ namespace PetApp
         {
             gridControl1.DataSource = Clientes.Get();
         }
+
+        private void FrmCli_Load(object sender, EventArgs e)
+        {
+            gridControl1.DataSource = Clientes.Get();
+        }
     }
 }

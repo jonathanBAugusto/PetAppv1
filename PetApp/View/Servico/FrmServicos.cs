@@ -24,7 +24,13 @@ namespace PetApp
 
         private void FrmServicos_Load(object sender, EventArgs e)
         {
+            edCLI_ID.Properties.DataSource = Clientes.Get();
+            edCLI_ID.Properties.ValueMember = "CLI_ID";
+            edCLI_ID.Properties.DisplayMember = "CLI_RAZAO";
 
+            edTIPO_SER.Properties.DataSource = TipoServico.Get();
+            edTIPO_SER.Properties.ValueMember = "TIPO_SER_ID";
+            edTIPO_SER.Properties.DisplayMember = "TIPO_SER_NOME";
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
@@ -55,14 +61,14 @@ namespace PetApp
                 estagio = "Cancelado";
             }
             Servicos servico = new Servicos {
-                CLI_ID = F.toInt(edCLI_NOME.EditValue),
+                CLI_ID = F.toInt(edCLI_ID.EditValue),
                 PET_ID = F.toInt(edPET_ID.EditValue),
                 SER_VALOR_BASE = F.toDouble(edSER_VALOR_BASE.EditValue),
                 SER_VALOR_DESCONTO = F.toDouble(edSER_VALOR_DESCONTO.EditValue),
                 SER_VALOR_TOTAL = F.toDouble(valorTotal),
                 SER_DATA_CAD = F.toString(DateTime.Now.ToShortDateString()),
                 SER_DATA_PREV = F.toString(edSER_DATA_PREV.Text),
-                SER_TIPO_ID = F.toInt(edSER_TIPO.EditValue),
+                SER_TIPO_ID = F.toInt(edTIPO_SER.EditValue),
                 SER_OBSERVACAO = F.toString(edSER_OBSERVACAO.Text),
                 SER_ESTAGIO = F.toString(estagio)
             };

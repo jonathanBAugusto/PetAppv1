@@ -15,6 +15,7 @@ namespace PetApp
     public partial class FrmCadCli : DevExpress.XtraEditors.XtraForm
     {
         DataTable infoPets;
+        Pets pet;
         int id = 0;
         public FrmCadCli()
         {
@@ -89,15 +90,13 @@ namespace PetApp
 
         private void btnAddPet_Click(object sender, EventArgs e)
         {
-            DataRow dr = infoPets.NewRow();
-            dr["PET_ID"] = id;
-            id++;
-            dr["PET_NOME"] = F.toString(edPET_NOME.Text);
-            dr["PET_RACA"] = F.toString(edPET_RACA.Text);
-            dr["PET_COR"] = F.toString(edPET_COR.Text);
-            dr["PET_NAS"] = F.toString(edPET_NAS.Text);
-            dr["PET_IDADE"] = F.toString(F.idade(Convert.ToDateTime(edPET_NAS.EditValue)));
-            infoPets.Rows.Add(dr);
+            pet = new Pets {
+                PET_COR = F.toString(edPET_COR.EditValue),
+                PET_RACA = F.toString(edPET_RACA.EditValue),
+                PET_OBS = F.toString(edPET_OBS.EditValue),
+                PET_NOME = F.toString(edPET_NOME.EditValue),
+                PET_NAS = F.toString(edPET_NAS.EditValue)
+            };
         }
 
         private void simpleButton1_Click(object sender, EventArgs e)
@@ -158,6 +157,27 @@ namespace PetApp
                     edDDDTel.Focus();
                 }
             }
+            Clientes cliente = new Clientes
+            {
+                CLI_RAZAO = F.toString(edCLI_RAZAO.EditValue),
+                CLI_FANTASIA = F.toString(edCLI_FANTASIA.EditValue),
+                CLI_CNPJ = F.toString(edCLI_CNPJ.EditValue),
+                CLI_EMAIL = F.toString(edCLI_EMAIL.EditValue),
+                CLI_DDDCEL = F.toString(edDDDCel.EditValue),
+                CLI_CEL = F.toString(edCLI_CEL.EditValue),
+                CLI_DDDTEL = F.toString(edDDDTel.EditValue),
+                CLI_TEL = F.toString(edCLI_TEL.EditValue),
+                CLI_PESTIPO = (F.toString(rgCLI_PESTIPO.EditValue) == "FIS" ? "Física" : "Jurídica"),
+                CLI_CEP = F.toString(edCEP.EditValue),
+                CLI_RUA = F.toString(edRua.EditValue),
+                CLI_BAIRRO = F.toString(edBairro.EditValue),
+                CLI_NUMERO = F.toString(edNumero.EditValue),
+                CLI_NASC = F.toString(edCLI_NASC.EditValue),
+                CID_ID = F.toInt(edCidade.EditValue),
+                CLI_INSCRICAO = F.toString(edCLI_INSCRICAO.EditValue)
+            };
+            Clientes.Insert(cliente);
+            Pets.Insert(pet);
             F.Aviso("Cliente Cadastrado com Sucesso!");
         }
 

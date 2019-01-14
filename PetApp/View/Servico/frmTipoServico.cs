@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PetApp.Model;
 
 namespace PetApp.View.Servico
 {
@@ -19,7 +20,11 @@ namespace PetApp.View.Servico
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-
+            TipoServico tipo = new TipoServico
+            {
+                TIPO_SER_NOME = F.toString(edTIPO_SER_NOME.EditValue),
+                TIPO_SER_VALOR = F.toDouble(edTIPO_SER_VALOR.EditValue)
+            };
         }
     }
 }

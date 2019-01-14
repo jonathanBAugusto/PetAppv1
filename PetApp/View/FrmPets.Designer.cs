@@ -28,37 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraEditors.TableLayout.TableColumnDefinition tableColumnDefinition1 = new DevExpress.XtraEditors.TableLayout.TableColumnDefinition();
-            DevExpress.XtraEditors.TableLayout.TableColumnDefinition tableColumnDefinition2 = new DevExpress.XtraEditors.TableLayout.TableColumnDefinition();
-            DevExpress.XtraEditors.TableLayout.TableColumnDefinition tableColumnDefinition3 = new DevExpress.XtraEditors.TableLayout.TableColumnDefinition();
-            DevExpress.XtraEditors.TableLayout.TableColumnDefinition tableColumnDefinition4 = new DevExpress.XtraEditors.TableLayout.TableColumnDefinition();
-            DevExpress.XtraEditors.TableLayout.TableRowDefinition tableRowDefinition1 = new DevExpress.XtraEditors.TableLayout.TableRowDefinition();
-            DevExpress.XtraEditors.TableLayout.TableRowDefinition tableRowDefinition2 = new DevExpress.XtraEditors.TableLayout.TableRowDefinition();
-            DevExpress.XtraEditors.TableLayout.TableRowDefinition tableRowDefinition3 = new DevExpress.XtraEditors.TableLayout.TableRowDefinition();
-            DevExpress.XtraEditors.TableLayout.TableSpan tableSpan1 = new DevExpress.XtraEditors.TableLayout.TableSpan();
-            DevExpress.XtraEditors.TableLayout.TableSpan tableSpan2 = new DevExpress.XtraEditors.TableLayout.TableSpan();
-            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement1 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
-            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement2 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
-            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement3 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
-            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement4 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
-            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement5 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
-            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement6 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
-            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement7 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
-            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement8 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.TileViewColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.TileViewColumn();
-            this.gridColumn5 = new DevExpress.XtraGrid.Columns.TileViewColumn();
-            this.gridColumn4 = new DevExpress.XtraGrid.Columns.TileViewColumn();
-            this.gridColumn6 = new DevExpress.XtraGrid.Columns.TileViewColumn();
-            this.layoutViewColumn1 = new DevExpress.XtraGrid.Columns.TileViewColumn();
             this.repositoryItemPictureEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit();
-            this.tileViewColumn1 = new DevExpress.XtraGrid.Columns.TileViewColumn();
-            this.Nome = new DevExpress.XtraGrid.Columns.TileViewColumn();
             this.repositoryItemHypertextLabel1 = new DevExpress.XtraEditors.Repository.RepositoryItemHypertextLabel();
             this.repositoryItemImageEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemImageEdit();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.TileViewColumn();
             this.gridControlPets = new DevExpress.XtraGrid.GridControl();
-            this.tileView1 = new DevExpress.XtraGrid.Views.Tile.TileView();
+            this.layoutView1 = new DevExpress.XtraGrid.Views.Layout.LayoutView();
+            this.gridColumn1 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
+            this.layoutViewField_gridColumn1 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.gridColumn2 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
+            this.layoutViewField_gridColumn2 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.gridColumn3 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
+            this.layoutViewField_gridColumn3 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.gridColumn4 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
+            this.layoutViewField_gridColumn4 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.gridColumn5 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
+            this.layoutViewField_gridColumn5 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.gridColumn6 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
+            this.layoutViewField_gridColumn6 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.tileViewColumn1 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
+            this.layoutViewField_tileViewColumn1 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.layoutViewColumn1 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
+            this.repositoryItemPictureEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit();
+            this.layoutViewField_layoutViewColumn1 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.layoutViewCard1 = new DevExpress.XtraGrid.Views.Layout.LayoutViewCard();
             this.btnAdd = new DevExpress.XtraEditors.SimpleButton();
             this.PET_IMG = new DevExpress.XtraEditors.PictureEdit();
             this.edPET_NOME = new DevExpress.XtraEditors.TextEdit();
@@ -80,7 +72,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemHypertextLabel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemImageEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlPets)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tileView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_tileViewColumn1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_layoutViewColumn1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewCard1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PET_IMG.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.edPET_NOME.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.edPET_COR.Properties)).BeginInit();
@@ -106,74 +108,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.edPET_OBS.Properties)).BeginInit();
             this.SuspendLayout();
             // 
-            // gridColumn2
-            // 
-            this.gridColumn2.Caption = "Nome do PET";
-            this.gridColumn2.FieldName = "PET_NOME";
-            this.gridColumn2.Name = "gridColumn2";
-            this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 2;
-            // 
-            // gridColumn3
-            // 
-            this.gridColumn3.Caption = "Nascimento";
-            this.gridColumn3.FieldName = "PET_NAS";
-            this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 3;
-            // 
-            // gridColumn5
-            // 
-            this.gridColumn5.Caption = "Dono";
-            this.gridColumn5.FieldName = "CLI_FANTASIA";
-            this.gridColumn5.Name = "gridColumn5";
-            this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 5;
-            // 
-            // gridColumn4
-            // 
-            this.gridColumn4.Caption = "Raça";
-            this.gridColumn4.FieldName = "PET_RACA";
-            this.gridColumn4.Name = "gridColumn4";
-            this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 4;
-            // 
-            // gridColumn6
-            // 
-            this.gridColumn6.Caption = "Observação";
-            this.gridColumn6.FieldName = "PET_OBS";
-            this.gridColumn6.Name = "gridColumn6";
-            this.gridColumn6.Visible = true;
-            this.gridColumn6.VisibleIndex = 6;
-            // 
-            // layoutViewColumn1
-            // 
-            this.layoutViewColumn1.Caption = "Foto";
-            this.layoutViewColumn1.ColumnEdit = this.repositoryItemPictureEdit1;
-            this.layoutViewColumn1.FieldName = "PET_IMG";
-            this.layoutViewColumn1.Name = "layoutViewColumn1";
-            this.layoutViewColumn1.Visible = true;
-            this.layoutViewColumn1.VisibleIndex = 0;
-            // 
             // repositoryItemPictureEdit1
             // 
             this.repositoryItemPictureEdit1.Name = "repositoryItemPictureEdit1";
-            // 
-            // tileViewColumn1
-            // 
-            this.tileViewColumn1.Caption = "Cor";
-            this.tileViewColumn1.FieldName = "PET_COR";
-            this.tileViewColumn1.Name = "tileViewColumn1";
-            this.tileViewColumn1.Visible = true;
-            this.tileViewColumn1.VisibleIndex = 7;
-            // 
-            // Nome
-            // 
-            this.Nome.ColumnEdit = this.repositoryItemHypertextLabel1;
-            this.Nome.DisplayFormat.FormatString = "Nome do PET";
-            this.Nome.Name = "Nome";
-            this.Nome.Visible = true;
-            this.Nome.VisibleIndex = 8;
             // 
             // repositoryItemHypertextLabel1
             // 
@@ -186,35 +123,28 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.repositoryItemImageEdit1.Name = "repositoryItemImageEdit1";
             // 
-            // gridColumn1
-            // 
-            this.gridColumn1.Caption = "ID";
-            this.gridColumn1.FieldName = "PET_ID";
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 1;
-            // 
             // gridControlPets
             // 
             this.gridControlPets.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.gridControlPets.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2);
             this.gridControlPets.Location = new System.Drawing.Point(0, 113);
-            this.gridControlPets.MainView = this.tileView1;
+            this.gridControlPets.MainView = this.layoutView1;
             this.gridControlPets.Margin = new System.Windows.Forms.Padding(2);
             this.gridControlPets.Name = "gridControlPets";
             this.gridControlPets.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemPictureEdit1,
             this.repositoryItemImageEdit1,
-            this.repositoryItemHypertextLabel1});
+            this.repositoryItemHypertextLabel1,
+            this.repositoryItemPictureEdit2});
             this.gridControlPets.Size = new System.Drawing.Size(643, 194);
             this.gridControlPets.TabIndex = 0;
             this.gridControlPets.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.tileView1});
+            this.layoutView1});
             // 
-            // tileView1
+            // layoutView1
             // 
-            this.tileView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.layoutViewColumn1,
+            this.layoutView1.CardMinSize = new System.Drawing.Size(241, 339);
+            this.layoutView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.LayoutViewColumn[] {
             this.gridColumn1,
             this.gridColumn2,
             this.gridColumn3,
@@ -222,95 +152,163 @@
             this.gridColumn5,
             this.gridColumn6,
             this.tileViewColumn1,
-            this.Nome});
-            this.tileView1.GridControl = this.gridControlPets;
-            this.tileView1.Name = "tileView1";
-            this.tileView1.OptionsTiles.GroupTextPadding = new System.Windows.Forms.Padding(12, 8, 12, 8);
-            this.tileView1.OptionsTiles.IndentBetweenGroups = 0;
-            this.tileView1.OptionsTiles.IndentBetweenItems = 0;
-            this.tileView1.OptionsTiles.ItemSize = new System.Drawing.Size(456, 114);
-            this.tileView1.OptionsTiles.LayoutMode = DevExpress.XtraGrid.Views.Tile.TileViewLayoutMode.List;
-            this.tileView1.OptionsTiles.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.tileView1.OptionsTiles.Padding = new System.Windows.Forms.Padding(0);
-            this.tileView1.OptionsTiles.RowCount = 0;
-            tableColumnDefinition1.Length.Value = 106D;
-            tableColumnDefinition2.Length.Value = 117D;
-            tableColumnDefinition3.Length.Value = 118D;
-            tableColumnDefinition4.Length.Value = 91D;
-            this.tileView1.TileColumns.Add(tableColumnDefinition1);
-            this.tileView1.TileColumns.Add(tableColumnDefinition2);
-            this.tileView1.TileColumns.Add(tableColumnDefinition3);
-            this.tileView1.TileColumns.Add(tableColumnDefinition4);
-            tableRowDefinition1.Length.Value = 28D;
-            tableRowDefinition2.Length.Value = 36D;
-            tableRowDefinition3.Length.Value = 37D;
-            this.tileView1.TileRows.Add(tableRowDefinition1);
-            this.tileView1.TileRows.Add(tableRowDefinition2);
-            this.tileView1.TileRows.Add(tableRowDefinition3);
-            tableSpan1.RowSpan = 3;
-            tableSpan2.ColumnIndex = 3;
-            tableSpan2.RowSpan = 3;
-            this.tileView1.TileSpans.Add(tableSpan1);
-            this.tileView1.TileSpans.Add(tableSpan2);
-            tileViewItemElement1.Column = this.gridColumn2;
-            tileViewItemElement1.ColumnIndex = 2;
-            tileViewItemElement1.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileViewItemElement1.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
-            tileViewItemElement1.Text = "gridColumn2";
-            tileViewItemElement1.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileViewItemElement2.Column = this.gridColumn3;
-            tileViewItemElement2.ColumnIndex = 1;
-            tileViewItemElement2.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileViewItemElement2.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
-            tileViewItemElement2.RowIndex = 1;
-            tileViewItemElement2.Text = "gridColumn3";
-            tileViewItemElement2.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileViewItemElement3.Column = this.gridColumn5;
-            tileViewItemElement3.ColumnIndex = 2;
-            tileViewItemElement3.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileViewItemElement3.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
-            tileViewItemElement3.RowIndex = 1;
-            tileViewItemElement3.Text = "gridColumn5";
-            tileViewItemElement3.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileViewItemElement4.Column = this.gridColumn4;
-            tileViewItemElement4.ColumnIndex = 1;
-            tileViewItemElement4.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileViewItemElement4.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
-            tileViewItemElement4.RowIndex = 2;
-            tileViewItemElement4.Text = "gridColumn4";
-            tileViewItemElement4.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileViewItemElement5.Column = this.gridColumn6;
-            tileViewItemElement5.ColumnIndex = 3;
-            tileViewItemElement5.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileViewItemElement5.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
-            tileViewItemElement5.Text = "gridColumn6";
-            tileViewItemElement5.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileViewItemElement6.Column = this.layoutViewColumn1;
-            tileViewItemElement6.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileViewItemElement6.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
-            tileViewItemElement6.Text = "layoutViewColumn1";
-            tileViewItemElement6.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileViewItemElement7.Column = this.tileViewColumn1;
-            tileViewItemElement7.ColumnIndex = 2;
-            tileViewItemElement7.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileViewItemElement7.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
-            tileViewItemElement7.RowIndex = 2;
-            tileViewItemElement7.Text = "tileViewColumn1";
-            tileViewItemElement7.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileViewItemElement8.Column = this.Nome;
-            tileViewItemElement8.ColumnIndex = 1;
-            tileViewItemElement8.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileViewItemElement8.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
-            tileViewItemElement8.Text = "NomePet";
-            tileViewItemElement8.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            this.tileView1.TileTemplate.Add(tileViewItemElement1);
-            this.tileView1.TileTemplate.Add(tileViewItemElement2);
-            this.tileView1.TileTemplate.Add(tileViewItemElement3);
-            this.tileView1.TileTemplate.Add(tileViewItemElement4);
-            this.tileView1.TileTemplate.Add(tileViewItemElement5);
-            this.tileView1.TileTemplate.Add(tileViewItemElement6);
-            this.tileView1.TileTemplate.Add(tileViewItemElement7);
-            this.tileView1.TileTemplate.Add(tileViewItemElement8);
+            this.layoutViewColumn1});
+            this.layoutView1.GridControl = this.gridControlPets;
+            this.layoutView1.HiddenItems.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutViewField_gridColumn1});
+            this.layoutView1.Name = "layoutView1";
+            this.layoutView1.OptionsView.ViewMode = DevExpress.XtraGrid.Views.Layout.LayoutViewMode.MultiColumn;
+            this.layoutView1.TemplateCard = this.layoutViewCard1;
+            // 
+            // gridColumn1
+            // 
+            this.gridColumn1.Caption = "ID";
+            this.gridColumn1.FieldName = "PET_ID";
+            this.gridColumn1.LayoutViewField = this.layoutViewField_gridColumn1;
+            this.gridColumn1.Name = "gridColumn1";
+            // 
+            // layoutViewField_gridColumn1
+            // 
+            this.layoutViewField_gridColumn1.EditorPreferredWidth = 20;
+            this.layoutViewField_gridColumn1.Location = new System.Drawing.Point(0, 0);
+            this.layoutViewField_gridColumn1.Name = "layoutViewField_gridColumn1";
+            this.layoutViewField_gridColumn1.Size = new System.Drawing.Size(209, 270);
+            this.layoutViewField_gridColumn1.TextLocation = DevExpress.Utils.Locations.Left;
+            this.layoutViewField_gridColumn1.TextSize = new System.Drawing.Size(67, 13);
+            // 
+            // gridColumn2
+            // 
+            this.gridColumn2.Caption = "Nome do PET";
+            this.gridColumn2.FieldName = "PET_NOME";
+            this.gridColumn2.LayoutViewField = this.layoutViewField_gridColumn2;
+            this.gridColumn2.Name = "gridColumn2";
+            // 
+            // layoutViewField_gridColumn2
+            // 
+            this.layoutViewField_gridColumn2.EditorPreferredWidth = 145;
+            this.layoutViewField_gridColumn2.Location = new System.Drawing.Point(0, 157);
+            this.layoutViewField_gridColumn2.Name = "layoutViewField_gridColumn2";
+            this.layoutViewField_gridColumn2.Size = new System.Drawing.Size(221, 24);
+            this.layoutViewField_gridColumn2.TextLocation = DevExpress.Utils.Locations.Left;
+            this.layoutViewField_gridColumn2.TextSize = new System.Drawing.Size(67, 13);
+            // 
+            // gridColumn3
+            // 
+            this.gridColumn3.Caption = "Nascimento";
+            this.gridColumn3.FieldName = "PET_NAS";
+            this.gridColumn3.LayoutViewField = this.layoutViewField_gridColumn3;
+            this.gridColumn3.Name = "gridColumn3";
+            // 
+            // layoutViewField_gridColumn3
+            // 
+            this.layoutViewField_gridColumn3.EditorPreferredWidth = 145;
+            this.layoutViewField_gridColumn3.Location = new System.Drawing.Point(0, 181);
+            this.layoutViewField_gridColumn3.Name = "layoutViewField_gridColumn3";
+            this.layoutViewField_gridColumn3.Size = new System.Drawing.Size(221, 24);
+            this.layoutViewField_gridColumn3.TextLocation = DevExpress.Utils.Locations.Left;
+            this.layoutViewField_gridColumn3.TextSize = new System.Drawing.Size(67, 13);
+            // 
+            // gridColumn4
+            // 
+            this.gridColumn4.Caption = "Raça";
+            this.gridColumn4.FieldName = "PET_RACA";
+            this.gridColumn4.LayoutViewField = this.layoutViewField_gridColumn4;
+            this.gridColumn4.Name = "gridColumn4";
+            // 
+            // layoutViewField_gridColumn4
+            // 
+            this.layoutViewField_gridColumn4.EditorPreferredWidth = 145;
+            this.layoutViewField_gridColumn4.Location = new System.Drawing.Point(0, 205);
+            this.layoutViewField_gridColumn4.Name = "layoutViewField_gridColumn4";
+            this.layoutViewField_gridColumn4.Size = new System.Drawing.Size(221, 24);
+            this.layoutViewField_gridColumn4.TextLocation = DevExpress.Utils.Locations.Left;
+            this.layoutViewField_gridColumn4.TextSize = new System.Drawing.Size(67, 13);
+            // 
+            // gridColumn5
+            // 
+            this.gridColumn5.Caption = "Dono";
+            this.gridColumn5.FieldName = "CLI_FANTASIA";
+            this.gridColumn5.LayoutViewField = this.layoutViewField_gridColumn5;
+            this.gridColumn5.Name = "gridColumn5";
+            // 
+            // layoutViewField_gridColumn5
+            // 
+            this.layoutViewField_gridColumn5.EditorPreferredWidth = 145;
+            this.layoutViewField_gridColumn5.Location = new System.Drawing.Point(0, 229);
+            this.layoutViewField_gridColumn5.Name = "layoutViewField_gridColumn5";
+            this.layoutViewField_gridColumn5.Size = new System.Drawing.Size(221, 24);
+            this.layoutViewField_gridColumn5.TextLocation = DevExpress.Utils.Locations.Left;
+            this.layoutViewField_gridColumn5.TextSize = new System.Drawing.Size(67, 13);
+            // 
+            // gridColumn6
+            // 
+            this.gridColumn6.Caption = "Observação";
+            this.gridColumn6.FieldName = "PET_OBS";
+            this.gridColumn6.LayoutViewField = this.layoutViewField_gridColumn6;
+            this.gridColumn6.Name = "gridColumn6";
+            // 
+            // layoutViewField_gridColumn6
+            // 
+            this.layoutViewField_gridColumn6.EditorPreferredWidth = 145;
+            this.layoutViewField_gridColumn6.Location = new System.Drawing.Point(0, 253);
+            this.layoutViewField_gridColumn6.Name = "layoutViewField_gridColumn6";
+            this.layoutViewField_gridColumn6.Size = new System.Drawing.Size(221, 24);
+            this.layoutViewField_gridColumn6.TextLocation = DevExpress.Utils.Locations.Left;
+            this.layoutViewField_gridColumn6.TextSize = new System.Drawing.Size(67, 13);
+            // 
+            // tileViewColumn1
+            // 
+            this.tileViewColumn1.Caption = "Cor";
+            this.tileViewColumn1.FieldName = "PET_COR";
+            this.tileViewColumn1.LayoutViewField = this.layoutViewField_tileViewColumn1;
+            this.tileViewColumn1.Name = "tileViewColumn1";
+            // 
+            // layoutViewField_tileViewColumn1
+            // 
+            this.layoutViewField_tileViewColumn1.EditorPreferredWidth = 145;
+            this.layoutViewField_tileViewColumn1.Location = new System.Drawing.Point(0, 277);
+            this.layoutViewField_tileViewColumn1.Name = "layoutViewField_tileViewColumn1";
+            this.layoutViewField_tileViewColumn1.Size = new System.Drawing.Size(221, 24);
+            this.layoutViewField_tileViewColumn1.TextLocation = DevExpress.Utils.Locations.Left;
+            this.layoutViewField_tileViewColumn1.TextSize = new System.Drawing.Size(67, 13);
+            // 
+            // layoutViewColumn1
+            // 
+            this.layoutViewColumn1.Caption = "Imagem";
+            this.layoutViewColumn1.ColumnEdit = this.repositoryItemPictureEdit2;
+            this.layoutViewColumn1.FieldName = "PET_IMAGEM";
+            this.layoutViewColumn1.LayoutViewField = this.layoutViewField_layoutViewColumn1;
+            this.layoutViewColumn1.Name = "layoutViewColumn1";
+            // 
+            // repositoryItemPictureEdit2
+            // 
+            this.repositoryItemPictureEdit2.Name = "repositoryItemPictureEdit2";
+            // 
+            // layoutViewField_layoutViewColumn1
+            // 
+            this.layoutViewField_layoutViewColumn1.EditorPreferredWidth = 145;
+            this.layoutViewField_layoutViewColumn1.Location = new System.Drawing.Point(0, 0);
+            this.layoutViewField_layoutViewColumn1.Name = "layoutViewField_layoutViewColumn1";
+            this.layoutViewField_layoutViewColumn1.Size = new System.Drawing.Size(221, 157);
+            this.layoutViewField_layoutViewColumn1.StartNewLine = true;
+            this.layoutViewField_layoutViewColumn1.TextLocation = DevExpress.Utils.Locations.Left;
+            this.layoutViewField_layoutViewColumn1.TextSize = new System.Drawing.Size(67, 13);
+            // 
+            // layoutViewCard1
+            // 
+            this.layoutViewCard1.CustomizationFormText = "TemplateCard";
+            this.layoutViewCard1.HeaderButtonsLocation = DevExpress.Utils.GroupElementLocation.AfterText;
+            this.layoutViewCard1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutViewField_gridColumn2,
+            this.layoutViewField_gridColumn3,
+            this.layoutViewField_gridColumn4,
+            this.layoutViewField_gridColumn5,
+            this.layoutViewField_gridColumn6,
+            this.layoutViewField_tileViewColumn1,
+            this.layoutViewField_layoutViewColumn1});
+            this.layoutViewCard1.Name = "layoutViewCard1";
+            this.layoutViewCard1.OptionsItemText.TextToControlDistance = 5;
+            this.layoutViewCard1.Text = "TemplateCard";
             // 
             // btnAdd
             // 
@@ -356,6 +354,10 @@
             this.edCLI_ID.Name = "edCLI_ID";
             this.edCLI_ID.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.edCLI_ID.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("CLI_ID", "ID"),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("CLI_RAZAO", "Nome"),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("CLI_FANTASIA", "Nome fantasia")});
             this.edCLI_ID.Size = new System.Drawing.Size(148, 20);
             this.edCLI_ID.TabIndex = 15;
             // 
@@ -421,6 +423,7 @@
             this.edPET_RACA.Name = "edPET_RACA";
             this.edPET_RACA.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.edPET_RACA.Properties.NullText = "";
             this.edPET_RACA.Properties.PopupView = this.gridLookUpEdit1View;
             this.edPET_RACA.Size = new System.Drawing.Size(102, 20);
             this.edPET_RACA.TabIndex = 17;
@@ -492,7 +495,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemHypertextLabel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemImageEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlPets)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tileView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_tileViewColumn1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_layoutViewColumn1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewCard1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PET_IMG.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.edPET_NOME.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.edPET_COR.Properties)).EndInit();
@@ -525,21 +538,12 @@
         private DevExpress.XtraGrid.GridControl gridControlPets;
         private DevExpress.XtraEditors.Repository.RepositoryItemImageEdit repositoryItemImageEdit1;
         private DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit repositoryItemPictureEdit1;
-        private DevExpress.XtraGrid.Views.Tile.TileView tileView1;
-        private DevExpress.XtraGrid.Columns.TileViewColumn layoutViewColumn1;
-        private DevExpress.XtraGrid.Columns.TileViewColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.TileViewColumn gridColumn2;
-        private DevExpress.XtraGrid.Columns.TileViewColumn gridColumn3;
-        private DevExpress.XtraGrid.Columns.TileViewColumn gridColumn4;
-        private DevExpress.XtraGrid.Columns.TileViewColumn gridColumn5;
-        private DevExpress.XtraGrid.Columns.TileViewColumn gridColumn6;
         private DevExpress.XtraEditors.SimpleButton btnAdd;
         private DevExpress.XtraEditors.PictureEdit PET_IMG;
         private DevExpress.XtraEditors.TextEdit edPET_NOME;
         private DevExpress.XtraEditors.TextEdit edPET_COR;
         private DevExpress.XtraEditors.LookUpEdit edCLI_ID;
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraGrid.Columns.TileViewColumn tileViewColumn1;
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraEditors.GroupControl groupControl2;
         private DevExpress.XtraEditors.GroupControl groupControl3;
@@ -547,11 +551,29 @@
         private DevExpress.XtraEditors.GroupControl groupControl6;
         private DevExpress.XtraEditors.GroupControl groupControl7;
         private DevExpress.XtraEditors.GroupControl groupControl8;
-        private DevExpress.XtraGrid.Columns.TileViewColumn Nome;
         private DevExpress.XtraEditors.Repository.RepositoryItemHypertextLabel repositoryItemHypertextLabel1;
         private DevExpress.XtraEditors.GridLookUpEdit edPET_RACA;
         private DevExpress.XtraGrid.Views.Grid.GridView gridLookUpEdit1View;
         private DevExpress.XtraEditors.DateEdit edPET_NAS;
         private DevExpress.XtraEditors.MemoEdit edPET_OBS;
+        private DevExpress.XtraGrid.Views.Layout.LayoutView layoutView1;
+        private DevExpress.XtraGrid.Columns.LayoutViewColumn gridColumn1;
+        private DevExpress.XtraGrid.Views.Layout.LayoutViewField layoutViewField_gridColumn1;
+        private DevExpress.XtraGrid.Columns.LayoutViewColumn gridColumn2;
+        private DevExpress.XtraGrid.Views.Layout.LayoutViewField layoutViewField_gridColumn2;
+        private DevExpress.XtraGrid.Columns.LayoutViewColumn gridColumn3;
+        private DevExpress.XtraGrid.Views.Layout.LayoutViewField layoutViewField_gridColumn3;
+        private DevExpress.XtraGrid.Columns.LayoutViewColumn gridColumn4;
+        private DevExpress.XtraGrid.Views.Layout.LayoutViewField layoutViewField_gridColumn4;
+        private DevExpress.XtraGrid.Columns.LayoutViewColumn gridColumn5;
+        private DevExpress.XtraGrid.Views.Layout.LayoutViewField layoutViewField_gridColumn5;
+        private DevExpress.XtraGrid.Columns.LayoutViewColumn gridColumn6;
+        private DevExpress.XtraGrid.Views.Layout.LayoutViewField layoutViewField_gridColumn6;
+        private DevExpress.XtraGrid.Columns.LayoutViewColumn tileViewColumn1;
+        private DevExpress.XtraGrid.Views.Layout.LayoutViewField layoutViewField_tileViewColumn1;
+        private DevExpress.XtraGrid.Columns.LayoutViewColumn layoutViewColumn1;
+        private DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit repositoryItemPictureEdit2;
+        private DevExpress.XtraGrid.Views.Layout.LayoutViewField layoutViewField_layoutViewColumn1;
+        private DevExpress.XtraGrid.Views.Layout.LayoutViewCard layoutViewCard1;
     }
 }

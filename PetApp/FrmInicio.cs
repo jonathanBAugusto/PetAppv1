@@ -84,5 +84,11 @@ namespace PetApp
             FrmServicos form = new FrmServicos();
             form.Show();
         }
+
+        private void accordionControlElement12_Click(object sender, EventArgs e)
+        {
+            FrmCli form = new FrmCli();
+            form.Show();
+        }
     }
 }

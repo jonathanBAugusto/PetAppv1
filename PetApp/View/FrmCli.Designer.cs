@@ -40,68 +40,68 @@
             this.btnRemCli = new DevExpress.XtraEditors.SimpleButton();
             this.btnAltCli = new DevExpress.XtraEditors.SimpleButton();
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.btnInserir = new DevExpress.XtraEditors.SimpleButton();
-            this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
-            this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
-            this.groupControl5 = new DevExpress.XtraEditors.GroupControl();
-            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
-            this.groupControl6 = new DevExpress.XtraEditors.GroupControl();
-            this.textEdit6 = new DevExpress.XtraEditors.TextEdit();
-            this.groupControl7 = new DevExpress.XtraEditors.GroupControl();
-            this.textEdit7 = new DevExpress.XtraEditors.TextEdit();
-            this.groupControl8 = new DevExpress.XtraEditors.GroupControl();
-            this.textEdit8 = new DevExpress.XtraEditors.TextEdit();
-            this.groupControl9 = new DevExpress.XtraEditors.GroupControl();
-            this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
-            this.rgCLI_PESTIPO = new DevExpress.XtraEditors.RadioGroup();
-            this.groupControl10 = new DevExpress.XtraEditors.GroupControl();
             this.groupControl11 = new DevExpress.XtraEditors.GroupControl();
             this.textEdit9 = new DevExpress.XtraEditors.TextEdit();
+            this.groupControl10 = new DevExpress.XtraEditors.GroupControl();
+            this.rgCLI_PESTIPO = new DevExpress.XtraEditors.RadioGroup();
+            this.groupControl9 = new DevExpress.XtraEditors.GroupControl();
+            this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
+            this.groupControl8 = new DevExpress.XtraEditors.GroupControl();
+            this.textEdit8 = new DevExpress.XtraEditors.TextEdit();
+            this.groupControl7 = new DevExpress.XtraEditors.GroupControl();
+            this.textEdit7 = new DevExpress.XtraEditors.TextEdit();
+            this.groupControl6 = new DevExpress.XtraEditors.GroupControl();
+            this.textEdit6 = new DevExpress.XtraEditors.TextEdit();
+            this.groupControl5 = new DevExpress.XtraEditors.GroupControl();
+            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
+            this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
+            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
+            this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
+            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
+            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.btnInserir = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
-            this.groupControl3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
-            this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
-            this.groupControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
-            this.groupControl4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).BeginInit();
-            this.groupControl5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).BeginInit();
-            this.groupControl6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).BeginInit();
-            this.groupControl7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl8)).BeginInit();
-            this.groupControl8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl11)).BeginInit();
+            this.groupControl11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl10)).BeginInit();
+            this.groupControl10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rgCLI_PESTIPO.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl9)).BeginInit();
             this.groupControl9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rgCLI_PESTIPO.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl10)).BeginInit();
-            this.groupControl10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl11)).BeginInit();
-            this.groupControl11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl8)).BeginInit();
+            this.groupControl8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).BeginInit();
+            this.groupControl7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).BeginInit();
+            this.groupControl6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).BeginInit();
+            this.groupControl5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
+            this.groupControl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
+            this.groupControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
+            this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
+            this.groupControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // gridControl1
@@ -110,7 +110,7 @@
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(805, 147);
+            this.gridControl1.Size = new System.Drawing.Size(805, 426);
             this.gridControl1.TabIndex = 3;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -142,7 +142,7 @@
             this.gridColumn3.FieldName = "CLI_RAZAO";
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 2;
+            this.gridColumn3.VisibleIndex = 1;
             // 
             // gridColumn4
             // 
@@ -150,7 +150,7 @@
             this.gridColumn4.FieldName = "CLI_INSCRICAO";
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 3;
+            this.gridColumn4.VisibleIndex = 2;
             // 
             // gridColumn5
             // 
@@ -158,7 +158,7 @@
             this.gridColumn5.FieldName = "CLI_NASC";
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 4;
+            this.gridColumn5.VisibleIndex = 3;
             // 
             // gridColumn6
             // 
@@ -166,7 +166,7 @@
             this.gridColumn6.FieldName = "CLI_CEL";
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.Visible = true;
-            this.gridColumn6.VisibleIndex = 5;
+            this.gridColumn6.VisibleIndex = 4;
             // 
             // gridColumn7
             // 
@@ -174,7 +174,7 @@
             this.gridColumn7.FieldName = "CLI_TEL";
             this.gridColumn7.Name = "gridColumn7";
             this.gridColumn7.Visible = true;
-            this.gridColumn7.VisibleIndex = 6;
+            this.gridColumn7.VisibleIndex = 5;
             // 
             // gridColumn1
             // 
@@ -182,7 +182,7 @@
             this.gridColumn1.FieldName = "CLI_EMAIL";
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 7;
+            this.gridColumn1.VisibleIndex = 6;
             // 
             // btnRemCli
             // 
@@ -224,171 +224,52 @@
             this.splitContainerControl1.Panel1.Text = "Panel1";
             this.splitContainerControl1.Panel2.Controls.Add(this.gridControl1);
             this.splitContainerControl1.Panel2.Text = "Panel2";
-            this.splitContainerControl1.Size = new System.Drawing.Size(805, 326);
+            this.splitContainerControl1.Size = new System.Drawing.Size(805, 605);
             this.splitContainerControl1.SplitterPosition = 174;
             this.splitContainerControl1.TabIndex = 6;
             this.splitContainerControl1.Text = "splitContainerControl1";
             // 
-            // simpleButton1
+            // groupControl11
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(579, 12);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(196, 47);
-            this.simpleButton1.TabIndex = 61;
-            this.simpleButton1.Text = "Pesquisar";
-            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            this.groupControl11.Controls.Add(this.textEdit9);
+            this.groupControl11.Location = new System.Drawing.Point(436, 118);
+            this.groupControl11.Name = "groupControl11";
+            this.groupControl11.Padding = new System.Windows.Forms.Padding(2);
+            this.groupControl11.Size = new System.Drawing.Size(137, 47);
+            this.groupControl11.TabIndex = 62;
+            this.groupControl11.Text = "CEP";
             // 
-            // btnInserir
+            // textEdit9
             // 
-            this.btnInserir.Location = new System.Drawing.Point(579, 65);
-            this.btnInserir.Name = "btnInserir";
-            this.btnInserir.Size = new System.Drawing.Size(95, 47);
-            this.btnInserir.TabIndex = 55;
-            this.btnInserir.Text = "Inserir";
+            this.textEdit9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textEdit9.Location = new System.Drawing.Point(4, 22);
+            this.textEdit9.Name = "textEdit9";
+            this.textEdit9.Size = new System.Drawing.Size(129, 20);
+            this.textEdit9.TabIndex = 0;
             // 
-            // groupControl3
+            // groupControl10
             // 
-            this.groupControl3.Controls.Add(this.textEdit1);
-            this.groupControl3.Location = new System.Drawing.Point(150, 12);
-            this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Padding = new System.Windows.Forms.Padding(2);
-            this.groupControl3.Size = new System.Drawing.Size(137, 47);
-            this.groupControl3.TabIndex = 59;
-            this.groupControl3.Text = "Razão Social";
+            this.groupControl10.Controls.Add(this.rgCLI_PESTIPO);
+            this.groupControl10.Location = new System.Drawing.Point(150, 118);
+            this.groupControl10.Name = "groupControl10";
+            this.groupControl10.Padding = new System.Windows.Forms.Padding(2);
+            this.groupControl10.Size = new System.Drawing.Size(280, 47);
+            this.groupControl10.TabIndex = 64;
+            this.groupControl10.Text = "Tipo de pessoa";
             // 
-            // textEdit1
+            // rgCLI_PESTIPO
             // 
-            this.textEdit1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textEdit1.Location = new System.Drawing.Point(4, 22);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(129, 20);
-            this.textEdit1.TabIndex = 0;
-            // 
-            // groupControl1
-            // 
-            this.groupControl1.Controls.Add(this.textEdit2);
-            this.groupControl1.Location = new System.Drawing.Point(293, 12);
-            this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupControl1.Size = new System.Drawing.Size(137, 47);
-            this.groupControl1.TabIndex = 60;
-            this.groupControl1.Text = "Inscrição Estadual";
-            // 
-            // textEdit2
-            // 
-            this.textEdit2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textEdit2.Location = new System.Drawing.Point(4, 22);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(129, 20);
-            this.textEdit2.TabIndex = 0;
-            // 
-            // groupControl2
-            // 
-            this.groupControl2.Controls.Add(this.textEdit3);
-            this.groupControl2.Location = new System.Drawing.Point(7, 12);
-            this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupControl2.Size = new System.Drawing.Size(137, 47);
-            this.groupControl2.TabIndex = 61;
-            this.groupControl2.Text = "Nome Fantasia";
-            // 
-            // textEdit3
-            // 
-            this.textEdit3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textEdit3.Location = new System.Drawing.Point(4, 22);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Size = new System.Drawing.Size(129, 20);
-            this.textEdit3.TabIndex = 0;
-            // 
-            // groupControl4
-            // 
-            this.groupControl4.Controls.Add(this.textEdit4);
-            this.groupControl4.Location = new System.Drawing.Point(436, 12);
-            this.groupControl4.Name = "groupControl4";
-            this.groupControl4.Padding = new System.Windows.Forms.Padding(2);
-            this.groupControl4.Size = new System.Drawing.Size(137, 47);
-            this.groupControl4.TabIndex = 61;
-            this.groupControl4.Text = "Celular";
-            // 
-            // textEdit4
-            // 
-            this.textEdit4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textEdit4.Location = new System.Drawing.Point(4, 22);
-            this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Size = new System.Drawing.Size(129, 20);
-            this.textEdit4.TabIndex = 0;
-            // 
-            // groupControl5
-            // 
-            this.groupControl5.Controls.Add(this.textEdit5);
-            this.groupControl5.Location = new System.Drawing.Point(7, 65);
-            this.groupControl5.Name = "groupControl5";
-            this.groupControl5.Padding = new System.Windows.Forms.Padding(2);
-            this.groupControl5.Size = new System.Drawing.Size(137, 47);
-            this.groupControl5.TabIndex = 62;
-            this.groupControl5.Text = "Telefone";
-            // 
-            // textEdit5
-            // 
-            this.textEdit5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textEdit5.Location = new System.Drawing.Point(4, 22);
-            this.textEdit5.Name = "textEdit5";
-            this.textEdit5.Size = new System.Drawing.Size(129, 20);
-            this.textEdit5.TabIndex = 0;
-            // 
-            // groupControl6
-            // 
-            this.groupControl6.Controls.Add(this.textEdit6);
-            this.groupControl6.Location = new System.Drawing.Point(293, 65);
-            this.groupControl6.Name = "groupControl6";
-            this.groupControl6.Padding = new System.Windows.Forms.Padding(2);
-            this.groupControl6.Size = new System.Drawing.Size(137, 47);
-            this.groupControl6.TabIndex = 63;
-            this.groupControl6.Text = "Email";
-            // 
-            // textEdit6
-            // 
-            this.textEdit6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textEdit6.Location = new System.Drawing.Point(4, 22);
-            this.textEdit6.Name = "textEdit6";
-            this.textEdit6.Size = new System.Drawing.Size(129, 20);
-            this.textEdit6.TabIndex = 0;
-            // 
-            // groupControl7
-            // 
-            this.groupControl7.Controls.Add(this.textEdit7);
-            this.groupControl7.Location = new System.Drawing.Point(436, 65);
-            this.groupControl7.Name = "groupControl7";
-            this.groupControl7.Padding = new System.Windows.Forms.Padding(2);
-            this.groupControl7.Size = new System.Drawing.Size(137, 47);
-            this.groupControl7.TabIndex = 64;
-            this.groupControl7.Text = "CNPJ";
-            // 
-            // textEdit7
-            // 
-            this.textEdit7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textEdit7.Location = new System.Drawing.Point(4, 22);
-            this.textEdit7.Name = "textEdit7";
-            this.textEdit7.Size = new System.Drawing.Size(129, 20);
-            this.textEdit7.TabIndex = 0;
-            // 
-            // groupControl8
-            // 
-            this.groupControl8.Controls.Add(this.textEdit8);
-            this.groupControl8.Location = new System.Drawing.Point(150, 65);
-            this.groupControl8.Name = "groupControl8";
-            this.groupControl8.Padding = new System.Windows.Forms.Padding(2);
-            this.groupControl8.Size = new System.Drawing.Size(137, 47);
-            this.groupControl8.TabIndex = 65;
-            this.groupControl8.Text = "DDD";
-            // 
-            // textEdit8
-            // 
-            this.textEdit8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textEdit8.Location = new System.Drawing.Point(4, 22);
-            this.textEdit8.Name = "textEdit8";
-            this.textEdit8.Size = new System.Drawing.Size(129, 20);
-            this.textEdit8.TabIndex = 0;
+            this.rgCLI_PESTIPO.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rgCLI_PESTIPO.Location = new System.Drawing.Point(4, 22);
+            this.rgCLI_PESTIPO.Name = "rgCLI_PESTIPO";
+            this.rgCLI_PESTIPO.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.rgCLI_PESTIPO.Properties.Appearance.Options.UseBackColor = true;
+            this.rgCLI_PESTIPO.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.rgCLI_PESTIPO.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
+            new DevExpress.XtraEditors.Controls.RadioGroupItem("FIS", "Pessoa Física"),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem("JUR", "Pessoa Jurídica")});
+            this.rgCLI_PESTIPO.Size = new System.Drawing.Size(272, 21);
+            this.rgCLI_PESTIPO.TabIndex = 66;
             // 
             // groupControl9
             // 
@@ -413,94 +294,214 @@
             this.dateEdit1.Size = new System.Drawing.Size(129, 20);
             this.dateEdit1.TabIndex = 0;
             // 
-            // rgCLI_PESTIPO
+            // groupControl8
             // 
-            this.rgCLI_PESTIPO.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rgCLI_PESTIPO.Location = new System.Drawing.Point(4, 22);
-            this.rgCLI_PESTIPO.Name = "rgCLI_PESTIPO";
-            this.rgCLI_PESTIPO.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.rgCLI_PESTIPO.Properties.Appearance.Options.UseBackColor = true;
-            this.rgCLI_PESTIPO.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.rgCLI_PESTIPO.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
-            new DevExpress.XtraEditors.Controls.RadioGroupItem("FIS", "Pessoa Física"),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem("JUR", "Pessoa Jurídica")});
-            this.rgCLI_PESTIPO.Size = new System.Drawing.Size(272, 21);
-            this.rgCLI_PESTIPO.TabIndex = 66;
+            this.groupControl8.Controls.Add(this.textEdit8);
+            this.groupControl8.Location = new System.Drawing.Point(150, 65);
+            this.groupControl8.Name = "groupControl8";
+            this.groupControl8.Padding = new System.Windows.Forms.Padding(2);
+            this.groupControl8.Size = new System.Drawing.Size(137, 47);
+            this.groupControl8.TabIndex = 65;
+            this.groupControl8.Text = "DDD";
             // 
-            // groupControl10
+            // textEdit8
             // 
-            this.groupControl10.Controls.Add(this.rgCLI_PESTIPO);
-            this.groupControl10.Location = new System.Drawing.Point(150, 118);
-            this.groupControl10.Name = "groupControl10";
-            this.groupControl10.Padding = new System.Windows.Forms.Padding(2);
-            this.groupControl10.Size = new System.Drawing.Size(280, 47);
-            this.groupControl10.TabIndex = 64;
-            this.groupControl10.Text = "Tipo de pessoa";
+            this.textEdit8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textEdit8.Location = new System.Drawing.Point(4, 22);
+            this.textEdit8.Name = "textEdit8";
+            this.textEdit8.Size = new System.Drawing.Size(129, 20);
+            this.textEdit8.TabIndex = 0;
             // 
-            // groupControl11
+            // groupControl7
             // 
-            this.groupControl11.Controls.Add(this.textEdit9);
-            this.groupControl11.Location = new System.Drawing.Point(436, 118);
-            this.groupControl11.Name = "groupControl11";
-            this.groupControl11.Padding = new System.Windows.Forms.Padding(2);
-            this.groupControl11.Size = new System.Drawing.Size(137, 47);
-            this.groupControl11.TabIndex = 62;
-            this.groupControl11.Text = "CEP";
+            this.groupControl7.Controls.Add(this.textEdit7);
+            this.groupControl7.Location = new System.Drawing.Point(436, 65);
+            this.groupControl7.Name = "groupControl7";
+            this.groupControl7.Padding = new System.Windows.Forms.Padding(2);
+            this.groupControl7.Size = new System.Drawing.Size(137, 47);
+            this.groupControl7.TabIndex = 64;
+            this.groupControl7.Text = "CNPJ";
             // 
-            // textEdit9
+            // textEdit7
             // 
-            this.textEdit9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textEdit9.Location = new System.Drawing.Point(4, 22);
-            this.textEdit9.Name = "textEdit9";
-            this.textEdit9.Size = new System.Drawing.Size(129, 20);
-            this.textEdit9.TabIndex = 0;
+            this.textEdit7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textEdit7.Location = new System.Drawing.Point(4, 22);
+            this.textEdit7.Name = "textEdit7";
+            this.textEdit7.Size = new System.Drawing.Size(129, 20);
+            this.textEdit7.TabIndex = 0;
+            // 
+            // groupControl6
+            // 
+            this.groupControl6.Controls.Add(this.textEdit6);
+            this.groupControl6.Location = new System.Drawing.Point(293, 65);
+            this.groupControl6.Name = "groupControl6";
+            this.groupControl6.Padding = new System.Windows.Forms.Padding(2);
+            this.groupControl6.Size = new System.Drawing.Size(137, 47);
+            this.groupControl6.TabIndex = 63;
+            this.groupControl6.Text = "Email";
+            // 
+            // textEdit6
+            // 
+            this.textEdit6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textEdit6.Location = new System.Drawing.Point(4, 22);
+            this.textEdit6.Name = "textEdit6";
+            this.textEdit6.Size = new System.Drawing.Size(129, 20);
+            this.textEdit6.TabIndex = 0;
+            // 
+            // groupControl5
+            // 
+            this.groupControl5.Controls.Add(this.textEdit5);
+            this.groupControl5.Location = new System.Drawing.Point(7, 65);
+            this.groupControl5.Name = "groupControl5";
+            this.groupControl5.Padding = new System.Windows.Forms.Padding(2);
+            this.groupControl5.Size = new System.Drawing.Size(137, 47);
+            this.groupControl5.TabIndex = 62;
+            this.groupControl5.Text = "Telefone";
+            // 
+            // textEdit5
+            // 
+            this.textEdit5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textEdit5.Location = new System.Drawing.Point(4, 22);
+            this.textEdit5.Name = "textEdit5";
+            this.textEdit5.Size = new System.Drawing.Size(129, 20);
+            this.textEdit5.TabIndex = 0;
+            // 
+            // groupControl4
+            // 
+            this.groupControl4.Controls.Add(this.textEdit4);
+            this.groupControl4.Location = new System.Drawing.Point(436, 12);
+            this.groupControl4.Name = "groupControl4";
+            this.groupControl4.Padding = new System.Windows.Forms.Padding(2);
+            this.groupControl4.Size = new System.Drawing.Size(137, 47);
+            this.groupControl4.TabIndex = 61;
+            this.groupControl4.Text = "Celular";
+            // 
+            // textEdit4
+            // 
+            this.textEdit4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textEdit4.Location = new System.Drawing.Point(4, 22);
+            this.textEdit4.Name = "textEdit4";
+            this.textEdit4.Size = new System.Drawing.Size(129, 20);
+            this.textEdit4.TabIndex = 0;
+            // 
+            // groupControl2
+            // 
+            this.groupControl2.Controls.Add(this.textEdit3);
+            this.groupControl2.Location = new System.Drawing.Point(7, 12);
+            this.groupControl2.Name = "groupControl2";
+            this.groupControl2.Padding = new System.Windows.Forms.Padding(2);
+            this.groupControl2.Size = new System.Drawing.Size(137, 47);
+            this.groupControl2.TabIndex = 61;
+            this.groupControl2.Text = "Nome Fantasia";
+            // 
+            // textEdit3
+            // 
+            this.textEdit3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textEdit3.Location = new System.Drawing.Point(4, 22);
+            this.textEdit3.Name = "textEdit3";
+            this.textEdit3.Size = new System.Drawing.Size(129, 20);
+            this.textEdit3.TabIndex = 0;
+            // 
+            // groupControl1
+            // 
+            this.groupControl1.Controls.Add(this.textEdit2);
+            this.groupControl1.Location = new System.Drawing.Point(293, 12);
+            this.groupControl1.Name = "groupControl1";
+            this.groupControl1.Padding = new System.Windows.Forms.Padding(2);
+            this.groupControl1.Size = new System.Drawing.Size(137, 47);
+            this.groupControl1.TabIndex = 60;
+            this.groupControl1.Text = "Inscrição Estadual";
+            // 
+            // textEdit2
+            // 
+            this.textEdit2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textEdit2.Location = new System.Drawing.Point(4, 22);
+            this.textEdit2.Name = "textEdit2";
+            this.textEdit2.Size = new System.Drawing.Size(129, 20);
+            this.textEdit2.TabIndex = 0;
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Location = new System.Drawing.Point(579, 12);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(196, 47);
+            this.simpleButton1.TabIndex = 61;
+            this.simpleButton1.Text = "Pesquisar";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            // 
+            // groupControl3
+            // 
+            this.groupControl3.Controls.Add(this.textEdit1);
+            this.groupControl3.Location = new System.Drawing.Point(150, 12);
+            this.groupControl3.Name = "groupControl3";
+            this.groupControl3.Padding = new System.Windows.Forms.Padding(2);
+            this.groupControl3.Size = new System.Drawing.Size(137, 47);
+            this.groupControl3.TabIndex = 59;
+            this.groupControl3.Text = "Razão Social";
+            // 
+            // textEdit1
+            // 
+            this.textEdit1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textEdit1.Location = new System.Drawing.Point(4, 22);
+            this.textEdit1.Name = "textEdit1";
+            this.textEdit1.Size = new System.Drawing.Size(129, 20);
+            this.textEdit1.TabIndex = 0;
+            // 
+            // btnInserir
+            // 
+            this.btnInserir.Location = new System.Drawing.Point(579, 65);
+            this.btnInserir.Name = "btnInserir";
+            this.btnInserir.Size = new System.Drawing.Size(95, 47);
+            this.btnInserir.TabIndex = 55;
+            this.btnInserir.Text = "Inserir";
             // 
             // FrmCli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(805, 326);
+            this.ClientSize = new System.Drawing.Size(805, 605);
             this.Controls.Add(this.splitContainerControl1);
             this.Name = "FrmCli";
             this.Text = "Clientes";
+            this.Load += new System.EventHandler(this.FrmCli_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).EndInit();
             this.splitContainerControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
-            this.groupControl3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
-            this.groupControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
-            this.groupControl2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
-            this.groupControl4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).EndInit();
-            this.groupControl5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).EndInit();
-            this.groupControl6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).EndInit();
-            this.groupControl7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl8)).EndInit();
-            this.groupControl8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl11)).EndInit();
+            this.groupControl11.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl10)).EndInit();
+            this.groupControl10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.rgCLI_PESTIPO.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl9)).EndInit();
             this.groupControl9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rgCLI_PESTIPO.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl10)).EndInit();
-            this.groupControl10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl11)).EndInit();
-            this.groupControl11.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl8)).EndInit();
+            this.groupControl8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).EndInit();
+            this.groupControl7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).EndInit();
+            this.groupControl6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).EndInit();
+            this.groupControl5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
+            this.groupControl4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
+            this.groupControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
+            this.groupControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
+            this.groupControl3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
