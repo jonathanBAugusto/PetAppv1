@@ -130,6 +130,9 @@
     <Compile Include="View\FrmProdutos.Designer.cs">
       <DependentUpon>FrmProdutos.cs</DependentUpon>
     </Compile>
+	<Compile Include="View\Servico\FrmServicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="View\Servico\FrmServicos.Designer.cs">
       <DependentUpon>FrmServicos.cs</DependentUpon>
     </Compile>

@@ -12,6 +12,30 @@ namespace PetApp
 {
     class F
     {
+        public static string imgPath = "TEMPIMG";
+
+        public static bool copyToImagePath(string imgPath, string nameImg = "")
+        {
+            if (nameImg == "")
+            {
+                nameImg = System.IO.Path.GetFileName(imgPath);
+            }
+            
+            if (!System.IO.Directory.Exists(imgPath))
+            {
+                System.IO.Directory.CreateDirectory(imgPath);
+            }
+
+            try
+            {
+                System.IO.File.Copy(imgPath, System.IO.Path.Combine(imgPath, nameImg), true);
+            }
+            catch (Exception ex)
+            {
+                Aviso("Erro ao Salva/Alterar Imagem\n" + ex.Message);
+            }
+
+        }
         public static void WriteLOG(string log)
         {
             if (!File.Exists("LOG.txt"))
