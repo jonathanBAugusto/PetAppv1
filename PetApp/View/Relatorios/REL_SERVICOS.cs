@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevExpress.XtraCharts;
 using PetApp.Model;
 
 namespace PetApp.View.Relatorios

@@ -16,7 +16,6 @@ namespace PetApp
     {
         DataTable infoPets;
         Pets pet;
-        int id = 0;
         public FrmCadCli()
         {
             InitializeComponent();

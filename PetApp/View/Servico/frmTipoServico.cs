@@ -25,6 +25,12 @@ namespace PetApp.View.Servico
                 TIPO_SER_NOME = F.toString(edTIPO_SER_NOME.EditValue),
                 TIPO_SER_VALOR = F.toDouble(edTIPO_SER_VALOR.EditValue)
             };
+            TipoServico.Insert(tipo);
+        }
+
+        private void frmTipoServico_Load(object sender, EventArgs e)
+        {
+            gridControl1.DataSource = TipoServico.Get();
         }
     }
 }

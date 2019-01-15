@@ -38,6 +38,7 @@
     <Reference Include="Correios.Net, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Correios.CEP.Net.1.1.6\lib\Correios.Net.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.Charts.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Images.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Office.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -46,6 +47,9 @@
     <Reference Include="DevExpress.RichEdit.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v17.2.UI, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.2.Wizard, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraEditors.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraLayout.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -98,11 +102,11 @@
       <DependentUpon>FrmInicio.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\TipoServico.cs" />
-    <Compile Include="View\FrmCli.cs">
+    <Compile Include="View\SH_CLIENTES.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FrmCli.Designer.cs">
-      <DependentUpon>FrmCli.cs</DependentUpon>
+    <Compile Include="View\SH_CLIENTES.Designer.cs">
+      <DependentUpon>SH_CLIENTES.cs</DependentUpon>
     </Compile>
     <Compile Include="View\FrmCadCli.cs">
       <SubType>Form</SubType>
@@ -145,6 +149,12 @@
     <Compile Include="View\Servico\frmTipoServico.Designer.cs">
       <DependentUpon>frmTipoServico.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\SH_PETS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SH_PETS.Designer.cs">
+      <DependentUpon>SH_PETS.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\SH_SERVICOS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,8 +164,8 @@
     <EmbeddedResource Include="FrmInicio.resx">
       <DependentUpon>FrmInicio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FrmCli.resx">
-      <DependentUpon>FrmCli.cs</DependentUpon>
+    <EmbeddedResource Include="View\SH_CLIENTES.resx">
+      <DependentUpon>SH_CLIENTES.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FrmCadCli.resx">
       <DependentUpon>FrmCadCli.cs</DependentUpon>
@@ -185,6 +195,9 @@
     </Compile>
     <EmbeddedResource Include="View\Servico\frmTipoServico.resx">
       <DependentUpon>frmTipoServico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SH_PETS.resx">
+      <DependentUpon>SH_PETS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\SH_SERVICOS.resx">
       <DependentUpon>SH_SERVICOS.cs</DependentUpon>

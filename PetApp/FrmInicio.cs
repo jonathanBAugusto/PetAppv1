@@ -28,7 +28,7 @@ namespace PetApp
 
         private void accordionControlElement2_Click(object sender, EventArgs e)
         {
-            FrmCli frmcli = new FrmCli();
+            SH_CLIENTES frmcli = new SH_CLIENTES();
             frmcli.ShowDialog();
         }
 
@@ -87,7 +87,19 @@ namespace PetApp
 
         private void accordionControlElement12_Click(object sender, EventArgs e)
         {
-            FrmCli form = new FrmCli();
+            SH_CLIENTES form = new SH_CLIENTES();
+            form.Show();
+        }
+
+        private void accordionControlElement13_Click(object sender, EventArgs e)
+        {
+            SH_PETS form = new SH_PETS();
+            form.Show();
+        }
+
+        private void accordionControlElement4_Click_1(object sender, EventArgs e)
+        {
+            SH_SERVICOS form = new SH_SERVICOS();
             form.Show();
         }
     }

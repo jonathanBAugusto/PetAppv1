@@ -31,26 +31,26 @@
             this.edTIPO_SER_NOME = new DevExpress.XtraEditors.TextEdit();
             this.edTIPO_SER_VALOR = new DevExpress.XtraEditors.TextEdit();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
+            this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
             this.btnCadastrar = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
-            this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
             ((System.ComponentModel.ISupportInitialize)(this.edTIPO_SER_NOME.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.edTIPO_SER_VALOR.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
+            this.groupControl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
+            this.groupControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
-            this.groupControl3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
-            this.groupControl4.SuspendLayout();
             this.SuspendLayout();
             // 
             // edTIPO_SER_NOME
@@ -83,6 +83,26 @@
             this.groupControl1.Size = new System.Drawing.Size(469, 79);
             this.groupControl1.TabIndex = 5;
             this.groupControl1.Text = "Cadastrar Tipo de serviço";
+            // 
+            // groupControl4
+            // 
+            this.groupControl4.Controls.Add(this.edTIPO_SER_VALOR);
+            this.groupControl4.Location = new System.Drawing.Point(264, 23);
+            this.groupControl4.Name = "groupControl4";
+            this.groupControl4.Padding = new System.Windows.Forms.Padding(2);
+            this.groupControl4.Size = new System.Drawing.Size(117, 46);
+            this.groupControl4.TabIndex = 6;
+            this.groupControl4.Text = "Valor Base";
+            // 
+            // groupControl3
+            // 
+            this.groupControl3.Controls.Add(this.edTIPO_SER_NOME);
+            this.groupControl3.Location = new System.Drawing.Point(5, 23);
+            this.groupControl3.Name = "groupControl3";
+            this.groupControl3.Padding = new System.Windows.Forms.Padding(2);
+            this.groupControl3.Size = new System.Drawing.Size(253, 46);
+            this.groupControl3.TabIndex = 5;
+            this.groupControl3.Text = "Nome do serviço";
             // 
             // btnCadastrar
             // 
@@ -138,26 +158,6 @@
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 1;
             // 
-            // groupControl3
-            // 
-            this.groupControl3.Controls.Add(this.edTIPO_SER_NOME);
-            this.groupControl3.Location = new System.Drawing.Point(5, 23);
-            this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Padding = new System.Windows.Forms.Padding(2);
-            this.groupControl3.Size = new System.Drawing.Size(253, 46);
-            this.groupControl3.TabIndex = 5;
-            this.groupControl3.Text = "Nome do serviço";
-            // 
-            // groupControl4
-            // 
-            this.groupControl4.Controls.Add(this.edTIPO_SER_VALOR);
-            this.groupControl4.Location = new System.Drawing.Point(264, 23);
-            this.groupControl4.Name = "groupControl4";
-            this.groupControl4.Padding = new System.Windows.Forms.Padding(2);
-            this.groupControl4.Size = new System.Drawing.Size(117, 46);
-            this.groupControl4.TabIndex = 6;
-            this.groupControl4.Text = "Valor Base";
-            // 
             // frmTipoServico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -167,18 +167,19 @@
             this.Controls.Add(this.groupControl1);
             this.Name = "frmTipoServico";
             this.Text = "Tipos de serviço";
+            this.Load += new System.EventHandler(this.frmTipoServico_Load);
             ((System.ComponentModel.ISupportInitialize)(this.edTIPO_SER_NOME.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.edTIPO_SER_VALOR.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
+            this.groupControl4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
+            this.groupControl3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
-            this.groupControl3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
-            this.groupControl4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

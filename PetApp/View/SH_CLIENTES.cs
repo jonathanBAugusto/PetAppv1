@@ -11,9 +11,9 @@ using PetApp.Model;
 
 namespace PetApp
 {
-    public partial class FrmCli : DevExpress.XtraEditors.XtraForm
+    public partial class SH_CLIENTES : DevExpress.XtraEditors.XtraForm
     {
-        public FrmCli()
+        public SH_CLIENTES()
         {
             InitializeComponent();
 

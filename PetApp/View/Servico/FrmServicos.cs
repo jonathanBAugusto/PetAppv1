@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using PetApp.View.Servico;
 using PetApp.View.Relatorios;
 using PetApp.Model;
+using PetApp.View;
+
 namespace PetApp
 {
     public partial class FrmServicos : DevExpress.XtraEditors.XtraForm
@@ -31,6 +33,7 @@ namespace PetApp
             edTIPO_SER.Properties.DataSource = TipoServico.Get();
             edTIPO_SER.Properties.ValueMember = "TIPO_SER_ID";
             edTIPO_SER.Properties.DisplayMember = "TIPO_SER_NOME";
+
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
@@ -90,6 +93,30 @@ namespace PetApp
         {
             REL_SERVICOS rel = new REL_SERVICOS();
             rel.Show();
+        }
+
+        private void btnAddTipoServico_Click(object sender, EventArgs e)
+        {
+            frmTipoServico form = new frmTipoServico();
+            form.Show();
+        }
+
+        private void btnAddCli_Click(object sender, EventArgs e)
+        {
+            FrmCadCli form = new FrmCadCli();
+            form.Show();
+        }
+
+        private void btnAddPet_Click(object sender, EventArgs e)
+        {
+            FrmPets form = new FrmPets();
+            form.Show();
+        }
+
+        private void btnHistorico_Click(object sender, EventArgs e)
+        {
+            SH_SERVICOS form = new SH_SERVICOS();
+            form.Show();
         }
     }
 }

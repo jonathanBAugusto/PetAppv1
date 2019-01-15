@@ -23,6 +23,7 @@ namespace PetApp
         {
             listPets = Pets.Get();
             gridControlPets.DataSource = listPets;
+
             edCLI_ID.Properties.DataSource = Clientes.Get();
             edCLI_ID.Properties.ValueMember = "CLI_ID";
             edCLI_ID.Properties.DisplayMember = "CLI_NOME";
@@ -33,6 +34,17 @@ namespace PetApp
             Pets pet = new Pets { PET_NOME = F.toString(edPET_NOME.EditValue), PET_RACA = F.toString(edPET_RACA.EditValue), PET_OBS = F.toString(edPET_OBS.Text), PET_NAS = F.toString(edPET_NAS.EditValue), PET_COR = F.toString(edPET_COR.EditValue), CLI_ID = F.toInt(edCLI_ID.EditValue), PET_IMG = F.toString(PET_IMG.Image) };
             Pets.Insert(pet);
             listPets = Pets.Get();
+        }
+
+        private void edPRO_IMAGEM_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+        {
+            string pathImg = "";
+            if (openFileDialogImg.ShowDialog() != DialogResult.OK)
+            {
+                return;
+            }
+            pathImg = openFileDialogImg.FileName;
+            string fileName = System.IO.Path.GetFileName(pathImg);
         }
     }
 }

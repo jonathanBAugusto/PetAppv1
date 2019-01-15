@@ -1,6 +1,6 @@
 ﻿namespace PetApp
 {
-    partial class FrmCli
+    partial class SH_CLIENTES
     {
         /// <summary>
         /// Required designer variable.
@@ -110,7 +110,7 @@
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(805, 426);
+            this.gridControl1.Size = new System.Drawing.Size(788, 426);
             this.gridControl1.TabIndex = 3;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -224,7 +224,7 @@
             this.splitContainerControl1.Panel1.Text = "Panel1";
             this.splitContainerControl1.Panel2.Controls.Add(this.gridControl1);
             this.splitContainerControl1.Panel2.Text = "Panel2";
-            this.splitContainerControl1.Size = new System.Drawing.Size(805, 605);
+            this.splitContainerControl1.Size = new System.Drawing.Size(788, 605);
             this.splitContainerControl1.SplitterPosition = 174;
             this.splitContainerControl1.TabIndex = 6;
             this.splitContainerControl1.Text = "splitContainerControl1";
@@ -455,13 +455,13 @@
             this.btnInserir.TabIndex = 55;
             this.btnInserir.Text = "Inserir";
             // 
-            // FrmCli
+            // SH_CLIENTES
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(805, 605);
+            this.ClientSize = new System.Drawing.Size(788, 605);
             this.Controls.Add(this.splitContainerControl1);
-            this.Name = "FrmCli";
+            this.Name = "SH_CLIENTES";
             this.Text = "Clientes";
             this.Load += new System.EventHandler(this.FrmCli_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();

@@ -47,6 +47,7 @@
             this.btnCancelar = new DevExpress.XtraEditors.SimpleButton();
             this.btnSalvar = new DevExpress.XtraEditors.SimpleButton();
             this.openFileDialogImg = new System.Windows.Forms.OpenFileDialog();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.edPRO_DESCRICAO.Properties)).BeginInit();
@@ -231,6 +232,10 @@
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // FrmProdutos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -296,5 +301,6 @@
         private DevExpress.XtraEditors.SimpleButton btnSalvar;
         private DevExpress.XtraEditors.ButtonEdit edPRO_IMAGEM;
         private System.Windows.Forms.OpenFileDialog openFileDialogImg;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

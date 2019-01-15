@@ -55,10 +55,11 @@
             this.groupControl5 = new DevExpress.XtraEditors.GroupControl();
             this.edTIPO_SER = new DevExpress.XtraEditors.GridLookUpEdit();
             this.gridLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
-            this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemTextEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
+            this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
+            this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.edSER_VALOR_BASE.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.edPET_ID.Properties)).BeginInit();
@@ -84,6 +85,7 @@
             this.groupControl5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.edTIPO_SER.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
             this.groupControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
@@ -133,6 +135,7 @@
             this.btnAddTipoServico.Size = new System.Drawing.Size(24, 21);
             this.btnAddTipoServico.TabIndex = 36;
             this.btnAddTipoServico.Text = "+";
+            this.btnAddTipoServico.Click += new System.EventHandler(this.btnAddTipoServico_Click);
             // 
             // btnAddPet
             // 
@@ -142,6 +145,7 @@
             this.btnAddPet.Size = new System.Drawing.Size(22, 21);
             this.btnAddPet.TabIndex = 32;
             this.btnAddPet.Text = "+";
+            this.btnAddPet.Click += new System.EventHandler(this.btnAddPet_Click);
             // 
             // edPET_ID
             // 
@@ -163,7 +167,8 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.edCLI_ID.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("CLI_ID", "ID"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("CLI_NOME", "Nome")});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("CLI_RAZAO", "Nome"),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("CLI_FANTASIA", "Nome Fantasia")});
             this.edCLI_ID.Properties.NullText = "Cliente";
             this.edCLI_ID.Size = new System.Drawing.Size(74, 20);
             this.edCLI_ID.TabIndex = 1;
@@ -176,6 +181,7 @@
             this.btnAddCli.Size = new System.Drawing.Size(24, 20);
             this.btnAddCli.TabIndex = 29;
             this.btnAddCli.Text = "+";
+            this.btnAddCli.Click += new System.EventHandler(this.btnAddCli_Click);
             // 
             // groupControl2
             // 
@@ -227,6 +233,7 @@
             this.btnHistorico.Size = new System.Drawing.Size(104, 31);
             this.btnHistorico.TabIndex = 53;
             this.btnHistorico.Text = "Histórico";
+            this.btnHistorico.Click += new System.EventHandler(this.btnHistorico_Click);
             // 
             // groupControl10
             // 
@@ -337,6 +344,8 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.edTIPO_SER.Properties.NullText = "Selecione";
             this.edTIPO_SER.Properties.PopupView = this.gridLookUpEdit1View;
+            this.edTIPO_SER.Properties.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemTextEdit1});
             this.edTIPO_SER.Size = new System.Drawing.Size(67, 20);
             this.edTIPO_SER.TabIndex = 44;
             // 
@@ -349,6 +358,31 @@
             this.gridLookUpEdit1View.Name = "gridLookUpEdit1View";
             this.gridLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.gridLookUpEdit1View.OptionsView.ShowGroupPanel = false;
+            // 
+            // gridColumn1
+            // 
+            this.gridColumn1.Caption = "Nome";
+            this.gridColumn1.FieldName = "TIPO_SER_NOME";
+            this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.Visible = true;
+            this.gridColumn1.VisibleIndex = 0;
+            // 
+            // gridColumn2
+            // 
+            this.gridColumn2.Caption = "Valor";
+            this.gridColumn2.ColumnEdit = this.repositoryItemTextEdit1;
+            this.gridColumn2.FieldName = "TIPO_SER_VALOR";
+            this.gridColumn2.Name = "gridColumn2";
+            this.gridColumn2.Visible = true;
+            this.gridColumn2.VisibleIndex = 1;
+            // 
+            // repositoryItemTextEdit1
+            // 
+            this.repositoryItemTextEdit1.AutoHeight = false;
+            this.repositoryItemTextEdit1.Mask.EditMask = "c2";
+            this.repositoryItemTextEdit1.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.repositoryItemTextEdit1.Mask.UseMaskAsDisplayFormat = true;
+            this.repositoryItemTextEdit1.Name = "repositoryItemTextEdit1";
             // 
             // groupControl4
             // 
@@ -369,22 +403,6 @@
             this.groupControl3.Size = new System.Drawing.Size(111, 46);
             this.groupControl3.TabIndex = 46;
             this.groupControl3.Text = "Cliente";
-            // 
-            // gridColumn1
-            // 
-            this.gridColumn1.Caption = "Nome";
-            this.gridColumn1.FieldName = "TIPO_SER_NOME";
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 0;
-            // 
-            // gridColumn2
-            // 
-            this.gridColumn2.Caption = "Valor";
-            this.gridColumn2.FieldName = "TIPO_SER_VALOR";
-            this.gridColumn2.Name = "gridColumn2";
-            this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 1;
             // 
             // FrmServicos
             // 
@@ -421,6 +439,7 @@
             this.groupControl5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.edTIPO_SER.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
             this.groupControl4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
@@ -460,5 +479,6 @@
         private DevExpress.XtraEditors.SimpleButton btnHistorico;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
+        private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit1;
     }
 }
