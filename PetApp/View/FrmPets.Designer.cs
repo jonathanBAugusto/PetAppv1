@@ -524,7 +524,7 @@
             this.groupControl9.Name = "groupControl9";
             this.groupControl9.Size = new System.Drawing.Size(643, 425);
             this.groupControl9.TabIndex = 27;
-            this.groupControl9.Text = "groupControl9";
+            this.groupControl9.Text = "Pets";
             // 
             // FrmPets
             // 

@@ -1,4 +1,5 @@
 ﻿using PetApp.Control;
+using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,8 +8,11 @@ using System.Threading.Tasks;
 
 namespace PetApp.Model
 {
+    [Table("PET")]
     class Pets
     {
+        [PrimaryKey]
+        [AutoIncrement]
         public int PET_ID { get; set; }
         public string PET_IMG { get; set; }
         public string PET_NOME { get; set; }

@@ -34,6 +34,9 @@ namespace PetApp
             edTIPO_SER.Properties.ValueMember = "TIPO_SER_ID";
             edTIPO_SER.Properties.DisplayMember = "TIPO_SER_NOME";
 
+            edPET_ID.Properties.DataSource = Pets.Get();
+            edPET_ID.Properties.ValueMember = "PET_ID";
+            edPET_ID.Properties.DisplayMember = "PET_NOME";
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
@@ -71,7 +74,7 @@ namespace PetApp
                 SER_VALOR_TOTAL = F.toDouble(valorTotal),
                 SER_DATA_CAD = F.toString(DateTime.Now.ToShortDateString()),
                 SER_DATA_PREV = F.toString(edSER_DATA_PREV.Text),
-                SER_TIPO_ID = F.toInt(edTIPO_SER.EditValue),
+                TIPO_SER_ID = F.toInt(edTIPO_SER.EditValue),
                 SER_OBSERVACAO = F.toString(edSER_OBSERVACAO.Text),
                 SER_ESTAGIO = F.toString(estagio)
             };

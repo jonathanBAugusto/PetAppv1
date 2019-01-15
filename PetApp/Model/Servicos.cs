@@ -18,7 +18,7 @@ namespace PetApp.Model
         public double SER_VALOR_TOTAL { get; set; }
         public int PET_ID { get; set; }
         public int CLI_ID { get; set; }
-        public int SER_TIPO_ID { get; set; }
+        public int TIPO_SER_ID { get; set; }
         public string SER_DATA_PREV { get; set; }
         public string SER_DATA_CAD { get; set; }
         public string SER_OBSERVACAO { get; set; }

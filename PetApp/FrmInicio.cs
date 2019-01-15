@@ -19,6 +19,9 @@ namespace PetApp
         public FrmInicio()
         {
             InitializeComponent();
+            DevExpress.UserSkins.BonusSkins.Register();
+            DevExpress.Skins.SkinManager.EnableFormSkins();
+            DevExpress.XtraBars.Helpers.SkinHelper.InitSkinGallery(skinRibbonGalleryBarItem1, true, true);
         }
 
         private void accordionControlElement1_Click(object sender, EventArgs e)

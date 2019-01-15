@@ -211,7 +211,7 @@
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(750, 159);
+            this.groupControl1.Size = new System.Drawing.Size(750, 174);
             this.groupControl1.TabIndex = 1;
             this.groupControl1.Text = "Informações do Cliente";
             // 
@@ -221,7 +221,7 @@
             this.groupControl11.Location = new System.Drawing.Point(611, 26);
             this.groupControl11.Name = "groupControl11";
             this.groupControl11.Padding = new System.Windows.Forms.Padding(2);
-            this.groupControl11.Size = new System.Drawing.Size(131, 43);
+            this.groupControl11.Size = new System.Drawing.Size(131, 46);
             this.groupControl11.TabIndex = 31;
             this.groupControl11.Text = "Nascimento";
             // 
@@ -245,7 +245,7 @@
             this.groupControl10.Controls.Add(this.groupControl13);
             this.groupControl10.Controls.Add(this.groupControl12);
             this.groupControl10.Controls.Add(this.groupControl9);
-            this.groupControl10.Location = new System.Drawing.Point(7, 74);
+            this.groupControl10.Location = new System.Drawing.Point(6, 92);
             this.groupControl10.Name = "groupControl10";
             this.groupControl10.Size = new System.Drawing.Size(598, 76);
             this.groupControl10.TabIndex = 30;
@@ -257,7 +257,7 @@
             this.groupControl14.Location = new System.Drawing.Point(468, 24);
             this.groupControl14.Name = "groupControl14";
             this.groupControl14.Padding = new System.Windows.Forms.Padding(2);
-            this.groupControl14.Size = new System.Drawing.Size(125, 44);
+            this.groupControl14.Size = new System.Drawing.Size(125, 47);
             this.groupControl14.TabIndex = 33;
             this.groupControl14.Text = "Celular";
             // 
@@ -275,7 +275,7 @@
             this.groupControl15.Location = new System.Drawing.Point(405, 24);
             this.groupControl15.Name = "groupControl15";
             this.groupControl15.Padding = new System.Windows.Forms.Padding(2);
-            this.groupControl15.Size = new System.Drawing.Size(57, 44);
+            this.groupControl15.Size = new System.Drawing.Size(57, 47);
             this.groupControl15.TabIndex = 32;
             this.groupControl15.Text = "DDD";
             // 
@@ -293,7 +293,7 @@
             this.groupControl13.Location = new System.Drawing.Point(282, 23);
             this.groupControl13.Name = "groupControl13";
             this.groupControl13.Padding = new System.Windows.Forms.Padding(2);
-            this.groupControl13.Size = new System.Drawing.Size(117, 44);
+            this.groupControl13.Size = new System.Drawing.Size(117, 48);
             this.groupControl13.TabIndex = 31;
             this.groupControl13.Text = "Telefone";
             // 
@@ -303,7 +303,7 @@
             this.groupControl12.Location = new System.Drawing.Point(219, 23);
             this.groupControl12.Name = "groupControl12";
             this.groupControl12.Padding = new System.Windows.Forms.Padding(2);
-            this.groupControl12.Size = new System.Drawing.Size(57, 44);
+            this.groupControl12.Size = new System.Drawing.Size(57, 48);
             this.groupControl12.TabIndex = 30;
             this.groupControl12.Text = "DDD";
             // 
@@ -321,7 +321,7 @@
             this.groupControl9.Location = new System.Drawing.Point(6, 23);
             this.groupControl9.Name = "groupControl9";
             this.groupControl9.Padding = new System.Windows.Forms.Padding(2);
-            this.groupControl9.Size = new System.Drawing.Size(207, 44);
+            this.groupControl9.Size = new System.Drawing.Size(207, 48);
             this.groupControl9.TabIndex = 29;
             this.groupControl9.Text = "Email";
             // 
@@ -336,7 +336,7 @@
             // groupControl8
             // 
             this.groupControl8.Controls.Add(this.rgCLI_PESTIPO);
-            this.groupControl8.Location = new System.Drawing.Point(611, 75);
+            this.groupControl8.Location = new System.Drawing.Point(610, 93);
             this.groupControl8.Name = "groupControl8";
             this.groupControl8.Size = new System.Drawing.Size(131, 75);
             this.groupControl8.TabIndex = 32;
@@ -363,7 +363,7 @@
             this.groupControl7.Location = new System.Drawing.Point(456, 25);
             this.groupControl7.Name = "groupControl7";
             this.groupControl7.Padding = new System.Windows.Forms.Padding(2);
-            this.groupControl7.Size = new System.Drawing.Size(149, 44);
+            this.groupControl7.Size = new System.Drawing.Size(149, 47);
             this.groupControl7.TabIndex = 31;
             this.groupControl7.Text = "Inscrição Estadual";
             // 
@@ -381,7 +381,7 @@
             this.groupControl6.Location = new System.Drawing.Point(319, 25);
             this.groupControl6.Name = "groupControl6";
             this.groupControl6.Padding = new System.Windows.Forms.Padding(2);
-            this.groupControl6.Size = new System.Drawing.Size(131, 44);
+            this.groupControl6.Size = new System.Drawing.Size(131, 47);
             this.groupControl6.TabIndex = 30;
             this.groupControl6.Text = "CPF/CNPJ";
             // 
@@ -399,7 +399,7 @@
             this.groupControl5.Location = new System.Drawing.Point(161, 24);
             this.groupControl5.Name = "groupControl5";
             this.groupControl5.Padding = new System.Windows.Forms.Padding(2);
-            this.groupControl5.Size = new System.Drawing.Size(152, 44);
+            this.groupControl5.Size = new System.Drawing.Size(152, 48);
             this.groupControl5.TabIndex = 29;
             this.groupControl5.Text = "Razão Social";
             // 
@@ -414,10 +414,10 @@
             // groupControl4
             // 
             this.groupControl4.Controls.Add(this.edCLI_FANTASIA);
-            this.groupControl4.Location = new System.Drawing.Point(5, 24);
+            this.groupControl4.Location = new System.Drawing.Point(6, 24);
             this.groupControl4.Name = "groupControl4";
             this.groupControl4.Padding = new System.Windows.Forms.Padding(2);
-            this.groupControl4.Size = new System.Drawing.Size(152, 45);
+            this.groupControl4.Size = new System.Drawing.Size(152, 48);
             this.groupControl4.TabIndex = 28;
             this.groupControl4.Text = "Nome Fantasia";
             // 
@@ -598,9 +598,9 @@
             // 
             this.groupControl3.Controls.Add(this.splitContainerControl1);
             this.groupControl3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupControl3.Location = new System.Drawing.Point(0, 159);
+            this.groupControl3.Location = new System.Drawing.Point(0, 174);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(750, 303);
+            this.groupControl3.Size = new System.Drawing.Size(750, 288);
             this.groupControl3.TabIndex = 2;
             this.groupControl3.Text = "PETS";
             // 
@@ -621,7 +621,7 @@
             this.splitContainerControl1.Panel1.Text = "Panel1";
             this.splitContainerControl1.Panel2.Controls.Add(this.gridControlPet);
             this.splitContainerControl1.Panel2.Text = "Panel2";
-            this.splitContainerControl1.Size = new System.Drawing.Size(746, 281);
+            this.splitContainerControl1.Size = new System.Drawing.Size(746, 266);
             this.splitContainerControl1.SplitterPosition = 134;
             this.splitContainerControl1.TabIndex = 30;
             this.splitContainerControl1.Text = "splitContainerControl1";
@@ -773,7 +773,7 @@
             this.gridControlPet.Location = new System.Drawing.Point(0, 0);
             this.gridControlPet.MainView = this.gridViewPet;
             this.gridControlPet.Name = "gridControlPet";
-            this.gridControlPet.Size = new System.Drawing.Size(746, 142);
+            this.gridControlPet.Size = new System.Drawing.Size(746, 127);
             this.gridControlPet.TabIndex = 28;
             this.gridControlPet.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewPet});

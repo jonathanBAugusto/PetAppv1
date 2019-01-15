@@ -69,7 +69,7 @@ namespace PetApp
             {
                 edCLI_INSCRICAO.Enabled = false;
                 edCLI_CNPJ.Enabled = false;
-                edCLI_RAZAO.Enabled = false;
+                edCLI_RAZAO.Enabled = true;
                 edCLI_FANTASIA.Enabled = false;
                 edCLI_NASC.Enabled = true;
             }

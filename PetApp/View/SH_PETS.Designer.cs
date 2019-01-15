@@ -57,6 +57,7 @@
             this.btnAlterar = new DevExpress.XtraEditors.SimpleButton();
             this.btnInserir = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.edPET_ID = new DevExpress.XtraEditors.LookUpEdit();
             this.groupControl7 = new DevExpress.XtraEditors.GroupControl();
             this.edPET_NAS = new DevExpress.XtraEditors.DateEdit();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
@@ -67,7 +68,6 @@
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
             this.edCLI_ID = new DevExpress.XtraEditors.LookUpEdit();
-            this.edPET_ID = new DevExpress.XtraEditors.LookUpEdit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl9)).BeginInit();
             this.groupControl9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlPets)).BeginInit();
@@ -89,6 +89,7 @@
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.edPET_ID.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).BeginInit();
             this.groupControl7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.edPET_NAS.Properties.CalendarTimeProperties)).BeginInit();
@@ -103,7 +104,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
             this.groupControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.edCLI_ID.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edPET_ID.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl9
@@ -369,6 +369,21 @@
             this.groupControl2.TabIndex = 26;
             this.groupControl2.Text = "Nome do PET";
             // 
+            // edPET_ID
+            // 
+            this.edPET_ID.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.edPET_ID.Location = new System.Drawing.Point(4, 22);
+            this.edPET_ID.Margin = new System.Windows.Forms.Padding(2);
+            this.edPET_ID.Name = "edPET_ID";
+            this.edPET_ID.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.edPET_ID.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("PET_ID", "ID"),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("PET_NOME", "Nome")});
+            this.edPET_ID.Properties.NullText = "";
+            this.edPET_ID.Size = new System.Drawing.Size(98, 20);
+            this.edPET_ID.TabIndex = 16;
+            // 
             // groupControl7
             // 
             this.groupControl7.Controls.Add(this.edPET_NAS);
@@ -470,21 +485,6 @@
             this.edCLI_ID.Size = new System.Drawing.Size(148, 20);
             this.edCLI_ID.TabIndex = 15;
             // 
-            // edPET_ID
-            // 
-            this.edPET_ID.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.edPET_ID.Location = new System.Drawing.Point(4, 22);
-            this.edPET_ID.Margin = new System.Windows.Forms.Padding(2);
-            this.edPET_ID.Name = "edPET_ID";
-            this.edPET_ID.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.edPET_ID.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("PET_ID", "ID"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("PET_NOME", "Nome")});
-            this.edPET_ID.Properties.NullText = "";
-            this.edPET_ID.Size = new System.Drawing.Size(98, 20);
-            this.edPET_ID.TabIndex = 16;
-            // 
             // SH_PETS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -493,7 +493,7 @@
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.groupControl9);
             this.Name = "SH_PETS";
-            this.Text = "SH_PETS";
+            this.Text = "Pesquisa de PETS";
             this.Load += new System.EventHandler(this.SH_PETS_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl9)).EndInit();
             this.groupControl9.ResumeLayout(false);
@@ -516,6 +516,7 @@
             this.groupControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.edPET_ID.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).EndInit();
             this.groupControl7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.edPET_NAS.Properties.CalendarTimeProperties)).EndInit();
@@ -530,7 +531,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
             this.groupControl4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.edCLI_ID.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edPET_ID.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
