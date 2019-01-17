@@ -94,6 +94,7 @@
     </Compile>
     <Compile Include="Control\Connection.cs" />
     <Compile Include="Model\Produtos.cs" />
+    <Compile Include="Model\SqliteSequence.cs" />
     <Compile Include="Model\TipoProduto.cs" />
     <Compile Include="Model\Servicos.cs" />
     <Compile Include="FrmInicio.cs">
