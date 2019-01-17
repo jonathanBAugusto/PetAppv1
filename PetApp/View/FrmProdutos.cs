@@ -85,7 +85,29 @@ namespace PetApp.View
                 return;
             }
             pathImg = openFileDialogImg.FileName;
-            string fileName = System.IO.Path.GetFileName(pathImg);
+            string fileName = F.copyToImagePath(pathImg);
+
+            if (fileName == "")
+            {
+                F.Aviso("Erro ao Salvar Imagem");
+                return;
+            }
+
+            try
+            {
+                pic_IMAGEM.Image = Image.FromFile(fileName);
+                pic_IMAGEM.Tag = fileName;
+                edPRO_IMAGEM.EditValue = fileName;
+            }
+            catch (Exception ex)
+            {
+                F.WriteLOG("----------------------\nLOG WSCorreios - " + DateTime.Now.ToString() + " - Erro: " + ex.Message);
+            }
+        }
+
+        private void pic_IMAGEM_DoubleClick(object sender, EventArgs e)
+        {
+            edPRO_IMAGEM_ButtonClick(null, null);
         }
     }
 }

@@ -12,30 +12,73 @@ namespace PetApp
 {
     class F
     {
-        public static string imgPath = "TEMPIMG";
+        public static string IMGPATH = "IMAGES";
+        public static string TEMPFOLDER= "TEMPFOLDER";
 
-        public static bool copyToImagePath(string imgPath, string nameImg = "")
+        public static bool cleanTempFolder()
+        {
+            try
+            {
+                System.IO.Directory.Delete(TEMPFOLDER);
+            }
+            catch (Exception ex)
+            {
+                F.WriteLOG("----------------------\nLOG WSCorreios - " + DateTime.Now.ToString() + " - Erro: " + ex.Message);
+                return false;
+            }
+            return true;
+        }
+        public static string copyToTempPath(string filePath, string nameFile = "")
+        {
+            if (nameFile == "")
+            {
+                nameFile = System.IO.Path.GetFileName(filePath);
+            }
+
+            if (!System.IO.Directory.Exists(TEMPFOLDER))
+            {
+                System.IO.Directory.CreateDirectory(TEMPFOLDER);
+            }
+            else
+            {
+                System.IO.Directory.Delete(TEMPFOLDER);
+                System.IO.Directory.CreateDirectory(TEMPFOLDER);
+            }
+            try
+            {
+                System.IO.File.Copy(filePath, System.IO.Path.Combine(TEMPFOLDER, nameFile), true);
+            }
+            catch (Exception ex)
+            {
+                Aviso("Erro ao Salva/Alterar Imagem\n" + ex.Message);
+                return "";
+            }
+            return System.IO.Path.Combine(TEMPFOLDER, nameFile);
+
+        }
+        public static string copyToImagePath(string imgPath, string nameImg = "")
         {
             if (nameImg == "")
             {
                 nameImg = System.IO.Path.GetFileName(imgPath);
             }
             
-            if (!System.IO.Directory.Exists(imgPath))
+            if (!System.IO.Directory.Exists(IMGPATH))
             {
-                System.IO.Directory.CreateDirectory(imgPath);
+                System.IO.Directory.CreateDirectory(IMGPATH);
             }
 
             try
             {
-                System.IO.File.Copy(imgPath, System.IO.Path.Combine(imgPath, nameImg), true);
+                System.IO.File.Copy(imgPath, System.IO.Path.Combine(IMGPATH, nameImg), true);
             }
             catch (Exception ex)
             {
                 Aviso("Erro ao Salva/Alterar Imagem\n" + ex.Message);
-                return false;
+                return "";
             }
-            return true;
+            return System.IO.Path.Combine(IMGPATH, nameImg);
+
         }
         public static void WriteLOG(string log)
         {
