@@ -156,6 +156,12 @@
     <Compile Include="View\SH_PETS.Designer.cs">
       <DependentUpon>SH_PETS.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\SH_PRODUTOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SH_PRODUTOS.Designer.cs">
+      <DependentUpon>SH_PRODUTOS.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\SH_SERVICOS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\SH_PETS.resx">
       <DependentUpon>SH_PETS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SH_PRODUTOS.resx">
+      <DependentUpon>SH_PRODUTOS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\SH_SERVICOS.resx">
       <DependentUpon>SH_SERVICOS.cs</DependentUpon>

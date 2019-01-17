@@ -64,6 +64,7 @@ namespace PetApp.View
             {
                 Produtos.Update(objProdutos);
             }
+            F.Aviso("Produto cadastrado com sucesso!");
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

@@ -95,6 +95,36 @@ namespace PetApp.Control
                     F.WriteLOG("---------------------------\n" + DateTime.Now.ToString() + " Error: " + ex.Message);
                 }
             }
+            try
+            {
+                conn.CreateTable<Produtos>();
+            }
+            catch
+            {
+                try
+                {
+                    conn.CreateTable<Produtos>();
+                }
+                catch (Exception ex)
+                {
+                    F.WriteLOG("---------------------------\n" + DateTime.Now.ToString() + " Error: " + ex.Message);
+                }
+            }
+            try
+            {
+                conn.CreateTable<TipoProduto>();
+            }
+            catch
+            {
+                try
+                {
+                    conn.CreateTable<TipoProduto>();
+                }
+                catch (Exception ex)
+                {
+                    F.WriteLOG("---------------------------\n" + DateTime.Now.ToString() + " Error: " + ex.Message);
+                }
+            }
 
         }
 
