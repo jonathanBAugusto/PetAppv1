@@ -11,28 +11,40 @@ using PetApp.Model;
 
 namespace PetApp
 {
-    public partial class FrmPets : Form
+    public partial class FrmPets : DevExpress.XtraEditors.XtraForm
     {
-        int id = 0;
+        List<Pets> listPets = new List<Pets>();
         public FrmPets()
         {
-            InitializeComponent();
-
-            
+            InitializeComponent();            
         }
 
         private void FrmPets_Load(object sender, EventArgs e)
         {
+            listPets = Pets.Get();
+            gridControlPets.DataSource = listPets;
 
+            edCLI_ID.Properties.DataSource = Clientes.Get();
+            edCLI_ID.Properties.ValueMember = "CLI_ID";
+            edCLI_ID.Properties.DisplayMember = "CLI_NOME";
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            List<Pets> listPets = new List<Pets>();
+            Pets pet = new Pets { PET_NOME = F.toString(edPET_NOME.EditValue), PET_RACA = F.toString(edPET_RACA.EditValue), PET_OBS = F.toString(edPET_OBS.Text), PET_NAS = F.toString(edPET_NAS.EditValue), PET_COR = F.toString(edPET_COR.EditValue), CLI_ID = F.toInt(edCLI_ID.EditValue), PET_IMG = F.toString(PET_IMG.Image) };
+            Pets.Insert(pet);
+            listPets = Pets.Get();
+        }
 
-            listPets.Add(new Pets() { PET_ID = id, PET_NOME = F.toString(edPET_NOME.EditValue), PET_RACA = F.toString(edPET_RACA.EditValue), PET_OBS = F.toString(edPET_OBS.Text), PET_NAS = F.toString(edPET_NAS.EditValue), PET_COR = F.toString(edPET_COR.EditValue), CLI_ID = F.toInt(edCLI_ID.EditValue), PET_IMG = F.toString(PET_IMG.Image) });
-            id++;
-            gridControlPets.DataSource = listPets;
+        private void edPRO_IMAGEM_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+        {
+            string pathImg = "";
+            if (openFileDialogImg.ShowDialog() != DialogResult.OK)
+            {
+                return;
+            }
+            pathImg = openFileDialogImg.FileName;
+            string fileName = System.IO.Path.GetFileName(pathImg);
         }
     }
 }

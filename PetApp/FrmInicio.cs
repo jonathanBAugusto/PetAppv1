@@ -8,16 +8,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using PetApp.View.Servicos;
+using PetApp.View.Servico;
 using PetApp.View;
+using PetApp.View.Relatorios;
 
 namespace PetApp
 {
-    public partial class FrmInicio : Form
+    public partial class FrmInicio : DevExpress.XtraEditors.XtraForm
     {
         public FrmInicio()
         {
             InitializeComponent();
+            DevExpress.UserSkins.BonusSkins.Register();
+            DevExpress.Skins.SkinManager.EnableFormSkins();
+            DevExpress.XtraBars.Helpers.SkinHelper.InitSkinGallery(skinRibbonGalleryBarItem1, true, true);
         }
 
         private void accordionControlElement1_Click(object sender, EventArgs e)
@@ -27,7 +31,7 @@ namespace PetApp
 
         private void accordionControlElement2_Click(object sender, EventArgs e)
         {
-            FrmCli frmcli = new FrmCli();
+            SH_CLIENTES frmcli = new SH_CLIENTES();
             frmcli.ShowDialog();
         }
 
@@ -45,6 +49,7 @@ namespace PetApp
 
         private void FrmInicio_Load(object sender, EventArgs e)
         {
+
         }
 
         private void accordionControlElement7_Click(object sender, EventArgs e)
@@ -68,6 +73,36 @@ namespace PetApp
         private void accordionControlElement1_Click_1(object sender, EventArgs e)
         {
             FrmProdutos form = new FrmProdutos();
+            form.Show();
+        }
+
+        private void accordionControlElement11_Click(object sender, EventArgs e)
+        {
+            REL_SERVICOS form = new REL_SERVICOS();
+            form.Show();
+        }
+
+        private void accordionControlElement2_Click_1(object sender, EventArgs e)
+        {
+            FrmServicos form = new FrmServicos();
+            form.Show();
+        }
+
+        private void accordionControlElement12_Click(object sender, EventArgs e)
+        {
+            SH_CLIENTES form = new SH_CLIENTES();
+            form.Show();
+        }
+
+        private void accordionControlElement13_Click(object sender, EventArgs e)
+        {
+            SH_PETS form = new SH_PETS();
+            form.Show();
+        }
+
+        private void accordionControlElement4_Click_1(object sender, EventArgs e)
+        {
+            SH_SERVICOS form = new SH_SERVICOS();
             form.Show();
         }
     }

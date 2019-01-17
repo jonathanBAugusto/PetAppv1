@@ -1,6 +1,6 @@
-﻿namespace PetApp
+﻿namespace PetApp.View
 {
-    partial class FrmPets
+    partial class SH_PETS
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.repositoryItemPictureEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit();
-            this.repositoryItemHypertextLabel1 = new DevExpress.XtraEditors.Repository.RepositoryItemHypertextLabel();
-            this.repositoryItemImageEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemImageEdit();
+            this.groupControl9 = new DevExpress.XtraEditors.GroupControl();
             this.gridControlPets = new DevExpress.XtraGrid.GridControl();
             this.layoutView1 = new DevExpress.XtraGrid.Views.Layout.LayoutView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
@@ -51,30 +49,27 @@
             this.repositoryItemPictureEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit();
             this.layoutViewField_layoutViewColumn1 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
             this.layoutViewCard1 = new DevExpress.XtraGrid.Views.Layout.LayoutViewCard();
-            this.btnAdd = new DevExpress.XtraEditors.SimpleButton();
-            this.edPET_NOME = new DevExpress.XtraEditors.TextEdit();
-            this.edPET_COR = new DevExpress.XtraEditors.TextEdit();
-            this.edCLI_ID = new DevExpress.XtraEditors.LookUpEdit();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.repositoryItemPictureEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit();
+            this.repositoryItemImageEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemImageEdit();
+            this.repositoryItemHypertextLabel1 = new DevExpress.XtraEditors.Repository.RepositoryItemHypertextLabel();
+            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnAlterar = new DevExpress.XtraEditors.SimpleButton();
+            this.btnInserir = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.edPET_ID = new DevExpress.XtraEditors.LookUpEdit();
+            this.groupControl7 = new DevExpress.XtraEditors.GroupControl();
+            this.edPET_NAS = new DevExpress.XtraEditors.DateEdit();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
-            this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
+            this.edPET_COR = new DevExpress.XtraEditors.TextEdit();
             this.groupControl6 = new DevExpress.XtraEditors.GroupControl();
             this.edPET_RACA = new DevExpress.XtraEditors.GridLookUpEdit();
             this.gridLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.groupControl7 = new DevExpress.XtraEditors.GroupControl();
-            this.edPET_NAS = new DevExpress.XtraEditors.DateEdit();
-            this.groupControl8 = new DevExpress.XtraEditors.GroupControl();
-            this.edPET_OBS = new DevExpress.XtraEditors.MemoEdit();
-            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.PET_IMG = new DevExpress.XtraEditors.PictureEdit();
-            this.edPRO_IMAGEM = new DevExpress.XtraEditors.ButtonEdit();
-            this.openFileDialogImg = new System.Windows.Forms.OpenFileDialog();
-            this.groupControl5 = new DevExpress.XtraEditors.GroupControl();
-            this.groupControl9 = new DevExpress.XtraEditors.GroupControl();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemHypertextLabel1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemImageEdit1)).BeginInit();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
+            this.edCLI_ID = new DevExpress.XtraEditors.LookUpEdit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl9)).BeginInit();
+            this.groupControl9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlPets)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn1)).BeginInit();
@@ -87,50 +82,39 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_layoutViewColumn1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewCard1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edPET_NOME.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edPET_COR.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edCLI_ID.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemImageEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemHypertextLabel1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
+            this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
-            this.groupControl3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
-            this.groupControl4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).BeginInit();
-            this.groupControl6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.edPET_RACA.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edPET_ID.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).BeginInit();
             this.groupControl7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.edPET_NAS.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.edPET_NAS.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl8)).BeginInit();
-            this.groupControl8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.edPET_OBS.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
-            this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PET_IMG.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edPRO_IMAGEM.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).BeginInit();
-            this.groupControl5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl9)).BeginInit();
-            this.groupControl9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
+            this.groupControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.edPET_COR.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).BeginInit();
+            this.groupControl6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.edPET_RACA.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
+            this.groupControl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.edCLI_ID.Properties)).BeginInit();
             this.SuspendLayout();
             // 
-            // repositoryItemPictureEdit1
+            // groupControl9
             // 
-            this.repositoryItemPictureEdit1.Name = "repositoryItemPictureEdit1";
-            // 
-            // repositoryItemHypertextLabel1
-            // 
-            this.repositoryItemHypertextLabel1.Name = "repositoryItemHypertextLabel1";
-            this.repositoryItemHypertextLabel1.NullText = "Nome do PET";
-            // 
-            // repositoryItemImageEdit1
-            // 
-            this.repositoryItemImageEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.repositoryItemImageEdit1.Name = "repositoryItemImageEdit1";
+            this.groupControl9.Controls.Add(this.gridControlPets);
+            this.groupControl9.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.groupControl9.Location = new System.Drawing.Point(0, 131);
+            this.groupControl9.Name = "groupControl9";
+            this.groupControl9.Size = new System.Drawing.Size(526, 331);
+            this.groupControl9.TabIndex = 28;
+            this.groupControl9.Text = "Resultados";
             // 
             // gridControlPets
             // 
@@ -145,7 +129,7 @@
             this.repositoryItemImageEdit1,
             this.repositoryItemHypertextLabel1,
             this.repositoryItemPictureEdit2});
-            this.gridControlPets.Size = new System.Drawing.Size(639, 403);
+            this.gridControlPets.Size = new System.Drawing.Size(522, 309);
             this.gridControlPets.TabIndex = 0;
             this.gridControlPets.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.layoutView1});
@@ -319,23 +303,116 @@
             this.layoutViewCard1.OptionsItemText.TextToControlDistance = 5;
             this.layoutViewCard1.Text = "TemplateCard";
             // 
-            // btnAdd
+            // repositoryItemPictureEdit1
             // 
-            this.btnAdd.Location = new System.Drawing.Point(544, 23);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(88, 102);
-            this.btnAdd.TabIndex = 1;
-            this.btnAdd.Text = "Cadastrar";
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            this.repositoryItemPictureEdit1.Name = "repositoryItemPictureEdit1";
             // 
-            // edPET_NOME
+            // repositoryItemImageEdit1
             // 
-            this.edPET_NOME.Location = new System.Drawing.Point(4, 22);
-            this.edPET_NOME.Margin = new System.Windows.Forms.Padding(2);
-            this.edPET_NOME.Name = "edPET_NOME";
-            this.edPET_NOME.Size = new System.Drawing.Size(98, 20);
-            this.edPET_NOME.TabIndex = 3;
+            this.repositoryItemImageEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemImageEdit1.Name = "repositoryItemImageEdit1";
+            // 
+            // repositoryItemHypertextLabel1
+            // 
+            this.repositoryItemHypertextLabel1.Name = "repositoryItemHypertextLabel1";
+            this.repositoryItemHypertextLabel1.NullText = "Nome do PET";
+            // 
+            // groupControl1
+            // 
+            this.groupControl1.Controls.Add(this.simpleButton1);
+            this.groupControl1.Controls.Add(this.btnAlterar);
+            this.groupControl1.Controls.Add(this.btnInserir);
+            this.groupControl1.Controls.Add(this.groupControl2);
+            this.groupControl1.Controls.Add(this.groupControl7);
+            this.groupControl1.Controls.Add(this.groupControl3);
+            this.groupControl1.Controls.Add(this.groupControl6);
+            this.groupControl1.Controls.Add(this.groupControl4);
+            this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupControl1.Location = new System.Drawing.Point(0, 0);
+            this.groupControl1.Name = "groupControl1";
+            this.groupControl1.Size = new System.Drawing.Size(526, 131);
+            this.groupControl1.TabIndex = 29;
+            this.groupControl1.Text = "Pesquisa";
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Location = new System.Drawing.Point(265, 78);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(156, 47);
+            this.simpleButton1.TabIndex = 56;
+            this.simpleButton1.Text = "Pesquisar";
+            // 
+            // btnAlterar
+            // 
+            this.btnAlterar.Location = new System.Drawing.Point(427, 77);
+            this.btnAlterar.Name = "btnAlterar";
+            this.btnAlterar.Size = new System.Drawing.Size(90, 48);
+            this.btnAlterar.TabIndex = 54;
+            this.btnAlterar.Text = "Alterar";
+            // 
+            // btnInserir
+            // 
+            this.btnInserir.Location = new System.Drawing.Point(427, 23);
+            this.btnInserir.Name = "btnInserir";
+            this.btnInserir.Size = new System.Drawing.Size(90, 48);
+            this.btnInserir.TabIndex = 55;
+            this.btnInserir.Text = "Inserir";
+            // 
+            // groupControl2
+            // 
+            this.groupControl2.Controls.Add(this.edPET_ID);
+            this.groupControl2.Location = new System.Drawing.Point(12, 23);
+            this.groupControl2.Name = "groupControl2";
+            this.groupControl2.Padding = new System.Windows.Forms.Padding(2);
+            this.groupControl2.Size = new System.Drawing.Size(106, 48);
+            this.groupControl2.TabIndex = 26;
+            this.groupControl2.Text = "Nome do PET";
+            // 
+            // edPET_ID
+            // 
+            this.edPET_ID.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.edPET_ID.Location = new System.Drawing.Point(4, 22);
+            this.edPET_ID.Margin = new System.Windows.Forms.Padding(2);
+            this.edPET_ID.Name = "edPET_ID";
+            this.edPET_ID.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.edPET_ID.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("PET_ID", "ID"),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("PET_NOME", "Nome")});
+            this.edPET_ID.Properties.NullText = "";
+            this.edPET_ID.Size = new System.Drawing.Size(98, 20);
+            this.edPET_ID.TabIndex = 16;
+            // 
+            // groupControl7
+            // 
+            this.groupControl7.Controls.Add(this.edPET_NAS);
+            this.groupControl7.Location = new System.Drawing.Point(12, 77);
+            this.groupControl7.Name = "groupControl7";
+            this.groupControl7.Size = new System.Drawing.Size(106, 48);
+            this.groupControl7.TabIndex = 30;
+            this.groupControl7.Text = "Nascimento";
+            // 
+            // edPET_NAS
+            // 
+            this.edPET_NAS.EditValue = null;
+            this.edPET_NAS.Location = new System.Drawing.Point(6, 23);
+            this.edPET_NAS.Name = "edPET_NAS";
+            this.edPET_NAS.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.edPET_NAS.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.edPET_NAS.Size = new System.Drawing.Size(95, 20);
+            this.edPET_NAS.TabIndex = 0;
+            // 
+            // groupControl3
+            // 
+            this.groupControl3.Controls.Add(this.edPET_COR);
+            this.groupControl3.Location = new System.Drawing.Point(124, 23);
+            this.groupControl3.Name = "groupControl3";
+            this.groupControl3.Size = new System.Drawing.Size(135, 48);
+            this.groupControl3.TabIndex = 27;
+            this.groupControl3.Text = "Cor";
             // 
             // edPET_COR
             // 
@@ -345,67 +422,14 @@
             this.edPET_COR.Size = new System.Drawing.Size(127, 20);
             this.edPET_COR.TabIndex = 5;
             // 
-            // edCLI_ID
-            // 
-            this.edCLI_ID.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.edCLI_ID.Location = new System.Drawing.Point(4, 22);
-            this.edCLI_ID.Margin = new System.Windows.Forms.Padding(2);
-            this.edCLI_ID.Name = "edCLI_ID";
-            this.edCLI_ID.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.edCLI_ID.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("CLI_ID", "ID"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("CLI_RAZAO", "Nome"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("CLI_FANTASIA", "Nome fantasia")});
-            this.edCLI_ID.Properties.NullText = "";
-            this.edCLI_ID.Size = new System.Drawing.Size(148, 20);
-            this.edCLI_ID.TabIndex = 15;
-            // 
-            // simpleButton2
-            // 
-            this.simpleButton2.Location = new System.Drawing.Point(111, 24);
-            this.simpleButton2.Margin = new System.Windows.Forms.Padding(2);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(20, 20);
-            this.simpleButton2.TabIndex = 18;
-            this.simpleButton2.Text = "+";
-            // 
-            // groupControl2
-            // 
-            this.groupControl2.Controls.Add(this.edPET_NOME);
-            this.groupControl2.Location = new System.Drawing.Point(130, 23);
-            this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(106, 48);
-            this.groupControl2.TabIndex = 20;
-            this.groupControl2.Text = "Nome do PET";
-            // 
-            // groupControl3
-            // 
-            this.groupControl3.Controls.Add(this.edPET_COR);
-            this.groupControl3.Location = new System.Drawing.Point(242, 23);
-            this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(135, 48);
-            this.groupControl3.TabIndex = 21;
-            this.groupControl3.Text = "Cor";
-            // 
-            // groupControl4
-            // 
-            this.groupControl4.Controls.Add(this.edCLI_ID);
-            this.groupControl4.Location = new System.Drawing.Point(383, 23);
-            this.groupControl4.Name = "groupControl4";
-            this.groupControl4.Padding = new System.Windows.Forms.Padding(2);
-            this.groupControl4.Size = new System.Drawing.Size(156, 48);
-            this.groupControl4.TabIndex = 22;
-            this.groupControl4.Text = "Dono do PET";
-            // 
             // groupControl6
             // 
             this.groupControl6.Controls.Add(this.edPET_RACA);
             this.groupControl6.Controls.Add(this.simpleButton2);
-            this.groupControl6.Location = new System.Drawing.Point(242, 77);
+            this.groupControl6.Location = new System.Drawing.Point(124, 77);
             this.groupControl6.Name = "groupControl6";
             this.groupControl6.Size = new System.Drawing.Size(135, 48);
-            this.groupControl6.TabIndex = 24;
+            this.groupControl6.TabIndex = 29;
             this.groupControl6.Text = "Raça";
             // 
             // edPET_RACA
@@ -426,120 +450,53 @@
             this.gridLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.gridLookUpEdit1View.OptionsView.ShowGroupPanel = false;
             // 
-            // groupControl7
+            // simpleButton2
             // 
-            this.groupControl7.Controls.Add(this.edPET_NAS);
-            this.groupControl7.Location = new System.Drawing.Point(130, 77);
-            this.groupControl7.Name = "groupControl7";
-            this.groupControl7.Size = new System.Drawing.Size(106, 48);
-            this.groupControl7.TabIndex = 25;
-            this.groupControl7.Text = "Nascimento";
+            this.simpleButton2.Location = new System.Drawing.Point(111, 24);
+            this.simpleButton2.Margin = new System.Windows.Forms.Padding(2);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(20, 20);
+            this.simpleButton2.TabIndex = 18;
+            this.simpleButton2.Text = "+";
             // 
-            // edPET_NAS
+            // groupControl4
             // 
-            this.edPET_NAS.EditValue = null;
-            this.edPET_NAS.Location = new System.Drawing.Point(6, 23);
-            this.edPET_NAS.Name = "edPET_NAS";
-            this.edPET_NAS.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.groupControl4.Controls.Add(this.edCLI_ID);
+            this.groupControl4.Location = new System.Drawing.Point(265, 23);
+            this.groupControl4.Name = "groupControl4";
+            this.groupControl4.Padding = new System.Windows.Forms.Padding(2);
+            this.groupControl4.Size = new System.Drawing.Size(156, 48);
+            this.groupControl4.TabIndex = 28;
+            this.groupControl4.Text = "Dono do PET";
+            // 
+            // edCLI_ID
+            // 
+            this.edCLI_ID.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.edCLI_ID.Location = new System.Drawing.Point(4, 22);
+            this.edCLI_ID.Margin = new System.Windows.Forms.Padding(2);
+            this.edCLI_ID.Name = "edCLI_ID";
+            this.edCLI_ID.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.edPET_NAS.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.edPET_NAS.Size = new System.Drawing.Size(95, 20);
-            this.edPET_NAS.TabIndex = 0;
+            this.edCLI_ID.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("CLI_ID", "ID"),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("CLI_RAZAO", "Nome"),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("CLI_FANTASIA", "Nome fantasia")});
+            this.edCLI_ID.Properties.NullText = "";
+            this.edCLI_ID.Size = new System.Drawing.Size(148, 20);
+            this.edCLI_ID.TabIndex = 15;
             // 
-            // groupControl8
-            // 
-            this.groupControl8.Controls.Add(this.edPET_OBS);
-            this.groupControl8.Location = new System.Drawing.Point(383, 77);
-            this.groupControl8.Name = "groupControl8";
-            this.groupControl8.Size = new System.Drawing.Size(158, 48);
-            this.groupControl8.TabIndex = 23;
-            this.groupControl8.Text = "Observações";
-            // 
-            // edPET_OBS
-            // 
-            this.edPET_OBS.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.edPET_OBS.Location = new System.Drawing.Point(2, 20);
-            this.edPET_OBS.Name = "edPET_OBS";
-            this.edPET_OBS.Size = new System.Drawing.Size(154, 26);
-            this.edPET_OBS.TabIndex = 16;
-            // 
-            // groupControl1
-            // 
-            this.groupControl1.Controls.Add(this.PET_IMG);
-            this.groupControl1.Controls.Add(this.edPRO_IMAGEM);
-            this.groupControl1.Location = new System.Drawing.Point(5, 23);
-            this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(119, 102);
-            this.groupControl1.TabIndex = 17;
-            this.groupControl1.Text = "Imagem";
-            // 
-            // PET_IMG
-            // 
-            this.PET_IMG.Cursor = System.Windows.Forms.Cursors.Default;
-            this.PET_IMG.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PET_IMG.Location = new System.Drawing.Point(2, 40);
-            this.PET_IMG.Name = "PET_IMG";
-            this.PET_IMG.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.PET_IMG.Size = new System.Drawing.Size(115, 60);
-            this.PET_IMG.TabIndex = 0;
-            // 
-            // edPRO_IMAGEM
-            // 
-            this.edPRO_IMAGEM.Dock = System.Windows.Forms.DockStyle.Top;
-            this.edPRO_IMAGEM.Location = new System.Drawing.Point(2, 20);
-            this.edPRO_IMAGEM.Name = "edPRO_IMAGEM";
-            this.edPRO_IMAGEM.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Search)});
-            this.edPRO_IMAGEM.Size = new System.Drawing.Size(115, 20);
-            this.edPRO_IMAGEM.TabIndex = 9;
-            this.edPRO_IMAGEM.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.edPRO_IMAGEM_ButtonClick);
-            // 
-            // openFileDialogImg
-            // 
-            this.openFileDialogImg.FileName = "openFileDialog1";
-            // 
-            // groupControl5
-            // 
-            this.groupControl5.Controls.Add(this.groupControl1);
-            this.groupControl5.Controls.Add(this.btnAdd);
-            this.groupControl5.Controls.Add(this.groupControl8);
-            this.groupControl5.Controls.Add(this.groupControl2);
-            this.groupControl5.Controls.Add(this.groupControl7);
-            this.groupControl5.Controls.Add(this.groupControl3);
-            this.groupControl5.Controls.Add(this.groupControl6);
-            this.groupControl5.Controls.Add(this.groupControl4);
-            this.groupControl5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupControl5.Location = new System.Drawing.Point(0, 0);
-            this.groupControl5.Name = "groupControl5";
-            this.groupControl5.Size = new System.Drawing.Size(643, 135);
-            this.groupControl5.TabIndex = 26;
-            this.groupControl5.Text = "Cadastro";
-            // 
-            // groupControl9
-            // 
-            this.groupControl9.Controls.Add(this.gridControlPets);
-            this.groupControl9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupControl9.Location = new System.Drawing.Point(0, 135);
-            this.groupControl9.Name = "groupControl9";
-            this.groupControl9.Size = new System.Drawing.Size(643, 425);
-            this.groupControl9.TabIndex = 27;
-            this.groupControl9.Text = "Pets";
-            // 
-            // FrmPets
+            // SH_PETS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(643, 560);
+            this.ClientSize = new System.Drawing.Size(526, 462);
+            this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.groupControl9);
-            this.Controls.Add(this.groupControl5);
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "FrmPets";
-            this.Text = "PETS";
-            this.Load += new System.EventHandler(this.FrmPets_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemHypertextLabel1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemImageEdit1)).EndInit();
+            this.Name = "SH_PETS";
+            this.Text = "Pesquisa de PETS";
+            this.Load += new System.EventHandler(this.SH_PETS_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl9)).EndInit();
+            this.groupControl9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControlPets)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn1)).EndInit();
@@ -552,59 +509,36 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_layoutViewColumn1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewCard1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edPET_NOME.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edPET_COR.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edCLI_ID.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemImageEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemHypertextLabel1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
+            this.groupControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
-            this.groupControl3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
-            this.groupControl4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).EndInit();
-            this.groupControl6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.edPET_RACA.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edPET_ID.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).EndInit();
             this.groupControl7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.edPET_NAS.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.edPET_NAS.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl8)).EndInit();
-            this.groupControl8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.edPET_OBS.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
-            this.groupControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PET_IMG.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edPRO_IMAGEM.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).EndInit();
-            this.groupControl5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl9)).EndInit();
-            this.groupControl9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
+            this.groupControl3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.edPET_COR.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).EndInit();
+            this.groupControl6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.edPET_RACA.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
+            this.groupControl4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.edCLI_ID.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
+        private DevExpress.XtraEditors.GroupControl groupControl9;
         private DevExpress.XtraGrid.GridControl gridControlPets;
-        private DevExpress.XtraEditors.Repository.RepositoryItemImageEdit repositoryItemImageEdit1;
-        private DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit repositoryItemPictureEdit1;
-        private DevExpress.XtraEditors.SimpleButton btnAdd;
-        private DevExpress.XtraEditors.TextEdit edPET_NOME;
-        private DevExpress.XtraEditors.TextEdit edPET_COR;
-        private DevExpress.XtraEditors.LookUpEdit edCLI_ID;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraEditors.GroupControl groupControl2;
-        private DevExpress.XtraEditors.GroupControl groupControl3;
-        private DevExpress.XtraEditors.GroupControl groupControl4;
-        private DevExpress.XtraEditors.GroupControl groupControl6;
-        private DevExpress.XtraEditors.GroupControl groupControl7;
-        private DevExpress.XtraEditors.GroupControl groupControl8;
-        private DevExpress.XtraEditors.Repository.RepositoryItemHypertextLabel repositoryItemHypertextLabel1;
-        private DevExpress.XtraEditors.GridLookUpEdit edPET_RACA;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridLookUpEdit1View;
-        private DevExpress.XtraEditors.DateEdit edPET_NAS;
-        private DevExpress.XtraEditors.MemoEdit edPET_OBS;
         private DevExpress.XtraGrid.Views.Layout.LayoutView layoutView1;
         private DevExpress.XtraGrid.Columns.LayoutViewColumn gridColumn1;
         private DevExpress.XtraGrid.Views.Layout.LayoutViewField layoutViewField_gridColumn1;
@@ -624,11 +558,24 @@
         private DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit repositoryItemPictureEdit2;
         private DevExpress.XtraGrid.Views.Layout.LayoutViewField layoutViewField_layoutViewColumn1;
         private DevExpress.XtraGrid.Views.Layout.LayoutViewCard layoutViewCard1;
+        private DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit repositoryItemPictureEdit1;
+        private DevExpress.XtraEditors.Repository.RepositoryItemImageEdit repositoryItemImageEdit1;
+        private DevExpress.XtraEditors.Repository.RepositoryItemHypertextLabel repositoryItemHypertextLabel1;
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraEditors.PictureEdit PET_IMG;
-        private DevExpress.XtraEditors.ButtonEdit edPRO_IMAGEM;
-        private System.Windows.Forms.OpenFileDialog openFileDialogImg;
-        private DevExpress.XtraEditors.GroupControl groupControl5;
-        private DevExpress.XtraEditors.GroupControl groupControl9;
+        private DevExpress.XtraEditors.GroupControl groupControl2;
+        private DevExpress.XtraEditors.GroupControl groupControl7;
+        private DevExpress.XtraEditors.DateEdit edPET_NAS;
+        private DevExpress.XtraEditors.GroupControl groupControl3;
+        private DevExpress.XtraEditors.TextEdit edPET_COR;
+        private DevExpress.XtraEditors.GroupControl groupControl6;
+        private DevExpress.XtraEditors.GridLookUpEdit edPET_RACA;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridLookUpEdit1View;
+        private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private DevExpress.XtraEditors.GroupControl groupControl4;
+        private DevExpress.XtraEditors.LookUpEdit edCLI_ID;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton btnAlterar;
+        private DevExpress.XtraEditors.SimpleButton btnInserir;
+        private DevExpress.XtraEditors.LookUpEdit edPET_ID;
     }
 }

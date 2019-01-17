@@ -1,6 +1,6 @@
-﻿namespace PetApp.View.Relatorios
+﻿namespace PetApp.View
 {
-    partial class REL_SERVICOS
+    partial class SH_SERVICOS
     {
         /// <summary>
         /// Required designer variable.
@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.numericChartRangeControlClient1 = new DevExpress.XtraEditors.NumericChartRangeControlClient();
-            this.printDialog1 = new System.Windows.Forms.PrintDialog();
-            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.gridControlServicos = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -61,9 +58,29 @@
             this.repositoryItemTextEdit3 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.btnAlterar = new DevExpress.XtraEditors.SimpleButton();
+            this.btnInserir = new DevExpress.XtraEditors.SimpleButton();
+            this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.CLI_ID = new DevExpress.XtraEditors.GridLookUpEdit();
+            this.gridLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn14 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn15 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn16 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
+            this.PET_ID = new DevExpress.XtraEditors.GridLookUpEdit();
+            this.gridLookUpEdit2View = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn13 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
+            this.edSER_DATA_CAD = new DevExpress.XtraEditors.DateEdit();
+            this.groupControl5 = new DevExpress.XtraEditors.GroupControl();
+            this.edSER_VALOR_TOTAL = new DevExpress.XtraEditors.TextEdit();
+            this.groupControl10 = new DevExpress.XtraEditors.GroupControl();
+            this.cbEstagio = new DevExpress.XtraEditors.RadioGroup();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.groupControl6 = new DevExpress.XtraEditors.GroupControl();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericChartRangeControlClient1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlServicos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEditClientes)).BeginInit();
@@ -75,22 +92,38 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
+            this.groupControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CLI_ID.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
+            this.groupControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PET_ID.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit2View)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
+            this.groupControl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.edSER_DATA_CAD.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edSER_DATA_CAD.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).BeginInit();
+            this.groupControl5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.edSER_VALOR_TOTAL.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl10)).BeginInit();
+            this.groupControl10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cbEstagio.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).BeginInit();
+            this.groupControl6.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupControl1
             // 
             this.groupControl1.Controls.Add(this.gridControlServicos);
-            this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupControl1.Location = new System.Drawing.Point(0, 0);
+            this.groupControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.groupControl1.Location = new System.Drawing.Point(0, 144);
             this.groupControl1.Margin = new System.Windows.Forms.Padding(2);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(717, 450);
-            this.groupControl1.TabIndex = 2;
+            this.groupControl1.Size = new System.Drawing.Size(772, 245);
+            this.groupControl1.TabIndex = 3;
             this.groupControl1.Text = "Relatórios de serviços";
-            // 
-            // printDialog1
-            // 
-            this.printDialog1.UseEXDialog = true;
             // 
             // gridControlServicos
             // 
@@ -107,8 +140,8 @@
             this.repositoryItemGridLookUpEditClientes,
             this.repositoryItemGridLookUpEditTipoSer,
             this.repositoryItemGridLookUpEditPets});
-            this.gridControlServicos.Size = new System.Drawing.Size(713, 428);
-            this.gridControlServicos.TabIndex = 2;
+            this.gridControlServicos.Size = new System.Drawing.Size(768, 223);
+            this.gridControlServicos.TabIndex = 1;
             this.gridControlServicos.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
@@ -380,18 +413,232 @@
             this.gridColumn11.VisibleIndex = 9;
             this.gridColumn11.Width = 90;
             // 
-            // REL_SERVICOS
+            // btnAlterar
+            // 
+            this.btnAlterar.Location = new System.Drawing.Point(673, 76);
+            this.btnAlterar.Name = "btnAlterar";
+            this.btnAlterar.Size = new System.Drawing.Size(90, 57);
+            this.btnAlterar.TabIndex = 4;
+            this.btnAlterar.Text = "Alterar";
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
+            // 
+            // btnInserir
+            // 
+            this.btnInserir.Location = new System.Drawing.Point(577, 76);
+            this.btnInserir.Name = "btnInserir";
+            this.btnInserir.Size = new System.Drawing.Size(90, 57);
+            this.btnInserir.TabIndex = 5;
+            this.btnInserir.Text = "Inserir";
+            this.btnInserir.Click += new System.EventHandler(this.btnInserir_Click);
+            // 
+            // groupControl2
+            // 
+            this.groupControl2.Controls.Add(this.CLI_ID);
+            this.groupControl2.Location = new System.Drawing.Point(5, 23);
+            this.groupControl2.Name = "groupControl2";
+            this.groupControl2.Padding = new System.Windows.Forms.Padding(2);
+            this.groupControl2.Size = new System.Drawing.Size(137, 47);
+            this.groupControl2.TabIndex = 6;
+            this.groupControl2.Text = "Cliente";
+            // 
+            // CLI_ID
+            // 
+            this.CLI_ID.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CLI_ID.Location = new System.Drawing.Point(4, 22);
+            this.CLI_ID.Name = "CLI_ID";
+            this.CLI_ID.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.CLI_ID.Properties.NullText = "";
+            this.CLI_ID.Properties.PopupView = this.gridLookUpEdit1View;
+            this.CLI_ID.Size = new System.Drawing.Size(129, 20);
+            this.CLI_ID.TabIndex = 0;
+            // 
+            // gridLookUpEdit1View
+            // 
+            this.gridLookUpEdit1View.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn14,
+            this.gridColumn15,
+            this.gridColumn16});
+            this.gridLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.gridLookUpEdit1View.Name = "gridLookUpEdit1View";
+            this.gridLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.gridLookUpEdit1View.OptionsView.ShowGroupPanel = false;
+            // 
+            // gridColumn14
+            // 
+            this.gridColumn14.Caption = "ID";
+            this.gridColumn14.FieldName = "CLI_ID";
+            this.gridColumn14.Name = "gridColumn14";
+            this.gridColumn14.Visible = true;
+            this.gridColumn14.VisibleIndex = 0;
+            // 
+            // gridColumn15
+            // 
+            this.gridColumn15.Caption = "Nome";
+            this.gridColumn15.FieldName = "CLI_RAZAO";
+            this.gridColumn15.Name = "gridColumn15";
+            this.gridColumn15.Visible = true;
+            this.gridColumn15.VisibleIndex = 1;
+            // 
+            // gridColumn16
+            // 
+            this.gridColumn16.Caption = "Nome Fantasia";
+            this.gridColumn16.FieldName = "CLI_FANTASIA";
+            this.gridColumn16.Name = "gridColumn16";
+            this.gridColumn16.Visible = true;
+            this.gridColumn16.VisibleIndex = 2;
+            // 
+            // groupControl3
+            // 
+            this.groupControl3.Controls.Add(this.PET_ID);
+            this.groupControl3.Location = new System.Drawing.Point(148, 23);
+            this.groupControl3.Name = "groupControl3";
+            this.groupControl3.Padding = new System.Windows.Forms.Padding(2);
+            this.groupControl3.Size = new System.Drawing.Size(137, 47);
+            this.groupControl3.TabIndex = 7;
+            this.groupControl3.Text = "PET";
+            // 
+            // PET_ID
+            // 
+            this.PET_ID.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PET_ID.Location = new System.Drawing.Point(4, 22);
+            this.PET_ID.Name = "PET_ID";
+            this.PET_ID.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.PET_ID.Properties.NullText = "";
+            this.PET_ID.Properties.PopupView = this.gridLookUpEdit2View;
+            this.PET_ID.Size = new System.Drawing.Size(129, 20);
+            this.PET_ID.TabIndex = 0;
+            // 
+            // gridLookUpEdit2View
+            // 
+            this.gridLookUpEdit2View.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn12,
+            this.gridColumn13});
+            this.gridLookUpEdit2View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.gridLookUpEdit2View.Name = "gridLookUpEdit2View";
+            this.gridLookUpEdit2View.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.gridLookUpEdit2View.OptionsView.ShowGroupPanel = false;
+            // 
+            // gridColumn12
+            // 
+            this.gridColumn12.Caption = "ID";
+            this.gridColumn12.FieldName = "PET_ID";
+            this.gridColumn12.Name = "gridColumn12";
+            this.gridColumn12.Visible = true;
+            this.gridColumn12.VisibleIndex = 0;
+            // 
+            // gridColumn13
+            // 
+            this.gridColumn13.Caption = "NOME";
+            this.gridColumn13.FieldName = "PET_NOME";
+            this.gridColumn13.Name = "gridColumn13";
+            this.gridColumn13.Visible = true;
+            this.gridColumn13.VisibleIndex = 1;
+            // 
+            // groupControl4
+            // 
+            this.groupControl4.Controls.Add(this.edSER_DATA_CAD);
+            this.groupControl4.Location = new System.Drawing.Point(291, 23);
+            this.groupControl4.Name = "groupControl4";
+            this.groupControl4.Padding = new System.Windows.Forms.Padding(2);
+            this.groupControl4.Size = new System.Drawing.Size(137, 47);
+            this.groupControl4.TabIndex = 7;
+            this.groupControl4.Text = "Data de cadastro";
+            // 
+            // edSER_DATA_CAD
+            // 
+            this.edSER_DATA_CAD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.edSER_DATA_CAD.EditValue = null;
+            this.edSER_DATA_CAD.Location = new System.Drawing.Point(4, 22);
+            this.edSER_DATA_CAD.Name = "edSER_DATA_CAD";
+            this.edSER_DATA_CAD.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.edSER_DATA_CAD.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.edSER_DATA_CAD.Size = new System.Drawing.Size(129, 20);
+            this.edSER_DATA_CAD.TabIndex = 0;
+            // 
+            // groupControl5
+            // 
+            this.groupControl5.Controls.Add(this.edSER_VALOR_TOTAL);
+            this.groupControl5.Location = new System.Drawing.Point(434, 23);
+            this.groupControl5.Name = "groupControl5";
+            this.groupControl5.Padding = new System.Windows.Forms.Padding(2);
+            this.groupControl5.Size = new System.Drawing.Size(137, 47);
+            this.groupControl5.TabIndex = 7;
+            this.groupControl5.Text = "Valor";
+            // 
+            // edSER_VALOR_TOTAL
+            // 
+            this.edSER_VALOR_TOTAL.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.edSER_VALOR_TOTAL.Location = new System.Drawing.Point(4, 22);
+            this.edSER_VALOR_TOTAL.Name = "edSER_VALOR_TOTAL";
+            this.edSER_VALOR_TOTAL.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.edSER_VALOR_TOTAL.Size = new System.Drawing.Size(129, 20);
+            this.edSER_VALOR_TOTAL.TabIndex = 0;
+            // 
+            // groupControl10
+            // 
+            this.groupControl10.Controls.Add(this.cbEstagio);
+            this.groupControl10.Location = new System.Drawing.Point(5, 76);
+            this.groupControl10.Name = "groupControl10";
+            this.groupControl10.Padding = new System.Windows.Forms.Padding(2);
+            this.groupControl10.Size = new System.Drawing.Size(566, 57);
+            this.groupControl10.TabIndex = 52;
+            this.groupControl10.Text = "Estágio";
+            // 
+            // cbEstagio
+            // 
+            this.cbEstagio.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbEstagio.Location = new System.Drawing.Point(4, 22);
+            this.cbEstagio.Name = "cbEstagio";
+            this.cbEstagio.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
+            new DevExpress.XtraEditors.Controls.RadioGroupItem("N", "Não Iniciado"),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem("P", "Em processo"),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem("F", "Finalizado"),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem("C", "Cancelado")});
+            this.cbEstagio.Size = new System.Drawing.Size(558, 31);
+            this.cbEstagio.TabIndex = 0;
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Location = new System.Drawing.Point(577, 23);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(186, 47);
+            this.simpleButton1.TabIndex = 53;
+            this.simpleButton1.Text = "Pesquisar";
+            // 
+            // groupControl6
+            // 
+            this.groupControl6.Controls.Add(this.groupControl2);
+            this.groupControl6.Controls.Add(this.simpleButton1);
+            this.groupControl6.Controls.Add(this.btnAlterar);
+            this.groupControl6.Controls.Add(this.groupControl10);
+            this.groupControl6.Controls.Add(this.btnInserir);
+            this.groupControl6.Controls.Add(this.groupControl5);
+            this.groupControl6.Controls.Add(this.groupControl3);
+            this.groupControl6.Controls.Add(this.groupControl4);
+            this.groupControl6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupControl6.Location = new System.Drawing.Point(0, 0);
+            this.groupControl6.Name = "groupControl6";
+            this.groupControl6.Size = new System.Drawing.Size(772, 144);
+            this.groupControl6.TabIndex = 54;
+            this.groupControl6.Text = "Pesquisa";
+            // 
+            // SH_SERVICOS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(717, 450);
+            this.ClientSize = new System.Drawing.Size(772, 389);
+            this.Controls.Add(this.groupControl6);
             this.Controls.Add(this.groupControl1);
-            this.Name = "REL_SERVICOS";
-            this.Text = "Relatório Serviços";
-            this.Load += new System.EventHandler(this.REL_SERVICOS_Load);
+            this.Name = "SH_SERVICOS";
+            this.ShowIcon = false;
+            this.Text = "Pesquisa de Serviços";
+            this.Load += new System.EventHandler(this.SH_SERVICOS_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericChartRangeControlClient1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlServicos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEditClientes)).EndInit();
@@ -403,6 +650,26 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
+            this.groupControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.CLI_ID.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
+            this.groupControl3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PET_ID.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit2View)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
+            this.groupControl4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.edSER_DATA_CAD.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edSER_DATA_CAD.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).EndInit();
+            this.groupControl5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.edSER_VALOR_TOTAL.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl10)).EndInit();
+            this.groupControl10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.cbEstagio.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).EndInit();
+            this.groupControl6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -410,37 +677,55 @@
         #endregion
 
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraEditors.NumericChartRangeControlClient numericChartRangeControlClient1;
-        private System.Windows.Forms.PrintDialog printDialog1;
-        private System.Drawing.Printing.PrintDocument printDocument1;
         private DevExpress.XtraGrid.GridControl gridControlServicos;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
+        private DevExpress.XtraEditors.SimpleButton btnAlterar;
+        private DevExpress.XtraEditors.SimpleButton btnInserir;
+        private DevExpress.XtraEditors.GroupControl groupControl2;
+        private DevExpress.XtraEditors.GridLookUpEdit CLI_ID;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridLookUpEdit1View;
+        private DevExpress.XtraEditors.GroupControl groupControl3;
+        private DevExpress.XtraEditors.GridLookUpEdit PET_ID;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridLookUpEdit2View;
+        private DevExpress.XtraEditors.GroupControl groupControl4;
+        private DevExpress.XtraEditors.DateEdit edSER_DATA_CAD;
+        private DevExpress.XtraEditors.GroupControl groupControl5;
+        private DevExpress.XtraEditors.TextEdit edSER_VALOR_TOTAL;
+        private DevExpress.XtraEditors.GroupControl groupControl10;
+        private DevExpress.XtraEditors.RadioGroup cbEstagio;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit1;
+        private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit2;
+        private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit3;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn14;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn15;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn16;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn12;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn13;
+        private DevExpress.XtraEditors.GroupControl groupControl6;
         private DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit repositoryItemGridLookUpEditClientes;
         private DevExpress.XtraGrid.Views.Grid.GridView repositoryItemGridLookUpEdit1View;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn17;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn18;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn19;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
         private DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit repositoryItemGridLookUpEditTipoSer;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn20;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn21;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
         private DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit repositoryItemGridLookUpEditPets;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView3;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn22;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn23;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
-        private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
-        private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
-        private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit3;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
     }
 }

@@ -80,7 +80,22 @@ namespace PetApp.Control
                     F.WriteLOG("---------------------------\n" + DateTime.Now.ToString() + " Error: " + ex.Message);
                 }
             }
-            
+            try
+            {
+                conn.CreateTable<TipoServico>();
+            }
+            catch
+            {
+                try
+                {
+                    conn.CreateTable<TipoServico>();
+                }
+                catch (Exception ex)
+                {
+                    F.WriteLOG("---------------------------\n" + DateTime.Now.ToString() + " Error: " + ex.Message);
+                }
+            }
+
         }
 
         public bool ExecuteSQL(string sql)

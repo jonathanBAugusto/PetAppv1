@@ -8,75 +8,67 @@ using PetApp.Control;
 
 namespace PetApp.Model
 {
-    [Table("SERVICO")]
-    class Servicos
+    [Table("TIPOSERVICO")]
+    class TipoServico
     {
         [PrimaryKey][AutoIncrement]
-        public int SER_ID { get; set; }
-        public double SER_VALOR_BASE { get; set; }
-        public double SER_VALOR_DESCONTO { get; set; }
-        public double SER_VALOR_TOTAL { get; set; }
-        public int PET_ID { get; set; }
-        public int CLI_ID { get; set; }
         public int TIPO_SER_ID { get; set; }
-        public string SER_DATA_PREV { get; set; }
-        public string SER_DATA_CAD { get; set; }
-        public string SER_OBSERVACAO { get; set; }
-        public string SER_ESTAGIO { get; set; }
+        public string TIPO_SER_NOME { get; set; }
+        public double TIPO_SER_VALOR { get; set; }
 
         private static Connection CONN;
 
-        public static List<Servicos> Get()
+        public static List<TipoServico> Get()
         {
             CONN = new Connection();
-            List<Servicos> list = new List<Servicos>();
+            List<TipoServico> list = new List<TipoServico>();
 
             try
             {
-                list = CONN.conn.Table<Servicos>().ToList<Servicos>();
+                list = CONN.conn.Table<TipoServico>().ToList<TipoServico>();
             }
             catch
             {
                 try
                 {
-                    list = CONN.conn.Table<Servicos>().ToList<Servicos>();
+                    list = CONN.conn.Table<TipoServico>().ToList<TipoServico>();
                 }
                 catch (Exception ex)
                 {
                     F.WriteLOG("---------------------------\n" + DateTime.Now.ToString() + " Error: " + ex.Message);
-                    list = new List<Servicos>();
+                    list = new List<TipoServico>();
                 }
             }
 
             return list;
         }
 
-        public static Servicos Get(int ID)
+        public static TipoServico Get(int ID)
         {
             CONN = new Connection();
-            Servicos user = new Servicos();
+            TipoServico user = new TipoServico();
 
             try
             {
-                user = CONN.conn.Get<Servicos>(ID);
+                user = CONN.conn.Get<TipoServico>(ID);
             }
             catch
             {
                 try
                 {
-                    user = CONN.conn.Get<Servicos>(ID);
+                    user = CONN.conn.Get<TipoServico>(ID);
                 }
                 catch (Exception ex)
                 {
                     F.WriteLOG("---------------------------\n" + DateTime.Now.ToString() + " Error: " + ex.Message);
-                    user = new Servicos();
+                    user = new TipoServico();
                 }
             }
 
             return user;
         }
 
-        public static bool Insert(Servicos user)
+        public static bool Insert(TipoServico user)
         {
             CONN = new Connection();
             try
@@ -98,7 +90,7 @@ namespace PetApp.Model
             return true;
         }
 
-        public static bool Insert(List<Servicos> user)
+        public static bool Insert(List<TipoServico> user)
         {
             CONN = new Connection();
             try
@@ -120,7 +112,7 @@ namespace PetApp.Model
             return true;
         }
 
-        public static bool Update(Servicos user)
+        public static bool Update(TipoServico user)
         {
             CONN = new Connection();
             try
@@ -142,7 +134,7 @@ namespace PetApp.Model
             return true;
         }
 
-        public static bool Update(List<Servicos> user)
+        public static bool Update(List<TipoServico> user)
         {
             CONN = new Connection();
             try
@@ -164,7 +156,7 @@ namespace PetApp.Model
             return true;
         }
 
-        public static bool Delete(Servicos user)
+        public static bool Delete(TipoServico user)
         {
             CONN = new Connection();
             try
@@ -186,12 +178,12 @@ namespace PetApp.Model
             return true;
         }
 
-        public static bool Delete(List<Servicos> users)
+        public static bool Delete(List<TipoServico> users)
         {
             CONN = new Connection();
             try
             {
-                foreach (Servicos user in users)
+                foreach (TipoServico user in users)
                 {
                     CONN.conn.Delete(user);
                 }
@@ -210,13 +202,13 @@ namespace PetApp.Model
             CONN = new Connection();
             try
             {
-                CONN.conn.DeleteAll<Servicos>();
+                CONN.conn.DeleteAll<TipoServico>();
             }
             catch
             {
                 try
                 {
-                    CONN.conn.DeleteAll<Servicos>();
+                    CONN.conn.DeleteAll<TipoServico>();
                 }
                 catch (Exception ex)
                 {
