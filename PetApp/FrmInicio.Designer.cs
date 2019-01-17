@@ -143,6 +143,7 @@
             this.accordionControlElement3.Expanded = true;
             this.accordionControlElement3.Name = "accordionControlElement3";
             this.accordionControlElement3.Text = "Pesquisas/Listagens";
+            this.accordionControlElement3.Click += new System.EventHandler(this.accordionControlElement3_Click_1);
             // 
             // accordionControlElement4
             // 

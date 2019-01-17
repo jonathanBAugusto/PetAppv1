@@ -109,5 +109,10 @@ namespace PetApp.View
         {
             edPRO_IMAGEM_ButtonClick(null, null);
         }
+
+        private void FrmProdutos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

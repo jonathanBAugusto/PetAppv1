@@ -24,5 +24,11 @@ namespace PetApp.View
         {
             gridControlProdutos.DataSource = Produtos.Get();
         }
+
+        private void simpleButton3_Click(object sender, EventArgs e)
+        {
+            FrmCadCli form = new FrmCadCli();
+            form.ShowDialog();
+        }
     }
 }

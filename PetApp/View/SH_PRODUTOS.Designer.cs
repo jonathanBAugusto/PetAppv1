@@ -298,6 +298,7 @@
             this.simpleButton3.Size = new System.Drawing.Size(110, 42);
             this.simpleButton3.TabIndex = 6;
             this.simpleButton3.Text = "inserir";
+            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
             // 
             // btnRemover
             // 

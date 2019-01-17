@@ -111,5 +111,10 @@ namespace PetApp
             SH_PRODUTOS form = new SH_PRODUTOS();
             form.ShowDialog();
         }
+
+        private void accordionControlElement3_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

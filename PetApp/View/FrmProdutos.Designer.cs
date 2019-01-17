@@ -255,6 +255,7 @@
             this.Name = "FrmProdutos";
             this.ShowIcon = false;
             this.Text = "Cadastro de Produto";
+            this.Load += new System.EventHandler(this.FrmProdutos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.edPRO_DESCRICAO.Properties)).EndInit();
