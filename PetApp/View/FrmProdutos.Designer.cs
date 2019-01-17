@@ -175,6 +175,7 @@
             this.pic_IMAGEM.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pic_IMAGEM.Size = new System.Drawing.Size(115, 91);
             this.pic_IMAGEM.TabIndex = 0;
+            this.pic_IMAGEM.DoubleClick += new System.EventHandler(this.pic_IMAGEM_DoubleClick);
             // 
             // edPRO_IMAGEM
             // 
