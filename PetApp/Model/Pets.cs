@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace PetApp.Model
 {
     [Table("PET")]
-    class Pets
+    public class Pets
     {
         [PrimaryKey]
         [AutoIncrement]

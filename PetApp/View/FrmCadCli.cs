@@ -14,22 +14,12 @@ namespace PetApp
 {
     public partial class FrmCadCli : DevExpress.XtraEditors.XtraForm
     {
-        DataTable infoPets;
-        Pets pet;
+        List<Pets> pets = new List<Pets>();
         public FrmCadCli()
         {
             InitializeComponent();
-            infoPets = new DataTable();
-            infoPets.Columns.Add("PET_ID", typeof(int));
-            infoPets.Columns.Add("PET_NOME", typeof(string));
-            infoPets.Columns.Add("PET_RACA", typeof(string));
-            infoPets.Columns.Add("PET_COR", typeof(string));
-            infoPets.Columns.Add("PET_NAS", typeof(string));
-            infoPets.Columns.Add("PET_IDADE", typeof(int));
-            gridControlPet.DataSource = infoPets;
-            infoPets.PrimaryKey = new DataColumn[] {
-                infoPets.Columns["PET_ID"]
-            };
+
+            gridControlPet.DataSource = pets;
 
             List<Clientes> clientes = new List<Clientes>();
             clientes.Add(new Clientes {
@@ -75,27 +65,22 @@ namespace PetApp
             }
         }
 
-        private void edCEP_EditValueChanged(object sender, EventArgs e)
-        {
-          
-        }
-
         private void edCEP_Validated(object sender, EventArgs e)
         {
-
-            F.LocalizarCEP(F.toString(edCEP.EditValue),edEstado,edCidade,edBairro,edRua);
-          
+            F.LocalizarCEP(F.toString(edCEP.EditValue), edEstado, edCidade, edBairro, edRua);
         }
 
         private void btnAddPet_Click(object sender, EventArgs e)
         {
-            pet = new Pets {
-                PET_COR = F.toString(edPET_COR.EditValue),
-                PET_RACA = F.toString(edPET_RACA.EditValue),
-                PET_OBS = F.toString(edPET_OBS.EditValue),
-                PET_NOME = F.toString(edPET_NOME.EditValue),
-                PET_NAS = F.toString(edPET_NAS.EditValue)
-            };
+            FrmPets objFrmPets = new FrmPets("M");
+
+            objFrmPets.DonoTemp = SqliteSequence.LastID("CLIENTE") + 1;
+
+            if (objFrmPets.ShowDialog() == DialogResult.OK)
+            {
+                pets.Add(objFrmPets.NewPet);
+                gridViewPet.RefreshData();
+            }
         }
 
         private void simpleButton1_Click(object sender, EventArgs e)
@@ -175,14 +160,22 @@ namespace PetApp
                 CID_ID = F.toInt(edCidade.EditValue),
                 CLI_INSCRICAO = F.toString(edCLI_INSCRICAO.EditValue)
             };
-            Clientes.Insert(cliente);
-            Pets.Insert(pet);
-            F.Aviso("Cliente Cadastrado com Sucesso!");
-        }
-
-        private void peImgPET_EditValueChanged(object sender, EventArgs e)
-        {
-
+            if (Clientes.Insert(cliente))
+            {
+                if (Pets.Insert(pets))
+                {
+                    F.Aviso("Cliente Cadastrado com Sucesso!");
+                    this.Close();
+                }
+                else
+                {
+                    F.Aviso("Erro ao cadastrar Pets");
+                }
+            }
+            else
+            {
+                F.Aviso("Erro ao Cadastrar Cliente");
+            }
         }
     }
 }
