@@ -17,7 +17,7 @@ namespace PetApp.Model
         public string PRO_DESCRICAO { get; set; }
         public double PRO_CUSTO { get; set; }
         public double PRO_CUSTOULTCOMPRA { get; set; }
-        public string PRO_TIPO { get; set; }
+        public int PRO_TIPO { get; set; }
         public int PRO_FORNECEDOR { get; set; }
         public string PRO_IMAGEM { get; set; }
 

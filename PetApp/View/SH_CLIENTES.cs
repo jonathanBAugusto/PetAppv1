@@ -44,5 +44,13 @@ namespace PetApp
         {
             gridControl1.DataSource = Clientes.Get();
         }
+
+        private void btnRemCli_Click(object sender, EventArgs e)
+        {
+            int IdCli = 0;
+            IdCli = F.toInt(gridView1.GetFocusedRowCellValue("CLI_ID"));
+            Clientes.Delete( Clientes.Get(IdCli));
+            FrmCli_Load(null, null);
+        }
     }
 }

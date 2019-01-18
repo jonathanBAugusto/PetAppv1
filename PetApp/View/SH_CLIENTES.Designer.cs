@@ -191,6 +191,7 @@
             this.btnRemCli.Size = new System.Drawing.Size(196, 47);
             this.btnRemCli.TabIndex = 4;
             this.btnRemCli.Text = "Remover Cliente";
+            this.btnRemCli.Click += new System.EventHandler(this.btnRemCli_Click);
             // 
             // btnAltCli
             // 

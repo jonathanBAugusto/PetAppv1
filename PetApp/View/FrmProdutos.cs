@@ -50,7 +50,7 @@ namespace PetApp.View
 
             objProdutos.PRO_REFERENCIA = F.toString(edPRO_REFERENCIA.EditValue);
             objProdutos.PRO_DESCRICAO = F.toString(edPRO_DESCRICAO.EditValue);
-            objProdutos.PRO_TIPO = F.toString(edTPR_ID.EditValue);
+            objProdutos.PRO_TIPO = F.toInt(edTPR_ID.EditValue);
             objProdutos.PRO_CUSTO = F.toDouble(edPRO_CUSTO.EditValue);
             objProdutos.PRO_CUSTOULTCOMPRA = F.toDouble(edPRO_CUSTOULTCOMPRA.EditValue);
             objProdutos.PRO_FORNECEDOR = F.toInt(edPRO_FORNECEDOR.EditValue);
