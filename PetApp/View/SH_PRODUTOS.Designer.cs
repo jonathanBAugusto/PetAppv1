@@ -54,7 +54,7 @@
             this.edPRO_CUSTOULTCOMPRA = new DevExpress.XtraEditors.TextEdit();
             this.btnPesq = new DevExpress.XtraEditors.SimpleButton();
             this.btnAlterar = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnAdd = new DevExpress.XtraEditors.SimpleButton();
             this.btnRemover = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlProdutos)).BeginInit();
@@ -313,14 +313,14 @@
             this.btnAlterar.Text = "Alterar";
             this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
-            // simpleButton3
+            // btnAdd
             // 
-            this.simpleButton3.Location = new System.Drawing.Point(185, 76);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(110, 42);
-            this.simpleButton3.TabIndex = 6;
-            this.simpleButton3.Text = "inserir";
-            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
+            this.btnAdd.Location = new System.Drawing.Point(185, 76);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(110, 42);
+            this.btnAdd.TabIndex = 6;
+            this.btnAdd.Text = "inserir";
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnRemover
             // 
@@ -336,7 +336,7 @@
             this.groupControl2.Controls.Add(this.gpDesc);
             this.groupControl2.Controls.Add(this.btnRemover);
             this.groupControl2.Controls.Add(this.gpRef);
-            this.groupControl2.Controls.Add(this.simpleButton3);
+            this.groupControl2.Controls.Add(this.btnAdd);
             this.groupControl2.Controls.Add(this.gpFor);
             this.groupControl2.Controls.Add(this.btnAlterar);
             this.groupControl2.Controls.Add(this.gpCus);
@@ -413,7 +413,7 @@
         private DevExpress.XtraEditors.TextEdit edPRO_CUSTOULTCOMPRA;
         private DevExpress.XtraEditors.SimpleButton btnPesq;
         private DevExpress.XtraEditors.SimpleButton btnAlterar;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
+        private DevExpress.XtraEditors.SimpleButton btnAdd;
         private DevExpress.XtraEditors.SimpleButton btnRemover;
         private DevExpress.XtraEditors.GroupControl groupControl2;
         private DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit repositoryItemGridLookUpEditTPR;

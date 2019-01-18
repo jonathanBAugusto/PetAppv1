@@ -162,15 +162,25 @@ namespace PetApp
             };
             if (Clientes.Insert(cliente))
             {
-                if (Pets.Insert(pets))
+                foreach (Pets pet in pets)
                 {
-                    F.Aviso("Cliente Cadastrado com Sucesso!");
-                    this.Close();
+                    Pets petAdd = new Pets
+                    {
+                        PET_COR = pet.PET_COR,
+                        PET_RACA = pet.PET_RACA,
+                        PET_OBS = pet.PET_OBS,
+                        PET_NOME = pet.PET_NOME,
+                        PET_NAS = pet.PET_NAS,
+                        PET_IMG = pet.PET_IMG,
+                        CLI_ID = cliente.CLI_ID
+                    };
+                    Pets.Insert(petAdd);
+                    
                 }
-                else
-                {
-                    F.Aviso("Erro ao cadastrar Pets");
-                }
+
+                F.Aviso("Cliente Cadastrado com Sucesso!");
+                Close();
+
             }
             else
             {
