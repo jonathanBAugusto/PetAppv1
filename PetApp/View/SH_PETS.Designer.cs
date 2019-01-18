@@ -40,6 +40,8 @@
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
             this.layoutViewField_gridColumn4 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
+            this.repositoryItemGridLookUpEditDono = new DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit();
+            this.repositoryItemGridLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.layoutViewField_gridColumn5 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
             this.layoutViewField_gridColumn6 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
@@ -68,8 +70,8 @@
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
             this.edCLI_ID = new DevExpress.XtraEditors.LookUpEdit();
-            this.repositoryItemGridLookUpEditDono = new DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit();
-            this.repositoryItemGridLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl9)).BeginInit();
             this.groupControl9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlPets)).BeginInit();
@@ -78,6 +80,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEditDono)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEdit1View)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_tileViewColumn1)).BeginInit();
@@ -106,8 +110,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
             this.groupControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.edCLI_ID.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEditDono)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEdit1View)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl9
@@ -226,9 +228,27 @@
             // 
             this.gridColumn5.Caption = "Dono";
             this.gridColumn5.ColumnEdit = this.repositoryItemGridLookUpEditDono;
-            this.gridColumn5.FieldName = "CLI_RAZAO";
+            this.gridColumn5.FieldName = "CLI_ID";
             this.gridColumn5.LayoutViewField = this.layoutViewField_gridColumn5;
             this.gridColumn5.Name = "gridColumn5";
+            // 
+            // repositoryItemGridLookUpEditDono
+            // 
+            this.repositoryItemGridLookUpEditDono.AutoHeight = false;
+            this.repositoryItemGridLookUpEditDono.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemGridLookUpEditDono.Name = "repositoryItemGridLookUpEditDono";
+            this.repositoryItemGridLookUpEditDono.PopupView = this.repositoryItemGridLookUpEdit1View;
+            // 
+            // repositoryItemGridLookUpEdit1View
+            // 
+            this.repositoryItemGridLookUpEdit1View.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn7,
+            this.gridColumn8});
+            this.repositoryItemGridLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.repositoryItemGridLookUpEdit1View.Name = "repositoryItemGridLookUpEdit1View";
+            this.repositoryItemGridLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.repositoryItemGridLookUpEdit1View.OptionsView.ShowGroupPanel = false;
             // 
             // layoutViewField_gridColumn5
             // 
@@ -491,20 +511,21 @@
             this.edCLI_ID.Size = new System.Drawing.Size(148, 20);
             this.edCLI_ID.TabIndex = 15;
             // 
-            // repositoryItemGridLookUpEditDono
+            // gridColumn7
             // 
-            this.repositoryItemGridLookUpEditDono.AutoHeight = false;
-            this.repositoryItemGridLookUpEditDono.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.repositoryItemGridLookUpEditDono.Name = "repositoryItemGridLookUpEditDono";
-            this.repositoryItemGridLookUpEditDono.PopupView = this.repositoryItemGridLookUpEdit1View;
+            this.gridColumn7.Caption = "ID";
+            this.gridColumn7.FieldName = "CLI_ID";
+            this.gridColumn7.Name = "gridColumn7";
+            this.gridColumn7.Visible = true;
+            this.gridColumn7.VisibleIndex = 0;
             // 
-            // repositoryItemGridLookUpEdit1View
+            // gridColumn8
             // 
-            this.repositoryItemGridLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
-            this.repositoryItemGridLookUpEdit1View.Name = "repositoryItemGridLookUpEdit1View";
-            this.repositoryItemGridLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
-            this.repositoryItemGridLookUpEdit1View.OptionsView.ShowGroupPanel = false;
+            this.gridColumn8.Caption = "Nome";
+            this.gridColumn8.FieldName = "CLI_RAZAO";
+            this.gridColumn8.Name = "gridColumn8";
+            this.gridColumn8.Visible = true;
+            this.gridColumn8.VisibleIndex = 1;
             // 
             // SH_PETS
             // 
@@ -524,6 +545,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEditDono)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEdit1View)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_tileViewColumn1)).EndInit();
@@ -552,8 +575,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
             this.groupControl4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.edCLI_ID.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEditDono)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEdit1View)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -602,5 +623,7 @@
         private DevExpress.XtraEditors.LookUpEdit edPET_ID;
         private DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit repositoryItemGridLookUpEditDono;
         private DevExpress.XtraGrid.Views.Grid.GridView repositoryItemGridLookUpEdit1View;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
     }
 }
