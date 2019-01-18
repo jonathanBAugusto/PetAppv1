@@ -28,14 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInicio));
             this.acInicio = new DevExpress.XtraBars.Navigation.AccordionControl();
             this.accordionControlElement6 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement7 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement8 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement9 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement15 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement2 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement9 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement16 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement10 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement11 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement3 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -52,8 +55,7 @@
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
-            this.accordionControlElement15 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement16 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.alertControl1 = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.acInicio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iSlider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -104,12 +106,12 @@
             this.accordionControlElement8.Text = "Pets";
             this.accordionControlElement8.Click += new System.EventHandler(this.accordionControlElement8_Click);
             // 
-            // accordionControlElement9
+            // accordionControlElement15
             // 
-            this.accordionControlElement9.Name = "accordionControlElement9";
-            this.accordionControlElement9.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement9.Text = "Tipos de serviço";
-            this.accordionControlElement9.Click += new System.EventHandler(this.accordionControlElement9_Click);
+            this.accordionControlElement15.Name = "accordionControlElement15";
+            this.accordionControlElement15.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement15.Text = "Raças";
+            this.accordionControlElement15.Click += new System.EventHandler(this.accordionControlElement15_Click);
             // 
             // accordionControlElement2
             // 
@@ -118,12 +120,26 @@
             this.accordionControlElement2.Text = "Serviços";
             this.accordionControlElement2.Click += new System.EventHandler(this.accordionControlElement2_Click_1);
             // 
+            // accordionControlElement9
+            // 
+            this.accordionControlElement9.Name = "accordionControlElement9";
+            this.accordionControlElement9.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement9.Text = "Tipos de serviço";
+            this.accordionControlElement9.Click += new System.EventHandler(this.accordionControlElement9_Click);
+            // 
             // accordionControlElement1
             // 
             this.accordionControlElement1.Name = "accordionControlElement1";
             this.accordionControlElement1.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement1.Text = "Produtos";
             this.accordionControlElement1.Click += new System.EventHandler(this.accordionControlElement1_Click_1);
+            // 
+            // accordionControlElement16
+            // 
+            this.accordionControlElement16.Name = "accordionControlElement16";
+            this.accordionControlElement16.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement16.Text = "Tipos de produtos";
+            this.accordionControlElement16.Click += new System.EventHandler(this.accordionControlElement16_Click);
             // 
             // accordionControlElement10
             // 
@@ -260,20 +276,6 @@
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
             this.ribbonStatusBar1.Size = new System.Drawing.Size(441, 27);
             // 
-            // accordionControlElement15
-            // 
-            this.accordionControlElement15.Name = "accordionControlElement15";
-            this.accordionControlElement15.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement15.Text = "Raças";
-            this.accordionControlElement15.Click += new System.EventHandler(this.accordionControlElement15_Click);
-            // 
-            // accordionControlElement16
-            // 
-            this.accordionControlElement16.Name = "accordionControlElement16";
-            this.accordionControlElement16.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement16.Text = "Tipos de produtos";
-            this.accordionControlElement16.Click += new System.EventHandler(this.accordionControlElement16_Click);
-            // 
             // FrmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -326,6 +328,7 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement14;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement15;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement16;
+        private DevExpress.XtraBars.Alerter.AlertControl alertControl1;
     }
 }
 

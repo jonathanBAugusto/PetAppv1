@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using PetApp.View.Servico;
 using PetApp.View;
 using PetApp.View.Relatorios;
+using PetApp.Model;
 
 namespace PetApp
 {
@@ -49,7 +50,14 @@ namespace PetApp
 
         private void FrmInicio_Load(object sender, EventArgs e)
         {
-
+            List<Pets> pets = Pets.Get();
+            foreach (Pets pet in pets)
+            {
+                if (Convert.ToDateTime(pet.PET_NAS).Day == DateTime.Now.Day && Convert.ToDateTime(pet.PET_NAS).Month == DateTime.Now.Month)
+                {
+                    alertControl1.Show(this, "Aniversário" ,"O PET " + F.toString(pet.PET_NOME) + " de " + F.toString( Clientes.Get(F.toInt(pet.CLI_ID)).CLI_RAZAO) + " Está fazendo aniversário");
+                }
+            }
         }
 
         private void accordionControlElement7_Click(object sender, EventArgs e)
