@@ -112,7 +112,7 @@
             this.groupControl9.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.groupControl9.Location = new System.Drawing.Point(0, 131);
             this.groupControl9.Name = "groupControl9";
-            this.groupControl9.Size = new System.Drawing.Size(526, 331);
+            this.groupControl9.Size = new System.Drawing.Size(531, 517);
             this.groupControl9.TabIndex = 28;
             this.groupControl9.Text = "Resultados";
             // 
@@ -129,7 +129,7 @@
             this.repositoryItemImageEdit1,
             this.repositoryItemHypertextLabel1,
             this.repositoryItemPictureEdit2});
-            this.gridControlPets.Size = new System.Drawing.Size(522, 309);
+            this.gridControlPets.Size = new System.Drawing.Size(527, 495);
             this.gridControlPets.TabIndex = 0;
             this.gridControlPets.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.layoutView1});
@@ -331,7 +331,7 @@
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(526, 131);
+            this.groupControl1.Size = new System.Drawing.Size(531, 131);
             this.groupControl1.TabIndex = 29;
             this.groupControl1.Text = "Pesquisa";
             // 
@@ -489,7 +489,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(526, 462);
+            this.ClientSize = new System.Drawing.Size(531, 648);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.groupControl9);
             this.Name = "SH_PETS";
