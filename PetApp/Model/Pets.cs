@@ -2,6 +2,7 @@
 using SQLite;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +15,7 @@ namespace PetApp.Model
         [PrimaryKey]
         [AutoIncrement]
         public int PET_ID { get; set; }
+        //Campo para Salvar no banco.
         public string PET_IMG { get; set; }
         public string PET_NOME { get; set; }
         public string PET_NAS { get; set; }
@@ -21,6 +23,32 @@ namespace PetApp.Model
         public string PET_COR { get; set; }
         public string PET_OBS { get; set; }
         public int CLI_ID { get; set; }
+
+
+
+        //Somente para Leitura da Imagem... Passar ele quando precisar Visualizar :D
+        private Image pet_IMAGEM;
+
+        public Image PET_IMAGEM
+        {
+            get {
+                string pathImg = System.IO.Path.Combine(PET_IMG);
+                if (System.IO.File.Exists(pathImg))
+                {
+                    try
+                    {
+                        return Image.FromFile(pathImg);
+                    }
+                    catch 
+                    {
+                        return pet_IMAGEM;
+                    }
+                }
+                return pet_IMAGEM;
+            }
+            set { pet_IMAGEM = value; }
+        }
+
 
         private static Connection CONN;
 

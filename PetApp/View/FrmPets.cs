@@ -169,7 +169,7 @@ namespace PetApp
             {
                 picPET_IMG.Image = Image.FromFile(fileName);
                 picPET_IMG.Tag = fileName;
-                edPET_IMAGEM.EditValue = fileName;
+                edPET_IMAGEM.EditValue = System.IO.Path.GetFileName(fileName);
             }
             catch (Exception ex)
             {
