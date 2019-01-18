@@ -311,6 +311,7 @@
             this.btnAlterar.Size = new System.Drawing.Size(147, 42);
             this.btnAlterar.TabIndex = 5;
             this.btnAlterar.Text = "Alterar";
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
             // simpleButton3
             // 
@@ -328,6 +329,7 @@
             this.btnRemover.Size = new System.Drawing.Size(110, 42);
             this.btnRemover.TabIndex = 7;
             this.btnRemover.Text = "Remover";
+            this.btnRemover.Click += new System.EventHandler(this.btnRemover_Click);
             // 
             // groupControl2
             // 
