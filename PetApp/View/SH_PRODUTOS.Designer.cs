@@ -55,6 +55,8 @@
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.btnRemover = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.repositoryItemGridLookUpEditTPR = new DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit();
+            this.repositoryItemGridLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlProdutos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEditProd)).BeginInit();
@@ -77,6 +79,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.edPRO_CUSTOULTCOMPRA.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEditTPR)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEdit1View)).BeginInit();
             this.SuspendLayout();
             // 
             // gridControlProdutos
@@ -86,7 +90,8 @@
             this.gridControlProdutos.MainView = this.gridView1;
             this.gridControlProdutos.Name = "gridControlProdutos";
             this.gridControlProdutos.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
-            this.repositoryItemPictureEditProd});
+            this.repositoryItemPictureEditProd,
+            this.repositoryItemGridLookUpEditTPR});
             this.gridControlProdutos.Size = new System.Drawing.Size(702, 155);
             this.gridControlProdutos.TabIndex = 0;
             this.gridControlProdutos.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -149,6 +154,7 @@
             // gridColumn6
             // 
             this.gridColumn6.Caption = "Tipo";
+            this.gridColumn6.ColumnEdit = this.repositoryItemGridLookUpEditTPR;
             this.gridColumn6.FieldName = "PRO_TIPO";
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.Visible = true;
@@ -326,6 +332,21 @@
             this.groupControl2.TabIndex = 8;
             this.groupControl2.Text = "Pesquisa";
             // 
+            // repositoryItemGridLookUpEditTPR
+            // 
+            this.repositoryItemGridLookUpEditTPR.AutoHeight = false;
+            this.repositoryItemGridLookUpEditTPR.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemGridLookUpEditTPR.Name = "repositoryItemGridLookUpEditTPR";
+            this.repositoryItemGridLookUpEditTPR.PopupView = this.repositoryItemGridLookUpEdit1View;
+            // 
+            // repositoryItemGridLookUpEdit1View
+            // 
+            this.repositoryItemGridLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.repositoryItemGridLookUpEdit1View.Name = "repositoryItemGridLookUpEdit1View";
+            this.repositoryItemGridLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.repositoryItemGridLookUpEdit1View.OptionsView.ShowGroupPanel = false;
+            // 
             // SH_PRODUTOS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -358,6 +379,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.edPRO_CUSTOULTCOMPRA.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEditTPR)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEdit1View)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -391,5 +414,7 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton3;
         private DevExpress.XtraEditors.SimpleButton btnRemover;
         private DevExpress.XtraEditors.GroupControl groupControl2;
+        private DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit repositoryItemGridLookUpEditTPR;
+        private DevExpress.XtraGrid.Views.Grid.GridView repositoryItemGridLookUpEdit1View;
     }
 }

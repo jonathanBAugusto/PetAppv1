@@ -23,6 +23,9 @@ namespace PetApp.View
         private void SH_PRODUTOS_Load(object sender, EventArgs e)
         {
             gridControlProdutos.DataSource = Produtos.Get();
+            repositoryItemGridLookUpEditTPR.DataSource = TipoProduto.Get();
+            repositoryItemGridLookUpEditTPR.ValueMember = "TPR_ID";
+            repositoryItemGridLookUpEditTPR.DisplayMember = "TPR_DESCRICAO";
         }
 
         private void simpleButton3_Click(object sender, EventArgs e)

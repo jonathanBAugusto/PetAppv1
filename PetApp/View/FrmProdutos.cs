@@ -35,7 +35,7 @@ namespace PetApp.View
                 edPRO_REFERENCIA.Focus();
                 return;
             }
-            if (F.toString(edPRO_TIPO.EditValue) == "")
+            if (F.toString(edTPR_ID.EditValue) == "")
             {
                 F.Aviso("Insira um Tipo");
                 edPRO_REFERENCIA.Focus();
@@ -50,7 +50,7 @@ namespace PetApp.View
 
             objProdutos.PRO_REFERENCIA = F.toString(edPRO_REFERENCIA.EditValue);
             objProdutos.PRO_DESCRICAO = F.toString(edPRO_DESCRICAO.EditValue);
-            objProdutos.PRO_TIPO = F.toString(edPRO_TIPO.EditValue);
+            objProdutos.PRO_TIPO = F.toString(edTPR_ID.EditValue);
             objProdutos.PRO_CUSTO = F.toDouble(edPRO_CUSTO.EditValue);
             objProdutos.PRO_CUSTOULTCOMPRA = F.toDouble(edPRO_CUSTOULTCOMPRA.EditValue);
             objProdutos.PRO_FORNECEDOR = F.toInt(edPRO_FORNECEDOR.EditValue);
@@ -112,7 +112,9 @@ namespace PetApp.View
 
         private void FrmProdutos_Load(object sender, EventArgs e)
         {
-
+            edTPR_ID.Properties.DataSource = TipoProduto.Get();
+            edTPR_ID.Properties.ValueMember = "TPR_ID";
+            edTPR_ID.Properties.DisplayMember = "TPR_DESCRICAO";
         }
     }
 }

@@ -60,8 +60,6 @@ namespace PetApp
 
         private void FrmPets_Load(object sender, EventArgs e)
         {
-            listPets = Pets.Get();
-            gridControlPets.DataSource = listPets;
 
             edPET_RACA.Properties.DataSource = Racas.Get();
             edPET_RACA.Properties.ValueMember = "PET_RACA_ID";
@@ -69,7 +67,7 @@ namespace PetApp
 
             edCLI_ID.Properties.DataSource = Clientes.Get();
             edCLI_ID.Properties.ValueMember = "CLI_ID";
-            edCLI_ID.Properties.DisplayMember = "CLI_NOME";
+            edCLI_ID.Properties.DisplayMember = "CLI_RAZAO";
             if (DonoTemp > 0)
             {
                 edCLI_ID.EditValue = DonoTemp;

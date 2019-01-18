@@ -17,57 +17,57 @@ namespace PetApp.Model
 
         private static Connection CONN;
 
-        public static List<Clientes> Get()
+        public static List<TipoProduto> Get()
         {
             CONN = new Connection();
-            List<Clientes> list = new List<Clientes>();
+            List<TipoProduto> list = new List<TipoProduto>();
 
             try
             {
-                list = CONN.conn.Table<Clientes>().ToList<Clientes>();
+                list = CONN.conn.Table<TipoProduto>().ToList<TipoProduto>();
             }
             catch
             {
                 try
                 {
-                    list = CONN.conn.Table<Clientes>().ToList<Clientes>();
+                    list = CONN.conn.Table<TipoProduto>().ToList<TipoProduto>();
                 }
                 catch (Exception ex)
                 {
                     F.WriteLOG("---------------------------\n" + DateTime.Now.ToString() + " Error: " + ex.Message);
-                    list = new List<Clientes>();
+                    list = new List<TipoProduto>();
                 }
             }
 
             return list;
         }
 
-        public static Clientes Get(int ID)
+        public static TipoProduto Get(int ID)
         {
             CONN = new Connection();
-            Clientes user = new Clientes();
+            TipoProduto user = new TipoProduto();
 
             try
             {
-                user = CONN.conn.Get<Clientes>(ID);
+                user = CONN.conn.Get<TipoProduto>(ID);
             }
             catch
             {
                 try
                 {
-                    user = CONN.conn.Get<Clientes>(ID);
+                    user = CONN.conn.Get<TipoProduto>(ID);
                 }
                 catch (Exception ex)
                 {
                     F.WriteLOG("---------------------------\n" + DateTime.Now.ToString() + " Error: " + ex.Message);
-                    user = new Clientes();
+                    user = new TipoProduto();
                 }
             }
 
             return user;
         }
 
-        public static bool Insert(Clientes user)
+        public static bool Insert(TipoProduto user)
         {
             CONN = new Connection();
             try
@@ -89,7 +89,7 @@ namespace PetApp.Model
             return true;
         }
 
-        public static bool Insert(List<Clientes> user)
+        public static bool Insert(List<TipoProduto> user)
         {
             CONN = new Connection();
             try
@@ -111,7 +111,7 @@ namespace PetApp.Model
             return true;
         }
 
-        public static bool Update(Clientes user)
+        public static bool Update(TipoProduto user)
         {
             CONN = new Connection();
             try
@@ -133,7 +133,7 @@ namespace PetApp.Model
             return true;
         }
 
-        public static bool Update(List<Clientes> user)
+        public static bool Update(List<TipoProduto> user)
         {
             CONN = new Connection();
             try
@@ -155,7 +155,7 @@ namespace PetApp.Model
             return true;
         }
 
-        public static bool Delete(Clientes user)
+        public static bool Delete(TipoProduto user)
         {
             CONN = new Connection();
             try
@@ -177,12 +177,12 @@ namespace PetApp.Model
             return true;
         }
 
-        public static bool Delete(List<Clientes> users)
+        public static bool Delete(List<TipoProduto> users)
         {
             CONN = new Connection();
             try
             {
-                foreach (Clientes user in users)
+                foreach (TipoProduto user in users)
                 {
                     CONN.conn.Delete(user);
                 }
@@ -201,13 +201,13 @@ namespace PetApp.Model
             CONN = new Connection();
             try
             {
-                CONN.conn.DeleteAll<Clientes>();
+                CONN.conn.DeleteAll<TipoProduto>();
             }
             catch
             {
                 try
                 {
-                    CONN.conn.DeleteAll<Clientes>();
+                    CONN.conn.DeleteAll<TipoProduto>();
                 }
                 catch (Exception ex)
                 {

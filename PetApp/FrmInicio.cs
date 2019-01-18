@@ -116,5 +116,22 @@ namespace PetApp
         {
 
         }
+
+        private void accordionControlElement6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void accordionControlElement15_Click(object sender, EventArgs e)
+        {
+            FrmCad_PET_RACA form = new FrmCad_PET_RACA();
+            form.ShowDialog();
+        }
+
+        private void accordionControlElement16_Click(object sender, EventArgs e)
+        {
+            FrmTipoProduto form = new FrmTipoProduto();
+            form.ShowDialog();
+        }
     }
 }

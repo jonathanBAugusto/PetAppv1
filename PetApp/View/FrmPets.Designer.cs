@@ -42,12 +42,12 @@
             this.groupControl7 = new DevExpress.XtraEditors.GroupControl();
             this.edPET_NAS = new DevExpress.XtraEditors.DateEdit();
             this.groupControl8 = new DevExpress.XtraEditors.GroupControl();
+            this.edPET_OBS = new DevExpress.XtraEditors.MemoExEdit();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.picPET_IMG = new DevExpress.XtraEditors.PictureEdit();
             this.edPET_IMAGEM = new DevExpress.XtraEditors.ButtonEdit();
             this.openFileDialogImg = new System.Windows.Forms.OpenFileDialog();
             this.groupControl5 = new DevExpress.XtraEditors.GroupControl();
-            this.edPET_OBS = new DevExpress.XtraEditors.MemoExEdit();
             ((System.ComponentModel.ISupportInitialize)(this.edPET_NOME.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.edPET_COR.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.edCLI_ID.Properties)).BeginInit();
@@ -67,13 +67,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.edPET_NAS.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl8)).BeginInit();
             this.groupControl8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.edPET_OBS.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPET_IMG.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.edPET_IMAGEM.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).BeginInit();
             this.groupControl5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.edPET_OBS.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAdd
@@ -183,9 +183,6 @@
             // 
             // gridLookUpEdit1View
             // 
-            this.gridLookUpEdit1View.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn7,
-            this.gridColumn8});
             this.gridLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
             this.gridLookUpEdit1View.Name = "gridLookUpEdit1View";
             this.gridLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
@@ -222,6 +219,17 @@
             this.groupControl8.Size = new System.Drawing.Size(156, 48);
             this.groupControl8.TabIndex = 6;
             this.groupControl8.Text = "Observações";
+            // 
+            // edPET_OBS
+            // 
+            this.edPET_OBS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.edPET_OBS.Location = new System.Drawing.Point(5, 24);
+            this.edPET_OBS.Name = "edPET_OBS";
+            this.edPET_OBS.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.edPET_OBS.Properties.ShowIcon = false;
+            this.edPET_OBS.Size = new System.Drawing.Size(146, 20);
+            this.edPET_OBS.TabIndex = 16;
             // 
             // groupControl1
             // 
@@ -278,33 +286,6 @@
             this.groupControl5.TabIndex = 26;
             this.groupControl5.Text = "Cadastro";
             // 
-            // edPET_OBS
-            // 
-            this.edPET_OBS.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.edPET_OBS.Location = new System.Drawing.Point(5, 24);
-            this.edPET_OBS.Name = "edPET_OBS";
-            this.edPET_OBS.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.edPET_OBS.Properties.ShowIcon = false;
-            this.edPET_OBS.Size = new System.Drawing.Size(146, 20);
-            this.edPET_OBS.TabIndex = 16;
-            // 
-            // gridColumn7
-            // 
-            this.gridColumn7.Caption = "ID";
-            this.gridColumn7.FieldName = "PET_RACA_ID";
-            this.gridColumn7.Name = "gridColumn7";
-            this.gridColumn7.Visible = true;
-            this.gridColumn7.VisibleIndex = 0;
-            // 
-            // gridColumn8
-            // 
-            this.gridColumn8.Caption = "Nome da Raça";
-            this.gridColumn8.FieldName = "PET_RACA_NOME";
-            this.gridColumn8.Name = "gridColumn8";
-            this.gridColumn8.Visible = true;
-            this.gridColumn8.VisibleIndex = 1;
-            // 
             // FrmPets
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -334,13 +315,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.edPET_NAS.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl8)).EndInit();
             this.groupControl8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.edPET_OBS.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picPET_IMG.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.edPET_IMAGEM.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).EndInit();
             this.groupControl5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.edPET_OBS.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

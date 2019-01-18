@@ -31,6 +31,9 @@ namespace PetApp.View
             Racas.Insert(raca);
 
             FrmCad_PET_RACA_Load(null, null);
+            List<Racas> a = new List<Racas>();
+
+
             
         }
 

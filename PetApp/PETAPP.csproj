@@ -111,6 +111,12 @@
     <Compile Include="View\FrmCad_PET_RACA.Designer.cs">
       <DependentUpon>FrmCad_PET_RACA.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FrmTipoProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmTipoProduto.Designer.cs">
+      <DependentUpon>FrmTipoProduto.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\SH_CLIENTES.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,6 +187,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\FrmCad_PET_RACA.resx">
       <DependentUpon>FrmCad_PET_RACA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmTipoProduto.resx">
+      <DependentUpon>FrmTipoProduto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\SH_CLIENTES.resx">
       <DependentUpon>SH_CLIENTES.cs</DependentUpon>
