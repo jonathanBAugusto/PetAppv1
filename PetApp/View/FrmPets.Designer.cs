@@ -72,6 +72,8 @@
             this.openFileDialogImg = new System.Windows.Forms.OpenFileDialog();
             this.groupControl5 = new DevExpress.XtraEditors.GroupControl();
             this.groupControl9 = new DevExpress.XtraEditors.GroupControl();
+            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemHypertextLabel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemImageEdit1)).BeginInit();
@@ -369,6 +371,7 @@
             this.simpleButton2.Size = new System.Drawing.Size(20, 20);
             this.simpleButton2.TabIndex = 18;
             this.simpleButton2.Text = "+";
+            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // groupControl2
             // 
@@ -421,6 +424,9 @@
             // 
             // gridLookUpEdit1View
             // 
+            this.gridLookUpEdit1View.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn7,
+            this.gridColumn8});
             this.gridLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
             this.gridLookUpEdit1View.Name = "gridLookUpEdit1View";
             this.gridLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
@@ -526,6 +532,22 @@
             this.groupControl9.TabIndex = 27;
             this.groupControl9.Text = "Pets";
             // 
+            // gridColumn7
+            // 
+            this.gridColumn7.Caption = "ID";
+            this.gridColumn7.FieldName = "PET_RACA_ID";
+            this.gridColumn7.Name = "gridColumn7";
+            this.gridColumn7.Visible = true;
+            this.gridColumn7.VisibleIndex = 0;
+            // 
+            // gridColumn8
+            // 
+            this.gridColumn8.Caption = "Nome da Raça";
+            this.gridColumn8.FieldName = "PET_RACA_NOME";
+            this.gridColumn8.Name = "gridColumn8";
+            this.gridColumn8.Visible = true;
+            this.gridColumn8.VisibleIndex = 1;
+            // 
             // FrmPets
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -630,5 +652,7 @@
         private System.Windows.Forms.OpenFileDialog openFileDialogImg;
         private DevExpress.XtraEditors.GroupControl groupControl5;
         private DevExpress.XtraEditors.GroupControl groupControl9;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
     }
 }

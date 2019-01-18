@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PetApp.Model;
+using PetApp.View;
 
 namespace PetApp
 {
@@ -23,6 +24,10 @@ namespace PetApp
         {
             listPets = Pets.Get();
             gridControlPets.DataSource = listPets;
+
+            edPET_RACA.Properties.DataSource = Racas.Get();
+            edPET_RACA.Properties.ValueMember = "PET_RACA_ID";
+            edPET_RACA.Properties.DisplayMember = "PET_RACA_NOME";
 
             edCLI_ID.Properties.DataSource = Clientes.Get();
             edCLI_ID.Properties.ValueMember = "CLI_ID";
@@ -45,6 +50,17 @@ namespace PetApp
             }
             pathImg = openFileDialogImg.FileName;
             string fileName = System.IO.Path.GetFileName(pathImg);
+        }
+
+        private void simpleButton2_Click(object sender, EventArgs e)
+        {
+            FrmCad_PET_RACA form = new FrmCad_PET_RACA();
+            form.ShowDialog();
+            if (form.DialogResult == DialogResult.OK)
+            {
+                FrmPets_Load(null, null);
+                edPET_RACA.EditValue = F.toInt(form.ids);
+            }
         }
     }
 }
