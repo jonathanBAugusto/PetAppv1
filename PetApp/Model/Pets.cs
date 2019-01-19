@@ -28,11 +28,11 @@ namespace PetApp.Model
 
         //Somente para Leitura da Imagem... Passar ele quando precisar Visualizar :D
         private Image pet_IMAGEM;
-
+        [Ignore]
         public Image PET_IMAGEM
         {
             get {
-                string pathImg = System.IO.Path.Combine(PET_IMG);
+                string pathImg = System.IO.Path.Combine(F.IMGPATH, PET_IMG);
                 if (System.IO.File.Exists(pathImg))
                 {
                     try
