@@ -54,14 +54,27 @@ namespace PetApp
                 edCLI_FANTASIA.Enabled = true;
                 edCLI_CNPJ.Enabled = true;
                 edCLI_RAZAO.Enabled = true;
+                btnAdd.Enabled = true;
+                btnDel.Enabled = true;
             }
-            else
+            else if(F.toString(rgCLI_PESTIPO.EditValue) == "FIS")
             {
                 edCLI_INSCRICAO.Enabled = false;
                 edCLI_CNPJ.Enabled = false;
                 edCLI_RAZAO.Enabled = true;
                 edCLI_FANTASIA.Enabled = false;
                 edCLI_NASC.Enabled = true;
+                btnAdd.Enabled = true;
+                btnDel.Enabled = true;
+            }
+            else
+            {
+                edCLI_FANTASIA.Enabled = true;
+                edCLI_CNPJ.Enabled = true;
+                edCLI_RAZAO.Enabled = true;
+                btnAdd.Enabled = false;
+                btnDel.Enabled = false;
+                
             }
         }
 
@@ -141,6 +154,38 @@ namespace PetApp
                     edDDDTel.Focus();
                 }
             }
+            if (F.toString(rgCLI_PESTIPO.EditValue) == "FOR")
+            {
+                Fornecedor fornecedor = new Fornecedor
+                {
+                    FOR_RAZAO = F.toString(edCLI_RAZAO.EditValue),
+                    FOR_FANTASIA = F.toString(edCLI_FANTASIA.EditValue),
+                    FOR_DDDCEL = F.toString(edDDDCel.EditValue),
+                    FOR_CEL = F.toString(edCLI_CEL.EditValue),
+                    FOR_DDDTEL = F.toString(edDDDTel.EditValue),
+                    FOR_TEL = F.toString(edCLI_TEL.EditValue),
+                    FOR_EMAIL = F.toString(edCLI_EMAIL.EditValue),
+                    FOR_CNPJ = F.toString(edCLI_CNPJ.EditValue),
+                    FOR_CEP = F.toString(edCEP.EditValue),
+                    FOR_UF = F.toString(edEstado.EditValue),
+                    FOR_RUA = F.toString(edRua.EditValue),
+                    FOR_NUMERO = F.toString(edNumero.EditValue),
+                    FOR_COMPLEMENTO = F.toString(edComplemento.EditValue),
+                    FOR_BAIRRO = F.toString(edBairro.EditValue),
+                    FOR_DATA_CADASTRO = F.toString(DateTime.Now.ToShortDateString())
+                };
+                if (Fornecedor.Insert(fornecedor))
+                {
+                    F.Aviso("Fornecedor Cadastrado com sucesso");
+                    Close();
+                    return;
+                }
+                else
+                {
+                    F.Aviso("Erro ao cadastrar fornecedor!");
+                    return;
+                }
+            }
             Clientes cliente = new Clientes
             {
                 CLI_RAZAO = F.toString(edCLI_RAZAO.EditValue),
@@ -159,6 +204,7 @@ namespace PetApp
                 CLI_NASC = F.toString(edCLI_NASC.EditValue),
                 CID_ID = F.toInt(edCidade.EditValue),
                 CLI_INSCRICAO = F.toString(edCLI_INSCRICAO.EditValue)
+                
             };
             if (Clientes.Insert(cliente))
             {

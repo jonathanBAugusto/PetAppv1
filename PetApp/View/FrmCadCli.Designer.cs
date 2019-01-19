@@ -323,7 +323,8 @@
             this.rgCLI_PESTIPO.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.rgCLI_PESTIPO.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
             new DevExpress.XtraEditors.Controls.RadioGroupItem("FIS", "Pessoa Física"),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem("JUR", "Pessoa Jurídica")});
+            new DevExpress.XtraEditors.Controls.RadioGroupItem("JUR", "Pessoa Jurídica"),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem("FOR", "Fornecedor")});
             this.rgCLI_PESTIPO.Size = new System.Drawing.Size(127, 53);
             this.rgCLI_PESTIPO.TabIndex = 0;
             this.rgCLI_PESTIPO.EditValueChanged += new System.EventHandler(this.rgPesTipo_EditValueChanged);

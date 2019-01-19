@@ -84,7 +84,7 @@ namespace PetApp.View
                 objProdutos.PRO_CUSTO = F.toDouble(edPRO_CUSTO.EditValue);
                 objProdutos.PRO_CUSTOULTCOMPRA = F.toDouble(edPRO_CUSTOULTCOMPRA.EditValue);
                 objProdutos.PRO_FORNECEDOR = F.toInt(edPRO_FORNECEDOR.EditValue);
-                objProdutos.PRO_IMAGEM = F.toString(pic_IMAGEM.EditValue);
+                objProdutos.PRO_IMAGEM = F.toString(edPRO_IMAGEM.EditValue);
 
                 if (objProdutos.PRO_ID == 0)
                 {
@@ -130,7 +130,7 @@ namespace PetApp.View
             {
                 pic_IMAGEM.Image = Image.FromFile(fileName);
                 pic_IMAGEM.Tag = fileName;
-                edPRO_IMAGEM.EditValue = fileName;
+                edPRO_IMAGEM.EditValue = System.IO.Path.GetFileName(fileName);
             }
             catch (Exception ex)
             {
@@ -145,6 +145,9 @@ namespace PetApp.View
 
         private void FrmProdutos_Load(object sender, EventArgs e)
         {
+            edPRO_FORNECEDOR.Properties.DataSource = Fornecedor.Get();
+            edPRO_FORNECEDOR.Properties.ValueMember = "FOR_ID";
+            edPRO_FORNECEDOR.Properties.DisplayMember = "FOR_RAZAO";
             if (PROID != 0)
             {
                 Produtos prods = Produtos.Get(PROID);
@@ -159,6 +162,11 @@ namespace PetApp.View
             edTPR_ID.Properties.DataSource = TipoProduto.Get();
             edTPR_ID.Properties.ValueMember = "TPR_ID";
             edTPR_ID.Properties.DisplayMember = "TPR_DESCRICAO";
+        }
+
+        private void pic_IMAGEM_EditValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -64,6 +64,11 @@
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.btnInserir = new DevExpress.XtraEditors.SimpleButton();
+            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
@@ -124,7 +129,12 @@
             this.gridColumn5,
             this.gridColumn6,
             this.gridColumn7,
-            this.gridColumn1});
+            this.gridColumn1,
+            this.gridColumn2,
+            this.gridColumn9,
+            this.gridColumn8,
+            this.gridColumn10,
+            this.gridColumn11});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             // 
@@ -162,7 +172,7 @@
             // 
             // gridColumn6
             // 
-            this.gridColumn6.Caption = "CELULAR";
+            this.gridColumn6.Caption = "Celular";
             this.gridColumn6.FieldName = "CLI_CEL";
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.Visible = true;
@@ -170,7 +180,7 @@
             // 
             // gridColumn7
             // 
-            this.gridColumn7.Caption = "TELEFONE";
+            this.gridColumn7.Caption = "Telefone";
             this.gridColumn7.FieldName = "CLI_TEL";
             this.gridColumn7.Name = "gridColumn7";
             this.gridColumn7.Visible = true;
@@ -456,6 +466,46 @@
             this.btnInserir.TabIndex = 55;
             this.btnInserir.Text = "Inserir";
             // 
+            // gridColumn2
+            // 
+            this.gridColumn2.Caption = "CEP";
+            this.gridColumn2.FieldName = "CLI_CEP";
+            this.gridColumn2.Name = "gridColumn2";
+            this.gridColumn2.Visible = true;
+            this.gridColumn2.VisibleIndex = 7;
+            // 
+            // gridColumn8
+            // 
+            this.gridColumn8.Caption = "Rua";
+            this.gridColumn8.FieldName = "CLI_RUA";
+            this.gridColumn8.Name = "gridColumn8";
+            this.gridColumn8.Visible = true;
+            this.gridColumn8.VisibleIndex = 9;
+            // 
+            // gridColumn9
+            // 
+            this.gridColumn9.Caption = "Bairro";
+            this.gridColumn9.FieldName = "CLI_BAIRRO";
+            this.gridColumn9.Name = "gridColumn9";
+            this.gridColumn9.Visible = true;
+            this.gridColumn9.VisibleIndex = 8;
+            // 
+            // gridColumn10
+            // 
+            this.gridColumn10.Caption = "Numero";
+            this.gridColumn10.FieldName = "CLI_NUMERO";
+            this.gridColumn10.Name = "gridColumn10";
+            this.gridColumn10.Visible = true;
+            this.gridColumn10.VisibleIndex = 10;
+            // 
+            // gridColumn11
+            // 
+            this.gridColumn11.Caption = "Estado";
+            this.gridColumn11.FieldName = "CLI_ESTADO";
+            this.gridColumn11.Name = "gridColumn11";
+            this.gridColumn11.Visible = true;
+            this.gridColumn11.VisibleIndex = 11;
+            // 
             // SH_CLIENTES
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -544,5 +594,10 @@
         private DevExpress.XtraEditors.RadioGroup rgCLI_PESTIPO;
         private DevExpress.XtraEditors.GroupControl groupControl11;
         private DevExpress.XtraEditors.TextEdit textEdit9;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
     }
 }

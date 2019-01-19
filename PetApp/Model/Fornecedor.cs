@@ -1,108 +1,87 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using PetApp.Control;
 using SQLite;
-
+using PetApp.Control;
 namespace PetApp.Model
 {
-    [Table("PRODUTOS")]
-    class Produtos
+    [Table("FORNECEDOR")]
+    class Fornecedor
     {
-        [PrimaryKey, AutoIncrement]
-        public int PRO_ID { get; set; }
-        public string PRO_REFERENCIA { get; set; }
-        public string PRO_DESCRICAO { get; set; }
-        public double PRO_CUSTO { get; set; }
-        public double PRO_CUSTOULTCOMPRA { get; set; }
-        public int PRO_TIPO { get; set; }
-        public int PRO_FORNECEDOR { get; set; }
-        public string PRO_IMAGEM { get; set; }
-
-        private Image pro_IMAGEM;
-        [Ignore]
-        public Image PRO_IMAGEMR
-        {
-            get
-            {
-                string pathImg = System.IO.Path.Combine(F.IMGPATH, PRO_IMAGEM);
-                if (System.IO.File.Exists(pathImg))
-                {
-                    try
-                    {
-                        return Image.FromFile(pathImg);
-                    }
-                    catch
-                    {
-                        return pro_IMAGEM;
-                    }
-                }
-                return pro_IMAGEM;
-            }
-            set { pro_IMAGEM = value; }
-        }
+        [PrimaryKey]
+        [AutoIncrement]
+        public int FOR_ID { get; set; }
+        public string FOR_RAZAO { get; set; }
+        public string FOR_FANTASIA { get; set; }
+        public string FOR_CNPJ { get; set; }
+        public string FOR_DDDCEL { get; set; }
+        public string FOR_CEL { get; set; }
+        public string FOR_DDDTEL { get; set; }
+        public string FOR_TEL { get; set; }
+        public string FOR_EMAIL { get; set; }
+        public string FOR_CEP { get; set; }
+        public string FOR_UF { get; set; }
+        public string FOR_RUA { get; set; }
+        public string FOR_BAIRRO { get; set; }
+        public string FOR_COMPLEMENTO { get; set; }
+        public string FOR_NUMERO { get; set; }
+        public string FOR_DATA_CADASTRO { get; set; }
 
         private static Connection CONN;
 
-        public Produtos()
+        public static List<Fornecedor> Get()
         {
             CONN = new Connection();
-        }
-
-        public static List<Produtos> Get()
-        {
-            CONN = new Connection();
-            List<Produtos> list = new List<Produtos>();
+            List<Fornecedor> list = new List<Fornecedor>();
 
             try
             {
-                list = CONN.conn.Table<Produtos>().ToList<Produtos>();
+                list = CONN.conn.Table<Fornecedor>().ToList<Fornecedor>();
             }
             catch
             {
                 try
                 {
-                    list = CONN.conn.Table<Produtos>().ToList<Produtos>();
+                    list = CONN.conn.Table<Fornecedor>().ToList<Fornecedor>();
                 }
                 catch (Exception ex)
                 {
                     F.WriteLOG("---------------------------\n" + DateTime.Now.ToString() + " Error: " + ex.Message);
-                    list = new List<Produtos>();
+                    list = new List<Fornecedor>();
                 }
             }
 
             return list;
         }
 
-        public static Produtos Get(int ID)
+        public static Fornecedor Get(int ID)
         {
             CONN = new Connection();
-            Produtos user = new Produtos();
+            Fornecedor user = new Fornecedor();
 
             try
             {
-                user = CONN.conn.Get<Produtos>(ID);
+                user = CONN.conn.Get<Fornecedor>(ID);
             }
             catch
             {
                 try
                 {
-                    user = CONN.conn.Get<Produtos>(ID);
+                    user = CONN.conn.Get<Fornecedor>(ID);
                 }
                 catch (Exception ex)
                 {
                     F.WriteLOG("---------------------------\n" + DateTime.Now.ToString() + " Error: " + ex.Message);
-                    user = new Produtos();
+                    user = new Fornecedor();
                 }
             }
 
             return user;
         }
 
-        public static bool Insert(Produtos user)
+        public static bool Insert(Fornecedor user)
         {
             CONN = new Connection();
             try
@@ -124,7 +103,7 @@ namespace PetApp.Model
             return true;
         }
 
-        public static bool Insert(List<Produtos> user)
+        public static bool Insert(List<Fornecedor> user)
         {
             CONN = new Connection();
             try
@@ -146,7 +125,7 @@ namespace PetApp.Model
             return true;
         }
 
-        public static bool Update(Produtos user)
+        public static bool Update(Fornecedor user)
         {
             CONN = new Connection();
             try
@@ -168,7 +147,7 @@ namespace PetApp.Model
             return true;
         }
 
-        public static bool Update(List<Produtos> user)
+        public static bool Update(List<Fornecedor> user)
         {
             CONN = new Connection();
             try
@@ -190,7 +169,7 @@ namespace PetApp.Model
             return true;
         }
 
-        public static bool Delete(Produtos user)
+        public static bool Delete(Fornecedor user)
         {
             CONN = new Connection();
             try
@@ -212,12 +191,12 @@ namespace PetApp.Model
             return true;
         }
 
-        public static bool Delete(List<Produtos> users)
+        public static bool Delete(List<Fornecedor> users)
         {
             CONN = new Connection();
             try
             {
-                foreach (Produtos user in users)
+                foreach (Fornecedor user in users)
                 {
                     CONN.conn.Delete(user);
                 }
@@ -236,13 +215,13 @@ namespace PetApp.Model
             CONN = new Connection();
             try
             {
-                CONN.conn.DeleteAll<Produtos>();
+                CONN.conn.DeleteAll<Fornecedor>();
             }
             catch
             {
-                try 
+                try
                 {
-                    CONN.conn.DeleteAll<Produtos>();
+                    CONN.conn.DeleteAll<Fornecedor>();
                 }
                 catch (Exception ex)
                 {
