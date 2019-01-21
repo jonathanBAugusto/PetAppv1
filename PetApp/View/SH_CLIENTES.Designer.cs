@@ -507,6 +507,7 @@
             this.btnInserir.Size = new System.Drawing.Size(95, 47);
             this.btnInserir.TabIndex = 55;
             this.btnInserir.Text = "Inserir";
+            this.btnInserir.Click += new System.EventHandler(this.btnInserir_Click_1);
             // 
             // SH_CLIENTES
             // 
