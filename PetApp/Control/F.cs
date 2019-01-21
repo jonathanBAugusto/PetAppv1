@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Correios.Net;
 using DevExpress.XtraEditors;
+using PetApp.View;
 
 namespace PetApp
 {
@@ -170,6 +171,19 @@ namespace PetApp
             int anoNas = data.Year;
             int age = anoNow - anoNas;
             return age;
+        }
+
+        public bool YesNo(string Titulo, string Conteudo, int Foco)
+        {
+            FrmYN objFrmYN = new FrmYN(Titulo, Conteudo, Foco);
+            if (objFrmYN.ShowDialog() == DialogResult.Yes)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

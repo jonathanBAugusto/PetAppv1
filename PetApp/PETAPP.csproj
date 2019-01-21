@@ -111,6 +111,18 @@
     <Compile Include="View\FrmCad_PET_RACA.Designer.cs">
       <DependentUpon>FrmCad_PET_RACA.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FrmEstoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmEstoque.Designer.cs">
+      <DependentUpon>FrmEstoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmPesq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmPesq.Designer.cs">
+      <DependentUpon>FrmPesq.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FrmTipoProduto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,6 +176,12 @@
     <Compile Include="View\Servico\frmTipoServico.Designer.cs">
       <DependentUpon>frmTipoServico.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\SH_ESTOQUE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SH_ESTOQUE.Designer.cs">
+      <DependentUpon>SH_ESTOQUE.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\SH_PETS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,11 +200,23 @@
     <Compile Include="View\SH_SERVICOS.Designer.cs">
       <DependentUpon>SH_SERVICOS.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\UTL\FrmYN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\UTL\FrmYN.Designer.cs">
+      <DependentUpon>FrmYN.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FrmInicio.resx">
       <DependentUpon>FrmInicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FrmCad_PET_RACA.resx">
       <DependentUpon>FrmCad_PET_RACA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmEstoque.resx">
+      <DependentUpon>FrmEstoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmPesq.resx">
+      <DependentUpon>FrmPesq.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FrmTipoProduto.resx">
       <DependentUpon>FrmTipoProduto.cs</DependentUpon>
@@ -231,6 +261,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\SH_SERVICOS.resx">
       <DependentUpon>SH_SERVICOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UTL\FrmYN.resx">
+      <DependentUpon>FrmYN.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Connected Services\WSCorreios\AtendeClienteService.wsdl" />
     <None Include="Connected Services\WSCorreios\PetApp.WSCorreios.atualizaPagamentoNaEntregaResponse.datasource">

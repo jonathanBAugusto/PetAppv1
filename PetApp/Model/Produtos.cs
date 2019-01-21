@@ -13,6 +13,7 @@ namespace PetApp.Model
     {
         [PrimaryKey, AutoIncrement]
         public int PRO_ID { get; set; }
+        [PrimaryKey]
         public string PRO_REFERENCIA { get; set; }
         public string PRO_DESCRICAO { get; set; }
         public double PRO_CUSTO { get; set; }
@@ -219,6 +220,243 @@ namespace PetApp.Model
                 try 
                 {
                     CONN.conn.DeleteAll<Produtos>();
+                }
+                catch (Exception ex)
+                {
+                    F.WriteLOG("---------------------------\n" + DateTime.Now.ToString() + " Error: " + ex.Message);
+                    return false;
+                }
+            }
+            return true;
+        }
+    }
+
+    [Table("LANCPRODS")]
+    class Lancprods
+    {
+        [PrimaryKey][AutoIncrement]
+        public int LCP_ID { get; set; }
+        public double LCP_QUANTIDADE { get; set; }
+        public DateTime LCP_DATA { get; set; }
+        public string LCP_TIPO { get; set; }
+        public int PRO_ID { get; set; }
+        private string pro_REFERENCIA;
+        [Ignore]
+        public string PRO_REFERENCIA
+        {
+            get
+            {
+                string result = "";
+                try
+                {
+                    result = F.toString(CONN.conn.Query<List<string>>("SELECT MAX(PRO_REFERENCIA) PRO_REFERENCIA FROM PRODUTOS WHERE PRO_ID = " + PRO_ID).LastOrDefault());
+                    return result;
+                }
+                catch
+                {
+                    return pro_REFERENCIA;
+                }
+            }
+            set { pro_REFERENCIA = value; }
+        }
+        private static Connection CONN;
+
+        public Lancprods()
+        {
+            CONN = new Connection();
+        }
+
+        public static List<Lancprods> Get()
+        {
+            CONN = new Connection();
+            List<Lancprods> list = new List<Lancprods>();
+
+            try
+            {
+                list = CONN.conn.Table<Lancprods>().ToList<Lancprods>();
+            }
+            catch
+            {
+                try
+                {
+                    list = CONN.conn.Table<Lancprods>().ToList<Lancprods>();
+                }
+                catch (Exception ex)
+                {
+                    F.WriteLOG("---------------------------\n" + DateTime.Now.ToString() + " Error: " + ex.Message);
+                    list = new List<Lancprods>();
+                }
+            }
+
+            return list;
+        }
+
+        public static Lancprods Get(int ID)
+        {
+            CONN = new Connection();
+            Lancprods user = new Lancprods();
+
+            try
+            {
+                user = CONN.conn.Get<Lancprods>(ID);
+            }
+            catch
+            {
+                try
+                {
+                    user = CONN.conn.Get<Lancprods>(ID);
+                }
+                catch (Exception ex)
+                {
+                    F.WriteLOG("---------------------------\n" + DateTime.Now.ToString() + " Error: " + ex.Message);
+                    user = new Lancprods();
+                }
+            }
+
+            return user;
+        }
+
+        public static bool Insert(Lancprods user)
+        {
+            CONN = new Connection();
+            try
+            {
+                CONN.conn.Insert(user);
+            }
+            catch
+            {
+                try
+                {
+                    CONN.conn.Insert(user);
+                }
+                catch (Exception ex)
+                {
+                    F.WriteLOG("---------------------------\n" + DateTime.Now.ToString() + " Error: " + ex.Message);
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        public static bool Insert(List<Lancprods> user)
+        {
+            CONN = new Connection();
+            try
+            {
+                CONN.conn.InsertAll(user);
+            }
+            catch
+            {
+                try
+                {
+                    CONN.conn.InsertAll(user);
+                }
+                catch (Exception ex)
+                {
+                    F.WriteLOG("---------------------------\n" + DateTime.Now.ToString() + " Error: " + ex.Message);
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        public static bool Update(Lancprods user)
+        {
+            CONN = new Connection();
+            try
+            {
+                CONN.conn.Update(user);
+            }
+            catch
+            {
+                try
+                {
+                    CONN.conn.Update(user);
+                }
+                catch (Exception ex)
+                {
+                    F.WriteLOG("---------------------------\n" + DateTime.Now.ToString() + " Error: " + ex.Message);
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        public static bool Update(List<Lancprods> user)
+        {
+            CONN = new Connection();
+            try
+            {
+                CONN.conn.UpdateAll(user);
+            }
+            catch
+            {
+                try
+                {
+                    CONN.conn.UpdateAll(user);
+                }
+                catch (Exception ex)
+                {
+                    F.WriteLOG("---------------------------\n" + DateTime.Now.ToString() + " Error: " + ex.Message);
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        public static bool Delete(Lancprods user)
+        {
+            CONN = new Connection();
+            try
+            {
+                CONN.conn.Delete(user);
+            }
+            catch
+            {
+                try
+                {
+                    CONN.conn.Delete(user);
+                }
+                catch (Exception ex)
+                {
+                    F.WriteLOG("---------------------------\n" + DateTime.Now.ToString() + " Error: " + ex.Message);
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        public static bool Delete(List<Lancprods> users)
+        {
+            CONN = new Connection();
+            try
+            {
+                foreach (Lancprods user in users)
+                {
+                    CONN.conn.Delete(user);
+                }
+            }
+            catch (Exception ex)
+            {
+                F.WriteLOG("---------------------------\n" + DateTime.Now.ToString() + " Error: " + ex.Message);
+                return false;
+
+            }
+            return true;
+        }
+
+        public static bool DeleteAll()
+        {
+            CONN = new Connection();
+            try
+            {
+                CONN.conn.DeleteAll<Lancprods>();
+            }
+            catch
+            {
+                try
+                {
+                    CONN.conn.DeleteAll<Lancprods>();
                 }
                 catch (Exception ex)
                 {
