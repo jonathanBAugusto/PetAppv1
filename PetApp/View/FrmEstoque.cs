@@ -19,6 +19,7 @@ namespace PetApp.View
         {
             InitializeComponent();
             listLancprods = new List<Lancprods>();
+            gridControlEstoque.DataSource = listLancprods;
         }
 
         private void btnAdicionar_Click(object sender, EventArgs e)
@@ -26,8 +27,62 @@ namespace PetApp.View
             if (F.toString(edPRO_REFEREMCIA.EditValue) == "")
             {
                 F.Aviso("Selecione um Produto para lançar uma movimentação");
+                edPRO_REFEREMCIA.Focus();
             }
-            Lancprods obj = new Lancprods();
+            if (F.toString(edLCP_QUANTIDADE.EditValue) == "")
+            {
+                F.Aviso("Informe a quantidade para lançar a movimentação");
+                edLCP_QUANTIDADE.Focus();
+            }
+            if (F.toString(edLCP_DATA.EditValue) == "")
+            {
+                F.Aviso("Informe a data para lançar a movimentação");
+                edLCP_DATA.Focus();
+            }
+            int pro_id = Lancprods.getIDByRef(F.toString(edPRO_REFEREMCIA.EditValue));
+            if (pro_id == -1)
+            {
+                F.Aviso("Produto não encontrado");
+                return;
+            }
+            Lancprods obj = new Lancprods() { PRO_ID = pro_id, LCP_QUANTIDADE = F.toDouble(edLCP_QUANTIDADE.EditValue), LCP_DATA = edLCP_DATA.DateTime, LCP_TIPO = F.toString(rgLCP_TIPO.EditValue)};
+            listLancprods.Add(obj);
+            limparCampos(false);
+        }
+
+        private void btnRemover_Click(object sender, EventArgs e)
+        {
+            Lancprods objFocused =  gridViewEstoque.GetFocusedRow() as Lancprods;
+
+            if (F.toString(objFocused.PRO_ID) != "")
+            {
+                listLancprods.Remove(objFocused);
+            }
+        }
+
+        private void btnConcluir_Click(object sender, EventArgs e)
+        {
+            if (F.YesNo("Atenção", "Deseja confirmar os lançamentos?", 2))
+            {
+                if (Lancprods.Insert(listLancprods))
+                {
+                    F.Aviso("Lançamentos feitos com sucesso!");
+                    limparCampos(true);
+                } 
+            }
+        }
+
+        private void limparCampos(bool limpaGrid)
+        {
+            if (limpaGrid)
+            {
+                listLancprods = null;
+            }
+
+            edLCP_DATA.DateTime = DateTime.Now;
+            edLCP_QUANTIDADE.EditValue = null;
+            edPRO_REFEREMCIA.EditValue = null;
+            edPRO_REFEREMCIA.Focus();
         }
     }
 }

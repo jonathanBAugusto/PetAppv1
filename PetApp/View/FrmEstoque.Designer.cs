@@ -29,15 +29,14 @@
         private void InitializeComponent()
         {
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.btnConcluir = new DevExpress.XtraEditors.SimpleButton();
-            this.btnRemover = new DevExpress.XtraEditors.SimpleButton();
-            this.btnAdicionar = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
             this.rgLCP_TIPO = new DevExpress.XtraEditors.RadioGroup();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
+            this.edLCP_DATA = new DevExpress.XtraEditors.DateEdit();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.edLCP_QUANTIDADE = new DevExpress.XtraEditors.TextEdit();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.edPRO_REFEREMCIA = new DevExpress.XtraEditors.ButtonEdit();
             this.gridControlEstoque = new DevExpress.XtraGrid.GridControl();
             this.gridViewEstoque = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -46,8 +45,9 @@
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.edPRO_REFEREMCIA = new DevExpress.XtraEditors.ButtonEdit();
-            this.edLCP_DATA = new DevExpress.XtraEditors.DateEdit();
+            this.btnAdicionar = new DevExpress.XtraEditors.SimpleButton();
+            this.btnRemover = new DevExpress.XtraEditors.SimpleButton();
+            this.btnConcluir = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
@@ -55,16 +55,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.rgLCP_TIPO.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.edLCP_DATA.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edLCP_DATA.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.edLCP_QUANTIDADE.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.edPRO_REFEREMCIA.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlEstoque)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewEstoque)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edPRO_REFEREMCIA.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edLCP_DATA.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edLCP_DATA.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl1
@@ -81,31 +81,6 @@
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(552, 91);
             this.panelControl1.TabIndex = 0;
-            // 
-            // btnConcluir
-            // 
-            this.btnConcluir.Location = new System.Drawing.Point(465, 61);
-            this.btnConcluir.Name = "btnConcluir";
-            this.btnConcluir.Size = new System.Drawing.Size(75, 23);
-            this.btnConcluir.TabIndex = 7;
-            this.btnConcluir.Text = "Concluir";
-            // 
-            // btnRemover
-            // 
-            this.btnRemover.Location = new System.Drawing.Point(384, 61);
-            this.btnRemover.Name = "btnRemover";
-            this.btnRemover.Size = new System.Drawing.Size(75, 23);
-            this.btnRemover.TabIndex = 5;
-            this.btnRemover.Text = "Remover";
-            // 
-            // btnAdicionar
-            // 
-            this.btnAdicionar.Location = new System.Drawing.Point(303, 61);
-            this.btnAdicionar.Name = "btnAdicionar";
-            this.btnAdicionar.Size = new System.Drawing.Size(75, 23);
-            this.btnAdicionar.TabIndex = 4;
-            this.btnAdicionar.Text = "Adicionar";
-            this.btnAdicionar.Click += new System.EventHandler(this.btnAdicionar_Click);
             // 
             // groupControl4
             // 
@@ -141,6 +116,25 @@
             this.groupControl3.TabIndex = 2;
             this.groupControl3.Text = "Data";
             // 
+            // edLCP_DATA
+            // 
+            this.edLCP_DATA.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.edLCP_DATA.EditValue = null;
+            this.edLCP_DATA.Location = new System.Drawing.Point(2, 20);
+            this.edLCP_DATA.Name = "edLCP_DATA";
+            this.edLCP_DATA.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.edLCP_DATA.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.edLCP_DATA.Properties.DisplayFormat.FormatString = "";
+            this.edLCP_DATA.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.edLCP_DATA.Properties.EditFormat.FormatString = "";
+            this.edLCP_DATA.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.edLCP_DATA.Properties.Mask.EditMask = "";
+            this.edLCP_DATA.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
+            this.edLCP_DATA.Size = new System.Drawing.Size(105, 20);
+            this.edLCP_DATA.TabIndex = 0;
+            // 
             // groupControl2
             // 
             this.groupControl2.Controls.Add(this.edLCP_QUANTIDADE);
@@ -169,6 +163,16 @@
             this.groupControl1.Size = new System.Drawing.Size(115, 43);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Produto";
+            // 
+            // edPRO_REFEREMCIA
+            // 
+            this.edPRO_REFEREMCIA.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.edPRO_REFEREMCIA.Location = new System.Drawing.Point(2, 20);
+            this.edPRO_REFEREMCIA.Name = "edPRO_REFEREMCIA";
+            this.edPRO_REFEREMCIA.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.edPRO_REFEREMCIA.Size = new System.Drawing.Size(111, 20);
+            this.edPRO_REFEREMCIA.TabIndex = 0;
             // 
             // gridControlEstoque
             // 
@@ -249,32 +253,32 @@
             this.gridColumn6.Visible = true;
             this.gridColumn6.VisibleIndex = 5;
             // 
-            // edPRO_REFEREMCIA
+            // btnAdicionar
             // 
-            this.edPRO_REFEREMCIA.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.edPRO_REFEREMCIA.Location = new System.Drawing.Point(2, 20);
-            this.edPRO_REFEREMCIA.Name = "edPRO_REFEREMCIA";
-            this.edPRO_REFEREMCIA.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.edPRO_REFEREMCIA.Size = new System.Drawing.Size(111, 20);
-            this.edPRO_REFEREMCIA.TabIndex = 0;
+            this.btnAdicionar.Location = new System.Drawing.Point(303, 61);
+            this.btnAdicionar.Name = "btnAdicionar";
+            this.btnAdicionar.Size = new System.Drawing.Size(75, 23);
+            this.btnAdicionar.TabIndex = 4;
+            this.btnAdicionar.Text = "Adicionar";
+            this.btnAdicionar.Click += new System.EventHandler(this.btnAdicionar_Click);
             // 
-            // edLCP_DATA
+            // btnRemover
             // 
-            this.edLCP_DATA.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.edLCP_DATA.EditValue = null;
-            this.edLCP_DATA.Location = new System.Drawing.Point(2, 20);
-            this.edLCP_DATA.Name = "edLCP_DATA";
-            this.edLCP_DATA.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.edLCP_DATA.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.edLCP_DATA.Properties.DisplayFormat.FormatString = "";
-            this.edLCP_DATA.Properties.EditFormat.FormatString = "";
-            this.edLCP_DATA.Properties.Mask.EditMask = "";
-            this.edLCP_DATA.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
-            this.edLCP_DATA.Size = new System.Drawing.Size(105, 20);
-            this.edLCP_DATA.TabIndex = 0;
+            this.btnRemover.Location = new System.Drawing.Point(384, 61);
+            this.btnRemover.Name = "btnRemover";
+            this.btnRemover.Size = new System.Drawing.Size(75, 23);
+            this.btnRemover.TabIndex = 5;
+            this.btnRemover.Text = "Remover";
+            this.btnRemover.Click += new System.EventHandler(this.btnRemover_Click);
+            // 
+            // btnConcluir
+            // 
+            this.btnConcluir.Location = new System.Drawing.Point(465, 61);
+            this.btnConcluir.Name = "btnConcluir";
+            this.btnConcluir.Size = new System.Drawing.Size(75, 23);
+            this.btnConcluir.TabIndex = 7;
+            this.btnConcluir.Text = "Concluir";
+            this.btnConcluir.Click += new System.EventHandler(this.btnConcluir_Click);
             // 
             // FrmEstoque
             // 
@@ -292,16 +296,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.rgLCP_TIPO.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.edLCP_DATA.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edLCP_DATA.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.edLCP_QUANTIDADE.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.edPRO_REFEREMCIA.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlEstoque)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewEstoque)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edPRO_REFEREMCIA.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edLCP_DATA.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edLCP_DATA.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -311,9 +315,6 @@
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.XtraGrid.GridControl gridControlEstoque;
         private DevExpress.XtraGrid.Views.Grid.GridView gridViewEstoque;
-        private DevExpress.XtraEditors.SimpleButton btnConcluir;
-        private DevExpress.XtraEditors.SimpleButton btnRemover;
-        private DevExpress.XtraEditors.SimpleButton btnAdicionar;
         private DevExpress.XtraEditors.GroupControl groupControl4;
         private DevExpress.XtraEditors.RadioGroup rgLCP_TIPO;
         private DevExpress.XtraEditors.GroupControl groupControl3;
@@ -328,5 +329,8 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
         private DevExpress.XtraEditors.DateEdit edLCP_DATA;
         private DevExpress.XtraEditors.ButtonEdit edPRO_REFEREMCIA;
+        private DevExpress.XtraEditors.SimpleButton btnConcluir;
+        private DevExpress.XtraEditors.SimpleButton btnRemover;
+        private DevExpress.XtraEditors.SimpleButton btnAdicionar;
     }
 }
