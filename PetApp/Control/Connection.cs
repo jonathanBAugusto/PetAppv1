@@ -133,6 +133,21 @@ namespace PetApp.Control
             {
                 try
                 {
+                    conn.CreateTable<Fornecedor>();
+                }
+                catch (Exception ex)
+                {
+                    F.WriteLOG("---------------------------\n" + DateTime.Now.ToString() + " Error: " + ex.Message);
+                }
+            }
+            try
+            {
+                conn.CreateTable<Fornecedor>();
+            }
+            catch
+            {
+                try
+                {
                     conn.CreateTable<Racas>();
                 }
                 catch (Exception ex)

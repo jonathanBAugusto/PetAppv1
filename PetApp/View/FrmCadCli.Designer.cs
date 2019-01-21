@@ -31,6 +31,9 @@
             this.edCLI_FANTASIA = new DevExpress.XtraEditors.TextEdit();
             this.edCLI_TEL = new DevExpress.XtraEditors.TextEdit();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.groupControl16 = new DevExpress.XtraEditors.GroupControl();
+            this.picCLI_IMG = new DevExpress.XtraEditors.PictureEdit();
+            this.edCLI_IMG = new DevExpress.XtraEditors.ButtonEdit();
             this.groupControl11 = new DevExpress.XtraEditors.GroupControl();
             this.edCLI_NASC = new DevExpress.XtraEditors.DateEdit();
             this.groupControl10 = new DevExpress.XtraEditors.GroupControl();
@@ -83,10 +86,15 @@
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.openFileDialogImg = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.edCLI_FANTASIA.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.edCLI_TEL.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl16)).BeginInit();
+            this.groupControl16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picCLI_IMG.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edCLI_IMG.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl11)).BeginInit();
             this.groupControl11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.edCLI_NASC.Properties.CalendarTimeProperties)).BeginInit();
@@ -172,6 +180,7 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.groupControl16);
             this.groupControl1.Controls.Add(this.groupControl11);
             this.groupControl1.Controls.Add(this.groupControl10);
             this.groupControl1.Controls.Add(this.groupControl8);
@@ -182,9 +191,43 @@
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(750, 174);
+            this.groupControl1.Size = new System.Drawing.Size(896, 174);
             this.groupControl1.TabIndex = 1;
             this.groupControl1.Text = "Informações do Cliente";
+            // 
+            // groupControl16
+            // 
+            this.groupControl16.Controls.Add(this.picCLI_IMG);
+            this.groupControl16.Controls.Add(this.edCLI_IMG);
+            this.groupControl16.Location = new System.Drawing.Point(748, 25);
+            this.groupControl16.Name = "groupControl16";
+            this.groupControl16.Size = new System.Drawing.Size(137, 143);
+            this.groupControl16.TabIndex = 33;
+            this.groupControl16.Text = "Imagem";
+            // 
+            // picCLI_IMG
+            // 
+            this.picCLI_IMG.Cursor = System.Windows.Forms.Cursors.Default;
+            this.picCLI_IMG.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picCLI_IMG.Location = new System.Drawing.Point(2, 40);
+            this.picCLI_IMG.Name = "picCLI_IMG";
+            this.picCLI_IMG.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.picCLI_IMG.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.picCLI_IMG.Size = new System.Drawing.Size(133, 101);
+            this.picCLI_IMG.TabIndex = 0;
+            this.picCLI_IMG.DoubleClick += new System.EventHandler(this.picCLI_IMG_DoubleClick);
+            // 
+            // edCLI_IMG
+            // 
+            this.edCLI_IMG.Dock = System.Windows.Forms.DockStyle.Top;
+            this.edCLI_IMG.EnterMoveNextControl = true;
+            this.edCLI_IMG.Location = new System.Drawing.Point(2, 20);
+            this.edCLI_IMG.Name = "edCLI_IMG";
+            this.edCLI_IMG.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Search)});
+            this.edCLI_IMG.Size = new System.Drawing.Size(133, 20);
+            this.edCLI_IMG.TabIndex = 0;
+            this.edCLI_IMG.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.edCLI_IMG_ButtonClick);
             // 
             // groupControl11
             // 
@@ -323,7 +366,8 @@
             this.rgCLI_PESTIPO.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.rgCLI_PESTIPO.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
             new DevExpress.XtraEditors.Controls.RadioGroupItem("FIS", "Pessoa Física"),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem("JUR", "Pessoa Jurídica")});
+            new DevExpress.XtraEditors.Controls.RadioGroupItem("JUR", "Pessoa Jurídica"),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem("FOR", "Fornecedor")});
             this.rgCLI_PESTIPO.Size = new System.Drawing.Size(127, 53);
             this.rgCLI_PESTIPO.TabIndex = 0;
             this.rgCLI_PESTIPO.EditValueChanged += new System.EventHandler(this.rgPesTipo_EditValueChanged);
@@ -405,7 +449,7 @@
             this.groupControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.groupControl2.Location = new System.Drawing.Point(0, 399);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(750, 136);
+            this.groupControl2.Size = new System.Drawing.Size(896, 136);
             this.groupControl2.TabIndex = 3;
             this.groupControl2.Text = "Endereço";
             // 
@@ -570,7 +614,7 @@
             this.groupControl3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl3.Location = new System.Drawing.Point(0, 174);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(750, 225);
+            this.groupControl3.Size = new System.Drawing.Size(896, 225);
             this.groupControl3.TabIndex = 2;
             this.groupControl3.Text = "PETS";
             // 
@@ -586,7 +630,7 @@
             this.splitContainerControl1.Panel1.Text = "Panel1";
             this.splitContainerControl1.Panel2.Controls.Add(this.gridControlPet);
             this.splitContainerControl1.Panel2.Text = "Panel2";
-            this.splitContainerControl1.Size = new System.Drawing.Size(746, 203);
+            this.splitContainerControl1.Size = new System.Drawing.Size(892, 203);
             this.splitContainerControl1.SplitterPosition = 52;
             this.splitContainerControl1.TabIndex = 30;
             this.splitContainerControl1.Text = "splitContainerControl1";
@@ -618,7 +662,7 @@
             this.gridControlPet.Name = "gridControlPet";
             this.gridControlPet.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemPictureEditImgPet});
-            this.gridControlPet.Size = new System.Drawing.Size(746, 146);
+            this.gridControlPet.Size = new System.Drawing.Size(892, 146);
             this.gridControlPet.TabIndex = 28;
             this.gridControlPet.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewPet});
@@ -713,11 +757,15 @@
             this.gridColumn6.Visible = true;
             this.gridColumn6.VisibleIndex = 6;
             // 
+            // openFileDialogImg
+            // 
+            this.openFileDialogImg.FileName = "openFileDialog1";
+            // 
             // FrmCadCli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(750, 535);
+            this.ClientSize = new System.Drawing.Size(896, 535);
             this.Controls.Add(this.groupControl3);
             this.Controls.Add(this.groupControl2);
             this.Controls.Add(this.groupControl1);
@@ -728,6 +776,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.edCLI_TEL.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl16)).EndInit();
+            this.groupControl16.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picCLI_IMG.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edCLI_IMG.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl11)).EndInit();
             this.groupControl11.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.edCLI_NASC.Properties.CalendarTimeProperties)).EndInit();
@@ -853,5 +905,9 @@
         private DevExpress.XtraEditors.SimpleButton btnDel;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
         private DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit repositoryItemPictureEditImgPet;
+        private DevExpress.XtraEditors.GroupControl groupControl16;
+        private DevExpress.XtraEditors.PictureEdit picCLI_IMG;
+        private DevExpress.XtraEditors.ButtonEdit edCLI_IMG;
+        private System.Windows.Forms.OpenFileDialog openFileDialogImg;
     }
 }

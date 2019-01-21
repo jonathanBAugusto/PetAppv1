@@ -141,5 +141,11 @@ namespace PetApp
             FrmTipoProduto form = new FrmTipoProduto();
             form.ShowDialog();
         }
+
+        private void accordionControlElement17_Click(object sender, EventArgs e)
+        {
+            SH_FORNECEDORES form = new SH_FORNECEDORES();
+            form.ShowDialog();
+        }
     }
 }

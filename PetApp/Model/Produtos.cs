@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,6 +22,29 @@ namespace PetApp.Model
         public int PRO_TIPO { get; set; }
         public int PRO_FORNECEDOR { get; set; }
         public string PRO_IMAGEM { get; set; }
+
+        private Image pro_IMAGEM;
+        [Ignore]
+        public Image PRO_IMAGEMR
+        {
+            get
+            {
+                string pathImg = System.IO.Path.Combine(F.IMGPATH, PRO_IMAGEM);
+                if (System.IO.File.Exists(pathImg))
+                {
+                    try
+                    {
+                        return Image.FromFile(pathImg);
+                    }
+                    catch
+                    {
+                        return pro_IMAGEM;
+                    }
+                }
+                return pro_IMAGEM;
+            }
+            set { pro_IMAGEM = value; }
+        }
 
         private static Connection CONN;
 

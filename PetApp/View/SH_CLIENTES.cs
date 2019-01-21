@@ -13,6 +13,7 @@ namespace PetApp
 {
     public partial class SH_CLIENTES : DevExpress.XtraEditors.XtraForm
     {
+        int IdCli = 0;
         public SH_CLIENTES()
         {
             InitializeComponent();
@@ -47,10 +48,31 @@ namespace PetApp
 
         private void btnRemCli_Click(object sender, EventArgs e)
         {
-            int IdCli = 0;
             IdCli = F.toInt(gridView1.GetFocusedRowCellValue("CLI_ID"));
             Clientes.Delete( Clientes.Get(IdCli));
             FrmCli_Load(null, null);
+        }
+
+        private void gridControl1_DoubleClick(object sender, EventArgs e)
+        {
+            IdCli = F.toInt(gridView1.GetFocusedRowCellValue("CLI_ID"));
+            FrmCadCli form = new FrmCadCli();
+            form.IdCliAlt = IdCli;
+            form.ShowDialog();
+            if (form.DialogResult == DialogResult.OK)
+            {
+                FrmCli_Load(null, null);
+            }
+        }
+
+        private void btnAltCli_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnInserir_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

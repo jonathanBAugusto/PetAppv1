@@ -5,109 +5,83 @@ using System.Text;
 using System.Threading.Tasks;
 using SQLite;
 using PetApp.Control;
-using System.Drawing;
-
 namespace PetApp.Model
 {
-    [Table("CLIENTE")]
-    public class Clientes
+    [Table("FORNECEDOR")]
+    class Fornecedor
     {
         [PrimaryKey]
         [AutoIncrement]
-        public int CLI_ID { get; set; }
-        public string CLI_FANTASIA { get; set; }
-        public string CLI_RAZAO { get; set; }
-        public string CLI_DDDTEL { get; set; }
-        public string CLI_TEL { get; set; }
-        public string CLI_DDDCEL { get; set; }
-        public string CLI_CEL { get; set; }
-        public string CLI_EMAIL { get; set; }
-        public string CLI_INSCRICAO { get; set; }
-        public string CLI_CNPJ { get; set; }
-        public string CLI_CEP { get; set; }
-        public string CLI_RUA { get; set; }
-        public string CLI_BAIRRO { get; set; }
-        public string CLI_NUMERO { get; set; }
-        public string CLI_NASC { get; set; }
-        public string CLI_PESTIPO { get; set; }
-        public string CLI_IMG { get; set; }
-        public int CID_ID { get; set; }
-
-        private Image cli_IMAGEM;
-        [Ignore]
-        public Image CLI_IMAGEM
-        {
-            get {
-                string pathImg = System.IO.Path.Combine(F.IMGPATH, F.toString(CLI_IMG));
-                if (System.IO.File.Exists(pathImg))
-                {
-                    try
-                    {
-                        return Image.FromFile(pathImg);
-                    }
-                    catch 
-                    {
-                        return cli_IMAGEM;
-                    }
-                }
-                return cli_IMAGEM;
-            }
-            set { cli_IMAGEM = value; }
-        }
+        public int FOR_ID { get; set; }
+        public string FOR_RAZAO { get; set; }
+        public string FOR_FANTASIA { get; set; }
+        public string FOR_CNPJ { get; set; }
+        public string FOR_DDDCEL { get; set; }
+        public string FOR_CEL { get; set; }
+        public string FOR_DDDTEL { get; set; }
+        public string FOR_TEL { get; set; }
+        public string FOR_EMAIL { get; set; }
+        public string FOR_CEP { get; set; }
+        public string FOR_UF { get; set; }
+        public string FOR_RUA { get; set; }
+        public string FOR_BAIRRO { get; set; }
+        public string FOR_COMPLEMENTO { get; set; }
+        public string FOR_NUMERO { get; set; }
+        public string FOR_DATA_CADASTRO { get; set; }
 
         private static Connection CONN;
 
-        public static List<Clientes> Get()
+        public static List<Fornecedor> Get()
         {
             CONN = new Connection();
-            List<Clientes> list = new List<Clientes>();
+            List<Fornecedor> list = new List<Fornecedor>();
 
             try
             {
-                list = CONN.conn.Table<Clientes>().ToList<Clientes>();
+                list = CONN.conn.Table<Fornecedor>().ToList<Fornecedor>();
             }
             catch
             {
                 try
                 {
-                    list = CONN.conn.Table<Clientes>().ToList<Clientes>();
+                    list = CONN.conn.Table<Fornecedor>().ToList<Fornecedor>();
                 }
                 catch (Exception ex)
                 {
                     F.WriteLOG("---------------------------\n" + DateTime.Now.ToString() + " Error: " + ex.Message);
-                    list = new List<Clientes>();
+                    list = new List<Fornecedor>();
                 }
             }
 
             return list;
         }
 
-        public static Clientes Get(int ID)
+        public static Fornecedor Get(int ID)
         {
             CONN = new Connection();
-            Clientes user = new Clientes();
+            Fornecedor user = new Fornecedor();
 
             try
             {
-                user = CONN.conn.Get<Clientes>(ID);
+                user = CONN.conn.Get<Fornecedor>(ID);
             }
             catch
             {
                 try
                 {
-                    user = CONN.conn.Get<Clientes>(ID);
+                    user = CONN.conn.Get<Fornecedor>(ID);
                 }
                 catch (Exception ex)
                 {
                     F.WriteLOG("---------------------------\n" + DateTime.Now.ToString() + " Error: " + ex.Message);
-                    user = new Clientes();
+                    user = new Fornecedor();
                 }
             }
 
             return user;
         }
 
-        public static bool Insert(Clientes user)
+        public static bool Insert(Fornecedor user)
         {
             CONN = new Connection();
             try
@@ -129,7 +103,7 @@ namespace PetApp.Model
             return true;
         }
 
-        public static bool Insert(List<Clientes> user)
+        public static bool Insert(List<Fornecedor> user)
         {
             CONN = new Connection();
             try
@@ -151,7 +125,7 @@ namespace PetApp.Model
             return true;
         }
 
-        public static bool Update(Clientes user)
+        public static bool Update(Fornecedor user)
         {
             CONN = new Connection();
             try
@@ -173,7 +147,7 @@ namespace PetApp.Model
             return true;
         }
 
-        public static bool Update(List<Clientes> user)
+        public static bool Update(List<Fornecedor> user)
         {
             CONN = new Connection();
             try
@@ -195,7 +169,7 @@ namespace PetApp.Model
             return true;
         }
 
-        public static bool Delete(Clientes user)
+        public static bool Delete(Fornecedor user)
         {
             CONN = new Connection();
             try
@@ -217,12 +191,12 @@ namespace PetApp.Model
             return true;
         }
 
-        public static bool Delete(List<Clientes> users)
+        public static bool Delete(List<Fornecedor> users)
         {
             CONN = new Connection();
             try
             {
-                foreach (Clientes user in users)
+                foreach (Fornecedor user in users)
                 {
                     CONN.conn.Delete(user);
                 }
@@ -241,13 +215,13 @@ namespace PetApp.Model
             CONN = new Connection();
             try
             {
-                CONN.conn.DeleteAll<Clientes>();
+                CONN.conn.DeleteAll<Fornecedor>();
             }
             catch
             {
                 try
                 {
-                    CONN.conn.DeleteAll<Clientes>();
+                    CONN.conn.DeleteAll<Fornecedor>();
                 }
                 catch (Exception ex)
                 {

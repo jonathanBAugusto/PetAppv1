@@ -93,6 +93,7 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="Control\Connection.cs" />
+    <Compile Include="Model\Fornecedor.cs" />
     <Compile Include="Model\Produtos.cs" />
     <Compile Include="Model\Racas.cs" />
     <Compile Include="Model\SqliteSequence.cs" />
@@ -182,6 +183,12 @@
     <Compile Include="View\SH_ESTOQUE.Designer.cs">
       <DependentUpon>SH_ESTOQUE.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\SH_FORNECEDORES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SH_FORNECEDORES.Designer.cs">
+      <DependentUpon>SH_FORNECEDORES.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\SH_PETS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -252,6 +259,9 @@
     </Compile>
     <EmbeddedResource Include="View\Servico\frmTipoServico.resx">
       <DependentUpon>frmTipoServico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SH_FORNECEDORES.resx">
+      <DependentUpon>SH_FORNECEDORES.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\SH_PETS.resx">
       <DependentUpon>SH_PETS.cs</DependentUpon>

@@ -46,6 +46,7 @@
             this.accordionControlElement12 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement13 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement14 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement17 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.iSlider = new DevExpress.XtraEditors.Controls.ImageSlider();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.accordionControlElement5 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -87,7 +88,6 @@
             this.accordionControlElement9,
             this.accordionControlElement1,
             this.accordionControlElement16});
-            this.accordionControlElement6.Expanded = true;
             this.accordionControlElement6.Name = "accordionControlElement6";
             this.accordionControlElement6.Text = "Cadastros";
             this.accordionControlElement6.Click += new System.EventHandler(this.accordionControlElement6_Click);
@@ -96,7 +96,7 @@
             // 
             this.accordionControlElement7.Name = "accordionControlElement7";
             this.accordionControlElement7.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement7.Text = "Clientes";
+            this.accordionControlElement7.Text = "Clientes / Fornecedores";
             this.accordionControlElement7.Click += new System.EventHandler(this.accordionControlElement7_Click);
             // 
             // accordionControlElement8
@@ -161,7 +161,8 @@
             this.accordionControlElement4,
             this.accordionControlElement12,
             this.accordionControlElement13,
-            this.accordionControlElement14});
+            this.accordionControlElement14,
+            this.accordionControlElement17});
             this.accordionControlElement3.Expanded = true;
             this.accordionControlElement3.Name = "accordionControlElement3";
             this.accordionControlElement3.Text = "Pesquisas/Listagens";
@@ -194,6 +195,13 @@
             this.accordionControlElement14.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement14.Text = "Produtos";
             this.accordionControlElement14.Click += new System.EventHandler(this.accordionControlElement14_Click);
+            // 
+            // accordionControlElement17
+            // 
+            this.accordionControlElement17.Name = "accordionControlElement17";
+            this.accordionControlElement17.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement17.Text = "Fornecedores";
+            this.accordionControlElement17.Click += new System.EventHandler(this.accordionControlElement17_Click);
             // 
             // iSlider
             // 
@@ -329,6 +337,7 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement15;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement16;
         private DevExpress.XtraBars.Alerter.AlertControl alertControl1;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement17;
     }
 }
 

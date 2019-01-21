@@ -26,9 +26,14 @@ namespace PetApp.View
         private void SH_PRODUTOS_Load(object sender, EventArgs e)
         {
             gridControlProdutos.DataSource = Produtos.Get();
+
             repositoryItemGridLookUpEditTPR.DataSource = TipoProduto.Get();
             repositoryItemGridLookUpEditTPR.ValueMember = "TPR_ID";
             repositoryItemGridLookUpEditTPR.DisplayMember = "TPR_DESCRICAO";
+
+            repositoryItemGridLookUpEditFornecedor.DataSource = Fornecedor.Get();
+            repositoryItemGridLookUpEditFornecedor.ValueMember = "FOR_ID";
+            repositoryItemGridLookUpEditFornecedor.DisplayMember = "FOR_RAZAO";
         }
 
         private void simpleButton3_Click(object sender, EventArgs e)
@@ -39,7 +44,7 @@ namespace PetApp.View
         private void btnRemover_Click(object sender, EventArgs e)
         {
             int IdCli = 0;
-            IdCli = F.toInt(gridView1.GetFocusedRowCellValue("PRO_ID"));
+            IdCli = F.toInt(layoutView1.GetFocusedRowCellValue("PRO_ID"));
             Produtos.Delete(Produtos.Get(IdCli));
             SH_PRODUTOS_Load(null, null);
         }
@@ -47,7 +52,7 @@ namespace PetApp.View
         private void btnAlterar_Click(object sender, EventArgs e)
         {
             FrmProdutos form = new FrmProdutos();
-            form.PROID = F.toInt(gridView1.GetFocusedRowCellValue("PRO_ID"));
+            form.PROID = F.toInt(layoutView1.GetFocusedRowCellValue("PRO_ID"));
             form.ShowDialog();
             if (form.DialogResult == DialogResult.OK)
             {
@@ -64,6 +69,11 @@ namespace PetApp.View
             {
                 SH_PRODUTOS_Load(null, null);
             }
+        }
+
+        private void gridControlProdutos_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
