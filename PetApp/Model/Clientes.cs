@@ -5,11 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using SQLite;
 using PetApp.Control;
+using System.Drawing;
 
 namespace PetApp.Model
 {
     [Table("CLIENTE")]
-    class Clientes
+    public class Clientes
     {
         [PrimaryKey]
         [AutoIncrement]
@@ -29,7 +30,30 @@ namespace PetApp.Model
         public string CLI_NUMERO { get; set; }
         public string CLI_NASC { get; set; }
         public string CLI_PESTIPO { get; set; }
+        public string CLI_IMG { get; set; }
         public int CID_ID { get; set; }
+
+        private Image cli_IMAGEM;
+        [Ignore]
+        public Image CLI_IMAGEM
+        {
+            get {
+                string pathImg = System.IO.Path.Combine(F.IMGPATH, F.toString(CLI_IMG));
+                if (System.IO.File.Exists(pathImg))
+                {
+                    try
+                    {
+                        return Image.FromFile(pathImg);
+                    }
+                    catch 
+                    {
+                        return cli_IMAGEM;
+                    }
+                }
+                return cli_IMAGEM;
+            }
+            set { cli_IMAGEM = value; }
+        }
 
         private static Connection CONN;
 

@@ -70,5 +70,10 @@ namespace PetApp.View
                 SH_PRODUTOS_Load(null, null);
             }
         }
+
+        private void gridControlProdutos_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

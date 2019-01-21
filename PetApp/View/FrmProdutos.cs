@@ -158,6 +158,7 @@ namespace PetApp.View
                 edPRO_IMAGEM.EditValue = F.toString(prods.PRO_IMAGEM);
                 edPRO_REFERENCIA.EditValue = F.toString(prods.PRO_REFERENCIA);
                 edTPR_ID.EditValue = F.toInt(prods.PRO_TIPO);
+                pic_IMAGEM.Image = prods.PRO_IMAGEMR;
             }
             edTPR_ID.Properties.DataSource = TipoProduto.Get();
             edTPR_ID.Properties.ValueMember = "TPR_ID";
