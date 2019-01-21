@@ -290,6 +290,19 @@ namespace PetApp.Model
             CONN = new Connection();
         }
 
+        public static int getIDByRef(string Referencia)
+        {
+            int pro_id = -1;
+            try
+            {
+                pro_id = F.toInt(CONN.conn.Query<List<int>>("SELECT MAX(PRO_ID) PRO_ID FROM PRODUTOS WHERE PRO_REFERENCIA = " + Referencia).LastOrDefault(), -1)
+            }
+            catch 
+            {
+                return -1;
+            }
+        }
+
         public static List<Lancprods> Get()
         {
             CONN = new Connection();

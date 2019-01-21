@@ -260,6 +260,9 @@
     <EmbeddedResource Include="View\Servico\frmTipoServico.resx">
       <DependentUpon>frmTipoServico.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\SH_ESTOQUE.resx">
+      <DependentUpon>SH_ESTOQUE.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\SH_FORNECEDORES.resx">
       <DependentUpon>SH_FORNECEDORES.cs</DependentUpon>
     </EmbeddedResource>
