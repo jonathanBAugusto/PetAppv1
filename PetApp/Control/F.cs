@@ -173,7 +173,7 @@ namespace PetApp
             return age;
         }
 
-        public bool YesNo(string Titulo, string Conteudo, int Foco)
+        public static bool YesNo(string Titulo, string Conteudo, int Foco)
         {
             FrmYN objFrmYN = new FrmYN(Titulo, Conteudo, Foco);
             if (objFrmYN.ShowDialog() == DialogResult.Yes)

@@ -29,7 +29,7 @@ namespace PetApp.Model
         {
             get
             {
-                string pathImg = System.IO.Path.Combine(F.IMGPATH, PRO_IMAGEM);
+                string pathImg = System.IO.Path.Combine(F.IMGPATH, F.toString(PRO_IMAGEM));
                 if (System.IO.File.Exists(pathImg))
                 {
                     try

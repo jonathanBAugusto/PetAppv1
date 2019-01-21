@@ -56,11 +56,14 @@ namespace PetApp
         //
         private void FrmCadCli_Load(object sender, EventArgs e)
         {
-            rgCLI_PESTIPO.EditValue = "FIS";
+            if (IdCliAlt == 0)
+            {
+                rgCLI_PESTIPO.EditValue = "FIS";
+            }
             if (IdCliAlt != 0)
             {
                 cliAltera = Clientes.Get(IdCliAlt);
-                rgCLI_PESTIPO.EditValue = F.toInt(cliAltera.CLI_PESTIPO);
+                rgCLI_PESTIPO.EditValue = F.toString(cliAltera.CLI_PESTIPO);
                 edCLI_RAZAO.EditValue = F.toString(cliAltera.CLI_RAZAO);
                 edCLI_FANTASIA.EditValue = F.toString(cliAltera.CLI_FANTASIA);
                 edCLI_EMAIL.EditValue = F.toString(cliAltera.CLI_EMAIL);
@@ -89,6 +92,7 @@ namespace PetApp
         {
             if (F.toString(rgCLI_PESTIPO.EditValue) == "JUR")
             {
+                this.Text = "Cadastro de Cliente Jurídico";
                 edCLI_NASC.Enabled = false;
                 edCLI_INSCRICAO.Enabled = true;
                 edCLI_FANTASIA.Enabled = true;
@@ -99,11 +103,23 @@ namespace PetApp
             }
             else if(F.toString(rgCLI_PESTIPO.EditValue) == "FIS")
             {
+                this.Text = "Cadastro de Cliente Físico";
                 edCLI_INSCRICAO.Enabled = false;
                 edCLI_CNPJ.Enabled = false;
                 edCLI_RAZAO.Enabled = true;
                 edCLI_FANTASIA.Enabled = false;
                 edCLI_NASC.Enabled = true;
+                btnAdd.Enabled = true;
+                btnDel.Enabled = true;
+            }
+            if (F.toString(rgCLI_PESTIPO.EditValue) == "FOR")
+            {
+                this.Text = "Cadastro de Fornecedor";
+                edCLI_NASC.Enabled = false;
+                edCLI_INSCRICAO.Enabled = true;
+                edCLI_FANTASIA.Enabled = true;
+                edCLI_CNPJ.Enabled = true;
+                edCLI_RAZAO.Enabled = true;
                 btnAdd.Enabled = true;
                 btnDel.Enabled = true;
             }
@@ -116,6 +132,7 @@ namespace PetApp
                 btnDel.Enabled = false;
                 
             }
+            groupControl3.Enabled = F.toString(rgCLI_PESTIPO.EditValue) != "FOR";
         }
 
         private void edCEP_Validated(object sender, EventArgs e)
@@ -151,7 +168,7 @@ namespace PetApp
                     CLI_CEL = F.toString(edCLI_CEL.EditValue),
                     CLI_DDDTEL = F.toString(edDDDTel.EditValue),
                     CLI_TEL = F.toString(edCLI_TEL.EditValue),
-                    CLI_PESTIPO = (F.toString(rgCLI_PESTIPO.EditValue) == "FIS" ? "Física" : "Jurídica"),
+                    CLI_PESTIPO = F.toString(rgCLI_PESTIPO.EditValue),
                     CLI_CEP = F.toString(edCEP.EditValue),
                     CLI_RUA = F.toString(edRua.EditValue),
                     CLI_BAIRRO = F.toString(edBairro.EditValue),
@@ -228,34 +245,35 @@ namespace PetApp
             }
             if (F.toString(rgCLI_PESTIPO.EditValue) == "FOR")
             {
-                Fornecedor fornecedor = new Fornecedor
+                if (F.toString(edCLI_RAZAO) == "")
                 {
-                    FOR_RAZAO = F.toString(edCLI_RAZAO.EditValue),
-                    FOR_FANTASIA = F.toString(edCLI_FANTASIA.EditValue),
-                    FOR_DDDCEL = F.toString(edDDDCel.EditValue),
-                    FOR_CEL = F.toString(edCLI_CEL.EditValue),
-                    FOR_DDDTEL = F.toString(edDDDTel.EditValue),
-                    FOR_TEL = F.toString(edCLI_TEL.EditValue),
-                    FOR_EMAIL = F.toString(edCLI_EMAIL.EditValue),
-                    FOR_CNPJ = F.toString(edCLI_CNPJ.EditValue),
-                    FOR_CEP = F.toString(edCEP.EditValue),
-                    FOR_UF = F.toString(edEstado.EditValue),
-                    FOR_RUA = F.toString(edRua.EditValue),
-                    FOR_NUMERO = F.toString(edNumero.EditValue),
-                    FOR_COMPLEMENTO = F.toString(edComplemento.EditValue),
-                    FOR_BAIRRO = F.toString(edBairro.EditValue),
-                    FOR_DATA_CADASTRO = F.toString(DateTime.Now.ToShortDateString())
-                };
-                if (Fornecedor.Insert(fornecedor))
-                {
-                    F.Aviso("Fornecedor Cadastrado com sucesso");
-                    Close();
-                    return;
+                    F.Aviso("Por favor, Informe a Razão Social do Fornecedor");
+                    edCLI_RAZAO.Focus();
                 }
-                else
+                if (F.toString(edCLI_FANTASIA.EditValue) == "")
                 {
-                    F.Aviso("Erro ao cadastrar fornecedor!");
-                    return;
+                    F.Aviso("Por favor, informe o nome fantasia do Fornecedor");
+                    edCLI_FANTASIA.Focus();
+                }
+                if (F.toString(edCLI_INSCRICAO) == "")
+                {
+                    F.Aviso("Por Favor, informe a Inscrição Estadual do Fornecedor");
+                    edCLI_INSCRICAO.Focus();
+                }
+                if (F.toString(edCLI_TEL.EditValue) == "" && F.toString(edCLI_CEL.EditValue) == ""
+                && F.toString(edCLI_EMAIL.EditValue) == "")
+                {
+                    F.Aviso("Por favor, informa ao menos uma forma de contato.");
+                }
+                if (F.toString(edDDDCel.EditValue) == "" && F.toString(edCLI_CEL.EditValue) != "")
+                {
+                    F.Aviso("Por Favor, Informe o DDD do celular.");
+                    edDDDCel.Focus();
+                }
+                if (F.toString(edDDDTel.EditValue) == "" && F.toString(edCLI_TEL.EditValue) != "")
+                {
+                    F.Aviso("Por Favor, Informe o DDD do telefone.");
+                    edDDDTel.Focus();
                 }
             }
             Clientes cliente = new Clientes
@@ -268,7 +286,7 @@ namespace PetApp
                 CLI_CEL = F.toString(edCLI_CEL.EditValue),
                 CLI_DDDTEL = F.toString(edDDDTel.EditValue),
                 CLI_TEL = F.toString(edCLI_TEL.EditValue),
-                CLI_PESTIPO = (F.toString(rgCLI_PESTIPO.EditValue) == "FIS" ? "Física" : "Jurídica"),
+                CLI_PESTIPO = F.toString(rgCLI_PESTIPO.EditValue),
                 CLI_CEP = F.toString(edCEP.EditValue),
                 CLI_RUA = F.toString(edRua.EditValue),
                 CLI_BAIRRO = F.toString(edBairro.EditValue),
@@ -277,29 +295,30 @@ namespace PetApp
                 CID_ID = F.toInt(edCidade.EditValue),
                 CLI_INSCRICAO = F.toString(edCLI_INSCRICAO.EditValue),
                 CLI_IMG = F.toString(edCLI_IMG.EditValue)
-                
-                
             };
             if (Clientes.Insert(cliente))
             {
-                foreach (Pets pet in pets)
+                if (groupControl3.Enabled = F.toString(rgCLI_PESTIPO.EditValue) != "FOR")
                 {
-                    Pets petAdd = new Pets
+                    foreach (Pets pet in pets)
                     {
-                        PET_COR = pet.PET_COR,
-                        PET_RACA = pet.PET_RACA,
-                        PET_OBS = pet.PET_OBS,
-                        PET_NOME = pet.PET_NOME,
-                        PET_NAS = pet.PET_NAS,
-                        PET_IMG = pet.PET_IMG,
-                        CLI_ID = cliente.CLI_ID,
-                        
-                    };
-                    Pets.Insert(petAdd);
-                    
+                        Pets petAdd = new Pets
+                        {
+                            PET_COR = pet.PET_COR,
+                            PET_RACA = pet.PET_RACA,
+                            PET_OBS = pet.PET_OBS,
+                            PET_NOME = pet.PET_NOME,
+                            PET_NAS = pet.PET_NAS,
+                            PET_IMG = pet.PET_IMG,
+                            CLI_ID = cliente.CLI_ID,
+
+                        };
+                        Pets.Insert(petAdd);
+                    }
                 }
 
                 F.Aviso("Cliente Cadastrado com Sucesso!");
+                DialogResult = DialogResult.OK;
                 Close();
 
             }

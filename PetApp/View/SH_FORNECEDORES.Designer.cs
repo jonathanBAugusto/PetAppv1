@@ -52,16 +52,16 @@
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.ID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl11)).BeginInit();
             this.groupControl11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).BeginInit();
@@ -317,6 +317,15 @@
             this.gridColumn3.VisibleIndex = 1;
             this.gridColumn3.Width = 109;
             // 
+            // gridColumn2
+            // 
+            this.gridColumn2.Caption = "Nome fantasia";
+            this.gridColumn2.FieldName = "FOR_FANTASIA";
+            this.gridColumn2.Name = "gridColumn2";
+            this.gridColumn2.Visible = true;
+            this.gridColumn2.VisibleIndex = 2;
+            this.gridColumn2.Width = 109;
+            // 
             // gridColumn6
             // 
             this.gridColumn6.Caption = "CELULAR";
@@ -343,6 +352,42 @@
             this.gridColumn1.Visible = true;
             this.gridColumn1.VisibleIndex = 5;
             this.gridColumn1.Width = 109;
+            // 
+            // gridColumn4
+            // 
+            this.gridColumn4.Caption = "CEP";
+            this.gridColumn4.FieldName = "FOR_CEP";
+            this.gridColumn4.Name = "gridColumn4";
+            this.gridColumn4.Visible = true;
+            this.gridColumn4.VisibleIndex = 6;
+            this.gridColumn4.Width = 109;
+            // 
+            // gridColumn9
+            // 
+            this.gridColumn9.Caption = "BAIRRO";
+            this.gridColumn9.FieldName = "FOR_BAIRRO";
+            this.gridColumn9.Name = "gridColumn9";
+            this.gridColumn9.Visible = true;
+            this.gridColumn9.VisibleIndex = 7;
+            this.gridColumn9.Width = 109;
+            // 
+            // gridColumn5
+            // 
+            this.gridColumn5.Caption = "RUA";
+            this.gridColumn5.FieldName = "FOR_RUA";
+            this.gridColumn5.Name = "gridColumn5";
+            this.gridColumn5.Visible = true;
+            this.gridColumn5.VisibleIndex = 8;
+            this.gridColumn5.Width = 109;
+            // 
+            // gridColumn8
+            // 
+            this.gridColumn8.Caption = "NUMERO";
+            this.gridColumn8.FieldName = "FOR_NUMERO";
+            this.gridColumn8.Name = "gridColumn8";
+            this.gridColumn8.Visible = true;
+            this.gridColumn8.VisibleIndex = 9;
+            this.gridColumn8.Width = 118;
             // 
             // groupControl1
             // 
@@ -379,51 +424,6 @@
             this.splitContainerControl1.SplitterPosition = 135;
             this.splitContainerControl1.TabIndex = 81;
             this.splitContainerControl1.Text = "splitContainerControl1";
-            // 
-            // gridColumn2
-            // 
-            this.gridColumn2.Caption = "Nome fantasia";
-            this.gridColumn2.FieldName = "FOR_FANTASIA";
-            this.gridColumn2.Name = "gridColumn2";
-            this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 2;
-            this.gridColumn2.Width = 109;
-            // 
-            // gridColumn4
-            // 
-            this.gridColumn4.Caption = "CEP";
-            this.gridColumn4.FieldName = "FOR_CEP";
-            this.gridColumn4.Name = "gridColumn4";
-            this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 6;
-            this.gridColumn4.Width = 109;
-            // 
-            // gridColumn5
-            // 
-            this.gridColumn5.Caption = "RUA";
-            this.gridColumn5.FieldName = "FOR_RUA";
-            this.gridColumn5.Name = "gridColumn5";
-            this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 8;
-            this.gridColumn5.Width = 109;
-            // 
-            // gridColumn8
-            // 
-            this.gridColumn8.Caption = "NUMERO";
-            this.gridColumn8.FieldName = "FOR_NUMERO";
-            this.gridColumn8.Name = "gridColumn8";
-            this.gridColumn8.Visible = true;
-            this.gridColumn8.VisibleIndex = 9;
-            this.gridColumn8.Width = 118;
-            // 
-            // gridColumn9
-            // 
-            this.gridColumn9.Caption = "BAIRRO";
-            this.gridColumn9.FieldName = "FOR_BAIRRO";
-            this.gridColumn9.Name = "gridColumn9";
-            this.gridColumn9.Visible = true;
-            this.gridColumn9.VisibleIndex = 7;
-            this.gridColumn9.Width = 109;
             // 
             // SH_FORNECEDORES
             // 

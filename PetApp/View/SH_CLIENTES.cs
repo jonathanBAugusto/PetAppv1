@@ -38,19 +38,23 @@ namespace PetApp
 
         private void simpleButton1_Click(object sender, EventArgs e)
         {
-            gridControl1.DataSource = Clientes.Get();
+
         }
 
         private void FrmCli_Load(object sender, EventArgs e)
         {
-            gridControl1.DataSource = Clientes.Get();
+            gridControl1.DataSource = Clientes.Get(" AND CLI_PESTIPO <> 'FOR'");
         }
 
         private void btnRemCli_Click(object sender, EventArgs e)
         {
             IdCli = F.toInt(gridView1.GetFocusedRowCellValue("CLI_ID"));
-            Clientes.Delete( Clientes.Get(IdCli));
-            FrmCli_Load(null, null);
+            if (F.YesNo("", "Deseja realmente excluir este cliente?", 1))
+            {
+
+                Clientes.Delete(Clientes.Get(IdCli));
+                FrmCli_Load(null, null);
+            }
         }
 
         private void gridControl1_DoubleClick(object sender, EventArgs e)
@@ -72,7 +76,53 @@ namespace PetApp
 
         private void btnInserir_Click_1(object sender, EventArgs e)
         {
+            FrmCadCli form = new FrmCadCli();
+            form.ShowDialog();
+            if (form.DialogResult == DialogResult.OK)
+            {
+                FrmCli_Load(null,null);
+            }
+        }
 
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+            StringBuilder filtro = new StringBuilder();
+            if (F.toString(edCLI_FANTASIA.EditValue) != "")
+            {
+                filtro.Append(" AND CLI_FANTASIA = '" + F.toString(edCLI_FANTASIA.EditValue) + "' ");
+            }
+            if (F.toString(edCLI_RAZAO.EditValue) != "")
+            {
+                filtro.Append(" AND CLI_RAZAO = '" + F.toString(edCLI_RAZAO.EditValue) + "' ");
+            }
+            if (F.toString(edINSCRICAO.EditValue) != "")
+            {
+                filtro.Append(" AND INSCRICAO = '" + F.toString(edINSCRICAO.EditValue) + "' ");
+            }
+            if (F.toString(edCLI_CNPJ.EditValue) != "")
+            {
+                filtro.Append(" AND CLI_CNPJ = '" + F.toString(edCLI_CNPJ.EditValue) + "' ");
+            }
+            if (F.toString(edCLI_EMAIL.EditValue) != "")
+            {
+                filtro.Append(" AND CLI_EMAIL = '" + F.toString(edCLI_EMAIL.EditValue) + "' ");
+            }
+            if (F.toString(edCLI_NASC.EditValue) != "")
+            {
+                filtro.Append(" AND CLI_NASC = '" + F.toString(edCLI_NASC.EditValue) + "' ");
+            }
+            if (F.toString(edCLI_CEP.EditValue) != "")
+            {
+                filtro.Append(" AND CLI_CEP = '" + F.toString(edCLI_CEP.EditValue) + "' ");
+            }
+            if (F.toString(rgCLI_PESTIPO.EditValue) != "")
+            {
+                filtro.Append(" AND CLI_PESTIPO = '" + F.toString(rgCLI_PESTIPO.EditValue) + "' ");
+            }
+
+            List<Clientes> listCliente = new List<Clientes>();
+            listCliente = Clientes.Get(filtro.ToString());
+            gridControl1.DataSource = listCliente;
         }
     }
 }

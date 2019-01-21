@@ -259,9 +259,9 @@
             this.groupControl10.Controls.Add(this.groupControl13);
             this.groupControl10.Controls.Add(this.groupControl12);
             this.groupControl10.Controls.Add(this.groupControl9);
-            this.groupControl10.Location = new System.Drawing.Point(6, 92);
+            this.groupControl10.Location = new System.Drawing.Point(6, 93);
             this.groupControl10.Name = "groupControl10";
-            this.groupControl10.Size = new System.Drawing.Size(598, 76);
+            this.groupControl10.Size = new System.Drawing.Size(598, 75);
             this.groupControl10.TabIndex = 30;
             this.groupControl10.Text = "Contatos";
             // 
@@ -411,10 +411,10 @@
             // groupControl5
             // 
             this.groupControl5.Controls.Add(this.edCLI_RAZAO);
-            this.groupControl5.Location = new System.Drawing.Point(161, 24);
+            this.groupControl5.Location = new System.Drawing.Point(164, 25);
             this.groupControl5.Name = "groupControl5";
             this.groupControl5.Padding = new System.Windows.Forms.Padding(2);
-            this.groupControl5.Size = new System.Drawing.Size(152, 48);
+            this.groupControl5.Size = new System.Drawing.Size(149, 47);
             this.groupControl5.TabIndex = 29;
             this.groupControl5.Text = "Razão Social";
             // 
@@ -423,16 +423,16 @@
             this.edCLI_RAZAO.Dock = System.Windows.Forms.DockStyle.Fill;
             this.edCLI_RAZAO.Location = new System.Drawing.Point(4, 22);
             this.edCLI_RAZAO.Name = "edCLI_RAZAO";
-            this.edCLI_RAZAO.Size = new System.Drawing.Size(144, 20);
+            this.edCLI_RAZAO.Size = new System.Drawing.Size(141, 20);
             this.edCLI_RAZAO.TabIndex = 8;
             // 
             // groupControl4
             // 
             this.groupControl4.Controls.Add(this.edCLI_FANTASIA);
-            this.groupControl4.Location = new System.Drawing.Point(6, 24);
+            this.groupControl4.Location = new System.Drawing.Point(6, 25);
             this.groupControl4.Name = "groupControl4";
             this.groupControl4.Padding = new System.Windows.Forms.Padding(2);
-            this.groupControl4.Size = new System.Drawing.Size(152, 48);
+            this.groupControl4.Size = new System.Drawing.Size(152, 47);
             this.groupControl4.TabIndex = 28;
             this.groupControl4.Text = "Nome Fantasia";
             // 

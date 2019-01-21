@@ -28,9 +28,11 @@ namespace PetApp.Model
         public string CLI_RUA { get; set; }
         public string CLI_BAIRRO { get; set; }
         public string CLI_NUMERO { get; set; }
+        public string CLI_COMPLEMENTO { get; set; }
         public string CLI_NASC { get; set; }
         public string CLI_PESTIPO { get; set; }
         public string CLI_IMG { get; set; }
+        public string CLI_DATA_CADASTRO { get; set; }
         public int CID_ID { get; set; }
 
         private Image cli_IMAGEM;
@@ -56,6 +58,14 @@ namespace PetApp.Model
         }
 
         private static Connection CONN;
+
+        public static List<Clientes> Get(string Filtro)
+        {
+            CONN = new Connection();
+            List<Clientes> list = new List<Clientes>();
+            list = CONN.conn.Query<Clientes>("SELECT * FROM CLIENTE WHERE CLI_ID >= 0 " + Filtro);
+            return list;
+        }
 
         public static List<Clientes> Get()
         {

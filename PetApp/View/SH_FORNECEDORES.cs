@@ -21,14 +21,14 @@ namespace PetApp.View
 
         private void SH_FORNECEDORES_Load(object sender, EventArgs e)
         {
-            gridControlFornecedores.DataSource = Fornecedor.Get();
+            gridControlFornecedores.DataSource = Clientes.Get(" AND CLI_PESTIPO = 'FOR'");
         }
 
         private void btnRemCli_Click(object sender, EventArgs e)
         {
             int IdFor = 0;
             IdFor = F.toInt(gridView1.GetFocusedRowCellValue("FOR_ID"));
-            Fornecedor.Delete(Fornecedor.Get(IdFor));
+            Clientes.Delete(Clientes.Get(IdFor));
             SH_FORNECEDORES_Load(null, null);
         }
 

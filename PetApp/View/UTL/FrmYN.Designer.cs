@@ -29,27 +29,27 @@
         private void InitializeComponent()
         {
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.btnSim = new DevExpress.XtraEditors.SimpleButton();
-            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.edConteudo = new DevExpress.XtraEditors.MemoEdit();
             this.btnNao = new DevExpress.XtraEditors.SimpleButton();
+            this.btnSim = new DevExpress.XtraEditors.SimpleButton();
+            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.emptySpaceItem4 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.edConteudo = new DevExpress.XtraEditors.MemoEdit();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.edConteudo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edConteudo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,6 +65,39 @@
             this.layoutControl1.Size = new System.Drawing.Size(288, 108);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
+            // 
+            // edConteudo
+            // 
+            this.edConteudo.Enabled = false;
+            this.edConteudo.EnterMoveNextControl = true;
+            this.edConteudo.Location = new System.Drawing.Point(12, 12);
+            this.edConteudo.Name = "edConteudo";
+            this.edConteudo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.edConteudo.Properties.ReadOnly = true;
+            this.edConteudo.Properties.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.edConteudo.Size = new System.Drawing.Size(264, 48);
+            this.edConteudo.StyleController = this.layoutControl1;
+            this.edConteudo.TabIndex = 6;
+            // 
+            // btnNao
+            // 
+            this.btnNao.Location = new System.Drawing.Point(165, 74);
+            this.btnNao.Name = "btnNao";
+            this.btnNao.Size = new System.Drawing.Size(81, 22);
+            this.btnNao.StyleController = this.layoutControl1;
+            this.btnNao.TabIndex = 5;
+            this.btnNao.Text = "Não";
+            this.btnNao.Click += new System.EventHandler(this.btnNao_Click);
+            // 
+            // btnSim
+            // 
+            this.btnSim.Location = new System.Drawing.Point(43, 74);
+            this.btnSim.Name = "btnSim";
+            this.btnSim.Size = new System.Drawing.Size(85, 22);
+            this.btnSim.StyleController = this.layoutControl1;
+            this.btnSim.TabIndex = 4;
+            this.btnSim.Text = "Sim";
+            this.btnSim.Click += new System.EventHandler(this.btnSim_Click);
             // 
             // layoutControlGroup1
             // 
@@ -82,16 +115,6 @@
             this.layoutControlGroup1.Size = new System.Drawing.Size(288, 108);
             this.layoutControlGroup1.TextVisible = false;
             // 
-            // btnSim
-            // 
-            this.btnSim.Location = new System.Drawing.Point(43, 74);
-            this.btnSim.Name = "btnSim";
-            this.btnSim.Size = new System.Drawing.Size(85, 22);
-            this.btnSim.StyleController = this.layoutControl1;
-            this.btnSim.TabIndex = 4;
-            this.btnSim.Text = "Sim";
-            this.btnSim.Click += new System.EventHandler(this.btnSim_Click);
-            // 
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.btnSim;
@@ -101,16 +124,6 @@
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
-            // btnNao
-            // 
-            this.btnNao.Location = new System.Drawing.Point(165, 74);
-            this.btnNao.Name = "btnNao";
-            this.btnNao.Size = new System.Drawing.Size(81, 22);
-            this.btnNao.StyleController = this.layoutControl1;
-            this.btnNao.TabIndex = 5;
-            this.btnNao.Text = "Não";
-            this.btnNao.Click += new System.EventHandler(this.btnNao_Click);
-            // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.btnNao;
@@ -119,14 +132,6 @@
             this.layoutControlItem2.Size = new System.Drawing.Size(85, 26);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
-            // 
-            // emptySpaceItem2
-            // 
-            this.emptySpaceItem2.AllowHotTrack = false;
-            this.emptySpaceItem2.Location = new System.Drawing.Point(120, 62);
-            this.emptySpaceItem2.Name = "emptySpaceItem2";
-            this.emptySpaceItem2.Size = new System.Drawing.Size(33, 26);
-            this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
             // emptySpaceItem3
             // 
@@ -148,6 +153,14 @@
             this.emptySpaceItem4.Text = "emptySpaceItem2";
             this.emptySpaceItem4.TextSize = new System.Drawing.Size(0, 0);
             // 
+            // emptySpaceItem2
+            // 
+            this.emptySpaceItem2.AllowHotTrack = false;
+            this.emptySpaceItem2.Location = new System.Drawing.Point(120, 62);
+            this.emptySpaceItem2.Name = "emptySpaceItem2";
+            this.emptySpaceItem2.Size = new System.Drawing.Size(33, 26);
+            this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
+            // 
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
@@ -155,19 +168,6 @@
             this.emptySpaceItem1.Name = "emptySpaceItem1";
             this.emptySpaceItem1.Size = new System.Drawing.Size(268, 10);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // edConteudo
-            // 
-            this.edConteudo.Enabled = false;
-            this.edConteudo.EnterMoveNextControl = true;
-            this.edConteudo.Location = new System.Drawing.Point(12, 12);
-            this.edConteudo.Name = "edConteudo";
-            this.edConteudo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.edConteudo.Properties.ReadOnly = true;
-            this.edConteudo.Properties.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.edConteudo.Size = new System.Drawing.Size(264, 48);
-            this.edConteudo.StyleController = this.layoutControl1;
-            this.edConteudo.TabIndex = 6;
             // 
             // layoutControlItem3
             // 
@@ -184,18 +184,20 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(288, 108);
             this.Controls.Add(this.layoutControl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FrmYN";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Titulo";
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.edConteudo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edConteudo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             this.ResumeLayout(false);
 

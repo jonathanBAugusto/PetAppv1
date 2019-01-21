@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using SQLite;
 using PetApp.Control;
+using System.Drawing;
+
 namespace PetApp.Model
 {
     [Table("FORNECEDOR")]
@@ -28,6 +30,30 @@ namespace PetApp.Model
         public string FOR_COMPLEMENTO { get; set; }
         public string FOR_NUMERO { get; set; }
         public string FOR_DATA_CADASTRO { get; set; }
+        public string FOR_IMG { get; set; }
+
+        private Image for_IMAGEM;
+        [Ignore]
+        public Image FOR_IMAGEM
+        {
+            get
+            {
+                string pathImg = System.IO.Path.Combine(F.IMGPATH, F.toString(FOR_IMG));
+                if (System.IO.File.Exists(pathImg))
+                {
+                    try
+                    {
+                        return Image.FromFile(pathImg);
+                    }
+                    catch
+                    {
+                        return for_IMAGEM;
+                    }
+                }
+                return for_IMAGEM;
+            }
+            set { for_IMAGEM = value; }
+        }
 
         private static Connection CONN;
 
