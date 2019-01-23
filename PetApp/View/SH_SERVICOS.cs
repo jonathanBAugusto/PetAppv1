@@ -94,7 +94,7 @@ namespace PetApp.View
             }
             if (F.toString(cbEstagio.EditValue) != "")
             {
-                filtro.Append(" AND SER_ESTAGIO = '" + F.toInt(cbEstagio.EditValue) + "' ");
+                filtro.Append(" AND SER_ESTAGIO = '" + F.toString(cbEstagio.EditValue) + "' ");
             }
             List<Servicos> listServico = new List<Servicos>();
             listServico = Servicos.Get(filtro.ToString());
