@@ -18,7 +18,7 @@ namespace PetApp.View
         string img = "";
         int tipo = 0;
 
-        public int PRO_ID = 0;
+        public string PRO_ID = "";
         public bool pesquisa = false;
         public SH_PRODUTOS()
         {
@@ -82,6 +82,30 @@ namespace PetApp.View
         private void btnPesq_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnOK_Click(object sender, EventArgs e)
+        {
+            Produtos objSelec = new Produtos();
+            try
+            {
+                objSelec = gridView2.GetFocusedRow() as Produtos;
+
+                PRO_ID = F.toInt(objSelec.PRO_REFERENCIA);
+                DialogResult = DialogResult.OK;
+                this.Close();
+            }
+            catch 
+            {
+                objSelec = new Produtos();
+            }
+
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            DialogResult = DialogResult.Cancel;
+            this.Close();
         }
     }
 }

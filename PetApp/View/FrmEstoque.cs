@@ -90,7 +90,8 @@ namespace PetApp.View
             SH_PRODUTOS obj = new SH_PRODUTOS();
             obj.pesquisa = true;
             obj.ShowDialog();
-            int PRO_ID = obj.PRO_ID;
+            string PRO_REFERENCIA = F.toString(obj.PRO_REFERENCIA);
+            edPRO_REFERENCIA.EditValue = PRO_REFERENCIA; 
         }
     }
 }
