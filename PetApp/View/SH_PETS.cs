@@ -78,9 +78,9 @@ namespace PetApp.View
             {
                 filtro.Append(" AND PET_ID = '" + F.toInt(edPET_ID.EditValue) + "' ");
             }
-            List<Pets> listCliente = new List<Pets>();
-            listCliente = Pets.Get(filtro.ToString());
-            gridControlPets.DataSource = listCliente;
+            List<Pets> listPet = new List<Pets>();
+            listPet = Pets.Get(filtro.ToString());
+            gridControlPets.DataSource = listPet;
         }
 
         private void alterarToolStripMenuItem_Click(object sender, EventArgs e)

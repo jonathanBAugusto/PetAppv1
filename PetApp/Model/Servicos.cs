@@ -26,6 +26,14 @@ namespace PetApp.Model
 
         private static Connection CONN;
 
+        public static List<Servicos> Get(string Filtro)
+        {
+            CONN = new Connection();
+            List<Servicos> list = new List<Servicos>();
+            list = CONN.conn.Query<Servicos>("SELECT * FROM SERVICO WHERE SER_ID >= 0 " + Filtro);
+            return list;
+        }
+
         public static List<Servicos> Get()
         {
             CONN = new Connection();

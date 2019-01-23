@@ -39,13 +39,13 @@ namespace PetApp.View
             repositoryItemGridLookUpEditPets.ValueMember = "PET_ID";
             repositoryItemGridLookUpEditPets.DisplayMember = "PET_NOME";
 
-            PET_ID.Properties.DataSource = Pets.Get();
-            PET_ID.Properties.ValueMember = "PET_ID";
-            PET_ID.Properties.DisplayMember = "PET_NOME";
+            edPET_ID.Properties.DataSource = Pets.Get();
+            edPET_ID.Properties.ValueMember = "PET_ID";
+            edPET_ID.Properties.DisplayMember = "PET_NOME";
 
-            CLI_ID.Properties.DataSource = Clientes.Get();
-            CLI_ID.Properties.ValueMember = "CLI_ID";
-            CLI_ID.Properties.DisplayMember = "CLI_RAZAO";
+            edCLI_ID.Properties.DataSource = Clientes.Get();
+            edCLI_ID.Properties.ValueMember = "CLI_ID";
+            edCLI_ID.Properties.DisplayMember = "CLI_RAZAO";
         }
 
         private void btnAlterar_Click(object sender, EventArgs e)
@@ -57,6 +57,30 @@ namespace PetApp.View
         {
             FrmServicos form = new FrmServicos();
             form.Show();
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            StringBuilder filtro = new StringBuilder();
+            if (F.toString(edCLI_ID.EditValue) != "")
+            {
+                filtro.Append(" AND CLI_ID = '" + F.toInt(edCLI_ID.EditValue) + "' ");
+            }
+            if (F.toString(edPET_ID.EditValue) != "")
+            {
+                filtro.Append(" AND PET_ID = '" + F.toInt(edPET_ID.EditValue) + "' ");
+            }
+            if (F.toString(edSER_DATA_CAD.EditValue) != "")
+            {
+                filtro.Append(" AND SER_DATA_CAD = '" + F.toString(edSER_DATA_CAD.EditValue) + "' ");
+            }
+            if (F.toString(edSER_VALOR_TOTAL.EditValue) != "")
+            {
+                filtro.Append(" AND SER_VALOR_TOTAL = '" + F.toDouble(edSER_VALOR_TOTAL.EditValue) + "' ");
+            }
+            List<Servicos> listServico = new List<Servicos>();
+            listServico = Servicos.Get(filtro.ToString());
+            gridControlServicos.DataSource = listServico;
         }
     }
 }
