@@ -297,6 +297,9 @@ namespace PetApp.Model
         public DateTime LCP_DATA { get; set; }
         public string LCP_TIPO { get; set; }
         public int PRO_ID { get; set; }
+
+
+
         private string pro_REFERENCIA;
         [Ignore]
         public string PRO_REFERENCIA

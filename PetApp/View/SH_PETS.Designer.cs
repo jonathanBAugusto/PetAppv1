@@ -28,27 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupControl9 = new DevExpress.XtraEditors.GroupControl();
             this.gridControlPets = new DevExpress.XtraGrid.GridControl();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.alterarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.layoutView1 = new DevExpress.XtraGrid.Views.Layout.LayoutView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
+            this.layoutViewField_gridColumn1 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
+            this.layoutViewField_gridColumn2 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
+            this.layoutViewField_gridColumn3 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
+            this.repositoryItemGridLookUpEditRaca = new DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.layoutViewField_gridColumn4 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
             this.repositoryItemGridLookUpEditDono = new DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit();
             this.repositoryItemGridLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.layoutViewField_gridColumn5 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
+            this.layoutViewField_gridColumn6 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
             this.tileViewColumn1 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
+            this.layoutViewField_tileViewColumn1 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
             this.layoutViewColumn1 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
             this.repositoryItemPictureEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit();
+            this.layoutViewField_layoutViewColumn1 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.layoutViewCard1 = new DevExpress.XtraGrid.Views.Layout.LayoutViewCard();
             this.repositoryItemPictureEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit();
             this.repositoryItemImageEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemImageEdit();
             this.repositoryItemHypertextLabel1 = new DevExpress.XtraEditors.Repository.RepositoryItemHypertextLabel();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnPesq = new DevExpress.XtraEditors.SimpleButton();
             this.btnAlterar = new DevExpress.XtraEditors.SimpleButton();
             this.btnInserir = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
@@ -60,25 +74,30 @@
             this.groupControl6 = new DevExpress.XtraEditors.GroupControl();
             this.edPET_RACA = new DevExpress.XtraEditors.GridLookUpEdit();
             this.gridLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
             this.edCLI_ID = new DevExpress.XtraEditors.LookUpEdit();
-            this.layoutViewCard1 = new DevExpress.XtraGrid.Views.Layout.LayoutViewCard();
-            this.layoutViewField_gridColumn2 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
-            this.layoutViewField_gridColumn3 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
-            this.layoutViewField_gridColumn4 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
-            this.layoutViewField_gridColumn5 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
-            this.layoutViewField_gridColumn6 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
-            this.layoutViewField_tileViewColumn1 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
-            this.layoutViewField_layoutViewColumn1 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
-            this.layoutViewField_gridColumn1 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl9)).BeginInit();
             this.groupControl9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlPets)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEditRaca)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEditDono)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEdit1View)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_tileViewColumn1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_layoutViewColumn1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewCard1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemImageEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemHypertextLabel1)).BeginInit();
@@ -101,15 +120,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
             this.groupControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.edCLI_ID.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewCard1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_tileViewColumn1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_layoutViewColumn1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl9
@@ -124,6 +134,7 @@
             // 
             // gridControlPets
             // 
+            this.gridControlPets.ContextMenuStrip = this.contextMenuStrip1;
             this.gridControlPets.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControlPets.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2);
             this.gridControlPets.Location = new System.Drawing.Point(2, 20);
@@ -135,11 +146,26 @@
             this.repositoryItemImageEdit1,
             this.repositoryItemHypertextLabel1,
             this.repositoryItemPictureEdit2,
-            this.repositoryItemGridLookUpEditDono});
+            this.repositoryItemGridLookUpEditDono,
+            this.repositoryItemGridLookUpEditRaca});
             this.gridControlPets.Size = new System.Drawing.Size(548, 580);
             this.gridControlPets.TabIndex = 0;
             this.gridControlPets.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.layoutView1});
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.alterarToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(110, 26);
+            // 
+            // alterarToolStripMenuItem
+            // 
+            this.alterarToolStripMenuItem.Name = "alterarToolStripMenuItem";
+            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.alterarToolStripMenuItem.Text = "Alterar";
+            this.alterarToolStripMenuItem.Click += new System.EventHandler(this.alterarToolStripMenuItem_Click);
             // 
             // layoutView1
             // 
@@ -166,6 +192,16 @@
             this.gridColumn1.FieldName = "PET_ID";
             this.gridColumn1.LayoutViewField = this.layoutViewField_gridColumn1;
             this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.OptionsColumn.ReadOnly = true;
+            // 
+            // layoutViewField_gridColumn1
+            // 
+            this.layoutViewField_gridColumn1.EditorPreferredWidth = 20;
+            this.layoutViewField_gridColumn1.Location = new System.Drawing.Point(0, 0);
+            this.layoutViewField_gridColumn1.Name = "layoutViewField_gridColumn1";
+            this.layoutViewField_gridColumn1.Size = new System.Drawing.Size(221, 274);
+            this.layoutViewField_gridColumn1.TextLocation = DevExpress.Utils.Locations.Left;
+            this.layoutViewField_gridColumn1.TextSize = new System.Drawing.Size(67, 13);
             // 
             // gridColumn2
             // 
@@ -173,6 +209,16 @@
             this.gridColumn2.FieldName = "PET_NOME";
             this.gridColumn2.LayoutViewField = this.layoutViewField_gridColumn2;
             this.gridColumn2.Name = "gridColumn2";
+            this.gridColumn2.OptionsColumn.ReadOnly = true;
+            // 
+            // layoutViewField_gridColumn2
+            // 
+            this.layoutViewField_gridColumn2.EditorPreferredWidth = 145;
+            this.layoutViewField_gridColumn2.Location = new System.Drawing.Point(0, 130);
+            this.layoutViewField_gridColumn2.Name = "layoutViewField_gridColumn2";
+            this.layoutViewField_gridColumn2.Size = new System.Drawing.Size(221, 24);
+            this.layoutViewField_gridColumn2.TextLocation = DevExpress.Utils.Locations.Left;
+            this.layoutViewField_gridColumn2.TextSize = new System.Drawing.Size(67, 13);
             // 
             // gridColumn3
             // 
@@ -180,13 +226,49 @@
             this.gridColumn3.FieldName = "PET_NAS";
             this.gridColumn3.LayoutViewField = this.layoutViewField_gridColumn3;
             this.gridColumn3.Name = "gridColumn3";
+            this.gridColumn3.OptionsColumn.ReadOnly = true;
+            // 
+            // layoutViewField_gridColumn3
+            // 
+            this.layoutViewField_gridColumn3.EditorPreferredWidth = 145;
+            this.layoutViewField_gridColumn3.Location = new System.Drawing.Point(0, 154);
+            this.layoutViewField_gridColumn3.Name = "layoutViewField_gridColumn3";
+            this.layoutViewField_gridColumn3.Size = new System.Drawing.Size(221, 24);
+            this.layoutViewField_gridColumn3.TextLocation = DevExpress.Utils.Locations.Left;
+            this.layoutViewField_gridColumn3.TextSize = new System.Drawing.Size(67, 13);
             // 
             // gridColumn4
             // 
             this.gridColumn4.Caption = "Raça";
+            this.gridColumn4.ColumnEdit = this.repositoryItemGridLookUpEditRaca;
             this.gridColumn4.FieldName = "PET_RACA";
             this.gridColumn4.LayoutViewField = this.layoutViewField_gridColumn4;
             this.gridColumn4.Name = "gridColumn4";
+            this.gridColumn4.OptionsColumn.ReadOnly = true;
+            // 
+            // repositoryItemGridLookUpEditRaca
+            // 
+            this.repositoryItemGridLookUpEditRaca.AutoHeight = false;
+            this.repositoryItemGridLookUpEditRaca.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemGridLookUpEditRaca.Name = "repositoryItemGridLookUpEditRaca";
+            this.repositoryItemGridLookUpEditRaca.PopupView = this.gridView1;
+            // 
+            // gridView1
+            // 
+            this.gridView1.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.gridView1.OptionsView.ShowGroupPanel = false;
+            // 
+            // layoutViewField_gridColumn4
+            // 
+            this.layoutViewField_gridColumn4.EditorPreferredWidth = 145;
+            this.layoutViewField_gridColumn4.Location = new System.Drawing.Point(0, 178);
+            this.layoutViewField_gridColumn4.Name = "layoutViewField_gridColumn4";
+            this.layoutViewField_gridColumn4.Size = new System.Drawing.Size(221, 24);
+            this.layoutViewField_gridColumn4.TextLocation = DevExpress.Utils.Locations.Left;
+            this.layoutViewField_gridColumn4.TextSize = new System.Drawing.Size(67, 13);
             // 
             // gridColumn5
             // 
@@ -195,6 +277,7 @@
             this.gridColumn5.FieldName = "CLI_ID";
             this.gridColumn5.LayoutViewField = this.layoutViewField_gridColumn5;
             this.gridColumn5.Name = "gridColumn5";
+            this.gridColumn5.OptionsColumn.ReadOnly = true;
             // 
             // repositoryItemGridLookUpEditDono
             // 
@@ -230,12 +313,31 @@
             this.gridColumn8.Visible = true;
             this.gridColumn8.VisibleIndex = 1;
             // 
+            // layoutViewField_gridColumn5
+            // 
+            this.layoutViewField_gridColumn5.EditorPreferredWidth = 145;
+            this.layoutViewField_gridColumn5.Location = new System.Drawing.Point(0, 202);
+            this.layoutViewField_gridColumn5.Name = "layoutViewField_gridColumn5";
+            this.layoutViewField_gridColumn5.Size = new System.Drawing.Size(221, 24);
+            this.layoutViewField_gridColumn5.TextLocation = DevExpress.Utils.Locations.Left;
+            this.layoutViewField_gridColumn5.TextSize = new System.Drawing.Size(67, 13);
+            // 
             // gridColumn6
             // 
             this.gridColumn6.Caption = "Observação";
             this.gridColumn6.FieldName = "PET_OBS";
             this.gridColumn6.LayoutViewField = this.layoutViewField_gridColumn6;
             this.gridColumn6.Name = "gridColumn6";
+            this.gridColumn6.OptionsColumn.ReadOnly = true;
+            // 
+            // layoutViewField_gridColumn6
+            // 
+            this.layoutViewField_gridColumn6.EditorPreferredWidth = 145;
+            this.layoutViewField_gridColumn6.Location = new System.Drawing.Point(0, 226);
+            this.layoutViewField_gridColumn6.Name = "layoutViewField_gridColumn6";
+            this.layoutViewField_gridColumn6.Size = new System.Drawing.Size(221, 24);
+            this.layoutViewField_gridColumn6.TextLocation = DevExpress.Utils.Locations.Left;
+            this.layoutViewField_gridColumn6.TextSize = new System.Drawing.Size(67, 13);
             // 
             // tileViewColumn1
             // 
@@ -243,6 +345,16 @@
             this.tileViewColumn1.FieldName = "PET_COR";
             this.tileViewColumn1.LayoutViewField = this.layoutViewField_tileViewColumn1;
             this.tileViewColumn1.Name = "tileViewColumn1";
+            this.tileViewColumn1.OptionsColumn.ReadOnly = true;
+            // 
+            // layoutViewField_tileViewColumn1
+            // 
+            this.layoutViewField_tileViewColumn1.EditorPreferredWidth = 145;
+            this.layoutViewField_tileViewColumn1.Location = new System.Drawing.Point(0, 250);
+            this.layoutViewField_tileViewColumn1.Name = "layoutViewField_tileViewColumn1";
+            this.layoutViewField_tileViewColumn1.Size = new System.Drawing.Size(221, 24);
+            this.layoutViewField_tileViewColumn1.TextLocation = DevExpress.Utils.Locations.Left;
+            this.layoutViewField_tileViewColumn1.TextSize = new System.Drawing.Size(67, 13);
             // 
             // layoutViewColumn1
             // 
@@ -251,11 +363,41 @@
             this.layoutViewColumn1.FieldName = "PET_IMAGEM";
             this.layoutViewColumn1.LayoutViewField = this.layoutViewField_layoutViewColumn1;
             this.layoutViewColumn1.Name = "layoutViewColumn1";
+            this.layoutViewColumn1.OptionsColumn.ReadOnly = true;
             // 
             // repositoryItemPictureEdit2
             // 
             this.repositoryItemPictureEdit2.Name = "repositoryItemPictureEdit2";
             this.repositoryItemPictureEdit2.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
+            // 
+            // layoutViewField_layoutViewColumn1
+            // 
+            this.layoutViewField_layoutViewColumn1.EditorPreferredWidth = 145;
+            this.layoutViewField_layoutViewColumn1.Location = new System.Drawing.Point(0, 0);
+            this.layoutViewField_layoutViewColumn1.MaxSize = new System.Drawing.Size(96, 130);
+            this.layoutViewField_layoutViewColumn1.MinSize = new System.Drawing.Size(96, 130);
+            this.layoutViewField_layoutViewColumn1.Name = "layoutViewField_layoutViewColumn1";
+            this.layoutViewField_layoutViewColumn1.Size = new System.Drawing.Size(221, 130);
+            this.layoutViewField_layoutViewColumn1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutViewField_layoutViewColumn1.StartNewLine = true;
+            this.layoutViewField_layoutViewColumn1.TextLocation = DevExpress.Utils.Locations.Left;
+            this.layoutViewField_layoutViewColumn1.TextSize = new System.Drawing.Size(67, 13);
+            // 
+            // layoutViewCard1
+            // 
+            this.layoutViewCard1.CustomizationFormText = "TemplateCard";
+            this.layoutViewCard1.HeaderButtonsLocation = DevExpress.Utils.GroupElementLocation.AfterText;
+            this.layoutViewCard1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutViewField_gridColumn2,
+            this.layoutViewField_gridColumn3,
+            this.layoutViewField_gridColumn4,
+            this.layoutViewField_gridColumn5,
+            this.layoutViewField_gridColumn6,
+            this.layoutViewField_tileViewColumn1,
+            this.layoutViewField_layoutViewColumn1});
+            this.layoutViewCard1.Name = "layoutViewCard1";
+            this.layoutViewCard1.OptionsItemText.TextToControlDistance = 5;
+            this.layoutViewCard1.Text = "TemplateCard";
             // 
             // repositoryItemPictureEdit1
             // 
@@ -274,7 +416,7 @@
             // 
             // groupControl1
             // 
-            this.groupControl1.Controls.Add(this.simpleButton1);
+            this.groupControl1.Controls.Add(this.btnPesq);
             this.groupControl1.Controls.Add(this.btnAlterar);
             this.groupControl1.Controls.Add(this.btnInserir);
             this.groupControl1.Controls.Add(this.groupControl2);
@@ -289,13 +431,14 @@
             this.groupControl1.TabIndex = 29;
             this.groupControl1.Text = "Pesquisa";
             // 
-            // simpleButton1
+            // btnPesq
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(265, 78);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(156, 47);
-            this.simpleButton1.TabIndex = 56;
-            this.simpleButton1.Text = "Pesquisar";
+            this.btnPesq.Location = new System.Drawing.Point(265, 78);
+            this.btnPesq.Name = "btnPesq";
+            this.btnPesq.Size = new System.Drawing.Size(156, 47);
+            this.btnPesq.TabIndex = 56;
+            this.btnPesq.Text = "Pesquisar";
+            this.btnPesq.Click += new System.EventHandler(this.btnPesq_Click);
             // 
             // btnAlterar
             // 
@@ -304,6 +447,7 @@
             this.btnAlterar.Size = new System.Drawing.Size(90, 48);
             this.btnAlterar.TabIndex = 54;
             this.btnAlterar.Text = "Alterar";
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
             // btnInserir
             // 
@@ -312,6 +456,7 @@
             this.btnInserir.Size = new System.Drawing.Size(90, 48);
             this.btnInserir.TabIndex = 55;
             this.btnInserir.Text = "Inserir";
+            this.btnInserir.Click += new System.EventHandler(this.btnInserir_Click);
             // 
             // groupControl2
             // 
@@ -399,10 +544,29 @@
             // 
             // gridLookUpEdit1View
             // 
+            this.gridLookUpEdit1View.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn9,
+            this.gridColumn10});
             this.gridLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
             this.gridLookUpEdit1View.Name = "gridLookUpEdit1View";
             this.gridLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.gridLookUpEdit1View.OptionsView.ShowGroupPanel = false;
+            // 
+            // gridColumn9
+            // 
+            this.gridColumn9.Caption = "id";
+            this.gridColumn9.FieldName = "PET_RACA_ID";
+            this.gridColumn9.Name = "gridColumn9";
+            this.gridColumn9.Visible = true;
+            this.gridColumn9.VisibleIndex = 0;
+            // 
+            // gridColumn10
+            // 
+            this.gridColumn10.Caption = "Nome";
+            this.gridColumn10.FieldName = "PET_RACA_NOME";
+            this.gridColumn10.Name = "gridColumn10";
+            this.gridColumn10.Visible = true;
+            this.gridColumn10.VisibleIndex = 1;
             // 
             // simpleButton2
             // 
@@ -439,98 +603,6 @@
             this.edCLI_ID.Size = new System.Drawing.Size(148, 20);
             this.edCLI_ID.TabIndex = 15;
             // 
-            // layoutViewCard1
-            // 
-            this.layoutViewCard1.CustomizationFormText = "TemplateCard";
-            this.layoutViewCard1.HeaderButtonsLocation = DevExpress.Utils.GroupElementLocation.AfterText;
-            this.layoutViewCard1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutViewField_gridColumn2,
-            this.layoutViewField_gridColumn3,
-            this.layoutViewField_gridColumn4,
-            this.layoutViewField_gridColumn5,
-            this.layoutViewField_gridColumn6,
-            this.layoutViewField_tileViewColumn1,
-            this.layoutViewField_layoutViewColumn1});
-            this.layoutViewCard1.Name = "layoutViewCard1";
-            this.layoutViewCard1.OptionsItemText.TextToControlDistance = 5;
-            this.layoutViewCard1.Text = "TemplateCard";
-            // 
-            // layoutViewField_gridColumn2
-            // 
-            this.layoutViewField_gridColumn2.EditorPreferredWidth = 145;
-            this.layoutViewField_gridColumn2.Location = new System.Drawing.Point(0, 130);
-            this.layoutViewField_gridColumn2.Name = "layoutViewField_gridColumn2";
-            this.layoutViewField_gridColumn2.Size = new System.Drawing.Size(221, 24);
-            this.layoutViewField_gridColumn2.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutViewField_gridColumn2.TextSize = new System.Drawing.Size(67, 13);
-            // 
-            // layoutViewField_gridColumn3
-            // 
-            this.layoutViewField_gridColumn3.EditorPreferredWidth = 145;
-            this.layoutViewField_gridColumn3.Location = new System.Drawing.Point(0, 154);
-            this.layoutViewField_gridColumn3.Name = "layoutViewField_gridColumn3";
-            this.layoutViewField_gridColumn3.Size = new System.Drawing.Size(221, 24);
-            this.layoutViewField_gridColumn3.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutViewField_gridColumn3.TextSize = new System.Drawing.Size(67, 13);
-            // 
-            // layoutViewField_gridColumn4
-            // 
-            this.layoutViewField_gridColumn4.EditorPreferredWidth = 145;
-            this.layoutViewField_gridColumn4.Location = new System.Drawing.Point(0, 178);
-            this.layoutViewField_gridColumn4.Name = "layoutViewField_gridColumn4";
-            this.layoutViewField_gridColumn4.Size = new System.Drawing.Size(221, 24);
-            this.layoutViewField_gridColumn4.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutViewField_gridColumn4.TextSize = new System.Drawing.Size(67, 13);
-            // 
-            // layoutViewField_gridColumn5
-            // 
-            this.layoutViewField_gridColumn5.EditorPreferredWidth = 145;
-            this.layoutViewField_gridColumn5.Location = new System.Drawing.Point(0, 202);
-            this.layoutViewField_gridColumn5.Name = "layoutViewField_gridColumn5";
-            this.layoutViewField_gridColumn5.Size = new System.Drawing.Size(221, 24);
-            this.layoutViewField_gridColumn5.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutViewField_gridColumn5.TextSize = new System.Drawing.Size(67, 13);
-            // 
-            // layoutViewField_gridColumn6
-            // 
-            this.layoutViewField_gridColumn6.EditorPreferredWidth = 145;
-            this.layoutViewField_gridColumn6.Location = new System.Drawing.Point(0, 226);
-            this.layoutViewField_gridColumn6.Name = "layoutViewField_gridColumn6";
-            this.layoutViewField_gridColumn6.Size = new System.Drawing.Size(221, 24);
-            this.layoutViewField_gridColumn6.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutViewField_gridColumn6.TextSize = new System.Drawing.Size(67, 13);
-            // 
-            // layoutViewField_tileViewColumn1
-            // 
-            this.layoutViewField_tileViewColumn1.EditorPreferredWidth = 145;
-            this.layoutViewField_tileViewColumn1.Location = new System.Drawing.Point(0, 250);
-            this.layoutViewField_tileViewColumn1.Name = "layoutViewField_tileViewColumn1";
-            this.layoutViewField_tileViewColumn1.Size = new System.Drawing.Size(221, 24);
-            this.layoutViewField_tileViewColumn1.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutViewField_tileViewColumn1.TextSize = new System.Drawing.Size(67, 13);
-            // 
-            // layoutViewField_layoutViewColumn1
-            // 
-            this.layoutViewField_layoutViewColumn1.EditorPreferredWidth = 145;
-            this.layoutViewField_layoutViewColumn1.Location = new System.Drawing.Point(0, 0);
-            this.layoutViewField_layoutViewColumn1.MaxSize = new System.Drawing.Size(96, 130);
-            this.layoutViewField_layoutViewColumn1.MinSize = new System.Drawing.Size(96, 130);
-            this.layoutViewField_layoutViewColumn1.Name = "layoutViewField_layoutViewColumn1";
-            this.layoutViewField_layoutViewColumn1.Size = new System.Drawing.Size(221, 130);
-            this.layoutViewField_layoutViewColumn1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutViewField_layoutViewColumn1.StartNewLine = true;
-            this.layoutViewField_layoutViewColumn1.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutViewField_layoutViewColumn1.TextSize = new System.Drawing.Size(67, 13);
-            // 
-            // layoutViewField_gridColumn1
-            // 
-            this.layoutViewField_gridColumn1.EditorPreferredWidth = 20;
-            this.layoutViewField_gridColumn1.Location = new System.Drawing.Point(0, 0);
-            this.layoutViewField_gridColumn1.Name = "layoutViewField_gridColumn1";
-            this.layoutViewField_gridColumn1.Size = new System.Drawing.Size(221, 274);
-            this.layoutViewField_gridColumn1.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutViewField_gridColumn1.TextSize = new System.Drawing.Size(67, 13);
-            // 
             // SH_PETS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -544,10 +616,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl9)).EndInit();
             this.groupControl9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControlPets)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEditRaca)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEditDono)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEdit1View)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_tileViewColumn1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_layoutViewColumn1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewCard1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemImageEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemHypertextLabel1)).EndInit();
@@ -570,15 +654,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
             this.groupControl4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.edCLI_ID.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewCard1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_tileViewColumn1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_layoutViewColumn1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -612,7 +687,7 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
         private DevExpress.XtraEditors.GroupControl groupControl4;
         private DevExpress.XtraEditors.LookUpEdit edCLI_ID;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton btnPesq;
         private DevExpress.XtraEditors.SimpleButton btnAlterar;
         private DevExpress.XtraEditors.SimpleButton btnInserir;
         private DevExpress.XtraEditors.LookUpEdit edPET_ID;
@@ -629,5 +704,11 @@
         private DevExpress.XtraGrid.Views.Layout.LayoutViewField layoutViewField_tileViewColumn1;
         private DevExpress.XtraGrid.Views.Layout.LayoutViewField layoutViewField_layoutViewColumn1;
         private DevExpress.XtraGrid.Views.Layout.LayoutViewCard layoutViewCard1;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
+        private DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit repositoryItemGridLookUpEditRaca;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem;
     }
 }

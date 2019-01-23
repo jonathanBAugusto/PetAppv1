@@ -66,6 +66,11 @@ namespace PetApp
 
         private void gridControl1_DoubleClick(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnAltCli_Click(object sender, EventArgs e)
+        {
             IdCli = F.toInt(gridView1.GetFocusedRowCellValue("CLI_ID"));
             FrmCadCli form = new FrmCadCli();
             form.IdCliAlt = IdCli;
@@ -74,11 +79,6 @@ namespace PetApp
             {
                 FrmCli_Load(null, null);
             }
-        }
-
-        private void btnAltCli_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnInserir_Click_1(object sender, EventArgs e)
@@ -104,7 +104,7 @@ namespace PetApp
             }
             if (F.toString(edINSCRICAO.EditValue) != "")
             {
-                filtro.Append(" AND INSCRICAO = '" + F.toString(edINSCRICAO.EditValue) + "' ");
+                filtro.Append(" AND CLI_INSCRICAO = '" + F.toString(edINSCRICAO.EditValue) + "' ");
             }
             if (F.toString(edCLI_CNPJ.EditValue) != "")
             {
@@ -135,6 +135,16 @@ namespace PetApp
         private void btnOK_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void alterarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            btnAltCli_Click(null, null);
+        }
+
+        private void removerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            btnRemCli_Click(null,null);
         }
     }
 }

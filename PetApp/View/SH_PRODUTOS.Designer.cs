@@ -445,6 +445,7 @@
             this.btnPesq.Size = new System.Drawing.Size(123, 42);
             this.btnPesq.TabIndex = 4;
             this.btnPesq.Text = "Pesquisar";
+            this.btnPesq.Click += new System.EventHandler(this.btnPesq_Click);
             // 
             // btnAlterar
             // 

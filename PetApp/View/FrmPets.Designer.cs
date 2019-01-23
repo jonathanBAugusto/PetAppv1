@@ -39,6 +39,8 @@
             this.groupControl6 = new DevExpress.XtraEditors.GroupControl();
             this.edPET_RACA = new DevExpress.XtraEditors.GridLookUpEdit();
             this.gridLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupControl7 = new DevExpress.XtraEditors.GroupControl();
             this.edPET_NAS = new DevExpress.XtraEditors.DateEdit();
             this.groupControl8 = new DevExpress.XtraEditors.GroupControl();
@@ -81,7 +83,7 @@
             this.btnAdd.Location = new System.Drawing.Point(544, 23);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(88, 102);
+            this.btnAdd.Size = new System.Drawing.Size(88, 117);
             this.btnAdd.TabIndex = 7;
             this.btnAdd.Text = "Cadastrar";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -163,7 +165,7 @@
             // 
             this.groupControl6.Controls.Add(this.edPET_RACA);
             this.groupControl6.Controls.Add(this.simpleButton2);
-            this.groupControl6.Location = new System.Drawing.Point(242, 77);
+            this.groupControl6.Location = new System.Drawing.Point(242, 92);
             this.groupControl6.Name = "groupControl6";
             this.groupControl6.Size = new System.Drawing.Size(135, 48);
             this.groupControl6.TabIndex = 5;
@@ -183,15 +185,34 @@
             // 
             // gridLookUpEdit1View
             // 
+            this.gridLookUpEdit1View.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn1,
+            this.gridColumn2});
             this.gridLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
             this.gridLookUpEdit1View.Name = "gridLookUpEdit1View";
             this.gridLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.gridLookUpEdit1View.OptionsView.ShowGroupPanel = false;
             // 
+            // gridColumn1
+            // 
+            this.gridColumn1.Caption = "ID";
+            this.gridColumn1.FieldName = "PET_RACA_ID";
+            this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.Visible = true;
+            this.gridColumn1.VisibleIndex = 0;
+            // 
+            // gridColumn2
+            // 
+            this.gridColumn2.Caption = "Nome";
+            this.gridColumn2.FieldName = "PET_RACA_NOME";
+            this.gridColumn2.Name = "gridColumn2";
+            this.gridColumn2.Visible = true;
+            this.gridColumn2.VisibleIndex = 1;
+            // 
             // groupControl7
             // 
             this.groupControl7.Controls.Add(this.edPET_NAS);
-            this.groupControl7.Location = new System.Drawing.Point(130, 77);
+            this.groupControl7.Location = new System.Drawing.Point(130, 92);
             this.groupControl7.Name = "groupControl7";
             this.groupControl7.Size = new System.Drawing.Size(106, 48);
             this.groupControl7.TabIndex = 4;
@@ -213,7 +234,7 @@
             // groupControl8
             // 
             this.groupControl8.Controls.Add(this.edPET_OBS);
-            this.groupControl8.Location = new System.Drawing.Point(383, 77);
+            this.groupControl8.Location = new System.Drawing.Point(383, 92);
             this.groupControl8.Name = "groupControl8";
             this.groupControl8.Padding = new System.Windows.Forms.Padding(3, 4, 3, 3);
             this.groupControl8.Size = new System.Drawing.Size(156, 48);
@@ -237,7 +258,7 @@
             this.groupControl1.Controls.Add(this.edPET_IMAGEM);
             this.groupControl1.Location = new System.Drawing.Point(5, 23);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(119, 102);
+            this.groupControl1.Size = new System.Drawing.Size(119, 119);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Imagem";
             // 
@@ -249,7 +270,7 @@
             this.picPET_IMG.Name = "picPET_IMG";
             this.picPET_IMG.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.picPET_IMG.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.picPET_IMG.Size = new System.Drawing.Size(115, 60);
+            this.picPET_IMG.Size = new System.Drawing.Size(115, 77);
             this.picPET_IMG.TabIndex = 0;
             this.picPET_IMG.DoubleClick += new System.EventHandler(this.PET_IMG_DoubleClick);
             // 
@@ -282,7 +303,7 @@
             this.groupControl5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl5.Location = new System.Drawing.Point(0, 0);
             this.groupControl5.Name = "groupControl5";
-            this.groupControl5.Size = new System.Drawing.Size(643, 134);
+            this.groupControl5.Size = new System.Drawing.Size(643, 154);
             this.groupControl5.TabIndex = 26;
             this.groupControl5.Text = "Cadastro";
             // 
@@ -290,7 +311,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(643, 134);
+            this.ClientSize = new System.Drawing.Size(643, 154);
             this.Controls.Add(this.groupControl5);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmPets";
@@ -347,5 +368,7 @@
         private System.Windows.Forms.OpenFileDialog openFileDialogImg;
         private DevExpress.XtraEditors.GroupControl groupControl5;
         private DevExpress.XtraEditors.MemoExEdit edPET_OBS;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
     }
 }
