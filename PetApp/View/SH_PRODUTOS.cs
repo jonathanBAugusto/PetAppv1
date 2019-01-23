@@ -17,6 +17,9 @@ namespace PetApp.View
         int idProdEdit = 0;
         string img = "";
         int tipo = 0;
+
+        public int PRO_ID = 0;
+        public bool pesquisa = false;
         public SH_PRODUTOS()
         {
             InitializeComponent();

@@ -86,11 +86,11 @@ namespace PetApp.View
         }
 
         private void edPRO_REFERENCIA_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
-        {
-            SH_CLIENTES obj = new SH_CLIENTES();
+        {//é Produto!
+            SH_PRODUTOS obj = new SH_PRODUTOS();
             obj.pesquisa = true;
             obj.ShowDialog();
-            int cli_id = obj.CLI_ID;
+            int PRO_ID = obj.PRO_ID;
         }
     }
 }

@@ -34,7 +34,7 @@ namespace PetApp
             btnAltCli.Enabled = !pesquisa;
             btnInserir.Enabled = !pesquisa;
             btnRemCli.Enabled = !pesquisa;
-            panelControlBottom.Enabled = !pesquisa;
+            panelControlBottom.Enabled = pesquisa;
             panelControlBottom.Visible = pesquisa;
         }
 
@@ -134,7 +134,18 @@ namespace PetApp
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-
+            Clientes cli = new Clientes();
+            try
+            {
+                cli = gridView1.GetFocusedRow() as Clientes;
+                CLI_ID = cli.CLI_ID;
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            }
+            catch
+            {
+                CLI_ID = 0;
+            }
         }
 
         private void alterarToolStripMenuItem_Click(object sender, EventArgs e)

@@ -71,6 +71,7 @@
             this.btnRemover = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
+            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlProdutos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn1)).BeginInit();
@@ -108,6 +109,7 @@
             this.groupControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.SuspendLayout();
             // 
             // gridControlProdutos
@@ -120,7 +122,7 @@
             this.repositoryItemPictureEditProd,
             this.repositoryItemGridLookUpEditTPR,
             this.repositoryItemGridLookUpEditFornecedor});
-            this.gridControlProdutos.Size = new System.Drawing.Size(715, 502);
+            this.gridControlProdutos.Size = new System.Drawing.Size(715, 463);
             this.gridControlProdutos.TabIndex = 0;
             this.gridControlProdutos.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.layoutView1});
@@ -344,7 +346,7 @@
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(719, 524);
+            this.groupControl1.Size = new System.Drawing.Size(719, 485);
             this.groupControl1.TabIndex = 1;
             this.groupControl1.Text = "Lista";
             // 
@@ -501,11 +503,20 @@
             this.splitContainerControl1.Panel1.Controls.Add(this.groupControl2);
             this.splitContainerControl1.Panel1.Text = "Panel1";
             this.splitContainerControl1.Panel2.Controls.Add(this.groupControl1);
+            this.splitContainerControl1.Panel2.Controls.Add(this.panelControl1);
             this.splitContainerControl1.Panel2.Text = "Panel2";
             this.splitContainerControl1.Size = new System.Drawing.Size(719, 659);
             this.splitContainerControl1.SplitterPosition = 130;
             this.splitContainerControl1.TabIndex = 9;
             this.splitContainerControl1.Text = "splitContainerControl1";
+            // 
+            // panelControl1
+            // 
+            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelControl1.Location = new System.Drawing.Point(0, 485);
+            this.panelControl1.Name = "panelControl1";
+            this.panelControl1.Size = new System.Drawing.Size(719, 39);
+            this.panelControl1.TabIndex = 2;
             // 
             // SH_PRODUTOS
             // 
@@ -553,6 +564,7 @@
             this.groupControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).EndInit();
             this.splitContainerControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -602,5 +614,6 @@
         private DevExpress.XtraGrid.Views.Layout.LayoutViewField layoutViewField_gridColumn7;
         private DevExpress.XtraGrid.Views.Layout.LayoutViewField layoutViewField_gridColumn8;
         private DevExpress.XtraGrid.Views.Layout.LayoutViewCard layoutViewCard1;
+        private DevExpress.XtraEditors.PanelControl panelControl1;
     }
 }
