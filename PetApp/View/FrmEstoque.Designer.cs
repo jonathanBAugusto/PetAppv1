@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.btnConcluir = new DevExpress.XtraEditors.SimpleButton();
+            this.btnRemover = new DevExpress.XtraEditors.SimpleButton();
+            this.btnAdicionar = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
             this.rgLCP_TIPO = new DevExpress.XtraEditors.RadioGroup();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
@@ -45,9 +48,6 @@
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.btnAdicionar = new DevExpress.XtraEditors.SimpleButton();
-            this.btnRemover = new DevExpress.XtraEditors.SimpleButton();
-            this.btnConcluir = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
@@ -81,6 +81,33 @@
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(552, 91);
             this.panelControl1.TabIndex = 0;
+            // 
+            // btnConcluir
+            // 
+            this.btnConcluir.Location = new System.Drawing.Point(465, 61);
+            this.btnConcluir.Name = "btnConcluir";
+            this.btnConcluir.Size = new System.Drawing.Size(75, 23);
+            this.btnConcluir.TabIndex = 7;
+            this.btnConcluir.Text = "Concluir";
+            this.btnConcluir.Click += new System.EventHandler(this.btnConcluir_Click);
+            // 
+            // btnRemover
+            // 
+            this.btnRemover.Location = new System.Drawing.Point(384, 61);
+            this.btnRemover.Name = "btnRemover";
+            this.btnRemover.Size = new System.Drawing.Size(75, 23);
+            this.btnRemover.TabIndex = 5;
+            this.btnRemover.Text = "Remover";
+            this.btnRemover.Click += new System.EventHandler(this.btnRemover_Click);
+            // 
+            // btnAdicionar
+            // 
+            this.btnAdicionar.Location = new System.Drawing.Point(303, 61);
+            this.btnAdicionar.Name = "btnAdicionar";
+            this.btnAdicionar.Size = new System.Drawing.Size(75, 23);
+            this.btnAdicionar.TabIndex = 4;
+            this.btnAdicionar.Text = "Adicionar";
+            this.btnAdicionar.Click += new System.EventHandler(this.btnAdicionar_Click);
             // 
             // groupControl4
             // 
@@ -252,33 +279,6 @@
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.Visible = true;
             this.gridColumn6.VisibleIndex = 5;
-            // 
-            // btnAdicionar
-            // 
-            this.btnAdicionar.Location = new System.Drawing.Point(303, 61);
-            this.btnAdicionar.Name = "btnAdicionar";
-            this.btnAdicionar.Size = new System.Drawing.Size(75, 23);
-            this.btnAdicionar.TabIndex = 4;
-            this.btnAdicionar.Text = "Adicionar";
-            this.btnAdicionar.Click += new System.EventHandler(this.btnAdicionar_Click);
-            // 
-            // btnRemover
-            // 
-            this.btnRemover.Location = new System.Drawing.Point(384, 61);
-            this.btnRemover.Name = "btnRemover";
-            this.btnRemover.Size = new System.Drawing.Size(75, 23);
-            this.btnRemover.TabIndex = 5;
-            this.btnRemover.Text = "Remover";
-            this.btnRemover.Click += new System.EventHandler(this.btnRemover_Click);
-            // 
-            // btnConcluir
-            // 
-            this.btnConcluir.Location = new System.Drawing.Point(465, 61);
-            this.btnConcluir.Name = "btnConcluir";
-            this.btnConcluir.Size = new System.Drawing.Size(75, 23);
-            this.btnConcluir.TabIndex = 7;
-            this.btnConcluir.Text = "Concluir";
-            this.btnConcluir.Click += new System.EventHandler(this.btnConcluir_Click);
             // 
             // FrmEstoque
             // 
