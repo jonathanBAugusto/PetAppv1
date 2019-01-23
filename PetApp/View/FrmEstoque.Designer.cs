@@ -225,6 +225,7 @@
             this.gridViewEstoque.GridControl = this.gridControlEstoque;
             this.gridViewEstoque.Name = "gridViewEstoque";
             this.gridViewEstoque.OptionsView.ColumnAutoWidth = false;
+            this.gridViewEstoque.OptionsView.ShowGroupPanel = false;
             // 
             // gridColumn1
             // 

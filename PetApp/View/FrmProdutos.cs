@@ -145,9 +145,9 @@ namespace PetApp.View
 
         private void FrmProdutos_Load(object sender, EventArgs e)
         {
-            edPRO_FORNECEDOR.Properties.DataSource = Fornecedor.Get();
-            edPRO_FORNECEDOR.Properties.ValueMember = "FOR_ID";
-            edPRO_FORNECEDOR.Properties.DisplayMember = "FOR_RAZAO";
+            edPRO_FORNECEDOR.Properties.DataSource = Clientes.Get(" AND CLI_PESTIPO = 'FOR'");
+            edPRO_FORNECEDOR.Properties.ValueMember = "CLI_ID";
+            edPRO_FORNECEDOR.Properties.DisplayMember = "CLI_RAZAO";
             if (PROID != 0)
             {
                 Produtos prods = Produtos.Get(PROID);

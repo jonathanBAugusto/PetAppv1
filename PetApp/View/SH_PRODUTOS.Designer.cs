@@ -71,7 +71,7 @@
             this.btnRemover = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
-            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.panelControlBottom = new DevExpress.XtraEditors.PanelControl();
             this.btnCancelar = new DevExpress.XtraEditors.SimpleButton();
             this.btnOK = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlProdutos)).BeginInit();
@@ -111,8 +111,8 @@
             this.groupControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
-            this.panelControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControlBottom)).BeginInit();
+            this.panelControlBottom.SuspendLayout();
             this.SuspendLayout();
             // 
             // gridControlProdutos
@@ -506,22 +506,22 @@
             this.splitContainerControl1.Panel1.Controls.Add(this.groupControl2);
             this.splitContainerControl1.Panel1.Text = "Panel1";
             this.splitContainerControl1.Panel2.Controls.Add(this.groupControl1);
-            this.splitContainerControl1.Panel2.Controls.Add(this.panelControl1);
+            this.splitContainerControl1.Panel2.Controls.Add(this.panelControlBottom);
             this.splitContainerControl1.Panel2.Text = "Panel2";
             this.splitContainerControl1.Size = new System.Drawing.Size(719, 659);
             this.splitContainerControl1.SplitterPosition = 130;
             this.splitContainerControl1.TabIndex = 9;
             this.splitContainerControl1.Text = "splitContainerControl1";
             // 
-            // panelControl1
+            // panelControlBottom
             // 
-            this.panelControl1.Controls.Add(this.btnCancelar);
-            this.panelControl1.Controls.Add(this.btnOK);
-            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControl1.Location = new System.Drawing.Point(0, 485);
-            this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(719, 39);
-            this.panelControl1.TabIndex = 2;
+            this.panelControlBottom.Controls.Add(this.btnCancelar);
+            this.panelControlBottom.Controls.Add(this.btnOK);
+            this.panelControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelControlBottom.Location = new System.Drawing.Point(0, 485);
+            this.panelControlBottom.Name = "panelControlBottom";
+            this.panelControlBottom.Size = new System.Drawing.Size(719, 39);
+            this.panelControlBottom.TabIndex = 2;
             // 
             // btnCancelar
             // 
@@ -587,8 +587,8 @@
             this.groupControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).EndInit();
             this.splitContainerControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
-            this.panelControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelControlBottom)).EndInit();
+            this.panelControlBottom.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -638,7 +638,7 @@
         private DevExpress.XtraGrid.Views.Layout.LayoutViewField layoutViewField_gridColumn7;
         private DevExpress.XtraGrid.Views.Layout.LayoutViewField layoutViewField_gridColumn8;
         private DevExpress.XtraGrid.Views.Layout.LayoutViewCard layoutViewCard1;
-        private DevExpress.XtraEditors.PanelControl panelControl1;
+        private DevExpress.XtraEditors.PanelControl panelControlBottom;
         private DevExpress.XtraEditors.SimpleButton btnCancelar;
         private DevExpress.XtraEditors.SimpleButton btnOK;
     }

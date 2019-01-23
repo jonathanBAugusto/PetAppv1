@@ -30,6 +30,7 @@
         {
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
             this.groupControl5 = new DevExpress.XtraEditors.GroupControl();
+            this.ckIgualZero = new DevExpress.XtraEditors.CheckEdit();
             this.rgAbxAcm = new DevExpress.XtraEditors.RadioGroup();
             this.btnPesquisar = new DevExpress.XtraEditors.SimpleButton();
             this.btnRemover = new DevExpress.XtraEditors.SimpleButton();
@@ -51,11 +52,11 @@
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemTextEditQuant = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
-            this.ckIgualZero = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).BeginInit();
             this.groupControl5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ckIgualZero.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rgAbxAcm.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
@@ -70,7 +71,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridViewEstoque)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEditQuant)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ckIgualZero.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -102,6 +102,15 @@
             this.groupControl5.Size = new System.Drawing.Size(232, 43);
             this.groupControl5.TabIndex = 11;
             this.groupControl5.Text = "Estoque";
+            // 
+            // ckIgualZero
+            // 
+            this.ckIgualZero.Location = new System.Drawing.Point(140, -1);
+            this.ckIgualZero.Name = "ckIgualZero";
+            this.ckIgualZero.Properties.Caption = "Estoque 0";
+            this.ckIgualZero.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.ckIgualZero.Size = new System.Drawing.Size(75, 19);
+            this.ckIgualZero.TabIndex = 1;
             // 
             // rgAbxAcm
             // 
@@ -341,15 +350,6 @@
             this.repositoryItemTextEditQuant.Mask.UseMaskAsDisplayFormat = true;
             this.repositoryItemTextEditQuant.Name = "repositoryItemTextEditQuant";
             // 
-            // ckIgualZero
-            // 
-            this.ckIgualZero.Location = new System.Drawing.Point(140, -1);
-            this.ckIgualZero.Name = "ckIgualZero";
-            this.ckIgualZero.Properties.Caption = "Estoque 0";
-            this.ckIgualZero.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.ckIgualZero.Size = new System.Drawing.Size(75, 19);
-            this.ckIgualZero.TabIndex = 1;
-            // 
             // SH_ESTOQUE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -362,6 +362,7 @@
             this.splitContainerControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).EndInit();
             this.groupControl5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ckIgualZero.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rgAbxAcm.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
@@ -377,7 +378,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridViewEstoque)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEditQuant)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ckIgualZero.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

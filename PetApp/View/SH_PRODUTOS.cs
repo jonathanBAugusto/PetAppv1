@@ -18,7 +18,7 @@ namespace PetApp.View
         string img = "";
         int tipo = 0;
 
-        public string PRO_ID = "";
+        public string PRO_REFERENCIA = "";
         public bool pesquisa = false;
         public SH_PRODUTOS()
         {
@@ -28,6 +28,13 @@ namespace PetApp.View
 
         private void SH_PRODUTOS_Load(object sender, EventArgs e)
         {
+            if (pesquisa)
+            {
+                panelControlBottom.Enabled = pesquisa;
+                btnAdd.Enabled = !pesquisa;
+                btnAlterar.Enabled = !pesquisa;
+                btnRemover.Enabled = !pesquisa;
+            }
             gridControlProdutos.DataSource = Produtos.Get();
 
             repositoryItemGridLookUpEditTPR.DataSource = TipoProduto.Get();
@@ -89,9 +96,9 @@ namespace PetApp.View
             Produtos objSelec = new Produtos();
             try
             {
-                objSelec = gridView2.GetFocusedRow() as Produtos;
-
-                PRO_ID = F.toInt(objSelec.PRO_REFERENCIA);
+                objSelec = ((Produtos)gridView2.GetFocusedRow());
+                var a = gridView2.GetFocusedRow();
+                PRO_REFERENCIA = F.toString(objSelec.PRO_REFERENCIA);
                 DialogResult = DialogResult.OK;
                 this.Close();
             }
