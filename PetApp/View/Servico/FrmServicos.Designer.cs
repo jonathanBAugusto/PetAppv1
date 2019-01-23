@@ -154,6 +154,10 @@
             this.edPET_ID.Name = "edPET_ID";
             this.edPET_ID.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.edPET_ID.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("PET_ID", "ID"),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("PET_NOME", "NOME"),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("CLI_RAZAO", "Dono")});
             this.edPET_ID.Properties.NullText = "Pet";
             this.edPET_ID.Size = new System.Drawing.Size(67, 20);
             this.edPET_ID.TabIndex = 2;

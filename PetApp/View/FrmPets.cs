@@ -26,13 +26,21 @@ namespace PetApp
             get { return newPet; }
             set { newPet = value; }
         }
-
+        Pets pet;
         private int donoTemp;
 
         public int DonoTemp
         {
             get { return donoTemp; }
             set { donoTemp = value; }
+        }
+
+        private int PetId;
+
+        public int PETID
+        {
+            get { return PetId; }
+            set { PetId = value; }
         }
 
 
@@ -73,6 +81,18 @@ namespace PetApp
                 edCLI_ID.EditValue = DonoTemp;
                 edCLI_ID.ReadOnly = true;
             }
+            if (TIPO == "A" || PETID != 0)
+            {
+                pet = Pets.Get(F.toInt(PETID));
+                edCLI_ID.EditValue = F.toInt(pet.CLI_ID);
+                edPET_COR.EditValue = F.toString(pet.PET_COR);
+                edPET_NAS.EditValue = Convert.ToDateTime(pet.PET_NAS);
+                edPET_NOME.EditValue = F.toString(F.toString(pet.PET_NOME));
+                edPET_OBS.EditValue = F.toString(pet.PET_OBS);
+                edPET_RACA.EditValue = F.toInt(pet.PET_RACA);
+                edPET_IMAGEM.EditValue = F.toString(pet.PET_IMG);
+                picPET_IMG.Image = pet.PET_IMAGEM;
+            }
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -107,7 +127,7 @@ namespace PetApp
                 edPET_RACA.Focus();
                 return;
             }
-            Pets pet = new Pets {
+            pet = new Pets {
                 PET_NOME = F.toString(edPET_NOME.EditValue),
                 PET_RACA = F.toString(edPET_RACA.EditValue),
                 PET_OBS = F.toString(edPET_OBS.Text),
@@ -128,6 +148,7 @@ namespace PetApp
                     }
                     break;
                 case "A":
+                        pet.PET_ID = PETID;
                     if (Pets.Update(pet))
                     {
                         NewPet = pet;

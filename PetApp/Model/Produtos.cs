@@ -264,6 +264,9 @@ namespace PetApp.Model
         public DateTime LCP_DATA { get; set; }
         public string LCP_TIPO { get; set; }
         public int PRO_ID { get; set; }
+
+
+
         private string pro_REFERENCIA;
         [Ignore]
         public string PRO_REFERENCIA
@@ -295,12 +298,13 @@ namespace PetApp.Model
             int pro_id = -1;
             try
             {
-                pro_id = F.toInt(CONN.conn.Query<List<int>>("SELECT MAX(PRO_ID) PRO_ID FROM PRODUTOS WHERE PRO_REFERENCIA = " + Referencia).LastOrDefault(), -1)
+                pro_id = F.toInt(CONN.conn.Query<List<int>>("SELECT MAX(PRO_ID) PRO_ID FROM PRODUTOS WHERE PRO_REFERENCIA = " + Referencia).LastOrDefault(), -1);
             }
             catch 
             {
                 return -1;
             }
+            return pro_id;
         }
 
         public static List<Lancprods> Get()

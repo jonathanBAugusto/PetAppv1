@@ -97,7 +97,7 @@ namespace PetApp
             }
             if (F.toString(edINSCRICAO.EditValue) != "")
             {
-                filtro.Append(" AND INSCRICAO = '" + F.toString(edINSCRICAO.EditValue) + "' ");
+                filtro.Append(" AND CLI_INSCRICAO = '" + F.toString(edINSCRICAO.EditValue) + "' ");
             }
             if (F.toString(edCLI_CNPJ.EditValue) != "")
             {

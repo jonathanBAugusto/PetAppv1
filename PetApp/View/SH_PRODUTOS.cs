@@ -75,5 +75,10 @@ namespace PetApp.View
         {
 
         }
+
+        private void btnPesq_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
