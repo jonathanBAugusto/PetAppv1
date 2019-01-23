@@ -54,7 +54,13 @@ namespace PetApp.View
 
         private void btnAlterar_Click(object sender, EventArgs e)
         {
-            DataRow dr = gridView1.GetFocusedDataRow();
+            FrmServicos form = new FrmServicos();
+            form.SERID = F.toInt(gridView1.GetFocusedRowCellValue("SER_ID"));
+            form.ShowDialog();
+            if (form.DialogResult == DialogResult.OK)
+            {
+                SH_SERVICOS_Load(null,null);
+            }
         }
 
         private void btnInserir_Click(object sender, EventArgs e)
@@ -86,9 +92,18 @@ namespace PetApp.View
             {
                 filtro.Append(" AND TIPO_SER_ID = '" + F.toInt(edTIPO_SER_ID.EditValue) + "' ");
             }
+            if (F.toString(cbEstagio.EditValue) != "")
+            {
+                filtro.Append(" AND SER_ESTAGIO = '" + F.toInt(cbEstagio.EditValue) + "' ");
+            }
             List<Servicos> listServico = new List<Servicos>();
             listServico = Servicos.Get(filtro.ToString());
             gridControlServicos.DataSource = listServico;
+        }
+
+        private void alterarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            btnAlterar_Click(null, null);
         }
     }
 }

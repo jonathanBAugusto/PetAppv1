@@ -28,8 +28,11 @@ namespace PetApp.View
         {
             int IdFor = 0;
             IdFor = F.toInt(gridView1.GetFocusedRowCellValue("CLI_ID"));
-            Clientes.Delete(Clientes.Get(IdFor));
-            SH_FORNECEDORES_Load(null, null);
+            if (F.YesNo("", "Deseja realmente excluir este cliente?", 1))
+            {
+                Clientes.Delete(Clientes.Get(IdFor));
+                SH_FORNECEDORES_Load(null, null);
+            }
         }
 
         private void btnInserir_Click(object sender, EventArgs e)
