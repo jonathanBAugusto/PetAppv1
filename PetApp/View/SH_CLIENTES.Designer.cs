@@ -63,6 +63,9 @@
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
             this.edCLI_RAZAO = new DevExpress.XtraEditors.TextEdit();
             this.btnInserir = new DevExpress.XtraEditors.SimpleButton();
+            this.panelControlBottom = new DevExpress.XtraEditors.PanelControl();
+            this.btnOK = new DevExpress.XtraEditors.SimpleButton();
+            this.btnCancelar = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
@@ -92,6 +95,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.edCLI_RAZAO.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControlBottom)).BeginInit();
+            this.panelControlBottom.SuspendLayout();
             this.SuspendLayout();
             // 
             // gridControl1
@@ -100,7 +105,7 @@
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(788, 426);
+            this.gridControl1.Size = new System.Drawing.Size(788, 383);
             this.gridControl1.TabIndex = 3;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -123,68 +128,93 @@
             this.gridColumn11});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsView.ColumnAutoWidth = false;
+            this.gridView1.OptionsView.ShowAutoFilterRow = true;
+            this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
             // ID
             // 
             this.ID.Caption = "ID";
             this.ID.FieldName = "CLI_ID";
             this.ID.Name = "ID";
+            this.ID.OptionsColumn.AllowEdit = false;
+            this.ID.OptionsColumn.ReadOnly = true;
             this.ID.Visible = true;
             this.ID.VisibleIndex = 0;
+            this.ID.Width = 43;
             // 
             // gridColumn3
             // 
             this.gridColumn3.Caption = "Razão Social";
             this.gridColumn3.FieldName = "CLI_RAZAO";
             this.gridColumn3.Name = "gridColumn3";
+            this.gridColumn3.OptionsColumn.AllowEdit = false;
+            this.gridColumn3.OptionsColumn.ReadOnly = true;
             this.gridColumn3.Visible = true;
             this.gridColumn3.VisibleIndex = 1;
+            this.gridColumn3.Width = 203;
             // 
             // gridColumn4
             // 
             this.gridColumn4.Caption = "Inscrição Estadual";
             this.gridColumn4.FieldName = "CLI_INSCRICAO";
             this.gridColumn4.Name = "gridColumn4";
+            this.gridColumn4.OptionsColumn.AllowEdit = false;
+            this.gridColumn4.OptionsColumn.ReadOnly = true;
             this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 2;
+            this.gridColumn4.VisibleIndex = 4;
+            this.gridColumn4.Width = 116;
             // 
             // gridColumn5
             // 
             this.gridColumn5.Caption = "Nascimento";
             this.gridColumn5.FieldName = "CLI_NASC";
             this.gridColumn5.Name = "gridColumn5";
+            this.gridColumn5.OptionsColumn.AllowEdit = false;
+            this.gridColumn5.OptionsColumn.ReadOnly = true;
             this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 3;
+            this.gridColumn5.VisibleIndex = 5;
+            this.gridColumn5.Width = 90;
             // 
             // gridColumn6
             // 
             this.gridColumn6.Caption = "Celular";
             this.gridColumn6.FieldName = "CLI_CEL";
             this.gridColumn6.Name = "gridColumn6";
+            this.gridColumn6.OptionsColumn.AllowEdit = false;
+            this.gridColumn6.OptionsColumn.ReadOnly = true;
             this.gridColumn6.Visible = true;
-            this.gridColumn6.VisibleIndex = 4;
+            this.gridColumn6.VisibleIndex = 2;
+            this.gridColumn6.Width = 92;
             // 
             // gridColumn7
             // 
             this.gridColumn7.Caption = "Telefone";
             this.gridColumn7.FieldName = "CLI_TEL";
             this.gridColumn7.Name = "gridColumn7";
+            this.gridColumn7.OptionsColumn.AllowEdit = false;
+            this.gridColumn7.OptionsColumn.ReadOnly = true;
             this.gridColumn7.Visible = true;
-            this.gridColumn7.VisibleIndex = 5;
+            this.gridColumn7.VisibleIndex = 6;
             // 
             // gridColumn1
             // 
             this.gridColumn1.Caption = "Email";
             this.gridColumn1.FieldName = "CLI_EMAIL";
             this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.OptionsColumn.AllowEdit = false;
+            this.gridColumn1.OptionsColumn.ReadOnly = true;
             this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 6;
+            this.gridColumn1.VisibleIndex = 3;
+            this.gridColumn1.Width = 145;
             // 
             // gridColumn2
             // 
             this.gridColumn2.Caption = "CEP";
             this.gridColumn2.FieldName = "CLI_CEP";
             this.gridColumn2.Name = "gridColumn2";
+            this.gridColumn2.OptionsColumn.AllowEdit = false;
+            this.gridColumn2.OptionsColumn.ReadOnly = true;
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 7;
             // 
@@ -193,6 +223,8 @@
             this.gridColumn9.Caption = "Bairro";
             this.gridColumn9.FieldName = "CLI_BAIRRO";
             this.gridColumn9.Name = "gridColumn9";
+            this.gridColumn9.OptionsColumn.AllowEdit = false;
+            this.gridColumn9.OptionsColumn.ReadOnly = true;
             this.gridColumn9.Visible = true;
             this.gridColumn9.VisibleIndex = 8;
             // 
@@ -201,14 +233,19 @@
             this.gridColumn8.Caption = "Rua";
             this.gridColumn8.FieldName = "CLI_RUA";
             this.gridColumn8.Name = "gridColumn8";
+            this.gridColumn8.OptionsColumn.AllowEdit = false;
+            this.gridColumn8.OptionsColumn.ReadOnly = true;
             this.gridColumn8.Visible = true;
             this.gridColumn8.VisibleIndex = 9;
+            this.gridColumn8.Width = 162;
             // 
             // gridColumn10
             // 
             this.gridColumn10.Caption = "Numero";
             this.gridColumn10.FieldName = "CLI_NUMERO";
             this.gridColumn10.Name = "gridColumn10";
+            this.gridColumn10.OptionsColumn.AllowEdit = false;
+            this.gridColumn10.OptionsColumn.ReadOnly = true;
             this.gridColumn10.Visible = true;
             this.gridColumn10.VisibleIndex = 10;
             // 
@@ -217,6 +254,8 @@
             this.gridColumn11.Caption = "Estado";
             this.gridColumn11.FieldName = "CLI_ESTADO";
             this.gridColumn11.Name = "gridColumn11";
+            this.gridColumn11.OptionsColumn.AllowEdit = false;
+            this.gridColumn11.OptionsColumn.ReadOnly = true;
             this.gridColumn11.Visible = true;
             this.gridColumn11.VisibleIndex = 11;
             // 
@@ -258,6 +297,7 @@
             this.splitContainerControl1.Panel1.Controls.Add(this.btnAltCli);
             this.splitContainerControl1.Panel1.Text = "Panel1";
             this.splitContainerControl1.Panel2.Controls.Add(this.gridControl1);
+            this.splitContainerControl1.Panel2.Controls.Add(this.panelControlBottom);
             this.splitContainerControl1.Panel2.Text = "Panel2";
             this.splitContainerControl1.Size = new System.Drawing.Size(788, 605);
             this.splitContainerControl1.SplitterPosition = 174;
@@ -438,6 +478,33 @@
             this.btnInserir.Text = "Inserir";
             this.btnInserir.Click += new System.EventHandler(this.btnInserir_Click_1);
             // 
+            // panelControlBottom
+            // 
+            this.panelControlBottom.Controls.Add(this.btnCancelar);
+            this.panelControlBottom.Controls.Add(this.btnOK);
+            this.panelControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelControlBottom.Location = new System.Drawing.Point(0, 383);
+            this.panelControlBottom.Name = "panelControlBottom";
+            this.panelControlBottom.Size = new System.Drawing.Size(788, 43);
+            this.panelControlBottom.TabIndex = 4;
+            // 
+            // btnOK
+            // 
+            this.btnOK.Location = new System.Drawing.Point(334, 10);
+            this.btnOK.Name = "btnOK";
+            this.btnOK.Size = new System.Drawing.Size(75, 23);
+            this.btnOK.TabIndex = 0;
+            this.btnOK.Text = "OK";
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Location = new System.Drawing.Point(415, 10);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.TabIndex = 1;
+            this.btnCancelar.Text = "Cancelar";
+            // 
             // SH_CLIENTES
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -476,6 +543,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.edCLI_RAZAO.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControlBottom)).EndInit();
+            this.panelControlBottom.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -516,5 +585,8 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
+        private DevExpress.XtraEditors.PanelControl panelControlBottom;
+        private DevExpress.XtraEditors.SimpleButton btnCancelar;
+        private DevExpress.XtraEditors.SimpleButton btnOK;
     }
 }

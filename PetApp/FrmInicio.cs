@@ -147,5 +147,17 @@ namespace PetApp
             SH_FORNECEDORES form = new SH_FORNECEDORES();
             form.ShowDialog();
         }
+
+        private void accordionControlElementEstoque_Click(object sender, EventArgs e)
+        {
+            SH_ESTOQUE obj = new SH_ESTOQUE();
+            obj.ShowDialog();
+        }
+
+        private void accordionControlElementEstoqueCad_Click(object sender, EventArgs e)
+        {
+            FrmEstoque obj = new FrmEstoque();
+            obj.ShowDialog();
+        }
     }
 }

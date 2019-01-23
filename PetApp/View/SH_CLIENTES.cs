@@ -14,6 +14,8 @@ namespace PetApp
     public partial class SH_CLIENTES : DevExpress.XtraEditors.XtraForm
     {
         int IdCli = 0;
+        public bool pesquisa = false;
+        public int CLI_ID = 0;
         public SH_CLIENTES()
         {
             InitializeComponent();
@@ -24,6 +26,16 @@ namespace PetApp
         {
             FrmCadCli frmcadcli = new FrmCadCli();
             frmcadcli.ShowDialog();
+        }
+
+        private void FrmCli_Load(object sender, EventArgs e)
+        {
+            gridControl1.DataSource = Clientes.Get(" AND CLI_PESTIPO <> 'FOR'");
+            btnAltCli.Enabled = !pesquisa;
+            btnInserir.Enabled = !pesquisa;
+            btnRemCli.Enabled = !pesquisa;
+            panelControlBottom.Enabled = !pesquisa;
+            panelControlBottom.Visible = pesquisa;
         }
 
         private void btnInserir_Click(object sender, EventArgs e)
@@ -39,11 +51,6 @@ namespace PetApp
         private void simpleButton1_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void FrmCli_Load(object sender, EventArgs e)
-        {
-            gridControl1.DataSource = Clientes.Get(" AND CLI_PESTIPO <> 'FOR'");
         }
 
         private void btnRemCli_Click(object sender, EventArgs e)
@@ -123,6 +130,11 @@ namespace PetApp
             List<Clientes> listCliente = new List<Clientes>();
             listCliente = Clientes.Get(filtro.ToString());
             gridControl1.DataSource = listCliente;
+        }
+
+        private void btnOK_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

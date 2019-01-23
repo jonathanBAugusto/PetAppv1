@@ -24,10 +24,10 @@ namespace PetApp.View
 
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
-            if (F.toString(edPRO_REFEREMCIA.EditValue) == "")
+            if (F.toString(edPRO_REFERENCIA.EditValue) == "")
             {
                 F.Aviso("Selecione um Produto para lançar uma movimentação");
-                edPRO_REFEREMCIA.Focus();
+                edPRO_REFERENCIA.Focus();
             }
             if (F.toString(edLCP_QUANTIDADE.EditValue) == "")
             {
@@ -39,7 +39,7 @@ namespace PetApp.View
                 F.Aviso("Informe a data para lançar a movimentação");
                 edLCP_DATA.Focus();
             }
-            int pro_id = Lancprods.getIDByRef(F.toString(edPRO_REFEREMCIA.EditValue));
+            int pro_id = Lancprods.getIDByRef(F.toString(edPRO_REFERENCIA.EditValue));
             if (pro_id == -1)
             {
                 F.Aviso("Produto não encontrado");
@@ -81,8 +81,16 @@ namespace PetApp.View
 
             edLCP_DATA.DateTime = DateTime.Now;
             edLCP_QUANTIDADE.EditValue = null;
-            edPRO_REFEREMCIA.EditValue = null;
-            edPRO_REFEREMCIA.Focus();
+            edPRO_REFERENCIA.EditValue = null;
+            edPRO_REFERENCIA.Focus();
+        }
+
+        private void edPRO_REFERENCIA_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+        {
+            SH_CLIENTES obj = new SH_CLIENTES();
+            obj.pesquisa = true;
+            obj.ShowDialog();
+            int cli_id = obj.CLI_ID;
         }
     }
 }

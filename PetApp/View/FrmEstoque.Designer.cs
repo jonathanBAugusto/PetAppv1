@@ -39,7 +39,7 @@
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.edLCP_QUANTIDADE = new DevExpress.XtraEditors.TextEdit();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.edPRO_REFEREMCIA = new DevExpress.XtraEditors.ButtonEdit();
+            this.edPRO_REFERENCIA = new DevExpress.XtraEditors.ButtonEdit();
             this.gridControlEstoque = new DevExpress.XtraGrid.GridControl();
             this.gridViewEstoque = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -62,7 +62,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.edLCP_QUANTIDADE.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.edPRO_REFEREMCIA.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edPRO_REFERENCIA.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlEstoque)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewEstoque)).BeginInit();
             this.SuspendLayout();
@@ -184,22 +184,23 @@
             // 
             // groupControl1
             // 
-            this.groupControl1.Controls.Add(this.edPRO_REFEREMCIA);
+            this.groupControl1.Controls.Add(this.edPRO_REFERENCIA);
             this.groupControl1.Location = new System.Drawing.Point(12, 12);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(115, 43);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Produto";
             // 
-            // edPRO_REFEREMCIA
+            // edPRO_REFERENCIA
             // 
-            this.edPRO_REFEREMCIA.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.edPRO_REFEREMCIA.Location = new System.Drawing.Point(2, 20);
-            this.edPRO_REFEREMCIA.Name = "edPRO_REFEREMCIA";
-            this.edPRO_REFEREMCIA.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.edPRO_REFERENCIA.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.edPRO_REFERENCIA.Location = new System.Drawing.Point(2, 20);
+            this.edPRO_REFERENCIA.Name = "edPRO_REFERENCIA";
+            this.edPRO_REFERENCIA.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.edPRO_REFEREMCIA.Size = new System.Drawing.Size(111, 20);
-            this.edPRO_REFEREMCIA.TabIndex = 0;
+            this.edPRO_REFERENCIA.Size = new System.Drawing.Size(111, 20);
+            this.edPRO_REFERENCIA.TabIndex = 0;
+            this.edPRO_REFERENCIA.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.edPRO_REFERENCIA_ButtonClick);
             // 
             // gridControlEstoque
             // 
@@ -228,6 +229,7 @@
             // gridColumn1
             // 
             this.gridColumn1.Caption = "Id";
+            this.gridColumn1.FieldName = "LCP_ID";
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.OptionsColumn.AllowEdit = false;
             this.gridColumn1.OptionsColumn.ReadOnly = true;
@@ -238,6 +240,7 @@
             // gridColumn2
             // 
             this.gridColumn2.Caption = "Ref.";
+            this.gridColumn2.FieldName = "PRO_REFERENCIA";
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.OptionsColumn.AllowEdit = false;
             this.gridColumn2.OptionsColumn.ReadOnly = true;
@@ -248,6 +251,7 @@
             // gridColumn3
             // 
             this.gridColumn3.Caption = "Descrição";
+            this.gridColumn3.FieldName = "PRO_DESCRICAO";
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.OptionsColumn.AllowEdit = false;
             this.gridColumn3.OptionsColumn.ReadOnly = true;
@@ -258,6 +262,7 @@
             // gridColumn4
             // 
             this.gridColumn4.Caption = "Estoque";
+            this.gridColumn4.FieldName = "LCP_QUANTIDADE";
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.OptionsColumn.AllowEdit = false;
             this.gridColumn4.OptionsColumn.ReadOnly = true;
@@ -267,6 +272,7 @@
             // gridColumn5
             // 
             this.gridColumn5.Caption = "Data";
+            this.gridColumn5.FieldName = "LCP_DATA";
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.OptionsColumn.AllowEdit = false;
             this.gridColumn5.OptionsColumn.ReadOnly = true;
@@ -276,6 +282,7 @@
             // gridColumn6
             // 
             this.gridColumn6.Caption = "Tipo";
+            this.gridColumn6.FieldName = "LCP_TIPO";
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.Visible = true;
             this.gridColumn6.VisibleIndex = 5;
@@ -303,7 +310,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.edLCP_QUANTIDADE.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.edPRO_REFEREMCIA.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edPRO_REFERENCIA.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlEstoque)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewEstoque)).EndInit();
             this.ResumeLayout(false);
@@ -328,7 +335,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
         private DevExpress.XtraEditors.DateEdit edLCP_DATA;
-        private DevExpress.XtraEditors.ButtonEdit edPRO_REFEREMCIA;
+        private DevExpress.XtraEditors.ButtonEdit edPRO_REFERENCIA;
         private DevExpress.XtraEditors.SimpleButton btnConcluir;
         private DevExpress.XtraEditors.SimpleButton btnRemover;
         private DevExpress.XtraEditors.SimpleButton btnAdicionar;

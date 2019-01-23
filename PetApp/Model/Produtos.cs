@@ -571,10 +571,31 @@ namespace PetApp.Model
         }
 
         private static Connection CONN;
+        public Connection conn;
         public EstoquePesquisa()
         {
             CONN = new Connection();
         }
 
+        public static List<EstoquePesquisa> GetBySQL(string sql)
+        {
+            CONN = new Connection();
+            try
+            {
+                return CONN.conn.Query<EstoquePesquisa>(sql);
+            }
+            catch
+            {
+                try
+                {
+                    return CONN.conn.Query<EstoquePesquisa>(sql);
+                }
+                catch (Exception ex)
+                {
+                    F.WriteLOG("---------------------------\n" + DateTime.Now.ToString() + " Error: " + ex.Message);
+                }
+            }
+            return new List<EstoquePesquisa>();
+        }
     }
 }

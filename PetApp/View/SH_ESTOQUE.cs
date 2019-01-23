@@ -8,6 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using PetApp.Model;
 
 namespace PetApp.View
 {
@@ -40,17 +41,15 @@ namespace PetApp.View
             switch (F.toString(rgAbxAcm.EditValue))
             {
                 case "AC":
+                    filter.Append(" AND LANCPRODS.LCP_QUANTIDADE > 0 ");
                     break;
                 case "AB":
-                    break;
-
-                default:
+                    filter.Append(" AND LANCPRODS.LCP_QUANTIDADE < 0 ");
                     break;
             }
-            if (F.toString(rgAbxAcm) != "" && F.toString(rgAbxAcm) != "AM")
+            if (ckIgualZero.Checked)
             {
-                
-                filter.Append(" AND LANCPRODS.LCP_QUANTIDADE = '" + F.toString(edPRO_REFERENCIA.EditValue) + "' ");
+                filter.Append(" AND LANCPRODS.LCP_QUANTIDADE = 0 ");
             }
 
 
@@ -79,11 +78,16 @@ namespace PetApp.View
             sql.Append("		PRODUTOS.PRO_CUSTOULTCOMPRA,	");
             sql.Append("		LANCPRODS.LCP_DATA,	");
             sql.Append("		LANCPRODS.LCP_TIPO	");
+
+            List<EstoquePesquisa> objPesq = new List<EstoquePesquisa>();
+            objPesq.AddRange(EstoquePesquisa.GetBySQL(sql.ToString()));
         }
 
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
-
+            FrmEstoque objFrmEstoque = new FrmEstoque();
+            objFrmEstoque.ShowDialog();
+            btnPesquisar_Click(null, null);
         }
 
         private void btnRemover_Click(object sender, EventArgs e)
