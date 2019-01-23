@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInicio));
             this.acInicio = new DevExpress.XtraBars.Navigation.AccordionControl();
             this.accordionControlElement6 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -55,7 +56,9 @@
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
-            this.alertControl1 = new DevExpress.XtraBars.Alerter.AlertControl();
+            this.alertControl1 = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
+            this.accordionControlElement18 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement19 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             ((System.ComponentModel.ISupportInitialize)(this.acInicio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iSlider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -86,7 +89,9 @@
             this.accordionControlElement2,
             this.accordionControlElement9,
             this.accordionControlElement1,
-            this.accordionControlElement16});
+            this.accordionControlElement16,
+            this.accordionControlElement19});
+            this.accordionControlElement6.Expanded = true;
             this.accordionControlElement6.Name = "accordionControlElement6";
             this.accordionControlElement6.Text = "Cadastros";
             this.accordionControlElement6.Click += new System.EventHandler(this.accordionControlElement6_Click);
@@ -161,7 +166,8 @@
             this.accordionControlElement12,
             this.accordionControlElement13,
             this.accordionControlElement14,
-            this.accordionControlElement17});
+            this.accordionControlElement17,
+            this.accordionControlElement18});
             this.accordionControlElement3.Expanded = true;
             this.accordionControlElement3.Name = "accordionControlElement3";
             this.accordionControlElement3.Text = "Pesquisas/Listagens";
@@ -283,6 +289,20 @@
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
             this.ribbonStatusBar1.Size = new System.Drawing.Size(441, 27);
             // 
+            // accordionControlElement18
+            // 
+            this.accordionControlElement18.Name = "accordionControlElement18";
+            this.accordionControlElement18.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement18.Text = "Estoque";
+            this.accordionControlElement18.Click += new System.EventHandler(this.accordionControlElement18_Click);
+            // 
+            // accordionControlElement19
+            // 
+            this.accordionControlElement19.Name = "accordionControlElement19";
+            this.accordionControlElement19.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement19.Text = "Estoque";
+            this.accordionControlElement19.Click += new System.EventHandler(this.accordionControlElement19_Click);
+            // 
             // FrmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -338,6 +358,8 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement16;
         private DevExpress.XtraBars.Alerter.AlertControl alertControl1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement17;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement18;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement19;
     }
 }
 

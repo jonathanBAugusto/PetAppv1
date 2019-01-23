@@ -98,5 +98,15 @@ namespace PetApp.View
         {
 
         }
+
+        private void btnInserir_Click(object sender, EventArgs e)
+        {
+            FrmPets form = new FrmPets();
+            form.ShowDialog();
+            if (form.DialogResult == DialogResult.OK)
+            {
+                SH_PETS_Load(null,null);
+            }
+        }
     }
 }

@@ -28,7 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.alterarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.removerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.ID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -64,6 +68,7 @@
             this.edCLI_RAZAO = new DevExpress.XtraEditors.TextEdit();
             this.btnInserir = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
@@ -96,6 +101,7 @@
             // 
             // gridControl1
             // 
+            this.gridControl1.ContextMenuStrip = this.contextMenuStrip1;
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
@@ -105,6 +111,28 @@
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             this.gridControl1.DoubleClick += new System.EventHandler(this.gridControl1_DoubleClick);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.alterarToolStripMenuItem,
+            this.removerToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(122, 48);
+            // 
+            // alterarToolStripMenuItem
+            // 
+            this.alterarToolStripMenuItem.Name = "alterarToolStripMenuItem";
+            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.alterarToolStripMenuItem.Text = "Alterar";
+            this.alterarToolStripMenuItem.Click += new System.EventHandler(this.alterarToolStripMenuItem_Click);
+            // 
+            // removerToolStripMenuItem
+            // 
+            this.removerToolStripMenuItem.Name = "removerToolStripMenuItem";
+            this.removerToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.removerToolStripMenuItem.Text = "Remover";
+            this.removerToolStripMenuItem.Click += new System.EventHandler(this.removerToolStripMenuItem_Click);
             // 
             // gridView1
             // 
@@ -129,6 +157,7 @@
             this.ID.Caption = "ID";
             this.ID.FieldName = "CLI_ID";
             this.ID.Name = "ID";
+            this.ID.OptionsColumn.ReadOnly = true;
             this.ID.Visible = true;
             this.ID.VisibleIndex = 0;
             // 
@@ -137,6 +166,7 @@
             this.gridColumn3.Caption = "Razão Social";
             this.gridColumn3.FieldName = "CLI_RAZAO";
             this.gridColumn3.Name = "gridColumn3";
+            this.gridColumn3.OptionsColumn.ReadOnly = true;
             this.gridColumn3.Visible = true;
             this.gridColumn3.VisibleIndex = 1;
             // 
@@ -145,6 +175,7 @@
             this.gridColumn4.Caption = "Inscrição Estadual";
             this.gridColumn4.FieldName = "CLI_INSCRICAO";
             this.gridColumn4.Name = "gridColumn4";
+            this.gridColumn4.OptionsColumn.ReadOnly = true;
             this.gridColumn4.Visible = true;
             this.gridColumn4.VisibleIndex = 2;
             // 
@@ -153,6 +184,7 @@
             this.gridColumn5.Caption = "Nascimento";
             this.gridColumn5.FieldName = "CLI_NASC";
             this.gridColumn5.Name = "gridColumn5";
+            this.gridColumn5.OptionsColumn.ReadOnly = true;
             this.gridColumn5.Visible = true;
             this.gridColumn5.VisibleIndex = 3;
             // 
@@ -161,6 +193,7 @@
             this.gridColumn6.Caption = "Celular";
             this.gridColumn6.FieldName = "CLI_CEL";
             this.gridColumn6.Name = "gridColumn6";
+            this.gridColumn6.OptionsColumn.ReadOnly = true;
             this.gridColumn6.Visible = true;
             this.gridColumn6.VisibleIndex = 4;
             // 
@@ -169,6 +202,7 @@
             this.gridColumn7.Caption = "Telefone";
             this.gridColumn7.FieldName = "CLI_TEL";
             this.gridColumn7.Name = "gridColumn7";
+            this.gridColumn7.OptionsColumn.ReadOnly = true;
             this.gridColumn7.Visible = true;
             this.gridColumn7.VisibleIndex = 5;
             // 
@@ -177,6 +211,7 @@
             this.gridColumn1.Caption = "Email";
             this.gridColumn1.FieldName = "CLI_EMAIL";
             this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.OptionsColumn.ReadOnly = true;
             this.gridColumn1.Visible = true;
             this.gridColumn1.VisibleIndex = 6;
             // 
@@ -185,6 +220,7 @@
             this.gridColumn2.Caption = "CEP";
             this.gridColumn2.FieldName = "CLI_CEP";
             this.gridColumn2.Name = "gridColumn2";
+            this.gridColumn2.OptionsColumn.ReadOnly = true;
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 7;
             // 
@@ -193,6 +229,7 @@
             this.gridColumn9.Caption = "Bairro";
             this.gridColumn9.FieldName = "CLI_BAIRRO";
             this.gridColumn9.Name = "gridColumn9";
+            this.gridColumn9.OptionsColumn.ReadOnly = true;
             this.gridColumn9.Visible = true;
             this.gridColumn9.VisibleIndex = 8;
             // 
@@ -201,6 +238,7 @@
             this.gridColumn8.Caption = "Rua";
             this.gridColumn8.FieldName = "CLI_RUA";
             this.gridColumn8.Name = "gridColumn8";
+            this.gridColumn8.OptionsColumn.ReadOnly = true;
             this.gridColumn8.Visible = true;
             this.gridColumn8.VisibleIndex = 9;
             // 
@@ -209,6 +247,7 @@
             this.gridColumn10.Caption = "Numero";
             this.gridColumn10.FieldName = "CLI_NUMERO";
             this.gridColumn10.Name = "gridColumn10";
+            this.gridColumn10.OptionsColumn.ReadOnly = true;
             this.gridColumn10.Visible = true;
             this.gridColumn10.VisibleIndex = 10;
             // 
@@ -217,6 +256,7 @@
             this.gridColumn11.Caption = "Estado";
             this.gridColumn11.FieldName = "CLI_ESTADO";
             this.gridColumn11.Name = "gridColumn11";
+            this.gridColumn11.OptionsColumn.ReadOnly = true;
             this.gridColumn11.Visible = true;
             this.gridColumn11.VisibleIndex = 11;
             // 
@@ -448,6 +488,7 @@
             this.Text = "Clientes";
             this.Load += new System.EventHandler(this.FrmCli_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).EndInit();
             this.splitContainerControl1.ResumeLayout(false);
@@ -516,5 +557,8 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem removerToolStripMenuItem;
     }
 }

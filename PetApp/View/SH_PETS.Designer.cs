@@ -456,6 +456,7 @@
             this.btnInserir.Size = new System.Drawing.Size(90, 48);
             this.btnInserir.TabIndex = 55;
             this.btnInserir.Text = "Inserir";
+            this.btnInserir.Click += new System.EventHandler(this.btnInserir_Click);
             // 
             // groupControl2
             // 
@@ -610,7 +611,7 @@
             this.Controls.Add(this.groupControl9);
             this.Controls.Add(this.groupControl1);
             this.Name = "SH_PETS";
-            this.Text = "dd";
+            this.Text = "Pesquisa de PETS";
             this.Load += new System.EventHandler(this.SH_PETS_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl9)).EndInit();
             this.groupControl9.ResumeLayout(false);
