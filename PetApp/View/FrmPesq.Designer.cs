@@ -32,8 +32,8 @@
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.btnOK = new DevExpress.XtraEditors.SimpleButton();
             this.btnCancelar = new DevExpress.XtraEditors.SimpleButton();
+            this.btnOK = new DevExpress.XtraEditors.SimpleButton();
             this.contextMenuStripGrid = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.marcarTodosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.desmarcarTodosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -71,14 +71,6 @@
             this.panelControl1.Size = new System.Drawing.Size(424, 34);
             this.panelControl1.TabIndex = 1;
             // 
-            // btnOK
-            // 
-            this.btnOK.Location = new System.Drawing.Point(134, 6);
-            this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(75, 23);
-            this.btnOK.TabIndex = 0;
-            this.btnOK.Text = "OK";
-            // 
             // btnCancelar
             // 
             this.btnCancelar.Location = new System.Drawing.Point(215, 6);
@@ -87,6 +79,14 @@
             this.btnCancelar.TabIndex = 1;
             this.btnCancelar.Text = "Cancelar";
             // 
+            // btnOK
+            // 
+            this.btnOK.Location = new System.Drawing.Point(134, 6);
+            this.btnOK.Name = "btnOK";
+            this.btnOK.Size = new System.Drawing.Size(75, 23);
+            this.btnOK.TabIndex = 0;
+            this.btnOK.Text = "OK";
+            // 
             // contextMenuStripGrid
             // 
             this.contextMenuStripGrid.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -94,25 +94,25 @@
             this.desmarcarTodosToolStripMenuItem,
             this.inverterSelecaoToolStripMenuItem});
             this.contextMenuStripGrid.Name = "contextMenuStripGrid";
-            this.contextMenuStripGrid.Size = new System.Drawing.Size(166, 70);
+            this.contextMenuStripGrid.Size = new System.Drawing.Size(167, 70);
             this.contextMenuStripGrid.Text = "Selecionar";
             // 
             // marcarTodosToolStripMenuItem
             // 
             this.marcarTodosToolStripMenuItem.Name = "marcarTodosToolStripMenuItem";
-            this.marcarTodosToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.marcarTodosToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.marcarTodosToolStripMenuItem.Text = "Marcar Todos";
             // 
             // desmarcarTodosToolStripMenuItem
             // 
             this.desmarcarTodosToolStripMenuItem.Name = "desmarcarTodosToolStripMenuItem";
-            this.desmarcarTodosToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.desmarcarTodosToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.desmarcarTodosToolStripMenuItem.Text = "Desmarcar Todos";
             // 
             // inverterSelecaoToolStripMenuItem
             // 
             this.inverterSelecaoToolStripMenuItem.Name = "inverterSelecaoToolStripMenuItem";
-            this.inverterSelecaoToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.inverterSelecaoToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.inverterSelecaoToolStripMenuItem.Text = "Inverter Seleção";
             // 
             // FrmPesq
@@ -124,6 +124,7 @@
             this.Controls.Add(this.panelControl1);
             this.Name = "FrmPesq";
             this.Text = "Pesquisa";
+            this.Load += new System.EventHandler(this.FrmPesq_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();

@@ -18,6 +18,15 @@ namespace PetApp
     {
         double valorTotal = 0;
         string estagio;
+        string data;
+        private int serID;
+
+        public int SERID
+        {
+            get { return serID; }
+            set { serID = value; }
+        }
+        Servicos altser;
         public FrmServicos()
         {
             InitializeComponent();
@@ -37,11 +46,60 @@ namespace PetApp
             edPET_ID.Properties.DataSource = Pets.Get();
             edPET_ID.Properties.ValueMember = "PET_ID";
             edPET_ID.Properties.DisplayMember = "PET_NOME";
+
+            if (SERID != 0)
+            {
+                altser = Servicos.Get(SERID);
+                edCLI_ID.EditValue = F.toInt(altser.CLI_ID);
+                edPET_ID.EditValue = F.toInt(altser.PET_ID);
+                edSER_DATA_PREV.EditValue = Convert.ToDateTime(altser.SER_DATA_PREV);
+                edSER_OBSERVACAO.EditValue = F.toString(altser.SER_OBSERVACAO);
+                edSER_VALOR_BASE.EditValue = F.toDouble(altser.SER_VALOR_BASE);
+                edSER_VALOR_DESCONTO.EditValue = F.toDouble(altser.SER_VALOR_DESCONTO);
+                edTIPO_SER.EditValue = F.toDouble(altser.SER_VALOR_TOTAL);
+                cbEstagio.EditValue = F.toString(altser.SER_ESTAGIO);
+                edTIPO_SER.EditValue = F.toInt(altser.TIPO_SER_ID);
+                btnCadastrar.Text = "Atualizar";
+                data = F.toString(altser.SER_DATA_CAD);
+            }
+
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-
+            if (SERID != 0 && altser != null)
+            {
+                if (F.toDouble(edSER_VALOR_DESCONTO.EditValue) != 0.0)
+                {
+                    valorTotal = F.toDouble(edSER_VALOR_BASE.EditValue) - F.toDouble(edSER_VALOR_DESCONTO.EditValue);
+                }
+                else
+                {
+                    valorTotal = F.toDouble(edSER_VALOR_BASE.EditValue);
+                }
+                altser = new Servicos
+                {
+                    SER_ID = SERID,
+                    CLI_ID = F.toInt(edCLI_ID.EditValue),
+                    PET_ID = F.toInt(edPET_ID.EditValue),
+                    SER_DATA_PREV = F.toString(edSER_DATA_PREV.EditValue),
+                    SER_ESTAGIO = F.toString(cbEstagio.EditValue),
+                    TIPO_SER_ID = F.toInt(edTIPO_SER.EditValue),
+                    SER_VALOR_TOTAL = F.toDouble(valorTotal),
+                    SER_VALOR_DESCONTO = F.toDouble(edSER_VALOR_DESCONTO.EditValue),
+                    SER_VALOR_BASE = F.toDouble(edSER_VALOR_BASE.EditValue),
+                    SER_OBSERVACAO = F.toString(edSER_OBSERVACAO.EditValue),
+                    SER_DATA_CAD = data
+                    
+                };
+                if (Servicos.Update(altser))
+                {
+                    F.Aviso("Serviço atualizado com sucesso");
+                    DialogResult = DialogResult.OK;
+                    Close();
+                    return;
+                }
+            }
             if (F.toDouble(edSER_VALOR_DESCONTO.EditValue) != 0.0)
             {
                 valorTotal = F.toDouble(edSER_VALOR_BASE.EditValue) - F.toDouble(edSER_VALOR_DESCONTO.EditValue);
