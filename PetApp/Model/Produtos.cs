@@ -103,6 +103,39 @@ namespace PetApp.Model
             return user;
         }
 
+        public static Produtos GetByID(int PRO_ID)
+        {
+            CONN = new Connection();
+            Produtos user = new Produtos();
+            StringBuilder sql = new StringBuilder();
+            sql.Append("	SELECT 	");
+            sql.Append("		MAX(PRODUTOS.PRO_ID),	");
+            sql.Append("		PRODUTOS.*	");
+            sql.Append("	FROM	");
+            sql.Append("		PRODUTOS 	");
+            sql.Append("	WHERE 	");
+            sql.Append("		PRO_ID = :PRO_ID	");
+            sql.Replace(":PRO_ID", PRO_ID.ToString());
+            try
+            {
+                user = CONN.conn.Query<Produtos>(sql.ToString()).FirstOrDefault();
+            }
+            catch
+            {
+                try
+                {
+                    user = CONN.conn.Query<Produtos>(sql.ToString()).FirstOrDefault();
+                }
+                catch (Exception ex)
+                {
+                    F.WriteLOG("---------------------------\n" + DateTime.Now.ToString() + " Error: " + ex.Message);
+                    user = new Produtos();
+                }
+            }
+
+            return user;
+        }
+
         public static bool Insert(Produtos user)
         {
             CONN = new Connection();
@@ -295,12 +328,13 @@ namespace PetApp.Model
             int pro_id = -1;
             try
             {
-                pro_id = F.toInt(CONN.conn.Query<List<int>>("SELECT MAX(PRO_ID) PRO_ID FROM PRODUTOS WHERE PRO_REFERENCIA = " + Referencia).LastOrDefault(), -1)
+                pro_id = F.toInt(CONN.conn.Query<List<int>>("SELECT MAX(PRO_ID) PRO_ID FROM PRODUTOS WHERE PRO_REFERENCIA = " + Referencia).LastOrDefault(), -1);
             }
             catch 
             {
                 return -1;
             }
+            return pro_id;
         }
 
         public static List<Lancprods> Get()
@@ -503,5 +537,44 @@ namespace PetApp.Model
             }
             return true;
         }
+    }
+
+    class EstoquePesquisa
+    {
+        public int LCP_ID { get; set; }
+        public int PRO_ID { get; set; }
+        public string PRO_REFERENCIA { get; set; }
+        public string PRO_DESCRICAO { get; set; }
+        public double PRO_CUSTO { get; set; }
+        public double PRO_CUSTOULTCOMPRA { get; set; }
+        public DateTime LCP_DATA { get; set; }
+        public string LCP_TIPO { get; set; }
+        private string lcp_TIPOVIEW;
+
+        public string LCP_TIPOVIEW
+        {
+            get
+            {
+                string final = "";
+                if (LCP_TIPO == "E")
+                {
+                    final = "ENTRADA";
+                }
+                else if (LCP_TIPO == "S")
+                {
+                    final = "SAÍDA";
+                }
+
+                return final;
+            }
+            set { lcp_TIPOVIEW = value; }
+        }
+
+        private static Connection CONN;
+        public EstoquePesquisa()
+        {
+            CONN = new Connection();
+        }
+
     }
 }
