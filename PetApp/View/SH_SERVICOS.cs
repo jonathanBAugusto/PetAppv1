@@ -46,6 +46,10 @@ namespace PetApp.View
             edCLI_ID.Properties.DataSource = Clientes.Get();
             edCLI_ID.Properties.ValueMember = "CLI_ID";
             edCLI_ID.Properties.DisplayMember = "CLI_RAZAO";
+
+            edTIPO_SER_ID.Properties.DataSource = TipoServico.Get();
+            edTIPO_SER_ID.Properties.ValueMember = "TIPO_SER_ID";
+            edTIPO_SER_ID.Properties.DisplayMember = "TIPO_SER_NOME";
         }
 
         private void btnAlterar_Click(object sender, EventArgs e)
@@ -77,6 +81,10 @@ namespace PetApp.View
             if (F.toString(edSER_VALOR_TOTAL.EditValue) != "")
             {
                 filtro.Append(" AND SER_VALOR_TOTAL = '" + F.toDouble(edSER_VALOR_TOTAL.EditValue) + "' ");
+            }
+            if (F.toString(edTIPO_SER_ID.EditValue) != "")
+            {
+                filtro.Append(" AND TIPO_SER_ID = '" + F.toInt(edTIPO_SER_ID.EditValue) + "' ");
             }
             List<Servicos> listServico = new List<Servicos>();
             listServico = Servicos.Get(filtro.ToString());
