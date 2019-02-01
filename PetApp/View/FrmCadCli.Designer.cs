@@ -87,6 +87,7 @@
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.openFileDialogImg = new System.Windows.Forms.OpenFileDialog();
+            this.ceEndOf = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.edCLI_FANTASIA.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.edCLI_TEL.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
@@ -160,6 +161,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControlPet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewPet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEditImgPet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ceEndOf.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // edCLI_FANTASIA
@@ -438,6 +440,7 @@
             // 
             // groupControl2
             // 
+            this.groupControl2.Controls.Add(this.ceEndOf);
             this.groupControl2.Controls.Add(this.groupControl27);
             this.groupControl2.Controls.Add(this.groupControl26);
             this.groupControl2.Controls.Add(this.groupControl25);
@@ -761,6 +764,14 @@
             // 
             this.openFileDialogImg.FileName = "openFileDialog1";
             // 
+            // ceEndOf
+            // 
+            this.ceEndOf.Location = new System.Drawing.Point(748, 31);
+            this.ceEndOf.Name = "ceEndOf";
+            this.ceEndOf.Properties.Caption = "Endereço offline";
+            this.ceEndOf.Size = new System.Drawing.Size(117, 19);
+            this.ceEndOf.TabIndex = 38;
+            // 
             // FrmCadCli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -845,6 +856,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControlPet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewPet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEditImgPet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ceEndOf.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -909,5 +921,6 @@
         private DevExpress.XtraEditors.PictureEdit picCLI_IMG;
         private DevExpress.XtraEditors.ButtonEdit edCLI_IMG;
         private System.Windows.Forms.OpenFileDialog openFileDialogImg;
+        private DevExpress.XtraEditors.CheckEdit ceEndOf;
     }
 }

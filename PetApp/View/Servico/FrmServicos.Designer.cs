@@ -352,6 +352,7 @@
             this.repositoryItemTextEdit1});
             this.edTIPO_SER.Size = new System.Drawing.Size(67, 20);
             this.edTIPO_SER.TabIndex = 44;
+            this.edTIPO_SER.Validated += new System.EventHandler(this.edTIPO_SER_Validated);
             // 
             // gridLookUpEdit1View
             // 

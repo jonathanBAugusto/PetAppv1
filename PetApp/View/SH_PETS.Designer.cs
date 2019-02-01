@@ -80,6 +80,7 @@
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
             this.edCLI_ID = new DevExpress.XtraEditors.LookUpEdit();
+            this.removerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl9)).BeginInit();
             this.groupControl9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlPets)).BeginInit();
@@ -160,14 +161,15 @@
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.alterarToolStripMenuItem});
+            this.alterarToolStripMenuItem,
+            this.removerToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(110, 26);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 70);
             // 
             // alterarToolStripMenuItem
             // 
             this.alterarToolStripMenuItem.Name = "alterarToolStripMenuItem";
-            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.alterarToolStripMenuItem.Text = "Alterar";
             this.alterarToolStripMenuItem.Click += new System.EventHandler(this.alterarToolStripMenuItem_Click);
             // 
@@ -617,6 +619,13 @@
             this.edCLI_ID.Size = new System.Drawing.Size(148, 20);
             this.edCLI_ID.TabIndex = 15;
             // 
+            // removerToolStripMenuItem
+            // 
+            this.removerToolStripMenuItem.Name = "removerToolStripMenuItem";
+            this.removerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.removerToolStripMenuItem.Text = "Remover";
+            this.removerToolStripMenuItem.Click += new System.EventHandler(this.removerToolStripMenuItem_Click_1);
+            // 
             // SH_PETS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -727,5 +736,6 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem;
         private DevExpress.XtraEditors.Repository.RepositoryItemDateEdit repositoryItemDateEdit1;
+        private System.Windows.Forms.ToolStripMenuItem removerToolStripMenuItem;
     }
 }

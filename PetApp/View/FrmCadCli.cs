@@ -137,7 +137,14 @@ namespace PetApp
 
         private void edCEP_Validated(object sender, EventArgs e)
         {
-            F.LocalizarCEP(F.toString(edCEP.EditValue), edEstado, edCidade, edBairro, edRua);
+            if (ceEndOf.Checked == false)
+            {
+                F.LocalizarCEP(F.toString(edCEP.EditValue), edEstado, edCidade, edBairro, edRua);
+            }
+            else
+            {
+                edEstado.Enabled = true;
+            }
         }
 
         private void btnAddPet_Click(object sender, EventArgs e)

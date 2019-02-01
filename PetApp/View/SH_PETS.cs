@@ -108,5 +108,13 @@ namespace PetApp.View
                 SH_PETS_Load(null,null);
             }
         }
+
+        private void removerToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            int PETID = F.toInt(layoutView1.GetFocusedRowCellValue("PET_ID"));
+            Pets.Delete(Pets.Get(PETID));
+            SH_PETS_Load(null, null);
+
+        }
     }
 }
