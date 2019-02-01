@@ -20,7 +20,8 @@ namespace PetApp.View
         }
         private void edPRO_REFERENCIA_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
         {
-
+            string refer = F.SearchProds();
+            edPRO_REFERENCIA.EditValue = refer;
         }
         private void btnPesquisar_Click(object sender, EventArgs e)
         {

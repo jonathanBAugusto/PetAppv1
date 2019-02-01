@@ -8,6 +8,7 @@ using System.Windows.Forms;
 using Correios.Net;
 using DevExpress.XtraEditors;
 using PetApp.View;
+using PetApp.View.UTL;
 
 namespace PetApp
 {
@@ -183,6 +184,19 @@ namespace PetApp
             else
             {
                 return false;
+            }
+        }
+
+        public static string SearchProds()
+        {
+            FrmSelectPro obj = new FrmSelectPro();
+            if (obj.ShowDialog() == DialogResult.OK)
+            {
+                return obj.PRO_REFERENCIA;
+            }
+            else
+            {
+                return "";
             }
         }
     }

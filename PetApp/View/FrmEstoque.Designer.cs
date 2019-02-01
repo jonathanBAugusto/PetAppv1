@@ -147,18 +147,13 @@
             // 
             this.edLCP_DATA.Dock = System.Windows.Forms.DockStyle.Fill;
             this.edLCP_DATA.EditValue = null;
+            this.edLCP_DATA.EnterMoveNextControl = true;
             this.edLCP_DATA.Location = new System.Drawing.Point(2, 20);
             this.edLCP_DATA.Name = "edLCP_DATA";
             this.edLCP_DATA.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.edLCP_DATA.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.edLCP_DATA.Properties.DisplayFormat.FormatString = "";
-            this.edLCP_DATA.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.edLCP_DATA.Properties.EditFormat.FormatString = "";
-            this.edLCP_DATA.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.edLCP_DATA.Properties.Mask.EditMask = "";
-            this.edLCP_DATA.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
             this.edLCP_DATA.Size = new System.Drawing.Size(105, 20);
             this.edLCP_DATA.TabIndex = 0;
             // 
@@ -179,6 +174,7 @@
             this.edLCP_QUANTIDADE.Name = "edLCP_QUANTIDADE";
             this.edLCP_QUANTIDADE.Properties.Mask.EditMask = "n3";
             this.edLCP_QUANTIDADE.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.edLCP_QUANTIDADE.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.edLCP_QUANTIDADE.Size = new System.Drawing.Size(107, 20);
             this.edLCP_QUANTIDADE.TabIndex = 0;
             // 
@@ -296,6 +292,7 @@
             this.Controls.Add(this.gridControlEstoque);
             this.Controls.Add(this.panelControl1);
             this.Name = "FrmEstoque";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Entrada/Saída de Estoque";
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
@@ -335,10 +332,10 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
-        private DevExpress.XtraEditors.DateEdit edLCP_DATA;
         private DevExpress.XtraEditors.ButtonEdit edPRO_REFERENCIA;
         private DevExpress.XtraEditors.SimpleButton btnConcluir;
         private DevExpress.XtraEditors.SimpleButton btnRemover;
         private DevExpress.XtraEditors.SimpleButton btnAdicionar;
+        private DevExpress.XtraEditors.DateEdit edLCP_DATA;
     }
 }
