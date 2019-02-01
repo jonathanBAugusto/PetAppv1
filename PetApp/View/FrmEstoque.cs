@@ -87,8 +87,7 @@ namespace PetApp.View
 
         private void edPRO_REFERENCIA_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
         {//é Produto!
-            SH_PRODUTOS obj = new SH_PRODUTOS();
-            obj.pesquisa = true;
+            UTL.FrmSelectPro obj = new UTL.FrmSelectPro();
             obj.ShowDialog();
             string PRO_REFERENCIA = F.toString(obj.PRO_REFERENCIA);
             edPRO_REFERENCIA.EditValue = PRO_REFERENCIA; 

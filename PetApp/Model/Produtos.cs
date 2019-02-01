@@ -18,6 +18,7 @@ namespace PetApp.Model
         public string PRO_REFERENCIA { get; set; }
         public string PRO_DESCRICAO { get; set; }
         public double PRO_CUSTO { get; set; }
+        public string PRO_DATACADASTRO { get; set; }
         public double PRO_CUSTOULTCOMPRA { get; set; }
         public int PRO_TIPO { get; set; }
         public int PRO_FORNECEDOR { get; set; }
@@ -328,13 +329,16 @@ namespace PetApp.Model
 
         public static int getIDByRef(string Referencia)
         {
+            CONN = new Connection();
             int pro_id = -1;
             try
             {
-                pro_id = F.toInt(CONN.conn.Query<List<int>>("SELECT MAX(PRO_ID) PRO_ID FROM PRODUTOS WHERE PRO_REFERENCIA = " + Referencia).LastOrDefault(), -1);
+                Produtos obj = CONN.conn.Get<Produtos>(prod => prod.PRO_REFERENCIA == Referencia);
+                pro_id = F.toInt(obj.PRO_ID, -1);
             }
-            catch 
+            catch(Exception ex) 
             {
+                string e = ex.Message;
                 return -1;
             }
             return pro_id;
