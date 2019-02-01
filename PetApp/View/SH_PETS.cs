@@ -33,7 +33,7 @@ namespace PetApp.View
 
             edPET_ID.Properties.DataSource = Pets.Get();
             edPET_ID.Properties.ValueMember = "PET_ID";
-            edPET_ID.Properties.ValueMember = "PET_NOME";
+            edPET_ID.Properties.DisplayMember = "PET_NOME";
 
             edPET_RACA.Properties.DataSource = Racas.Get();
             edPET_RACA.Properties.ValueMember = "PET_RACA_ID";

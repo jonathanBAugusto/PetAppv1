@@ -33,6 +33,7 @@
             this.gridControlPets = new DevExpress.XtraGrid.GridControl();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.alterarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.removerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.layoutView1 = new DevExpress.XtraGrid.Views.Layout.LayoutView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
             this.layoutViewField_gridColumn1 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
@@ -80,7 +81,6 @@
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
             this.edCLI_ID = new DevExpress.XtraEditors.LookUpEdit();
-            this.removerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl9)).BeginInit();
             this.groupControl9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlPets)).BeginInit();
@@ -164,14 +164,21 @@
             this.alterarToolStripMenuItem,
             this.removerToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 70);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(122, 48);
             // 
             // alterarToolStripMenuItem
             // 
             this.alterarToolStripMenuItem.Name = "alterarToolStripMenuItem";
-            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.alterarToolStripMenuItem.Text = "Alterar";
             this.alterarToolStripMenuItem.Click += new System.EventHandler(this.alterarToolStripMenuItem_Click);
+            // 
+            // removerToolStripMenuItem
+            // 
+            this.removerToolStripMenuItem.Name = "removerToolStripMenuItem";
+            this.removerToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.removerToolStripMenuItem.Text = "Remover";
+            this.removerToolStripMenuItem.Click += new System.EventHandler(this.removerToolStripMenuItem_Click_1);
             // 
             // layoutView1
             // 
@@ -618,13 +625,6 @@
             this.edCLI_ID.Properties.NullText = "";
             this.edCLI_ID.Size = new System.Drawing.Size(148, 20);
             this.edCLI_ID.TabIndex = 15;
-            // 
-            // removerToolStripMenuItem
-            // 
-            this.removerToolStripMenuItem.Name = "removerToolStripMenuItem";
-            this.removerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.removerToolStripMenuItem.Text = "Remover";
-            this.removerToolStripMenuItem.Click += new System.EventHandler(this.removerToolStripMenuItem_Click_1);
             // 
             // SH_PETS
             // 
