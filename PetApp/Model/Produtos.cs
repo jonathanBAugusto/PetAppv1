@@ -14,7 +14,6 @@ namespace PetApp.Model
     {
         [PrimaryKey, AutoIncrement]
         public int PRO_ID { get; set; }
-        [PrimaryKey]
         public string PRO_REFERENCIA { get; set; }
         public string PRO_DESCRICAO { get; set; }
         public double PRO_CUSTO { get; set; }
