@@ -56,6 +56,7 @@
             this.edCLI_RAZAO = new DevExpress.XtraEditors.TextEdit();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.ceEndOf = new DevExpress.XtraEditors.CheckEdit();
             this.groupControl27 = new DevExpress.XtraEditors.GroupControl();
             this.edEstado = new DevExpress.XtraEditors.TextEdit();
             this.groupControl26 = new DevExpress.XtraEditors.GroupControl();
@@ -131,6 +132,7 @@
             this.groupControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ceEndOf.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl27)).BeginInit();
             this.groupControl27.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.edEstado.Properties)).BeginInit();
@@ -438,6 +440,7 @@
             // 
             // groupControl2
             // 
+            this.groupControl2.Controls.Add(this.ceEndOf);
             this.groupControl2.Controls.Add(this.groupControl27);
             this.groupControl2.Controls.Add(this.groupControl26);
             this.groupControl2.Controls.Add(this.groupControl25);
@@ -452,6 +455,14 @@
             this.groupControl2.Size = new System.Drawing.Size(896, 136);
             this.groupControl2.TabIndex = 3;
             this.groupControl2.Text = "Endereço";
+            // 
+            // ceEndOf
+            // 
+            this.ceEndOf.Location = new System.Drawing.Point(748, 31);
+            this.ceEndOf.Name = "ceEndOf";
+            this.ceEndOf.Properties.Caption = "Endereço offline";
+            this.ceEndOf.Size = new System.Drawing.Size(117, 19);
+            this.ceEndOf.TabIndex = 38;
             // 
             // groupControl27
             // 
@@ -816,6 +827,7 @@
             this.groupControl4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ceEndOf.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl27)).EndInit();
             this.groupControl27.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.edEstado.Properties)).EndInit();
@@ -909,5 +921,6 @@
         private DevExpress.XtraEditors.PictureEdit picCLI_IMG;
         private DevExpress.XtraEditors.ButtonEdit edCLI_IMG;
         private System.Windows.Forms.OpenFileDialog openFileDialogImg;
+        private DevExpress.XtraEditors.CheckEdit ceEndOf;
     }
 }

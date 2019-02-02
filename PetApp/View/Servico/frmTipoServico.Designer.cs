@@ -31,6 +31,8 @@
             this.edTIPO_SER_NOME = new DevExpress.XtraEditors.TextEdit();
             this.edTIPO_SER_VALOR = new DevExpress.XtraEditors.TextEdit();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.btnRemover = new DevExpress.XtraEditors.SimpleButton();
+            this.btnAlterar = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
             this.btnCadastrar = new DevExpress.XtraEditors.SimpleButton();
@@ -74,15 +76,35 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.btnRemover);
+            this.groupControl1.Controls.Add(this.btnAlterar);
             this.groupControl1.Controls.Add(this.groupControl4);
             this.groupControl1.Controls.Add(this.groupControl3);
             this.groupControl1.Controls.Add(this.btnCadastrar);
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(469, 79);
+            this.groupControl1.Size = new System.Drawing.Size(665, 79);
             this.groupControl1.TabIndex = 5;
             this.groupControl1.Text = "Cadastrar Tipo de serviço";
+            // 
+            // btnRemover
+            // 
+            this.btnRemover.Location = new System.Drawing.Point(549, 23);
+            this.btnRemover.Name = "btnRemover";
+            this.btnRemover.Size = new System.Drawing.Size(75, 46);
+            this.btnRemover.TabIndex = 8;
+            this.btnRemover.Text = "Remover";
+            this.btnRemover.Click += new System.EventHandler(this.btnRemover_Click);
+            // 
+            // btnAlterar
+            // 
+            this.btnAlterar.Location = new System.Drawing.Point(468, 23);
+            this.btnAlterar.Name = "btnAlterar";
+            this.btnAlterar.Size = new System.Drawing.Size(75, 46);
+            this.btnAlterar.TabIndex = 7;
+            this.btnAlterar.Text = "Alterar";
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
             // groupControl4
             // 
@@ -119,7 +141,7 @@
             this.groupControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl2.Location = new System.Drawing.Point(0, 79);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(469, 371);
+            this.groupControl2.Size = new System.Drawing.Size(665, 371);
             this.groupControl2.TabIndex = 6;
             this.groupControl2.Text = "Listagem";
             // 
@@ -129,7 +151,7 @@
             this.gridControl1.Location = new System.Drawing.Point(2, 20);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(465, 349);
+            this.gridControl1.Size = new System.Drawing.Size(661, 349);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -162,7 +184,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(469, 450);
+            this.ClientSize = new System.Drawing.Size(665, 450);
             this.Controls.Add(this.groupControl2);
             this.Controls.Add(this.groupControl1);
             this.Name = "frmTipoServico";
@@ -197,5 +219,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
         private DevExpress.XtraEditors.GroupControl groupControl4;
         private DevExpress.XtraEditors.GroupControl groupControl3;
+        private DevExpress.XtraEditors.SimpleButton btnRemover;
+        private DevExpress.XtraEditors.SimpleButton btnAlterar;
     }
 }

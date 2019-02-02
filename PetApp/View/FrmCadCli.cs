@@ -120,24 +120,22 @@ namespace PetApp
                 edCLI_FANTASIA.Enabled = true;
                 edCLI_CNPJ.Enabled = true;
                 edCLI_RAZAO.Enabled = true;
-                btnAdd.Enabled = true;
-                btnDel.Enabled = true;
-            }
-            else
-            {
-                edCLI_FANTASIA.Enabled = true;
-                edCLI_CNPJ.Enabled = true;
-                edCLI_RAZAO.Enabled = true;
                 btnAdd.Enabled = false;
                 btnDel.Enabled = false;
-                
             }
             groupControl3.Enabled = F.toString(rgCLI_PESTIPO.EditValue) != "FOR";
         }
 
         private void edCEP_Validated(object sender, EventArgs e)
         {
-            F.LocalizarCEP(F.toString(edCEP.EditValue), edEstado, edCidade, edBairro, edRua);
+            if (ceEndOf.Checked == false)
+            {
+                F.LocalizarCEP(F.toString(edCEP.EditValue), edEstado, edCidade, edBairro, edRua);
+            }
+            else
+            {
+                edEstado.Enabled = true;
+            }
         }
 
         private void btnAddPet_Click(object sender, EventArgs e)

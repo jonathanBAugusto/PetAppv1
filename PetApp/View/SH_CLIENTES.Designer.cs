@@ -68,8 +68,8 @@
             this.edCLI_RAZAO = new DevExpress.XtraEditors.TextEdit();
             this.btnInserir = new DevExpress.XtraEditors.SimpleButton();
             this.panelControlBottom = new DevExpress.XtraEditors.PanelControl();
-            this.btnOK = new DevExpress.XtraEditors.SimpleButton();
             this.btnCancelar = new DevExpress.XtraEditors.SimpleButton();
+            this.btnOK = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
@@ -516,6 +516,14 @@
             this.panelControlBottom.Size = new System.Drawing.Size(788, 43);
             this.panelControlBottom.TabIndex = 4;
             // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Location = new System.Drawing.Point(415, 10);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.TabIndex = 1;
+            this.btnCancelar.Text = "Cancelar";
+            // 
             // btnOK
             // 
             this.btnOK.Location = new System.Drawing.Point(334, 10);
@@ -524,14 +532,6 @@
             this.btnOK.TabIndex = 0;
             this.btnOK.Text = "OK";
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Location = new System.Drawing.Point(415, 10);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelar.TabIndex = 1;
-            this.btnCancelar.Text = "Cancelar";
             // 
             // SH_CLIENTES
             // 

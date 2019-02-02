@@ -60,6 +60,11 @@ namespace PetApp
             {
 
                 Clientes.Delete(Clientes.Get(IdCli));
+                List<Pets> listPets = Pets.Get("AND CLI_ID = " + F.toString(IdCli));
+                foreach (Pets pet in listPets)
+                {
+                    Pets.Delete(pet);
+                }
                 FrmCli_Load(null, null);
             }
         }

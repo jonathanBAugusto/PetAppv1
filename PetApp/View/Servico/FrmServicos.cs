@@ -179,5 +179,13 @@ namespace PetApp
             SH_SERVICOS form = new SH_SERVICOS();
             form.Show();
         }
+
+        private void edTIPO_SER_Validated(object sender, EventArgs e)
+        {
+            int idt = F.toInt(edTIPO_SER.EditValue);
+            TipoServico tp = TipoServico.Get(idt);
+            double valorBase = F.toDouble(tp.TIPO_SER_VALOR);
+            edSER_VALOR_BASE.EditValue = valorBase;
+        }
     }
 }
