@@ -68,8 +68,19 @@ namespace PetApp.View.Servico
         private void btnRemover_Click(object sender, EventArgs e)
         {
             int TIPO_SER_ID = F.toInt(gridView1.GetFocusedRowCellValue("TIPO_SER_ID"));
-            TipoServico.Delete(TipoServico.Get(TIPO_SER_ID));
-            frmTipoServico_Load(null,null);
+            if (F.YesNo("Deletar","Você deseja realmente remover este tipo de serviço", 1))
+            {
+                if (TipoServico.Delete(TipoServico.Get(TIPO_SER_ID)))
+                {
+                    F.Aviso("Tipo de serviço deletado com sucesso");
+                    frmTipoServico_Load(null, null);
+                }
+                else
+                {
+                    F.Aviso("Erro ao deletar tipo de serviço");
+                }
+            }
+            
         }
     }
 }

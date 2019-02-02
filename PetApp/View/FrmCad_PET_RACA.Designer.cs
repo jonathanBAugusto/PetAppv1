@@ -84,6 +84,7 @@
             this.btnAlterar.Size = new System.Drawing.Size(86, 47);
             this.btnAlterar.TabIndex = 2;
             this.btnAlterar.Text = "Alterar";
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
             // btnRemover
             // 
@@ -92,6 +93,7 @@
             this.btnRemover.Size = new System.Drawing.Size(86, 47);
             this.btnRemover.TabIndex = 3;
             this.btnRemover.Text = "Remover";
+            this.btnRemover.Click += new System.EventHandler(this.btnRemover_Click);
             // 
             // groupControl2
             // 

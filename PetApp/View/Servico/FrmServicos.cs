@@ -182,6 +182,11 @@ namespace PetApp
 
         private void edTIPO_SER_Validated(object sender, EventArgs e)
         {
+
+        }
+
+        private void edTIPO_SER_EditValueChanged(object sender, EventArgs e)
+        {
             int idt = F.toInt(edTIPO_SER.EditValue);
             TipoServico tp = TipoServico.Get(idt);
             double valorBase = F.toDouble(tp.TIPO_SER_VALOR);
