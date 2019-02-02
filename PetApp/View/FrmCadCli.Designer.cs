@@ -56,6 +56,7 @@
             this.edCLI_RAZAO = new DevExpress.XtraEditors.TextEdit();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.ceEndOf = new DevExpress.XtraEditors.CheckEdit();
             this.groupControl27 = new DevExpress.XtraEditors.GroupControl();
             this.edEstado = new DevExpress.XtraEditors.TextEdit();
             this.groupControl26 = new DevExpress.XtraEditors.GroupControl();
@@ -87,7 +88,6 @@
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.openFileDialogImg = new System.Windows.Forms.OpenFileDialog();
-            this.ceEndOf = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.edCLI_FANTASIA.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.edCLI_TEL.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
@@ -132,6 +132,7 @@
             this.groupControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ceEndOf.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl27)).BeginInit();
             this.groupControl27.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.edEstado.Properties)).BeginInit();
@@ -161,7 +162,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControlPet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewPet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEditImgPet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ceEndOf.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // edCLI_FANTASIA
@@ -455,6 +455,14 @@
             this.groupControl2.Size = new System.Drawing.Size(896, 136);
             this.groupControl2.TabIndex = 3;
             this.groupControl2.Text = "Endereço";
+            // 
+            // ceEndOf
+            // 
+            this.ceEndOf.Location = new System.Drawing.Point(748, 31);
+            this.ceEndOf.Name = "ceEndOf";
+            this.ceEndOf.Properties.Caption = "Endereço offline";
+            this.ceEndOf.Size = new System.Drawing.Size(117, 19);
+            this.ceEndOf.TabIndex = 38;
             // 
             // groupControl27
             // 
@@ -764,14 +772,6 @@
             // 
             this.openFileDialogImg.FileName = "openFileDialog1";
             // 
-            // ceEndOf
-            // 
-            this.ceEndOf.Location = new System.Drawing.Point(748, 31);
-            this.ceEndOf.Name = "ceEndOf";
-            this.ceEndOf.Properties.Caption = "Endereço offline";
-            this.ceEndOf.Size = new System.Drawing.Size(117, 19);
-            this.ceEndOf.TabIndex = 38;
-            // 
             // FrmCadCli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -827,6 +827,7 @@
             this.groupControl4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ceEndOf.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl27)).EndInit();
             this.groupControl27.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.edEstado.Properties)).EndInit();
@@ -856,7 +857,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControlPet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewPet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEditImgPet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ceEndOf.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

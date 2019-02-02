@@ -120,17 +120,8 @@ namespace PetApp
                 edCLI_FANTASIA.Enabled = true;
                 edCLI_CNPJ.Enabled = true;
                 edCLI_RAZAO.Enabled = true;
-                btnAdd.Enabled = true;
-                btnDel.Enabled = true;
-            }
-            else
-            {
-                edCLI_FANTASIA.Enabled = true;
-                edCLI_CNPJ.Enabled = true;
-                edCLI_RAZAO.Enabled = true;
                 btnAdd.Enabled = false;
                 btnDel.Enabled = false;
-                
             }
             groupControl3.Enabled = F.toString(rgCLI_PESTIPO.EditValue) != "FOR";
         }
