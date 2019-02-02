@@ -77,7 +77,7 @@ namespace PetApp.View.Servico
                 }
                 else
                 {
-                    F.Aviso("Erro ao deletar tipo de serviço");
+                    F.Aviso("Erro ao deletar tipo de serviço!");
                 }
             }
             
