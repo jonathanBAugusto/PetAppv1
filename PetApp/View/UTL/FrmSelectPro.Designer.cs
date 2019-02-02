@@ -47,6 +47,7 @@
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemLookUpEditTipo = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
             this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemImageEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemImageEdit();
             this.pcBottom = new DevExpress.XtraEditors.PanelControl();
             this.btnCancelar = new DevExpress.XtraEditors.SimpleButton();
@@ -194,7 +195,8 @@
             this.gridColumn4,
             this.gridColumn5,
             this.gridColumn6,
-            this.gridColumn7});
+            this.gridColumn7,
+            this.gridColumn8});
             this.gridViewProdutos.GridControl = this.gridControlProdutos;
             this.gridViewProdutos.Name = "gridViewProdutos";
             this.gridViewProdutos.OptionsView.ColumnAutoWidth = false;
@@ -288,6 +290,14 @@
             this.gridColumn7.Visible = true;
             this.gridColumn7.VisibleIndex = 6;
             this.gridColumn7.Width = 186;
+            // 
+            // gridColumn8
+            // 
+            this.gridColumn8.Caption = "Data Cadastro";
+            this.gridColumn8.FieldName = "PRO_DATA";
+            this.gridColumn8.Name = "gridColumn8";
+            this.gridColumn8.Visible = true;
+            this.gridColumn8.VisibleIndex = 7;
             // 
             // repositoryItemImageEdit1
             // 
@@ -423,6 +433,7 @@
             this.pcImg.Location = new System.Drawing.Point(5, 5);
             this.pcImg.Name = "pcImg";
             this.pcImg.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pcImg.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.pcImg.Size = new System.Drawing.Size(100, 100);
             this.pcImg.TabIndex = 10;
             // 
@@ -508,5 +519,6 @@
         private DevExpress.XtraEditors.TextEdit edPRO_CUSTOULTCOMPRAFIN;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.TextEdit edPRO_CUSTOULTCOMPRAINI;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
     }
 }

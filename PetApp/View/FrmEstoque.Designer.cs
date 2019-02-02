@@ -121,7 +121,7 @@
             // rgLCP_TIPO
             // 
             this.rgLCP_TIPO.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rgLCP_TIPO.EditValue = "S";
+            this.rgLCP_TIPO.EditValue = "E";
             this.rgLCP_TIPO.EnterMoveNextControl = true;
             this.rgLCP_TIPO.Location = new System.Drawing.Point(2, 20);
             this.rgLCP_TIPO.Name = "rgLCP_TIPO";
@@ -129,7 +129,7 @@
             this.rgLCP_TIPO.Properties.Appearance.Options.UseBackColor = true;
             this.rgLCP_TIPO.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.rgLCP_TIPO.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
-            new DevExpress.XtraEditors.Controls.RadioGroupItem("S", "Entrada"),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem("E", "Entrada"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem("S", "Saída")});
             this.rgLCP_TIPO.Size = new System.Drawing.Size(171, 21);
             this.rgLCP_TIPO.TabIndex = 0;
@@ -230,8 +230,6 @@
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.OptionsColumn.AllowEdit = false;
             this.gridColumn1.OptionsColumn.ReadOnly = true;
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 0;
             this.gridColumn1.Width = 41;
             // 
             // gridColumn2
