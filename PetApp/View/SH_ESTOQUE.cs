@@ -14,9 +14,11 @@ namespace PetApp.View
 {
     public partial class SH_ESTOQUE : DevExpress.XtraEditors.XtraForm
     {
+        List<EstoquePesquisa> listPesquisa;
         public SH_ESTOQUE()
         {
             InitializeComponent();
+            listPesquisa = new List<EstoquePesquisa>();
         }
         private void edPRO_REFERENCIA_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
         {
@@ -25,6 +27,7 @@ namespace PetApp.View
         }
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
+            listPesquisa = new List<EstoquePesquisa>();
             StringBuilder sql = new StringBuilder();
             StringBuilder filter = new StringBuilder();
             if (F.toString(edDataIni.EditValue) != "")
@@ -82,6 +85,37 @@ namespace PetApp.View
 
             List<EstoquePesquisa> objPesq = new List<EstoquePesquisa>();
             objPesq.AddRange(EstoquePesquisa.GetBySQL(sql.ToString()));
+            List<int> jaFoi = new List<int>();
+            foreach (EstoquePesquisa item in objPesq)
+            {
+                if (jaFoi.Contains(item.LCP_ID))
+                {
+                    continue;
+                }
+                List<EstoquePesquisa> objSelect = new List<EstoquePesquisa>();
+                objSelect.AddRange(objPesq.Where(ob => ob.PRO_ID == F.toInt(item.PRO_ID)));
+                double totest = 0;
+                foreach (EstoquePesquisa item1 in objSelect)
+                {
+                    if (jaFoi.Contains(item1.LCP_ID))
+                    {
+                        continue;
+                    }
+                    if (item1.LCP_TIPO == "E")
+                    {
+                        totest += item1.LCP_QUANTIDADE;
+                        jaFoi.Add(item1.LCP_ID);
+                    }
+                    else if(item1.LCP_TIPO == "S")
+                    {
+                        totest -= item1.LCP_QUANTIDADE;
+                        jaFoi.Add(item1.LCP_ID);
+                    }
+                }
+                item.LCP_QUANTIDADE = totest;
+                listPesquisa.Add(item);
+            }
+            gridControlEstoque.DataSource = listPesquisa;
         }
 
         private void btnAdicionar_Click(object sender, EventArgs e)

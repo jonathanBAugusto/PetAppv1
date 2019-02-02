@@ -14,7 +14,6 @@ namespace PetApp.Model
     {
         [PrimaryKey, AutoIncrement]
         public int PRO_ID { get; set; }
-        [PrimaryKey]
         public string PRO_REFERENCIA { get; set; }
         public string PRO_DESCRICAO { get; set; }
         public double PRO_CUSTO { get; set; }
@@ -298,27 +297,44 @@ namespace PetApp.Model
         public DateTime LCP_DATA { get; set; }
         public string LCP_TIPO { get; set; }
         public int PRO_ID { get; set; }
-
-
-
-        private string pro_REFERENCIA;
+        private string pro_referencia;
         [Ignore]
         public string PRO_REFERENCIA
         {
             get
             {
-                string result = "";
+                Produtos obj = Produtos.GetByID(PRO_ID);
                 try
                 {
-                    result = F.toString(CONN.conn.Query<List<string>>("SELECT MAX(PRO_REFERENCIA) PRO_REFERENCIA FROM PRODUTOS WHERE PRO_ID = " + PRO_ID).LastOrDefault());
-                    return result;
+                    return obj.PRO_REFERENCIA;
                 }
-                catch
+                catch (Exception)
                 {
-                    return pro_REFERENCIA;
+
+                    return pro_referencia;
                 }
             }
-            set { pro_REFERENCIA = value; }
+            set { pro_referencia = value; }
+        }
+        private string pro_descricao;
+
+        [Ignore]
+        public string PRO_DESCRICAO
+        {
+            get
+            {
+                Produtos obj = Produtos.GetByID(PRO_ID);
+                try
+                {
+                    return obj.PRO_DESCRICAO;
+                }
+                catch (Exception)
+                {
+
+                    return pro_descricao;
+                }
+            }
+            set { pro_descricao = value; }
         }
         private static Connection CONN;
 
@@ -554,6 +570,7 @@ namespace PetApp.Model
         public string PRO_DESCRICAO { get; set; }
         public double PRO_CUSTO { get; set; }
         public double PRO_CUSTOULTCOMPRA { get; set; }
+        public double LCP_QUANTIDADE { get; set; }
         public DateTime LCP_DATA { get; set; }
         public string LCP_TIPO { get; set; }
         private string lcp_TIPOVIEW;

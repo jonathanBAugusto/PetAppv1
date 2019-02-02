@@ -48,6 +48,7 @@ namespace PetApp.View
             Lancprods obj = new Lancprods() { PRO_ID = pro_id, LCP_QUANTIDADE = F.toDouble(edLCP_QUANTIDADE.EditValue), LCP_DATA = edLCP_DATA.DateTime, LCP_TIPO = F.toString(rgLCP_TIPO.EditValue)};
             listLancprods.Add(obj);
             limparCampos(false);
+            gridViewEstoque.RefreshData();
         }
 
         private void btnRemover_Click(object sender, EventArgs e)
@@ -68,6 +69,7 @@ namespace PetApp.View
                 {
                     F.Aviso("Lançamentos feitos com sucesso!");
                     limparCampos(true);
+                    this.Close();
                 } 
             }
         }
