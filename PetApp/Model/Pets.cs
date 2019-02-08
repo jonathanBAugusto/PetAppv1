@@ -19,10 +19,12 @@ namespace PetApp.Model
         public string PET_IMG { get; set; }
         public string PET_NOME { get; set; }
         public string PET_NAS { get; set; }
-        public string PET_RACA { get; set; }
+        public int PET_RACA { get; set; }
         public string PET_COR { get; set; }
         public string PET_OBS { get; set; }
         public int CLI_ID { get; set; }
+        [Ignore]
+        public string CLI_NOME { get; set; }
 
 
 

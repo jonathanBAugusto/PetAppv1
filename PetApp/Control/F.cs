@@ -9,6 +9,8 @@ using Correios.Net;
 using DevExpress.XtraEditors;
 using PetApp.View;
 using PetApp.View.UTL;
+using PetApp.Control;
+using SQLite;
 
 namespace PetApp
 {
@@ -17,6 +19,11 @@ namespace PetApp
         public static string IMGPATH = "IMAGES";
         public static string TEMPFOLDER= "TEMPFOLDER";
 
+        public static SQLiteConnection conn()
+        {
+            Connection connection = new Connection();
+            return connection.conn;            
+        }
         public static bool cleanTempFolder()
         {
             try

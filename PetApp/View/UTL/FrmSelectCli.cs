@@ -13,6 +13,14 @@ namespace PetApp.View.UTL
 {
     public partial class FrmSelectCli : DevExpress.XtraEditors.XtraForm
     {
+        private string result;
+
+        public string Result
+        {
+            get { return result; }
+            set { result = value; }
+        }
+
         public FrmSelectCli()
         {
             InitializeComponent();

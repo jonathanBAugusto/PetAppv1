@@ -72,10 +72,7 @@ namespace PetApp
             edPET_RACA.Properties.DataSource = Racas.Get();
             edPET_RACA.Properties.ValueMember = "PET_RACA_ID";
             edPET_RACA.Properties.DisplayMember = "PET_RACA_NOME";
-
-            edCLI_ID.Properties.DataSource = Clientes.Get();
-            edCLI_ID.Properties.ValueMember = "CLI_ID";
-            edCLI_ID.Properties.DisplayMember = "CLI_RAZAO";
+            
             if (DonoTemp > 0)
             {
                 edCLI_ID.EditValue = DonoTemp;
@@ -129,7 +126,7 @@ namespace PetApp
             }
             pet = new Pets {
                 PET_NOME = F.toString(edPET_NOME.EditValue),
-                PET_RACA = F.toString(edPET_RACA.EditValue),
+                PET_RACA = F.toInt(edPET_RACA.EditValue),
                 PET_OBS = F.toString(edPET_OBS.Text),
                 PET_NAS = F.toString(edPET_NAS.EditValue),
                 PET_COR = F.toString(edPET_COR.EditValue),
