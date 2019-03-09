@@ -39,13 +39,13 @@ namespace PetApp
         private void accordionControlElement3_Click(object sender, EventArgs e)
         {
             FrmServicos form = new FrmServicos();
-            form.Show();
+            form.ShowDialog();
         }
 
         private void accordionControlElement4_Click(object sender, EventArgs e)
         {
             FrmPets form = new FrmPets();
-            form.Show();
+            form.ShowDialog();
         }
 
         private void FrmInicio_Load(object sender, EventArgs e)
@@ -63,55 +63,55 @@ namespace PetApp
         private void accordionControlElement7_Click(object sender, EventArgs e)
         {
             FrmCadCli form = new FrmCadCli();
-            form.Show();
+            form.ShowDialog();
         }
 
         private void accordionControlElement8_Click(object sender, EventArgs e)
         {
             FrmPets form = new FrmPets();
-            form.Show();
+            form.ShowDialog();
         }
 
         private void accordionControlElement9_Click(object sender, EventArgs e)
         {
             frmTipoServico form = new frmTipoServico();
-            form.Show();
+            form.ShowDialog();
         }
 
         private void accordionControlElement1_Click_1(object sender, EventArgs e)
         {
             FrmProdutos form = new FrmProdutos();
-            form.Show();
+            form.ShowDialog();
         }
 
         private void accordionControlElement11_Click(object sender, EventArgs e)
         {
             REL_SERVICOS form = new REL_SERVICOS();
-            form.Show();
+            form.ShowDialog();
         }
 
         private void accordionControlElement2_Click_1(object sender, EventArgs e)
         {
             FrmServicos form = new FrmServicos();
-            form.Show();
+            form.ShowDialog();
         }
 
         private void accordionControlElement12_Click(object sender, EventArgs e)
         {
             SH_CLIENTES form = new SH_CLIENTES();
-            form.Show();
+            form.ShowDialog();
         }
 
         private void accordionControlElement13_Click(object sender, EventArgs e)
         {
             SH_PETS form = new SH_PETS();
-            form.Show();
+            form.ShowDialog();
         }
 
         private void accordionControlElement4_Click_1(object sender, EventArgs e)
         {
             SH_SERVICOS form = new SH_SERVICOS();
-            form.Show();
+            form.ShowDialog();
         }
 
         private void accordionControlElement14_Click(object sender, EventArgs e)
@@ -157,6 +157,12 @@ namespace PetApp
         private void accordionControlElementEstoqueCad_Click(object sender, EventArgs e)
         {
             FrmEstoque obj = new FrmEstoque();
+            obj.ShowDialog();
+        }
+
+        private void accordionControlElementUnidade_Click(object sender, EventArgs e)
+        {
+            FrmCadUnidade obj = new FrmCadUnidade();
             obj.ShowDialog();
         }
     }

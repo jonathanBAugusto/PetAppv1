@@ -70,12 +70,13 @@
             this.groupControl2.Name = "groupControl2";
             this.groupControl2.Padding = new System.Windows.Forms.Padding(2);
             this.groupControl2.Size = new System.Drawing.Size(154, 48);
-            this.groupControl2.TabIndex = 4;
+            this.groupControl2.TabIndex = 0;
             this.groupControl2.Text = "Nome do tipo de produto";
             // 
             // edTPR_DESCRICAO
             // 
             this.edTPR_DESCRICAO.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.edTPR_DESCRICAO.EnterMoveNextControl = true;
             this.edTPR_DESCRICAO.Location = new System.Drawing.Point(4, 22);
             this.edTPR_DESCRICAO.Name = "edTPR_DESCRICAO";
             this.edTPR_DESCRICAO.Size = new System.Drawing.Size(146, 20);
@@ -86,7 +87,7 @@
             this.btnRemover.Location = new System.Drawing.Point(349, 23);
             this.btnRemover.Name = "btnRemover";
             this.btnRemover.Size = new System.Drawing.Size(86, 47);
-            this.btnRemover.TabIndex = 7;
+            this.btnRemover.TabIndex = 3;
             this.btnRemover.Text = "Remover";
             this.btnRemover.Click += new System.EventHandler(this.btnRemover_Click);
             // 
@@ -95,7 +96,7 @@
             this.btnAdicionar.Location = new System.Drawing.Point(165, 23);
             this.btnAdicionar.Name = "btnAdicionar";
             this.btnAdicionar.Size = new System.Drawing.Size(86, 47);
-            this.btnAdicionar.TabIndex = 5;
+            this.btnAdicionar.TabIndex = 1;
             this.btnAdicionar.Text = "Adicionar";
             this.btnAdicionar.Click += new System.EventHandler(this.btnAdicionar_Click);
             // 
@@ -104,7 +105,7 @@
             this.btnAlterar.Location = new System.Drawing.Point(257, 23);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(86, 47);
-            this.btnAlterar.TabIndex = 6;
+            this.btnAlterar.TabIndex = 2;
             this.btnAlterar.Text = "Alterar";
             this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
@@ -125,7 +126,7 @@
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.Size = new System.Drawing.Size(444, 159);
-            this.gridControl1.TabIndex = 0;
+            this.gridControl1.TabIndex = 4;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
@@ -136,6 +137,8 @@
             this.gridColumn2});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsView.ColumnAutoWidth = false;
+            this.gridView1.OptionsView.ShowAutoFilterRow = true;
             // 
             // gridColumn1
             // 
@@ -144,6 +147,7 @@
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.Visible = true;
             this.gridColumn1.VisibleIndex = 0;
+            this.gridColumn1.Width = 54;
             // 
             // gridColumn2
             // 
@@ -152,6 +156,7 @@
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 1;
+            this.gridColumn2.Width = 217;
             // 
             // FrmTipoProduto
             // 

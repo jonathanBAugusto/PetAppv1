@@ -52,6 +52,9 @@ namespace PetApp.View.Servico
 
         private void frmTipoServico_Load(object sender, EventArgs e)
         {
+            edTIPO_SER_NOME.EditValue = null;
+            edTIPO_SER_VALOR.EditValue = null;
+            edTIPO_SER_NOME.Focus();
             gridControl1.DataSource = TipoServico.Get();
         }
 

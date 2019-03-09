@@ -106,6 +106,13 @@
       <DependentUpon>FrmInicio.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\TipoServico.cs" />
+    <Compile Include="Model\Unidade.cs" />
+    <Compile Include="View\FrmCadUnidade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmCadUnidade.Designer.cs">
+      <DependentUpon>FrmCadUnidade.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FrmCad_PET_RACA.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -233,6 +240,9 @@
     </Compile>
     <EmbeddedResource Include="FrmInicio.resx">
       <DependentUpon>FrmInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmCadUnidade.resx">
+      <DependentUpon>FrmCadUnidade.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FrmCad_PET_RACA.resx">
       <DependentUpon>FrmCad_PET_RACA.cs</DependentUpon>

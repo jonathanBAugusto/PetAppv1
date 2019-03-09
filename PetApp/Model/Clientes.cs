@@ -35,6 +35,27 @@ namespace PetApp.Model
         public string CLI_DATA_CADASTRO { get; set; }
         public int CID_ID { get; set; }
 
+        private string cli_tipodesc;
+
+        public string CLI_TIPODESC
+        {
+            get
+            {
+                switch (CLI_PESTIPO)
+                {
+                    case "FIS":
+                        return "Pessoa Física";
+                    case "JUR":
+                        return "Pessoa Jurídica";
+                    case "FOR":
+                        return "Fornecedor";
+                    default:
+                        return "";
+                }
+            }
+        }
+
+
         private Image cli_IMAGEM;
         [Ignore]
         public Image CLI_IMAGEM
@@ -63,7 +84,22 @@ namespace PetApp.Model
         {
             CONN = new Connection();
             List<Clientes> list = new List<Clientes>();
-            list = CONN.conn.Query<Clientes>("SELECT * FROM CLIENTE WHERE CLI_ID >= 0 " + Filtro);
+            try
+            {
+                list = CONN.conn.Query<Clientes>("SELECT * FROM CLIENTE WHERE CLI_ID >= 0 " + Filtro);
+            }
+            catch
+            {
+                try
+                {
+                    list = CONN.conn.Query<Clientes>("SELECT * FROM CLIENTE WHERE CLI_ID >= 0 " + Filtro);
+                }
+                catch (Exception ex)
+                {
+                    F.WriteLOG("---------------------------\n" + DateTime.Now.ToString() + " Error: " + ex.Message);
+                    list = new List<Clientes>();
+                }
+            }
             return list;
         }
 

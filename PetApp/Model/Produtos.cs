@@ -14,6 +14,7 @@ namespace PetApp.Model
     {
         [PrimaryKey, AutoIncrement]
         public int PRO_ID { get; set; }
+        public int UNI_ID { get; set; }
         public string PRO_REFERENCIA { get; set; }
         public string PRO_DESCRICAO { get; set; }
         public double PRO_CUSTO { get; set; }
@@ -574,7 +575,7 @@ namespace PetApp.Model
         public DateTime LCP_DATA { get; set; }
         public string LCP_TIPO { get; set; }
         private string lcp_TIPOVIEW;
-
+        
         public string LCP_TIPOVIEW
         {
             get

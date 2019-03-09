@@ -204,7 +204,9 @@
             this.gridViewProdutos.OptionsView.ShowGroupPanel = false;
             this.gridViewProdutos.RowClick += new DevExpress.XtraGrid.Views.Grid.RowClickEventHandler(this.gridViewProdutos_RowClick);
             this.gridViewProdutos.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridViewProdutos_FocusedRowChanged);
+            this.gridViewProdutos.KeyDown += new System.Windows.Forms.KeyEventHandler(this.gridViewProdutos_KeyDown);
             this.gridViewProdutos.Click += new System.EventHandler(this.gridViewProdutos_Click);
+            this.gridViewProdutos.DoubleClick += new System.EventHandler(this.gridViewProdutos_DoubleClick);
             // 
             // gridColumn1
             // 

@@ -29,6 +29,35 @@ namespace PetApp.View
             objProdutos = new Produtos();
         }
 
+        private void FrmProdutos_Load(object sender, EventArgs e)
+        {
+            edPRO_FORNECEDOR.Properties.DataSource = Clientes.Get(" AND CLI_PESTIPO = 'FOR'");
+            edPRO_FORNECEDOR.Properties.ValueMember = "CLI_ID";
+            edPRO_FORNECEDOR.Properties.DisplayMember = "CLI_RAZAO";
+
+            edUNI_ID.Properties.DataSource = Unidade.Get();
+            edUNI_ID.Properties.ValueMember = "UNI_ID";
+            edUNI_ID.Properties.DisplayMember = "UNI_DESCRICAO";
+
+            if (PROID != 0)
+            {
+                Produtos prods = Produtos.Get(PROID);
+                edPRO_CUSTO.EditValue = F.toString(prods.PRO_CUSTO);
+                edPRO_CUSTOULTCOMPRA.EditValue = F.toString(prods.PRO_CUSTOULTCOMPRA);
+                edPRO_DESCRICAO.EditValue = F.toString(prods.PRO_DESCRICAO);
+                edPRO_FORNECEDOR.EditValue = F.toString(prods.PRO_FORNECEDOR);
+                edPRO_IMAGEM.EditValue = F.toString(prods.PRO_IMAGEM);
+                edPRO_REFERENCIA.EditValue = F.toString(prods.PRO_REFERENCIA);
+                edTPR_ID.EditValue = F.toInt(prods.PRO_TIPO);
+                edPRO_IMAGEM.EditValue = F.toString(prods.PRO_IMAGEM);
+                pic_IMAGEM.Image = prods.PRO_IMAGEMR;
+            }
+            edTPR_ID.Properties.DataSource = TipoProduto.Get();
+            edTPR_ID.Properties.ValueMember = "TPR_ID";
+            edTPR_ID.Properties.DisplayMember = "TPR_DESCRICAO";
+        }
+
+
         private void btnSalvar_Click(object sender, EventArgs e)
         {
             if (ProID > 0)
@@ -51,8 +80,6 @@ namespace PetApp.View
             }
             else
             {
-
-
                 if (F.toString(edPRO_REFERENCIA.EditValue) == "")
                 {
                     F.Aviso("Insira uma Referência");
@@ -87,13 +114,10 @@ namespace PetApp.View
                 objProdutos.PRO_IMAGEM = F.toString(edPRO_IMAGEM.EditValue);
 
                 if (objProdutos.PRO_ID == 0)
-                {
                     Produtos.Insert(objProdutos);
-                }
                 else
-                {
                     Produtos.Update(objProdutos);
-                }
+
                 F.Aviso("Produto cadastrado com sucesso!");
                 DialogResult = DialogResult.OK;
                 Close();
@@ -102,21 +126,30 @@ namespace PetApp.View
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            objProdutos = new Produtos();
+            DialogResult = DialogResult.Cancel;
+            Close();
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                if (F.YesNo("Excluir", "Deseja mesmo excluir o produto?"))
+                    Produtos.Delete(objProdutos);
+            }
+            catch (Exception)
+            {
+                F.Aviso("Erro ao excluir!");
+            }
         }
 
         private void edPRO_IMAGEM_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
         {
             string pathImg = "";
+
             if (openFileDialogImg.ShowDialog() != DialogResult.OK)
-            {
                 return;
-            }
+
             pathImg = openFileDialogImg.FileName;
             string fileName = F.copyToImagePath(pathImg);
 
@@ -142,33 +175,12 @@ namespace PetApp.View
         {
             edPRO_IMAGEM_ButtonClick(null, null);
         }
-
-        private void FrmProdutos_Load(object sender, EventArgs e)
+        private void edPRO_IMAGEM_KeyDown(object sender, KeyEventArgs e)
         {
-            edPRO_FORNECEDOR.Properties.DataSource = Clientes.Get(" AND CLI_PESTIPO = 'FOR'");
-            edPRO_FORNECEDOR.Properties.ValueMember = "CLI_ID";
-            edPRO_FORNECEDOR.Properties.DisplayMember = "CLI_RAZAO";
-            if (PROID != 0)
+            if (e.KeyCode == Keys.F4)
             {
-                Produtos prods = Produtos.Get(PROID);
-                edPRO_CUSTO.EditValue = F.toString(prods.PRO_CUSTO);
-                edPRO_CUSTOULTCOMPRA.EditValue = F.toString(prods.PRO_CUSTOULTCOMPRA);
-                edPRO_DESCRICAO.EditValue = F.toString(prods.PRO_DESCRICAO);
-                edPRO_FORNECEDOR.EditValue = F.toString(prods.PRO_FORNECEDOR);
-                edPRO_IMAGEM.EditValue = F.toString(prods.PRO_IMAGEM);
-                edPRO_REFERENCIA.EditValue = F.toString(prods.PRO_REFERENCIA);
-                edTPR_ID.EditValue = F.toInt(prods.PRO_TIPO);
-                edPRO_IMAGEM.EditValue = F.toString(prods.PRO_IMAGEM);
-                pic_IMAGEM.Image = prods.PRO_IMAGEMR;
+                edPRO_IMAGEM_ButtonClick(null, null);
             }
-            edTPR_ID.Properties.DataSource = TipoProduto.Get();
-            edTPR_ID.Properties.ValueMember = "TPR_ID";
-            edTPR_ID.Properties.DisplayMember = "TPR_DESCRICAO";
-        }
-
-        private void pic_IMAGEM_EditValueChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

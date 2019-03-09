@@ -11,6 +11,7 @@ using PetApp.View.Servico;
 using PetApp.View.Relatorios;
 using PetApp.Model;
 using PetApp.View;
+using PetApp.View.UTL;
 
 namespace PetApp
 {
@@ -35,18 +36,9 @@ namespace PetApp
 
         private void FrmServicos_Load(object sender, EventArgs e)
         {
-            edCLI_ID.Properties.DataSource = Clientes.Get();
-            edCLI_ID.Properties.ValueMember = "CLI_ID";
-            edCLI_ID.Properties.DisplayMember = "CLI_RAZAO";
-
             edTIPO_SER.Properties.DataSource = TipoServico.Get();
             edTIPO_SER.Properties.ValueMember = "TIPO_SER_ID";
             edTIPO_SER.Properties.DisplayMember = "TIPO_SER_NOME";
-
-            edPET_ID.Properties.DataSource = Pets.Get();
-            edPET_ID.Properties.ValueMember = "PET_ID";
-            edPET_ID.Properties.DisplayMember = "PET_NOME";
-
             if (SERID != 0)
             {
                 altser = Servicos.Get(SERID);
@@ -138,11 +130,8 @@ namespace PetApp
             };
             Servicos.Insert(servico);
             F.Aviso("Serviço Cadastrado com Sucesso!");
-        }
-
-        private void edSER_OBSERVACAO_TextChanged(object sender, EventArgs e)
-        {
-
+            DialogResult = DialogResult.OK;
+            Close();
         }
 
         private void btnFechar_Click(object sender, EventArgs e)
@@ -179,18 +168,39 @@ namespace PetApp
             SH_SERVICOS form = new SH_SERVICOS();
             form.Show();
         }
-
-        private void edTIPO_SER_Validated(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void edTIPO_SER_EditValueChanged(object sender, EventArgs e)
         {
             int idt = F.toInt(edTIPO_SER.EditValue);
             TipoServico tp = TipoServico.Get(idt);
             double valorBase = F.toDouble(tp.TIPO_SER_VALOR);
             edSER_VALOR_BASE.EditValue = valorBase;
+        }
+
+        private void edCLI_ID_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+        {
+            edCLI_ID.EditValue = F.SearchCli();
+        }
+
+        private void edCLI_ID_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F4)
+            {
+                edCLI_ID_ButtonClick(null, null);
+            }
+        }
+
+        private void edPET_ID_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+        {
+            edPET_ID.EditValue = F.SearchPet();
+        }
+
+        private void edPET_ID_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F4)
+            {
+                edPET_ID_ButtonClick(null, null);
+            }
         }
     }
 }

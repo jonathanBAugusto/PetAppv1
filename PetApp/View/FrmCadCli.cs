@@ -93,41 +93,27 @@ namespace PetApp
             if (F.toString(rgCLI_PESTIPO.EditValue) == "JUR")
             {
                 this.Text = "Cadastro de Cliente Jurídico";
-                edCLI_NASC.Enabled = false;
-                edCLI_INSCRICAO.Enabled = true;
-                edCLI_FANTASIA.Enabled = true;
-                edCLI_CNPJ.Enabled = true;
-                edCLI_RAZAO.Enabled = true;
-                btnAdd.Enabled = true;
-                btnDel.Enabled = true;
             }
             else if(F.toString(rgCLI_PESTIPO.EditValue) == "FIS")
             {
                 this.Text = "Cadastro de Cliente Físico";
-                edCLI_INSCRICAO.Enabled = false;
-                edCLI_CNPJ.Enabled = false;
-                edCLI_RAZAO.Enabled = true;
-                edCLI_FANTASIA.Enabled = false;
-                edCLI_NASC.Enabled = true;
-                btnAdd.Enabled = true;
-                btnDel.Enabled = true;
             }
             if (F.toString(rgCLI_PESTIPO.EditValue) == "FOR")
             {
                 this.Text = "Cadastro de Fornecedor";
-                edCLI_NASC.Enabled = false;
-                edCLI_INSCRICAO.Enabled = true;
-                edCLI_FANTASIA.Enabled = true;
-                edCLI_CNPJ.Enabled = true;
-                edCLI_RAZAO.Enabled = true;
-                btnAdd.Enabled = false;
-                btnDel.Enabled = false;
             }
+            btnAdd.Enabled = F.toString(rgCLI_PESTIPO.EditValue) != "FOR";
+            btnDel.Enabled = F.toString(rgCLI_PESTIPO.EditValue) != "FOR";
+            btnLimpar.Enabled = F.toString(rgCLI_PESTIPO.EditValue) != "FOR";
             groupControl3.Enabled = F.toString(rgCLI_PESTIPO.EditValue) != "FOR";
         }
 
         private void edCEP_Validated(object sender, EventArgs e)
         {
+            if (F.toString(edCEP.EditValue) == "")
+            {
+                return;
+            }
             if (ceEndOf.Checked == false)
             {
                 F.LocalizarCEP(F.toString(edCEP.EditValue), edEstado, edCidade, edBairro, edRua);
@@ -191,21 +177,25 @@ namespace PetApp
                 {
                     F.Aviso("Por Favor, Informe o Nome do cliente.");
                     edCLI_RAZAO.Focus();
+                    return;
                 }
                 if (F.toString(edCLI_TEL.EditValue) == "" && F.toString(edCLI_CEL.EditValue) == ""
                 && F.toString(edCLI_EMAIL.EditValue) == "")
                 {
                     F.Aviso("Por favor, informa ao menos uma forma de contato.");
+                    return;
                 }
                 if (F.toString(edDDDCel.EditValue) == "" && F.toString(edCLI_CEL.EditValue) != "") 
                 {
                     F.Aviso("Por Favor, Informe o DDD do celular.");
                     edDDDCel.Focus();
+                    return;
                 }
                 if (F.toString(edDDDTel.EditValue) == "" && F.toString(edCLI_TEL.EditValue) != "")
                 {
                     F.Aviso("Por Favor, Informe o DDD do telefone.");
                     edDDDTel.Focus();
+                    return;
                 }
             }
             if (F.toString(rgCLI_PESTIPO.EditValue) == "JUR")
@@ -214,21 +204,25 @@ namespace PetApp
                 {
                     F.Aviso("Por favor, Informe a Razão Social do cliente");
                     edCLI_RAZAO.Focus();
+                    return;
                 }
                 if (F.toString(edCLI_FANTASIA.EditValue) == "")
                 {
                     F.Aviso("Por favor, informe o nome fantasia do cliente");
                     edCLI_FANTASIA.Focus();
+                    return;
                 }
                 if (F.toString(edCLI_INSCRICAO) == "")
                 {
                     F.Aviso("Por Favor, informe a Inscrição Estadual do cliente");
                     edCLI_INSCRICAO.Focus();
+                    return;
                 }
                 if (F.toString(edCLI_TEL.EditValue) == "" && F.toString(edCLI_CEL.EditValue) == ""
                 && F.toString(edCLI_EMAIL.EditValue) == "")
                 {
                     F.Aviso("Por favor, informa ao menos uma forma de contato.");
+                    return;
                 }
                 if (F.toString(edDDDCel.EditValue) == "" && F.toString(edCLI_CEL.EditValue) != "")
                 {
@@ -239,6 +233,7 @@ namespace PetApp
                 {
                     F.Aviso("Por Favor, Informe o DDD do telefone.");
                     edDDDTel.Focus();
+                    return;
                 }
             }
             if (F.toString(rgCLI_PESTIPO.EditValue) == "FOR")
@@ -247,31 +242,37 @@ namespace PetApp
                 {
                     F.Aviso("Por favor, Informe a Razão Social do Fornecedor");
                     edCLI_RAZAO.Focus();
+                    return;
                 }
                 if (F.toString(edCLI_FANTASIA.EditValue) == "")
                 {
                     F.Aviso("Por favor, informe o nome fantasia do Fornecedor");
                     edCLI_FANTASIA.Focus();
+                    return;
                 }
                 if (F.toString(edCLI_INSCRICAO) == "")
                 {
                     F.Aviso("Por Favor, informe a Inscrição Estadual do Fornecedor");
                     edCLI_INSCRICAO.Focus();
+                    return;
                 }
                 if (F.toString(edCLI_TEL.EditValue) == "" && F.toString(edCLI_CEL.EditValue) == ""
                 && F.toString(edCLI_EMAIL.EditValue) == "")
                 {
                     F.Aviso("Por favor, informa ao menos uma forma de contato.");
+                    return;
                 }
                 if (F.toString(edDDDCel.EditValue) == "" && F.toString(edCLI_CEL.EditValue) != "")
                 {
                     F.Aviso("Por Favor, Informe o DDD do celular.");
                     edDDDCel.Focus();
+                    return;
                 }
                 if (F.toString(edDDDTel.EditValue) == "" && F.toString(edCLI_TEL.EditValue) != "")
                 {
                     F.Aviso("Por Favor, Informe o DDD do telefone.");
                     edDDDTel.Focus();
+                    return;
                 }
             }
             Clientes cliente = new Clientes
@@ -357,6 +358,45 @@ namespace PetApp
         private void picCLI_IMG_DoubleClick(object sender, EventArgs e)
         {
             edCLI_IMG_ButtonClick(null, null);
+        }
+
+        private void rgCLI_PESTIPO_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
+        {
+            if (F.toString(e.NewValue) == "FOR")
+            {
+                if (pets.Count > 0)
+                {
+                    e.Cancel = true;
+                }
+            }
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            if (F.YesNo("Confirmar", "Deseja Limpar todos Registros?"))
+            {
+                pets.Clear();
+                gridControlPet.Refresh();
+            }
+        }
+
+        private void gridViewPet_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (gridViewPet.IsLastRow && gridViewPet.Columns.Last() == gridViewPet.FocusedColumn)
+            {
+                SendKeys.Send("{Tab}");
+            }
+        }
+
+        private void btnDel_Click(object sender, EventArgs e)
+        {
+            Pets pet = new Pets();
+            pet = gridViewPet.GetFocusedRow() as Pets;
+            if (pet != null)
+            {
+                pets.Remove(pet);
+                gridControlPet.Refresh();
+            }
         }
     }
 }

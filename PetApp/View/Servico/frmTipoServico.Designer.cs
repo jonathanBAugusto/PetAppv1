@@ -41,6 +41,7 @@
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemTextEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.edTIPO_SER_NOME.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.edTIPO_SER_VALOR.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
@@ -53,11 +54,13 @@
             this.groupControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
             this.SuspendLayout();
             // 
             // edTIPO_SER_NOME
             // 
             this.edTIPO_SER_NOME.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.edTIPO_SER_NOME.EnterMoveNextControl = true;
             this.edTIPO_SER_NOME.Location = new System.Drawing.Point(4, 22);
             this.edTIPO_SER_NOME.Name = "edTIPO_SER_NOME";
             this.edTIPO_SER_NOME.Size = new System.Drawing.Size(245, 20);
@@ -66,6 +69,7 @@
             // edTIPO_SER_VALOR
             // 
             this.edTIPO_SER_VALOR.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.edTIPO_SER_VALOR.EnterMoveNextControl = true;
             this.edTIPO_SER_VALOR.Location = new System.Drawing.Point(4, 22);
             this.edTIPO_SER_VALOR.Name = "edTIPO_SER_VALOR";
             this.edTIPO_SER_VALOR.Properties.Mask.EditMask = "c2";
@@ -93,7 +97,7 @@
             this.btnRemover.Location = new System.Drawing.Point(549, 23);
             this.btnRemover.Name = "btnRemover";
             this.btnRemover.Size = new System.Drawing.Size(75, 46);
-            this.btnRemover.TabIndex = 8;
+            this.btnRemover.TabIndex = 4;
             this.btnRemover.Text = "Remover";
             this.btnRemover.Click += new System.EventHandler(this.btnRemover_Click);
             // 
@@ -102,7 +106,7 @@
             this.btnAlterar.Location = new System.Drawing.Point(468, 23);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(75, 46);
-            this.btnAlterar.TabIndex = 7;
+            this.btnAlterar.TabIndex = 3;
             this.btnAlterar.Text = "Alterar";
             this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
@@ -113,7 +117,7 @@
             this.groupControl4.Name = "groupControl4";
             this.groupControl4.Padding = new System.Windows.Forms.Padding(2);
             this.groupControl4.Size = new System.Drawing.Size(117, 46);
-            this.groupControl4.TabIndex = 6;
+            this.groupControl4.TabIndex = 1;
             this.groupControl4.Text = "Valor Base";
             // 
             // groupControl3
@@ -123,7 +127,7 @@
             this.groupControl3.Name = "groupControl3";
             this.groupControl3.Padding = new System.Windows.Forms.Padding(2);
             this.groupControl3.Size = new System.Drawing.Size(253, 46);
-            this.groupControl3.TabIndex = 5;
+            this.groupControl3.TabIndex = 0;
             this.groupControl3.Text = "Nome do serviço";
             // 
             // btnCadastrar
@@ -131,7 +135,7 @@
             this.btnCadastrar.Location = new System.Drawing.Point(387, 23);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(75, 46);
-            this.btnCadastrar.TabIndex = 4;
+            this.btnCadastrar.TabIndex = 2;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
@@ -151,8 +155,10 @@
             this.gridControl1.Location = new System.Drawing.Point(2, 20);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
+            this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemTextEdit1});
             this.gridControl1.Size = new System.Drawing.Size(661, 349);
-            this.gridControl1.TabIndex = 0;
+            this.gridControl1.TabIndex = 5;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
@@ -163,6 +169,8 @@
             this.gridColumn2});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsView.ColumnAutoWidth = false;
+            this.gridView1.OptionsView.ShowAutoFilterRow = true;
             // 
             // gridColumn1
             // 
@@ -171,14 +179,25 @@
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.Visible = true;
             this.gridColumn1.VisibleIndex = 0;
+            this.gridColumn1.Width = 236;
             // 
             // gridColumn2
             // 
             this.gridColumn2.Caption = "Valor Base";
+            this.gridColumn2.ColumnEdit = this.repositoryItemTextEdit1;
             this.gridColumn2.FieldName = "TIPO_SER_VALOR";
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 1;
+            this.gridColumn2.Width = 100;
+            // 
+            // repositoryItemTextEdit1
+            // 
+            this.repositoryItemTextEdit1.AutoHeight = false;
+            this.repositoryItemTextEdit1.Mask.EditMask = "c2";
+            this.repositoryItemTextEdit1.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.repositoryItemTextEdit1.Mask.UseMaskAsDisplayFormat = true;
+            this.repositoryItemTextEdit1.Name = "repositoryItemTextEdit1";
             // 
             // frmTipoServico
             // 
@@ -202,6 +221,7 @@
             this.groupControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -221,5 +241,6 @@
         private DevExpress.XtraEditors.GroupControl groupControl3;
         private DevExpress.XtraEditors.SimpleButton btnRemover;
         private DevExpress.XtraEditors.SimpleButton btnAlterar;
+        private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit1;
     }
 }

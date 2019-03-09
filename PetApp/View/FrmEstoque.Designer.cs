@@ -46,8 +46,13 @@
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemTextEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repLkTipoMov = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
+            this.repositoryItemImageEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemImageEdit();
+            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemLookUpEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
@@ -65,6 +70,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.edPRO_REFERENCIA.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlEstoque)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewEstoque)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repLkTipoMov)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemImageEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEdit1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl1
@@ -79,7 +88,7 @@
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(552, 91);
+            this.panelControl1.Size = new System.Drawing.Size(549, 91);
             this.panelControl1.TabIndex = 0;
             // 
             // btnConcluir
@@ -88,7 +97,7 @@
             this.btnConcluir.Name = "btnConcluir";
             this.btnConcluir.Size = new System.Drawing.Size(75, 23);
             this.btnConcluir.TabIndex = 7;
-            this.btnConcluir.Text = "Concluir";
+            this.btnConcluir.Text = "&Concluir";
             this.btnConcluir.Click += new System.EventHandler(this.btnConcluir_Click);
             // 
             // btnRemover
@@ -96,8 +105,8 @@
             this.btnRemover.Location = new System.Drawing.Point(384, 61);
             this.btnRemover.Name = "btnRemover";
             this.btnRemover.Size = new System.Drawing.Size(75, 23);
-            this.btnRemover.TabIndex = 5;
-            this.btnRemover.Text = "Remover";
+            this.btnRemover.TabIndex = 6;
+            this.btnRemover.Text = "&Remover";
             this.btnRemover.Click += new System.EventHandler(this.btnRemover_Click);
             // 
             // btnAdicionar
@@ -105,8 +114,8 @@
             this.btnAdicionar.Location = new System.Drawing.Point(303, 61);
             this.btnAdicionar.Name = "btnAdicionar";
             this.btnAdicionar.Size = new System.Drawing.Size(75, 23);
-            this.btnAdicionar.TabIndex = 4;
-            this.btnAdicionar.Text = "Adicionar";
+            this.btnAdicionar.TabIndex = 5;
+            this.btnAdicionar.Text = "&Adicionar";
             this.btnAdicionar.Click += new System.EventHandler(this.btnAdicionar_Click);
             // 
             // groupControl4
@@ -115,7 +124,7 @@
             this.groupControl4.Location = new System.Drawing.Point(365, 12);
             this.groupControl4.Name = "groupControl4";
             this.groupControl4.Size = new System.Drawing.Size(175, 43);
-            this.groupControl4.TabIndex = 3;
+            this.groupControl4.TabIndex = 4;
             this.groupControl4.Text = "Tipo de Movimento";
             // 
             // rgLCP_TIPO
@@ -140,7 +149,7 @@
             this.groupControl3.Location = new System.Drawing.Point(250, 12);
             this.groupControl3.Name = "groupControl3";
             this.groupControl3.Size = new System.Drawing.Size(109, 43);
-            this.groupControl3.TabIndex = 2;
+            this.groupControl3.TabIndex = 3;
             this.groupControl3.Text = "Data";
             // 
             // edLCP_DATA
@@ -190,6 +199,7 @@
             // edPRO_REFERENCIA
             // 
             this.edPRO_REFERENCIA.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.edPRO_REFERENCIA.EnterMoveNextControl = true;
             this.edPRO_REFERENCIA.Location = new System.Drawing.Point(2, 20);
             this.edPRO_REFERENCIA.Name = "edPRO_REFERENCIA";
             this.edPRO_REFERENCIA.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -197,6 +207,7 @@
             this.edPRO_REFERENCIA.Size = new System.Drawing.Size(111, 20);
             this.edPRO_REFERENCIA.TabIndex = 0;
             this.edPRO_REFERENCIA.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.edPRO_REFERENCIA_ButtonClick);
+            this.edPRO_REFERENCIA.KeyDown += new System.Windows.Forms.KeyEventHandler(this.edPRO_REFERENCIA_KeyDown);
             // 
             // gridControlEstoque
             // 
@@ -204,8 +215,13 @@
             this.gridControlEstoque.Location = new System.Drawing.Point(0, 91);
             this.gridControlEstoque.MainView = this.gridViewEstoque;
             this.gridControlEstoque.Name = "gridControlEstoque";
-            this.gridControlEstoque.Size = new System.Drawing.Size(552, 258);
-            this.gridControlEstoque.TabIndex = 7;
+            this.gridControlEstoque.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemTextEdit2,
+            this.repositoryItemImageEdit1,
+            this.repLkTipoMov,
+            this.repositoryItemLookUpEdit1});
+            this.gridControlEstoque.Size = new System.Drawing.Size(549, 258);
+            this.gridControlEstoque.TabIndex = 8;
             this.gridControlEstoque.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewEstoque});
             // 
@@ -217,7 +233,8 @@
             this.gridColumn3,
             this.gridColumn4,
             this.gridColumn5,
-            this.gridColumn6});
+            this.gridColumn6,
+            this.gridColumn7});
             this.gridViewEstoque.GridControl = this.gridControlEstoque;
             this.gridViewEstoque.Name = "gridViewEstoque";
             this.gridViewEstoque.OptionsView.ColumnAutoWidth = false;
@@ -240,7 +257,7 @@
             this.gridColumn2.OptionsColumn.AllowEdit = false;
             this.gridColumn2.OptionsColumn.ReadOnly = true;
             this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 1;
+            this.gridColumn2.VisibleIndex = 0;
             this.gridColumn2.Width = 73;
             // 
             // gridColumn3
@@ -251,18 +268,26 @@
             this.gridColumn3.OptionsColumn.AllowEdit = false;
             this.gridColumn3.OptionsColumn.ReadOnly = true;
             this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 2;
+            this.gridColumn3.VisibleIndex = 1;
             this.gridColumn3.Width = 177;
             // 
             // gridColumn4
             // 
             this.gridColumn4.Caption = "Estoque";
+            this.gridColumn4.ColumnEdit = this.repositoryItemTextEdit2;
             this.gridColumn4.FieldName = "LCP_QUANTIDADE";
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.OptionsColumn.AllowEdit = false;
             this.gridColumn4.OptionsColumn.ReadOnly = true;
             this.gridColumn4.Visible = true;
             this.gridColumn4.VisibleIndex = 3;
+            // 
+            // repositoryItemTextEdit2
+            // 
+            this.repositoryItemTextEdit2.AutoHeight = false;
+            this.repositoryItemTextEdit2.Mask.EditMask = "n2";
+            this.repositoryItemTextEdit2.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.repositoryItemTextEdit2.Name = "repositoryItemTextEdit2";
             // 
             // gridColumn5
             // 
@@ -277,21 +302,64 @@
             // gridColumn6
             // 
             this.gridColumn6.Caption = "Tipo";
+            this.gridColumn6.ColumnEdit = this.repLkTipoMov;
             this.gridColumn6.FieldName = "LCP_TIPO";
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.Visible = true;
             this.gridColumn6.VisibleIndex = 5;
             // 
+            // repLkTipoMov
+            // 
+            this.repLkTipoMov.AutoHeight = false;
+            this.repLkTipoMov.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repLkTipoMov.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("LCP_TIPO", "Entrada", 8, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Default, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("LCP_TIPODESC", "Descrição")});
+            this.repLkTipoMov.Name = "repLkTipoMov";
+            this.repLkTipoMov.NullText = "";
+            // 
+            // repositoryItemImageEdit1
+            // 
+            this.repositoryItemImageEdit1.AutoHeight = false;
+            this.repositoryItemImageEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemImageEdit1.Name = "repositoryItemImageEdit1";
+            // 
+            // gridColumn7
+            // 
+            this.gridColumn7.Caption = "Unidade";
+            this.gridColumn7.ColumnEdit = this.repositoryItemLookUpEdit1;
+            this.gridColumn7.FieldName = "UNI_ID";
+            this.gridColumn7.Name = "gridColumn7";
+            this.gridColumn7.OptionsColumn.AllowEdit = false;
+            this.gridColumn7.OptionsColumn.ReadOnly = true;
+            this.gridColumn7.Visible = true;
+            this.gridColumn7.VisibleIndex = 2;
+            this.gridColumn7.Width = 55;
+            // 
+            // repositoryItemLookUpEdit1
+            // 
+            this.repositoryItemLookUpEdit1.AutoHeight = false;
+            this.repositoryItemLookUpEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemLookUpEdit1.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("UNI_ID", "ID", 8, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Default, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("UNI_DESCRICAO", "Descrição")});
+            this.repositoryItemLookUpEdit1.Name = "repositoryItemLookUpEdit1";
+            this.repositoryItemLookUpEdit1.NullText = "";
+            // 
             // FrmEstoque
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(552, 349);
+            this.ClientSize = new System.Drawing.Size(549, 349);
             this.Controls.Add(this.gridControlEstoque);
             this.Controls.Add(this.panelControl1);
             this.Name = "FrmEstoque";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Entrada/Saída de Estoque";
+            this.Load += new System.EventHandler(this.FrmEstoque_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
@@ -309,6 +377,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.edPRO_REFERENCIA.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlEstoque)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewEstoque)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repLkTipoMov)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemImageEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEdit1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -335,5 +407,10 @@
         private DevExpress.XtraEditors.SimpleButton btnRemover;
         private DevExpress.XtraEditors.SimpleButton btnAdicionar;
         private DevExpress.XtraEditors.DateEdit edLCP_DATA;
+        private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit2;
+        private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit repLkTipoMov;
+        private DevExpress.XtraEditors.Repository.RepositoryItemImageEdit repositoryItemImageEdit1;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
+        private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit repositoryItemLookUpEdit1;
     }
 }

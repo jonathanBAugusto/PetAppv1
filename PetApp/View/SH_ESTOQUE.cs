@@ -36,7 +36,7 @@ namespace PetApp.View
             }
             if (F.toString(edDataFim.EditValue) != "")
             {
-                filter.Append(" AND LANCPRODS.LCP_DATA >= '" + F.toString(edDataIni.EditValue) + "' ");
+                filter.Append(" AND LANCPRODS.LCP_DATA <= '" + F.toString(edDataIni.EditValue) + "' ");
             }
             if (F.toString(edPRO_REFERENCIA.EditValue) != "")
             {
@@ -85,35 +85,49 @@ namespace PetApp.View
 
             List<EstoquePesquisa> objPesq = new List<EstoquePesquisa>();
             objPesq.AddRange(EstoquePesquisa.GetBySQL(sql.ToString()));
-            List<int> jaFoi = new List<int>();
-            foreach (EstoquePesquisa item in objPesq)
+            if (ckAgrupa.Checked)
             {
-                if (jaFoi.Contains(item.LCP_ID))
+                List<int> jaFoi = new List<int>();
+                foreach (EstoquePesquisa item in objPesq)
                 {
-                    continue;
-                }
-                List<EstoquePesquisa> objSelect = new List<EstoquePesquisa>();
-                objSelect.AddRange(objPesq.Where(ob => ob.PRO_ID == F.toInt(item.PRO_ID)));
-                double totest = 0;
-                foreach (EstoquePesquisa item1 in objSelect)
-                {
-                    if (jaFoi.Contains(item1.LCP_ID))
+                    if (jaFoi.Contains(item.LCP_ID))
                     {
                         continue;
                     }
-                    if (item1.LCP_TIPO == "E")
+                    List<EstoquePesquisa> objSelect = new List<EstoquePesquisa>();
+                    objSelect.AddRange(objPesq.Where(ob => ob.PRO_ID == F.toInt(item.PRO_ID)));
+                    double totest = 0;
+                    foreach (EstoquePesquisa item1 in objSelect)
                     {
-                        totest += item1.LCP_QUANTIDADE;
-                        jaFoi.Add(item1.LCP_ID);
+                        if (jaFoi.Contains(item1.LCP_ID))
+                        {
+                            continue;
+                        }
+                        if (item1.LCP_TIPO == "E")
+                        {
+                            totest += item1.LCP_QUANTIDADE;
+                            jaFoi.Add(item1.LCP_ID);
+                        }
+                        else if (item1.LCP_TIPO == "S")
+                        {
+                            totest -= item1.LCP_QUANTIDADE;
+                            jaFoi.Add(item1.LCP_ID);
+                        }
                     }
-                    else if(item1.LCP_TIPO == "S")
+                    item.LCP_QUANTIDADE = totest;
+                    listPesquisa.Add(item);
+                }
+            }
+            else
+            {
+                foreach (EstoquePesquisa item in objPesq)
+                {
+                    if (item.LCP_TIPO == "S")
                     {
-                        totest -= item1.LCP_QUANTIDADE;
-                        jaFoi.Add(item1.LCP_ID);
+                        item.LCP_QUANTIDADE *= -1; 
                     }
                 }
-                item.LCP_QUANTIDADE = totest;
-                listPesquisa.Add(item);
+                listPesquisa.AddRange(objPesq);
             }
             gridControlEstoque.DataSource = listPesquisa;
         }
@@ -125,9 +139,9 @@ namespace PetApp.View
             btnPesquisar_Click(null, null);
         }
 
-        private void btnRemover_Click(object sender, EventArgs e)
+        private void btnImprimir_Click(object sender, EventArgs e)
         {
-
+            gridViewEstoque.ShowPrintPreview();
         }
     }
 }

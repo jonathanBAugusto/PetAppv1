@@ -170,6 +170,21 @@ namespace PetApp.Control
                     F.WriteLOG("---------------------------\n" + DateTime.Now.ToString() + " Error: " + ex.Message);
                 }
             }
+            try
+            {
+                conn.CreateTable<Unidade>();
+            }
+            catch
+            {
+                try
+                {
+                    conn.CreateTable<Unidade>();
+                }
+                catch (Exception ex)
+                {
+                    F.WriteLOG("---------------------------\n" + DateTime.Now.ToString() + " Error: " + ex.Message);
+                }
+            }
 
         }
 

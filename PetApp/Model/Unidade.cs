@@ -2,129 +2,83 @@
 using SQLite;
 using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace PetApp.Model
 {
-    [Table("PET")]
-    public class Pets
+    [Table("UNIDADE")]
+    class Unidade
     {
         [PrimaryKey]
         [AutoIncrement]
-        public int PET_ID { get; set; }
-        //Campo para Salvar no banco.
-        public string PET_IMG { get; set; }
-        public string PET_NOME { get; set; }
-        public string PET_NAS { get; set; }
-        public string PET_CAD { get; set; }
-        public int PET_RACA { get; set; }
-        public string PET_COR { get; set; }
-        public string PET_OBS { get; set; }
-        public int CLI_ID { get; set; }
-        [Ignore]
-        public string CLI_NOME { get; set; }
-
-
-
-        //Somente para Leitura da Imagem... Passar ele quando precisar Visualizar :D
-        private Image pet_IMAGEM;
-        [Ignore]
-        public Image PET_IMAGEM
-        {
-            get {
-                string pathImg = System.IO.Path.Combine(F.IMGPATH, F.toString(PET_IMG));
-                if (System.IO.File.Exists(pathImg))
-                {
-                    try
-                    {
-                        return Image.FromFile(pathImg);
-                    }
-                    catch 
-                    {
-                        return pet_IMAGEM;
-                    }
-                }
-                return pet_IMAGEM;
-            }
-            set { pet_IMAGEM = value; }
-        }
-
+        public int UNI_ID { get; set; }
+        public string UNI_DESCRICAO { get; set; }
+        public double UNI_MEDIDA { get; set; }
 
         private static Connection CONN;
 
-        public static List<Pets> Get(string Filtro)
+        public static List<Unidade> Get(string Filtro = "")
         {
             CONN = new Connection();
-            List<Pets> list = new List<Pets>();
-            list = CONN.conn.Query<Pets>("SELECT * FROM PET WHERE PET_ID >= 0 " + Filtro);
+            List<Unidade> list = new List<Unidade>();
+            try
+            {
+                list = CONN.conn.Query<Unidade>("SELECT * FROM UNIDADE WHERE UNI_ID >= 0 " + Filtro);
+            }
+            catch
+            {
+                try
+                {
+                    list = CONN.conn.Query<Unidade>("SELECT * FROM UNIDADE WHERE UNI_ID >= 0 " + Filtro);
+                }
+                catch (Exception ex)
+                {
+                    F.WriteLOG("---------------------------\n" + DateTime.Now.ToString() + " Error: " + ex.Message);
+                    list = new List<Unidade>();
+                }
+            }
             return list;
         }
 
-        public static List<Pets> Get()
+        public static Unidade Get(int ID)
         {
             CONN = new Connection();
-            List<Pets> list = new List<Pets>();
+            Unidade unids = new Unidade();
 
             try
             {
-                list = CONN.conn.Table<Pets>().ToList<Pets>();
+                unids = CONN.conn.Get<Unidade>(ID);
             }
             catch
             {
                 try
                 {
-                    list = CONN.conn.Table<Pets>().ToList<Pets>();
+                    unids = CONN.conn.Get<Unidade>(ID);
                 }
                 catch (Exception ex)
                 {
                     F.WriteLOG("---------------------------\n" + DateTime.Now.ToString() + " Error: " + ex.Message);
-                    list = new List<Pets>();
+                    unids = new Unidade();
                 }
             }
 
-            return list;
+            return unids;
         }
 
-        public static Pets Get(int ID)
+        public static bool Insert(Unidade unids)
         {
             CONN = new Connection();
-            Pets user = new Pets();
-
             try
             {
-                user = CONN.conn.Get<Pets>(ID);
+                CONN.conn.Insert(unids);
             }
             catch
             {
                 try
                 {
-                    user = CONN.conn.Get<Pets>(ID);
-                }
-                catch (Exception ex)
-                {
-                    F.WriteLOG("---------------------------\n" + DateTime.Now.ToString() + " Error: " + ex.Message);
-                    user = new Pets();
-                }
-            }
-
-            return user;
-        }
-
-        public static bool Insert(Pets user)
-        {
-            CONN = new Connection();
-            try
-            {
-                CONN.conn.Insert(user);
-            }
-            catch
-            {
-                try
-                {
-                    CONN.conn.Insert(user);
+                    CONN.conn.Insert(unids);
                 }
                 catch (Exception ex)
                 {
@@ -135,18 +89,39 @@ namespace PetApp.Model
             return true;
         }
 
-        public static bool Insert(List<Pets> user)
+        public static bool Insert(List<Unidade> unids)
         {
             CONN = new Connection();
             try
             {
-                CONN.conn.InsertAll(user);
+                CONN.conn.InsertAll(unids);
             }
             catch
             {
                 try
                 {
-                    CONN.conn.InsertAll(user);
+                    CONN.conn.InsertAll(unids);
+                }
+                catch (Exception ex)
+                {
+                    F.WriteLOG("---------------------------\n" + DateTime.Now.ToString() + " Error: " + ex.Message);
+                    return false;
+                }
+            }
+            return true;
+        }
+        public static bool Update(Unidade unid)
+        {
+            CONN = new Connection();
+            try
+            {
+                CONN.conn.Update(unid);
+            }
+            catch
+            {
+                try
+                {
+                    CONN.conn.Update(unid);
                 }
                 catch (Exception ex)
                 {
@@ -157,18 +132,18 @@ namespace PetApp.Model
             return true;
         }
 
-        public static bool Update(Pets user)
+        public static bool Update(List<Unidade> unid)
         {
             CONN = new Connection();
             try
             {
-                CONN.conn.Update(user);
+                CONN.conn.UpdateAll(unid);
             }
             catch
             {
                 try
                 {
-                    CONN.conn.Update(user);
+                    CONN.conn.UpdateAll(unid);
                 }
                 catch (Exception ex)
                 {
@@ -179,18 +154,18 @@ namespace PetApp.Model
             return true;
         }
 
-        public static bool Update(List<Pets> user)
+        public static bool Delete(Unidade unid)
         {
             CONN = new Connection();
             try
             {
-                CONN.conn.UpdateAll(user);
+                CONN.conn.Delete(unid);
             }
             catch
             {
                 try
                 {
-                    CONN.conn.UpdateAll(user);
+                    CONN.conn.Delete(unid);
                 }
                 catch (Exception ex)
                 {
@@ -201,36 +176,14 @@ namespace PetApp.Model
             return true;
         }
 
-        public static bool Delete(Pets user)
+        public static bool Delete(List<Unidade> unids)
         {
             CONN = new Connection();
             try
             {
-                CONN.conn.Delete(user);
-            }
-            catch
-            {
-                try
+                foreach (Unidade unid in unids)
                 {
-                    CONN.conn.Delete(user);
-                }
-                catch (Exception ex)
-                {
-                    F.WriteLOG("---------------------------\n" + DateTime.Now.ToString() + " Error: " + ex.Message);
-                    return false;
-                }
-            }
-            return true;
-        }
-
-        public static bool Delete(List<Pets> users)
-        {
-            CONN = new Connection();
-            try
-            {
-                foreach (Pets user in users)
-                {
-                    CONN.conn.Delete(user);
+                    CONN.conn.Delete(unid);
                 }
             }
             catch (Exception ex)
@@ -247,13 +200,13 @@ namespace PetApp.Model
             CONN = new Connection();
             try
             {
-                CONN.conn.DeleteAll<Pets>();
+                CONN.conn.DeleteAll<Unidade>();
             }
             catch
             {
                 try
                 {
-                    CONN.conn.DeleteAll<Pets>();
+                    CONN.conn.DeleteAll<Unidade>();
                 }
                 catch (Exception ex)
                 {
@@ -263,5 +216,6 @@ namespace PetApp.Model
             }
             return true;
         }
+
     }
 }

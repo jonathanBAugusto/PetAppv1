@@ -212,5 +212,26 @@ namespace PetApp
                 edPET_RACA.EditValue = F.toInt(form.ids);
             }
         }
+
+        private void edCLI_ID_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+        {
+            edCLI_ID.EditValue = F.SearchCli();
+        }
+
+        private void edCLI_ID_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F4)
+            {
+                edCLI_ID_ButtonClick(null, null);
+            }
+        }
+
+        private void edPET_IMAGEM_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F4)
+            {
+                edPET_IMAGEM_ButtonClick(null, null);
+            }
+        }
     }
 }

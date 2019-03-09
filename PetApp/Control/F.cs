@@ -181,7 +181,7 @@ namespace PetApp
             return age;
         }
 
-        public static bool YesNo(string Titulo, string Conteudo, int Foco)
+        public static bool YesNo(string Titulo, string Conteudo, int Foco = 2)
         {
             FrmYN objFrmYN = new FrmYN(Titulo, Conteudo, Foco);
             if (objFrmYN.ShowDialog() == DialogResult.Yes)
@@ -194,7 +194,7 @@ namespace PetApp
             }
         }
 
-        public static string SearchProds()
+        public static string SearchProds(string oldValue = "")
         {
             FrmSelectPro obj = new FrmSelectPro();
             if (obj.ShowDialog() == DialogResult.OK)
@@ -203,7 +203,33 @@ namespace PetApp
             }
             else
             {
-                return "";
+                return oldValue;
+            }
+        }
+        public static string SearchCli(string oldValue = "")
+        {
+            FrmSelectCli obj = new FrmSelectCli() { GetInLoad = true };
+
+            if (obj.ShowDialog() == DialogResult.OK)
+            {
+                return obj.Result;
+            }
+            else
+            {
+                return oldValue;
+            }
+        }
+        public static string SearchPet(string oldValue = "")
+        {
+            FrmSelectPet obj = new FrmSelectPet() { GetInLoad = true };
+
+            if (obj.ShowDialog() == DialogResult.OK)
+            {
+                return obj.Result;
+            }
+            else
+            {
+                return oldValue;
             }
         }
     }

@@ -15,11 +15,35 @@ namespace PetApp.View
     public partial class FrmEstoque : DevExpress.XtraEditors.XtraForm
     {
         List<Lancprods> listLancprods;
+        List<Unidade> listUnidade;
         public FrmEstoque()
         {
             InitializeComponent();
             listLancprods = new List<Lancprods>();
             gridControlEstoque.DataSource = listLancprods;
+
+            DataTable temp = new DataTable();
+            temp.Columns.Add("LCP_TIPO");
+            temp.Columns.Add("LCP_TIPODESC");
+            temp.Rows.Add("E", "ENTRADA");
+            temp.Rows.Add("S", "SAÍDA");
+
+
+            repLkTipoMov.DataSource = temp;
+            repLkTipoMov.ValueMember = "LCP_TIPO";
+            repLkTipoMov.DisplayMember = "LCP_TIPODESC";
+
+            listUnidade = new List<Unidade>();
+            listUnidade = Unidade.Get();
+
+            repositoryItemLookUpEdit1.DataSource = listUnidade;
+            repositoryItemLookUpEdit1.ValueMember = "UNI_ID";
+            repositoryItemLookUpEdit1.DisplayMember = "UNI_DESCRICAO";
+
+        }
+        private void FrmEstoque_Load(object sender, EventArgs e)
+        {
+            
         }
 
         private void btnAdicionar_Click(object sender, EventArgs e)
@@ -45,7 +69,9 @@ namespace PetApp.View
                 F.Aviso("Produto não encontrado");
                 return;
             }
-            Lancprods obj = new Lancprods() { PRO_ID = pro_id, LCP_QUANTIDADE = F.toDouble(edLCP_QUANTIDADE.EditValue), LCP_DATA = edLCP_DATA.DateTime, LCP_TIPO = F.toString(rgLCP_TIPO.EditValue)};
+            double Quantidade = 0;
+            Quantidade = F.toDouble(edLCP_QUANTIDADE.EditValue);
+            Lancprods obj = new Lancprods() { PRO_ID = pro_id, LCP_QUANTIDADE = F.toDouble(Quantidade), LCP_DATA = edLCP_DATA.DateTime, LCP_TIPO = F.toString(rgLCP_TIPO.EditValue) };
             listLancprods.Add(obj);
             limparCampos(false);
             gridViewEstoque.RefreshData();
@@ -53,7 +79,7 @@ namespace PetApp.View
 
         private void btnRemover_Click(object sender, EventArgs e)
         {
-            Lancprods objFocused =  gridViewEstoque.GetFocusedRow() as Lancprods;
+            Lancprods objFocused = gridViewEstoque.GetFocusedRow() as Lancprods;
 
             if (F.toString(objFocused.PRO_ID) != "")
             {
@@ -70,7 +96,7 @@ namespace PetApp.View
                     F.Aviso("Lançamentos feitos com sucesso!");
                     limparCampos(true);
                     this.Close();
-                } 
+                }
             }
         }
 
@@ -88,11 +114,16 @@ namespace PetApp.View
         }
 
         private void edPRO_REFERENCIA_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
-        {//é Produto!
-            UTL.FrmSelectPro obj = new UTL.FrmSelectPro();
-            obj.ShowDialog();
-            string PRO_REFERENCIA = F.toString(obj.PRO_REFERENCIA);
-            edPRO_REFERENCIA.EditValue = PRO_REFERENCIA; 
+        {
+            edPRO_REFERENCIA.EditValue = F.SearchProds();
+        }
+
+        private void edPRO_REFERENCIA_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F4)
+            {
+                edPRO_REFERENCIA_ButtonClick(null, null);
+            }
         }
     }
 }

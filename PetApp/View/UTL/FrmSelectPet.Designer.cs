@@ -152,8 +152,8 @@
             this.rgPeriodo.Properties.Appearance.Options.UseBackColor = true;
             this.rgPeriodo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.rgPeriodo.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
-            new DevExpress.XtraEditors.Controls.RadioGroupItem("C", "Cadastro"),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem("N", "Nascimento")});
+            new DevExpress.XtraEditors.Controls.RadioGroupItem("PET_CAD", "Cadastro"),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem("PET_NAS", "Nascimento")});
             this.rgPeriodo.Size = new System.Drawing.Size(161, 19);
             this.rgPeriodo.TabIndex = 14;
             // 
@@ -298,6 +298,7 @@
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 1;
             this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnOK
             // 
@@ -306,6 +307,7 @@
             this.btnOK.Size = new System.Drawing.Size(75, 23);
             this.btnOK.TabIndex = 0;
             this.btnOK.Text = "OK";
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // pcBottom
             // 
@@ -345,7 +347,9 @@
             this.gridViewPets.OptionsView.ShowGroupPanel = false;
             this.gridViewPets.RowClick += new DevExpress.XtraGrid.Views.Grid.RowClickEventHandler(this.gridViewPets_RowClick);
             this.gridViewPets.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridViewPets_FocusedRowChanged);
+            this.gridViewPets.KeyDown += new System.Windows.Forms.KeyEventHandler(this.gridViewPets_KeyDown);
             this.gridViewPets.Click += new System.EventHandler(this.gridViewPets_Click);
+            this.gridViewPets.DoubleClick += new System.EventHandler(this.gridViewPets_DoubleClick);
             // 
             // gridColumn1
             // 
@@ -427,6 +431,7 @@
             this.Controls.Add(this.pcBottom);
             this.Name = "FrmSelectPet";
             this.Text = "Selecione um Pet";
+            this.Load += new System.EventHandler(this.FrmSelectPet_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pcImg.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.edDATAFIN.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.edDATAFIN.Properties)).EndInit();

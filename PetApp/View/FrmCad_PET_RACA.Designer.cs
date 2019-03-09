@@ -63,6 +63,7 @@
             // edPET_RACA_NOME
             // 
             this.edPET_RACA_NOME.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.edPET_RACA_NOME.EnterMoveNextControl = true;
             this.edPET_RACA_NOME.Location = new System.Drawing.Point(4, 22);
             this.edPET_RACA_NOME.Name = "edPET_RACA_NOME";
             this.edPET_RACA_NOME.Size = new System.Drawing.Size(105, 20);
@@ -115,7 +116,7 @@
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.Size = new System.Drawing.Size(397, 262);
-            this.gridControl1.TabIndex = 5;
+            this.gridControl1.TabIndex = 4;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
@@ -126,22 +127,29 @@
             this.gridColumn2});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
             // gridColumn1
             // 
             this.gridColumn1.Caption = "ID";
             this.gridColumn1.FieldName = "PET_RACA_ID";
             this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.OptionsColumn.AllowEdit = false;
+            this.gridColumn1.OptionsColumn.ReadOnly = true;
             this.gridColumn1.Visible = true;
             this.gridColumn1.VisibleIndex = 0;
+            this.gridColumn1.Width = 42;
             // 
             // gridColumn2
             // 
             this.gridColumn2.Caption = "Nome da raça";
             this.gridColumn2.FieldName = "PET_RACA_NOME";
             this.gridColumn2.Name = "gridColumn2";
+            this.gridColumn2.OptionsColumn.AllowEdit = false;
+            this.gridColumn2.OptionsColumn.ReadOnly = true;
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 1;
+            this.gridColumn2.Width = 339;
             // 
             // groupControl3
             // 
@@ -161,7 +169,8 @@
             this.Controls.Add(this.groupControl3);
             this.Controls.Add(this.groupControl2);
             this.Name = "FrmCad_PET_RACA";
-            this.Text = "FrmCad_PET_RACA";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Raça";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmCad_PET_RACA_FormClosing);
             this.Load += new System.EventHandler(this.FrmCad_PET_RACA_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();

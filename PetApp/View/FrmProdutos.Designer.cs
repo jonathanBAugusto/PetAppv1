@@ -54,6 +54,13 @@
             this.btnSalvar = new DevExpress.XtraEditors.SimpleButton();
             this.openFileDialogImg = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.groupControl8 = new DevExpress.XtraEditors.GroupControl();
+            this.edUNI_ID = new DevExpress.XtraEditors.GridLookUpEdit();
+            this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemTextEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.edPRO_DESCRICAO.Properties)).BeginInit();
@@ -78,6 +85,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).BeginInit();
             this.groupControl7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.edPRO_REFERENCIA.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl8)).BeginInit();
+            this.groupControl8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.edUNI_ID.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl1
@@ -102,11 +114,11 @@
             // groupControl2
             // 
             this.groupControl2.Controls.Add(this.edPRO_CUSTO);
-            this.groupControl2.Location = new System.Drawing.Point(301, 66);
+            this.groupControl2.Location = new System.Drawing.Point(266, 66);
             this.groupControl2.Name = "groupControl2";
             this.groupControl2.Padding = new System.Windows.Forms.Padding(2);
             this.groupControl2.Size = new System.Drawing.Size(127, 46);
-            this.groupControl2.TabIndex = 5;
+            this.groupControl2.TabIndex = 6;
             this.groupControl2.Text = "Custo";
             // 
             // edPRO_CUSTO
@@ -124,11 +136,11 @@
             // groupControl3
             // 
             this.groupControl3.Controls.Add(this.edPRO_CUSTOULTCOMPRA);
-            this.groupControl3.Location = new System.Drawing.Point(434, 66);
+            this.groupControl3.Location = new System.Drawing.Point(399, 66);
             this.groupControl3.Name = "groupControl3";
             this.groupControl3.Padding = new System.Windows.Forms.Padding(2);
             this.groupControl3.Size = new System.Drawing.Size(143, 46);
-            this.groupControl3.TabIndex = 6;
+            this.groupControl3.TabIndex = 7;
             this.groupControl3.Text = "Custo Ult. Compra";
             // 
             // edPRO_CUSTOULTCOMPRA
@@ -149,7 +161,7 @@
             this.groupControl4.Location = new System.Drawing.Point(434, 12);
             this.groupControl4.Name = "groupControl4";
             this.groupControl4.Padding = new System.Windows.Forms.Padding(2);
-            this.groupControl4.Size = new System.Drawing.Size(143, 46);
+            this.groupControl4.Size = new System.Drawing.Size(110, 46);
             this.groupControl4.TabIndex = 3;
             this.groupControl4.Text = "Tipo";
             // 
@@ -163,7 +175,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.edTPR_ID.Properties.NullText = "";
             this.edTPR_ID.Properties.PopupView = this.gridLookUpEdit1View;
-            this.edTPR_ID.Size = new System.Drawing.Size(135, 20);
+            this.edTPR_ID.Size = new System.Drawing.Size(102, 20);
             this.edTPR_ID.TabIndex = 1;
             // 
             // gridLookUpEdit1View
@@ -195,10 +207,10 @@
             // groupControl5
             // 
             this.groupControl5.Controls.Add(this.edPRO_FORNECEDOR);
-            this.groupControl5.Location = new System.Drawing.Point(135, 66);
+            this.groupControl5.Location = new System.Drawing.Point(550, 12);
             this.groupControl5.Name = "groupControl5";
             this.groupControl5.Padding = new System.Windows.Forms.Padding(2);
-            this.groupControl5.Size = new System.Drawing.Size(160, 46);
+            this.groupControl5.Size = new System.Drawing.Size(143, 46);
             this.groupControl5.TabIndex = 4;
             this.groupControl5.Text = "Fornecedor";
             // 
@@ -212,7 +224,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.edPRO_FORNECEDOR.Properties.NullText = "";
             this.edPRO_FORNECEDOR.Properties.PopupView = this.gridView1;
-            this.edPRO_FORNECEDOR.Size = new System.Drawing.Size(152, 20);
+            this.edPRO_FORNECEDOR.Size = new System.Drawing.Size(135, 20);
             this.edPRO_FORNECEDOR.TabIndex = 0;
             // 
             // gridView1
@@ -263,13 +275,13 @@
             // 
             this.pic_IMAGEM.Cursor = System.Windows.Forms.Cursors.Default;
             this.pic_IMAGEM.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pic_IMAGEM.EnterMoveNextControl = true;
             this.pic_IMAGEM.Location = new System.Drawing.Point(2, 40);
             this.pic_IMAGEM.Name = "pic_IMAGEM";
             this.pic_IMAGEM.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pic_IMAGEM.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.pic_IMAGEM.Size = new System.Drawing.Size(115, 99);
             this.pic_IMAGEM.TabIndex = 0;
-            this.pic_IMAGEM.EditValueChanged += new System.EventHandler(this.pic_IMAGEM_EditValueChanged);
             this.pic_IMAGEM.DoubleClick += new System.EventHandler(this.pic_IMAGEM_DoubleClick);
             // 
             // edPRO_IMAGEM
@@ -283,6 +295,7 @@
             this.edPRO_IMAGEM.Size = new System.Drawing.Size(115, 20);
             this.edPRO_IMAGEM.TabIndex = 9;
             this.edPRO_IMAGEM.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.edPRO_IMAGEM_ButtonClick);
+            this.edPRO_IMAGEM.KeyDown += new System.Windows.Forms.KeyEventHandler(this.edPRO_IMAGEM_KeyDown);
             // 
             // groupControl7
             // 
@@ -305,28 +318,28 @@
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Location = new System.Drawing.Point(434, 118);
+            this.btnExcluir.Location = new System.Drawing.Point(550, 118);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(143, 35);
-            this.btnExcluir.TabIndex = 9;
+            this.btnExcluir.TabIndex = 10;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(301, 118);
+            this.btnCancelar.Location = new System.Drawing.Point(417, 118);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(127, 35);
-            this.btnCancelar.TabIndex = 8;
+            this.btnCancelar.TabIndex = 9;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(135, 118);
+            this.btnSalvar.Location = new System.Drawing.Point(251, 118);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(160, 35);
-            this.btnSalvar.TabIndex = 7;
+            this.btnSalvar.TabIndex = 8;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
@@ -334,11 +347,91 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // groupControl8
+            // 
+            this.groupControl8.Controls.Add(this.edUNI_ID);
+            this.groupControl8.Location = new System.Drawing.Point(135, 66);
+            this.groupControl8.Name = "groupControl8";
+            this.groupControl8.Padding = new System.Windows.Forms.Padding(2);
+            this.groupControl8.Size = new System.Drawing.Size(125, 46);
+            this.groupControl8.TabIndex = 5;
+            this.groupControl8.Text = "Unidade";
+            // 
+            // edUNI_ID
+            // 
+            this.edUNI_ID.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.edUNI_ID.EnterMoveNextControl = true;
+            this.edUNI_ID.Location = new System.Drawing.Point(4, 22);
+            this.edUNI_ID.Name = "edUNI_ID";
+            this.edUNI_ID.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.edUNI_ID.Properties.NullText = "";
+            this.edUNI_ID.Properties.PopupView = this.gridView2;
+            this.edUNI_ID.Properties.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemTextEdit1});
+            this.edUNI_ID.Size = new System.Drawing.Size(117, 20);
+            this.edUNI_ID.TabIndex = 0;
+            // 
+            // gridView2
+            // 
+            this.gridView2.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn7,
+            this.gridColumn5,
+            this.gridColumn6});
+            this.gridView2.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.gridView2.Name = "gridView2";
+            this.gridView2.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.gridView2.OptionsView.ColumnAutoWidth = false;
+            this.gridView2.OptionsView.ShowAutoFilterRow = true;
+            this.gridView2.OptionsView.ShowGroupPanel = false;
+            // 
+            // gridColumn7
+            // 
+            this.gridColumn7.Caption = "ID";
+            this.gridColumn7.FieldName = "UNI_ID";
+            this.gridColumn7.Name = "gridColumn7";
+            this.gridColumn7.OptionsColumn.AllowEdit = false;
+            this.gridColumn7.OptionsColumn.ReadOnly = true;
+            this.gridColumn7.Visible = true;
+            this.gridColumn7.VisibleIndex = 0;
+            this.gridColumn7.Width = 41;
+            // 
+            // gridColumn5
+            // 
+            this.gridColumn5.Caption = "Descrição";
+            this.gridColumn5.FieldName = "UNI_DESCRICAO";
+            this.gridColumn5.Name = "gridColumn5";
+            this.gridColumn5.OptionsColumn.AllowEdit = false;
+            this.gridColumn5.OptionsColumn.ReadOnly = true;
+            this.gridColumn5.Visible = true;
+            this.gridColumn5.VisibleIndex = 1;
+            this.gridColumn5.Width = 144;
+            // 
+            // gridColumn6
+            // 
+            this.gridColumn6.Caption = "Medida";
+            this.gridColumn6.ColumnEdit = this.repositoryItemTextEdit1;
+            this.gridColumn6.FieldName = "UNI_MEDIDA";
+            this.gridColumn6.Name = "gridColumn6";
+            this.gridColumn6.OptionsColumn.AllowEdit = false;
+            this.gridColumn6.OptionsColumn.ReadOnly = true;
+            this.gridColumn6.Visible = true;
+            this.gridColumn6.VisibleIndex = 2;
+            // 
+            // repositoryItemTextEdit1
+            // 
+            this.repositoryItemTextEdit1.AutoHeight = false;
+            this.repositoryItemTextEdit1.Mask.EditMask = "c2";
+            this.repositoryItemTextEdit1.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.repositoryItemTextEdit1.Mask.UseMaskAsDisplayFormat = true;
+            this.repositoryItemTextEdit1.Name = "repositoryItemTextEdit1";
+            // 
             // FrmProdutos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 162);
+            this.ClientSize = new System.Drawing.Size(705, 162);
+            this.Controls.Add(this.groupControl8);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnExcluir);
@@ -377,6 +470,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).EndInit();
             this.groupControl7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.edPRO_REFERENCIA.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl8)).EndInit();
+            this.groupControl8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.edUNI_ID.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -409,5 +507,12 @@
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
+        private DevExpress.XtraEditors.GroupControl groupControl8;
+        private DevExpress.XtraEditors.GridLookUpEdit edUNI_ID;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
+        private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit1;
     }
 }

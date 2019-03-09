@@ -39,6 +39,7 @@
             this.accordionControlElement9 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement16 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElementEstoqueCad = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement10 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement11 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement3 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -47,6 +48,7 @@
             this.accordionControlElement13 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement14 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement17 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElementEstoque = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.iSlider = new DevExpress.XtraEditors.Controls.ImageSlider();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.accordionControlElement5 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -57,8 +59,7 @@
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.alertControl1 = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
-            this.accordionControlElementEstoque = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElementEstoqueCad = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElementUnidade = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             ((System.ComponentModel.ISupportInitialize)(this.acInicio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iSlider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -90,7 +91,8 @@
             this.accordionControlElement9,
             this.accordionControlElement1,
             this.accordionControlElement16,
-            this.accordionControlElementEstoqueCad});
+            this.accordionControlElementEstoqueCad,
+            this.accordionControlElementUnidade});
             this.accordionControlElement6.Expanded = true;
             this.accordionControlElement6.Name = "accordionControlElement6";
             this.accordionControlElement6.Text = "Cadastros";
@@ -144,6 +146,13 @@
             this.accordionControlElement16.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement16.Text = "Tipos de produtos";
             this.accordionControlElement16.Click += new System.EventHandler(this.accordionControlElement16_Click);
+            // 
+            // accordionControlElementEstoqueCad
+            // 
+            this.accordionControlElementEstoqueCad.Name = "accordionControlElementEstoqueCad";
+            this.accordionControlElementEstoqueCad.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElementEstoqueCad.Text = "Estoque";
+            this.accordionControlElementEstoqueCad.Click += new System.EventHandler(this.accordionControlElementEstoqueCad_Click);
             // 
             // accordionControlElement10
             // 
@@ -207,6 +216,13 @@
             this.accordionControlElement17.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement17.Text = "Fornecedores";
             this.accordionControlElement17.Click += new System.EventHandler(this.accordionControlElement17_Click);
+            // 
+            // accordionControlElementEstoque
+            // 
+            this.accordionControlElementEstoque.Name = "accordionControlElementEstoque";
+            this.accordionControlElementEstoque.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElementEstoque.Text = "Estoque";
+            this.accordionControlElementEstoque.Click += new System.EventHandler(this.accordionControlElementEstoque_Click);
             // 
             // iSlider
             // 
@@ -289,19 +305,12 @@
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
             this.ribbonStatusBar1.Size = new System.Drawing.Size(441, 27);
             // 
-            // accordionControlElementEstoque
+            // accordionControlElementUnidade
             // 
-            this.accordionControlElementEstoque.Name = "accordionControlElementEstoque";
-            this.accordionControlElementEstoque.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElementEstoque.Text = "Estoque";
-            this.accordionControlElementEstoque.Click += new System.EventHandler(this.accordionControlElementEstoque_Click);
-            // 
-            // accordionControlElementEstoqueCad
-            // 
-            this.accordionControlElementEstoqueCad.Name = "accordionControlElementEstoqueCad";
-            this.accordionControlElementEstoqueCad.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElementEstoqueCad.Text = "Estoque";
-            this.accordionControlElementEstoqueCad.Click += new System.EventHandler(this.accordionControlElementEstoqueCad_Click);
+            this.accordionControlElementUnidade.Name = "accordionControlElementUnidade";
+            this.accordionControlElementUnidade.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElementUnidade.Text = "Unidades";
+            this.accordionControlElementUnidade.Click += new System.EventHandler(this.accordionControlElementUnidade_Click);
             // 
             // FrmInicio
             // 
@@ -360,6 +369,7 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement17;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElementEstoque;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElementEstoqueCad;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElementUnidade;
     }
 }
 

@@ -22,6 +22,15 @@ namespace PetApp.View.UTL
             set { pro_referencia = value; }
         }
 
+        private bool getInLoad = false;
+
+        public bool GetInLoad
+        {
+            get { return getInLoad; }
+            set { getInLoad = value; }
+        }
+
+
         List<Produtos> listProdutos = new List<Produtos>();
         public FrmSelectPro()
         {
@@ -35,6 +44,12 @@ namespace PetApp.View.UTL
             repositoryItemLookUpEditTipo.DataSource = TipoProduto.Get();
             repositoryItemLookUpEditTipo.ValueMember = "TPR_ID";
             repositoryItemLookUpEditTipo.DisplayMember = "TPR_DESCRICAO";
+
+            if (GetInLoad)
+            {
+                btnPesquisar_Click(null, null);
+                gridViewProdutos.Focus();
+            }
         }
 
         private void btnOK_Click(object sender, EventArgs e)
@@ -125,6 +140,19 @@ namespace PetApp.View.UTL
         private void gridViewProdutos_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
         {
             gridViewProdutos_FocusedRowChanged(null, null);
+        }
+
+        private void gridViewProdutos_DoubleClick(object sender, EventArgs e)
+        {
+            btnOK_Click(null, null);
+        }
+
+        private void gridViewProdutos_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Return)
+            {
+                btnOK_Click(null, null);
+            }
         }
     }
 }
