@@ -34,9 +34,7 @@ namespace PetApp.Model
         public string CLI_IMG { get; set; }
         public string CLI_DATA_CADASTRO { get; set; }
         public int CID_ID { get; set; }
-
-        private string cli_tipodesc;
-
+        
         public string CLI_TIPODESC
         {
             get

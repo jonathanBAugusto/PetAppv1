@@ -136,7 +136,7 @@
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(75, 46);
             this.btnCadastrar.TabIndex = 2;
-            this.btnCadastrar.Text = "Cadastrar";
+            this.btnCadastrar.Text = "Adicionar";
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // groupControl2

@@ -79,6 +79,38 @@ namespace PetApp.Model
             return list;
         }
 
+        public static List<Produtos> Get(string filters)
+        {
+            CONN = new Connection();
+            List<Produtos> prods = new List<Produtos>();
+            StringBuilder sql = new StringBuilder();
+            sql.Append("	SELECT 	");
+            sql.Append("		PRODUTOS.*	");
+            sql.Append("	FROM	");
+            sql.Append("		PRODUTOS 	");
+            sql.Append("	WHERE 	");
+            sql.Append("		PRO_ID > -1	");
+            sql.Append(filters);
+            try
+            {
+                prods = CONN.conn.Query<Produtos>(sql.ToString());
+            }
+            catch
+            {
+                try
+                {
+                    prods = CONN.conn.Query<Produtos>(sql.ToString());
+                }
+                catch (Exception ex)
+                {
+                    F.WriteLOG("---------------------------\n" + DateTime.Now.ToString() + " Error: " + ex.Message);
+                    prods = new List<Produtos>();
+                }
+            }
+
+            return prods;
+        }
+
         public static Produtos Get(int ID)
         {
             CONN = new Connection();
@@ -136,7 +168,7 @@ namespace PetApp.Model
 
             return user;
         }
-
+        
         public static bool Insert(Produtos user)
         {
             CONN = new Connection();
@@ -596,7 +628,6 @@ namespace PetApp.Model
         }
 
         private static Connection CONN;
-        public Connection conn;
         public EstoquePesquisa()
         {
             CONN = new Connection();

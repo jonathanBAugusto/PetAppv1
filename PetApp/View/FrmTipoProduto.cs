@@ -48,8 +48,13 @@ namespace PetApp.View
                 {
                     TPR_DESCRICAO = F.toString(edTPR_DESCRICAO.EditValue)
                 };
-                TipoProduto.Insert(tipo);
-                FrmTipoProduto_Load(null, null);
+                if (TipoProduto.Insert(tipo))
+                {
+                    btnAdicionar.Text = "Adicionar";
+                    edTPR_DESCRICAO.EditValue = "";
+                    edTPR_DESCRICAO.Focus();
+                    FrmTipoProduto_Load(null, null);
+                }
             }
         }
 

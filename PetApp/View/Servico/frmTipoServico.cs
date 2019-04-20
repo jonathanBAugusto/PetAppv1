@@ -29,8 +29,10 @@ namespace PetApp.View.Servico
                     TIPO_SER_VALOR = F.toDouble(edTIPO_SER_VALOR.EditValue)
                 };
                 TipoServico.Insert(tipo);
+                edTIPO_SER_NOME.EditValue = "";
+                edTIPO_SER_VALOR.EditValue = "";
+                edTIPO_SER_NOME.Focus();
                 frmTipoServico_Load(null, null);
-                DialogResult = DialogResult.OK;
             }
             else
             {
@@ -41,11 +43,11 @@ namespace PetApp.View.Servico
                     TIPO_SER_VALOR = F.toDouble(edTIPO_SER_VALOR.EditValue)
                 };
                 TipoServico.Update(tipo);
-                btnCadastrar.Text = "Cadastrar";
+                btnCadastrar.Text = "Adicionar";
                 edTIPO_SER_NOME.EditValue = "";
                 edTIPO_SER_VALOR.EditValue = "";
+                edTIPO_SER_NOME.Focus();
                 frmTipoServico_Load(null, null);
-                DialogResult = DialogResult.OK;
                 id = 0;
             }
         }

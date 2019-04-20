@@ -31,7 +31,7 @@ namespace PetApp.View
                 return;
             }
             if (Unidade.Insert(new Unidade() { UNI_DESCRICAO = F.toString(edUNI_DESCRICAO.EditValue) }))            {
-                edUNI_DESCRICAO.EditValue = null;
+                edUNI_DESCRICAO.EditValue = "";
                 edUNI_DESCRICAO.Focus();
             }
             Reload();
@@ -47,6 +47,8 @@ namespace PetApp.View
             if (F.YesNo("Alterar", "Deseja mesmo Alterar este Registro?"))
             {
                 Unidade.Update(new Unidade() { UNI_ID = obj.UNI_ID, UNI_DESCRICAO = F.toString(edUNI_DESCRICAO.EditValue) });
+                edUNI_DESCRICAO.EditValue = "";
+                edUNI_DESCRICAO.Focus();
             }
             Reload();
         }

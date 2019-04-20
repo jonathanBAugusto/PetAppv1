@@ -50,14 +50,13 @@ namespace PetApp.View
                 Racas raca = new Racas
                 {
                     PET_RACA_NOME = F.toString(edPET_RACA_NOME.EditValue),
-
                 };
                 Racas.Insert(raca);
 
                 FrmCad_PET_RACA_Load(null, null);
                 List<Racas> a = new List<Racas>();
-
-
+                edPET_RACA_NOME.EditValue = "";
+                edPET_RACA_NOME.Focus();
             }
         }
 

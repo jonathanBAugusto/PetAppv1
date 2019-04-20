@@ -14,16 +14,11 @@ namespace PetApp.View
 {
     public partial class SH_PRODUTOS : DevExpress.XtraEditors.XtraForm
     {
-        int idProdEdit = 0;
-        string img = "";
-        int tipo = 0;
-
         public string PRO_REFERENCIA = "";
         public bool pesquisa = false;
         public SH_PRODUTOS()
         {
             InitializeComponent();
-  
         }
 
         private void SH_PRODUTOS_Load(object sender, EventArgs e)
@@ -46,13 +41,10 @@ namespace PetApp.View
             repositoryItemGridLookUpEditFornecedor.DisplayMember = "FOR_RAZAO";
         }
 
-        private void simpleButton3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnRemover_Click(object sender, EventArgs e)
         {
+            if (!F.YesNo("Apagar", "Deseja realmente apagar este produto?", 2))
+                return;
             int IdCli = 0;
             IdCli = F.toInt(layoutView1.GetFocusedRowCellValue("PRO_ID"));
             Produtos.Delete(Produtos.Get(IdCli));
@@ -80,17 +72,7 @@ namespace PetApp.View
                 SH_PRODUTOS_Load(null, null);
             }
         }
-
-        private void gridControlProdutos_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnPesq_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void btnOK_Click(object sender, EventArgs e)
         {
             Produtos objSelec = new Produtos();
@@ -113,6 +95,43 @@ namespace PetApp.View
         {
             DialogResult = DialogResult.Cancel;
             this.Close();
+        }
+
+        private void btnPesq_Click(object sender, EventArgs e)
+        {
+            search();
+        }
+
+        private void search()
+        {
+            StringBuilder sql = new StringBuilder();
+
+            if (F.toString(edPRO_DESCRICAO.EditValue) != "")
+            {
+                sql.Append(" AND PRO_DESCRICAO LIKE '" + F.toString(edPRO_DESCRICAO.EditValue) + "%'");
+            }
+
+            if (F.toString(edPRO_REFERENCIA.EditValue) != "")
+            {
+                sql.Append(" AND PRO_REFERENCIA = '" + F.toString(edPRO_REFERENCIA.EditValue) + "'");
+            }
+
+            if (F.toString(edPRO_FORNECEDOR.EditValue) != "")
+            {
+                sql.Append(" AND PRO_FORNECEDOR = '" + F.toString(edPRO_FORNECEDOR.EditValue) + "'");
+            }
+
+            if (F.toString(edPRO_CUSTO.EditValue) != "")
+            {
+                sql.Append(" AND PRO_CUSTO = '" + F.toString(edPRO_CUSTO.EditValue) + "'");
+            }
+
+            if (F.toString(edPRO_CUSTOULTCOMPRA.EditValue) != "")
+            {
+                sql.Append(" AND PRO_CUSTOULTCOMPRA = '" + F.toString(edPRO_CUSTOULTCOMPRA.EditValue) + "'");
+            }
+
+            gridControlProdutos.DataSource = Produtos.Get(sql.ToString());
         }
     }
 }
